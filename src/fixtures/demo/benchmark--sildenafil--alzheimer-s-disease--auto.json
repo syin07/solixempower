@@ -1,0 +1,1709 @@
+{
+  "query": {
+    "candidate": "sildenafil",
+    "disease": "alzheimer's disease",
+    "targetChemblId": "CHEMBL1827"
+  },
+  "target": {
+    "chemblId": "CHEMBL1827",
+    "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+    "organism": "Homo sapiens",
+    "source": {
+      "id": "chembl-target:CHEMBL1827",
+      "database": "ChEMBL",
+      "label": "CHEMBL1827",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1827"
+    }
+  },
+  "activityType": "IC50",
+  "candidate": {
+    "compound": {
+      "chemblId": "CHEMBL192",
+      "name": "SILDENAFIL",
+      "maxPhase": 4,
+      "isCandidate": true,
+      "properties": {
+        "molecularWeight": 474.59,
+        "alogp": 1.61,
+        "ro5Violations": 0,
+        "qed": 0.55
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    "n": 12,
+    "medianPchembl": 8.37,
+    "minPchembl": 4.9,
+    "maxPchembl": 8.85,
+    "rank": 5,
+    "measurements": [
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL762823",
+        "assayDescription": "Inhibition of Phosphodiesterase 5 from human corpus cavernosum",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 3,
+        "pchembl": 8.52,
+        "source": {
+          "id": "chembl-act:837349",
+          "database": "ChEMBL",
+          "label": "Activity 837349 (CHEMBL762823)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762823"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL762828",
+        "assayDescription": "Inhibition of Phosphodiesterase 5",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 6.6,
+        "pchembl": 8.18,
+        "source": {
+          "id": "chembl-act:869550",
+          "database": "ChEMBL",
+          "label": "Activity 869550 (CHEMBL762828)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762828"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL827930",
+        "assayDescription": "Inhibition of human Phosphodiesterase 5 (n=2-3)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 20,
+        "pchembl": 7.7,
+        "source": {
+          "id": "chembl-act:1523271",
+          "database": "ChEMBL",
+          "label": "Activity 1523271 (CHEMBL827930)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL827930"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL1930855",
+        "assayDescription": "Inhibition of human PDE5 isolated from corpus cavernosum after 30 to 60 mins by scintillation counting method",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 3.5,
+        "pchembl": 8.46,
+        "source": {
+          "id": "chembl-act:7972972",
+          "database": "ChEMBL",
+          "label": "Activity 7972972 (CHEMBL1930855)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930855"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL2184512",
+        "assayDescription": "Inhibition of human recombinant PDE5A by [3H]cGMP based tritium scintillation proximity assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 3.9,
+        "pchembl": 8.41,
+        "source": {
+          "id": "chembl-act:12165143",
+          "database": "ChEMBL",
+          "label": "Activity 12165143 (CHEMBL2184512)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2184512"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL2345130",
+        "assayDescription": "Inhibition of PDE5 (unknown origin) using FAM-cGMP as substrate after 60 mins by fluorescence assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 2.2,
+        "pchembl": 8.66,
+        "source": {
+          "id": "chembl-act:12680607",
+          "database": "ChEMBL",
+          "label": "Activity 12680607 (CHEMBL2345130)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2345130"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL3405816",
+        "assayDescription": "Inhibition of PDE5A1 (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 5.6,
+        "pchembl": 8.25,
+        "source": {
+          "id": "chembl-act:15184080",
+          "database": "ChEMBL",
+          "label": "Activity 15184080 (CHEMBL3405816)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3405816"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL3860975",
+        "assayDescription": "Inhibition of recombinant human PDE5A",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 8.5,
+        "pchembl": 8.07,
+        "source": {
+          "id": "chembl-act:16755420",
+          "database": "ChEMBL",
+          "label": "Activity 16755420 (CHEMBL3860975)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860975"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL4058384",
+        "assayDescription": "Inhibition of human PDE5A preincubated for 30 mins followed by TMB substrate addition by spectrophotometry",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 12590,
+        "pchembl": 4.9,
+        "source": {
+          "id": "chembl-act:18269639",
+          "database": "ChEMBL",
+          "label": "Activity 18269639 (CHEMBL4058384)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4058384"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL5153773",
+        "assayDescription": "Inhibition of human PDE5 using [3H]cGMP as substrate incubated for 10 mins by liquid scintillation counter analysis",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 1.4,
+        "pchembl": 8.85,
+        "source": {
+          "id": "chembl-act:24873452",
+          "database": "ChEMBL",
+          "label": "Activity 24873452 (CHEMBL5153773)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5153773"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL5233430",
+        "assayDescription": "Inhibition of PDE-5A (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 4.66,
+        "pchembl": 8.33,
+        "source": {
+          "id": "chembl-act:25002318",
+          "database": "ChEMBL",
+          "label": "Activity 25002318 (CHEMBL5233430)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5233430"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL192",
+        "assayChemblId": "CHEMBL6081092",
+        "assayDescription": "Inhibition of PDE5A (unknown origin) using FAM-cAMP as substrate incubated for 1 hr by fluorescence polarization assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 4,
+        "pchembl": 8.4,
+        "source": {
+          "id": "chembl-act:29085919",
+          "database": "ChEMBL",
+          "label": "Activity 29085919 (CHEMBL6081092)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6081092"
+        }
+      }
+    ]
+  },
+  "comparators": [
+    {
+      "compound": {
+        "chemblId": "CHEMBL4210847",
+        "name": "PF-00489791",
+        "maxPhase": 2,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 476.56,
+          "alogp": 1.46,
+          "ro5Violations": 1,
+          "qed": 0.41
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL4210847",
+          "database": "ChEMBL",
+          "label": "PF-00489791",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+        }
+      },
+      "n": 1,
+      "medianPchembl": 9.3,
+      "minPchembl": 9.3,
+      "maxPchembl": 9.3,
+      "rank": 1,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL4210847",
+          "assayChemblId": "CHEMBL4194770",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.5012,
+          "pchembl": 9.3,
+          "source": {
+            "id": "chembl-act:18528097",
+            "database": "ChEMBL",
+            "label": "Activity 18528097 (CHEMBL4194770)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4194770"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL1520",
+        "name": "VARDENAFIL",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 488.61,
+          "alogp": 2.07,
+          "ro5Violations": 0,
+          "qed": 0.52
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL1520",
+          "database": "ChEMBL",
+          "label": "VARDENAFIL",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+        }
+      },
+      "n": 6,
+      "medianPchembl": 9.23,
+      "minPchembl": 9,
+      "maxPchembl": 9.77,
+      "rank": 2,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "assayChemblId": "CHEMBL762828",
+          "assayDescription": "Inhibition of Phosphodiesterase 5",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.7,
+          "pchembl": 9.15,
+          "source": {
+            "id": "chembl-act:902360",
+            "database": "ChEMBL",
+            "label": "Activity 902360 (CHEMBL762828)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762828"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "assayChemblId": "CHEMBL831692",
+          "assayDescription": "Inhibition of human phosphodiesterase 5",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.2,
+          "pchembl": 9.7,
+          "source": {
+            "id": "chembl-act:1520505",
+            "database": "ChEMBL",
+            "label": "Activity 1520505 (CHEMBL831692)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL831692"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "assayChemblId": "CHEMBL2345130",
+          "assayDescription": "Inhibition of PDE5 (unknown origin) using FAM-cGMP as substrate after 60 mins by fluorescence assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1,
+          "pchembl": 9,
+          "source": {
+            "id": "chembl-act:12680586",
+            "database": "ChEMBL",
+            "label": "Activity 12680586 (CHEMBL2345130)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2345130"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "assayChemblId": "CHEMBL3860975",
+          "assayDescription": "Inhibition of recombinant human PDE5A",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.89,
+          "pchembl": 9.05,
+          "source": {
+            "id": "chembl-act:16755421",
+            "database": "ChEMBL",
+            "label": "Activity 16755421 (CHEMBL3860975)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860975"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "assayChemblId": "CHEMBL4028018",
+          "assayDescription": "Inhibition of PDE5A1 (unknwon origin) using [3H]cGMP as substrate after 30 mins by SPA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.17,
+          "pchembl": 9.77,
+          "source": {
+            "id": "chembl-act:18126527",
+            "database": "ChEMBL",
+            "label": "Activity 18126527 (CHEMBL4028018)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4028018"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "assayChemblId": "CHEMBL4194770",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.5012,
+          "pchembl": 9.3,
+          "source": {
+            "id": "chembl-act:18528107",
+            "database": "ChEMBL",
+            "label": "Activity 18528107 (CHEMBL4194770)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4194770"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL1928262",
+        "name": "GISADENAFIL",
+        "maxPhase": 2,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 519.63,
+          "alogp": 1.12,
+          "ro5Violations": 1,
+          "qed": 0.42
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL1928262",
+          "database": "ChEMBL",
+          "label": "GISADENAFIL",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+        }
+      },
+      "n": 1,
+      "medianPchembl": 8.91,
+      "minPchembl": 8.91,
+      "maxPchembl": 8.91,
+      "rank": 3,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL1928262",
+          "assayChemblId": "CHEMBL1930855",
+          "assayDescription": "Inhibition of human PDE5 isolated from corpus cavernosum after 30 to 60 mins by scintillation counting method",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.23,
+          "pchembl": 8.91,
+          "source": {
+            "id": "chembl-act:7971884",
+            "database": "ChEMBL",
+            "label": "Activity 7971884 (CHEMBL1930855)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930855"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL779",
+        "name": "TADALAFIL",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 389.41,
+          "alogp": 2.21,
+          "ro5Violations": 0,
+          "qed": 0.69
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL779",
+          "database": "ChEMBL",
+          "label": "TADALAFIL",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+        }
+      },
+      "n": 11,
+      "medianPchembl": 8.4,
+      "minPchembl": 4.58,
+      "maxPchembl": 8.92,
+      "rank": 4,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL762824",
+          "assayDescription": "Inhibitory activity against phosphodiesterase 5 (PDE5) obtained from human corpus cavernosum tissue",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6.7,
+          "pchembl": 8.17,
+          "source": {
+            "id": "chembl-act:331695",
+            "database": "ChEMBL",
+            "label": "Activity 331695 (CHEMBL762824)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762824"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL831692",
+          "assayDescription": "Inhibition of human phosphodiesterase 5",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 4,
+          "pchembl": 8.4,
+          "source": {
+            "id": "chembl-act:1520620",
+            "database": "ChEMBL",
+            "label": "Activity 1520620 (CHEMBL831692)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL831692"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL968866",
+          "assayDescription": "Inhibition of PDE5",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5.012,
+          "pchembl": 8.3,
+          "source": {
+            "id": "chembl-act:2566973",
+            "database": "ChEMBL",
+            "label": "Activity 2566973 (CHEMBL968866)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL968866"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL1664617",
+          "assayDescription": "Inhibition of human recombinant PDE5A-mediated hydrolysis of cGMP after 30 mins by fluorescence polarization assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 3,
+          "pchembl": 8.52,
+          "source": {
+            "id": "chembl-act:5187584",
+            "database": "ChEMBL",
+            "label": "Activity 5187584 (CHEMBL1664617)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1664617"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL2345130",
+          "assayDescription": "Inhibition of PDE5 (unknown origin) using FAM-cGMP as substrate after 60 mins by fluorescence assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.2,
+          "pchembl": 8.92,
+          "source": {
+            "id": "chembl-act:12680565",
+            "database": "ChEMBL",
+            "label": "Activity 12680565 (CHEMBL2345130)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2345130"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL3860975",
+          "assayDescription": "Inhibition of recombinant human PDE5A",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 9.4,
+          "pchembl": 8.03,
+          "source": {
+            "id": "chembl-act:16755422",
+            "database": "ChEMBL",
+            "label": "Activity 16755422 (CHEMBL3860975)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860975"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL4194770",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 3.162,
+          "pchembl": 8.5,
+          "source": {
+            "id": "chembl-act:18528108",
+            "database": "ChEMBL",
+            "label": "Activity 18528108 (CHEMBL4194770)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4194770"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL5226652",
+          "assayDescription": "Inhibition of human recombinant PDE5A using (Fl)-cAMP and TAMRA-cGMP as substrate incubated for 60 mins by IMAP-fluorescence polarization assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 7,
+          "pchembl": 8.15,
+          "source": {
+            "id": "chembl-act:24983026",
+            "database": "ChEMBL",
+            "label": "Activity 24983026 (CHEMBL5226652)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5226652"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL5235562",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 26000,
+          "pchembl": 4.58,
+          "source": {
+            "id": "chembl-act:25007827",
+            "database": "ChEMBL",
+            "label": "Activity 25007827 (CHEMBL5235562)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5235562"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL5723289",
+          "assayDescription": "Affinity Biochemical interaction: ([3H]cGMP-Binding Assay) EUB0002731a PDE5A",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.8,
+          "pchembl": 8.74,
+          "source": {
+            "id": "chembl-act:26335818",
+            "database": "ChEMBL",
+            "label": "Activity 26335818 (CHEMBL5723289)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5723289"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "assayChemblId": "CHEMBL6184025",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.8,
+          "pchembl": 8.74,
+          "source": {
+            "id": "chembl-act:29311697",
+            "database": "ChEMBL",
+            "label": "Activity 29311697 (CHEMBL6184025)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6184025"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL2103849",
+        "name": "UDENAFIL",
+        "maxPhase": 3,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 516.67,
+          "alogp": 2.83,
+          "ro5Violations": 1,
+          "qed": 0.4
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL2103849",
+          "database": "ChEMBL",
+          "label": "UDENAFIL",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+        }
+      },
+      "n": 1,
+      "medianPchembl": 8.08,
+      "minPchembl": 8.08,
+      "maxPchembl": 8.08,
+      "rank": 6,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL2103849",
+          "assayChemblId": "CHEMBL5153400",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 8.25,
+          "pchembl": 8.08,
+          "source": {
+            "id": "chembl-act:24872434",
+            "database": "ChEMBL",
+            "label": "Activity 24872434 (CHEMBL5153400)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5153400"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL1963681",
+        "name": "AVANAFIL",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 483.96,
+          "alogp": 2.43,
+          "ro5Violations": 0,
+          "qed": 0.42
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL1963681",
+          "database": "ChEMBL",
+          "label": "AVANAFIL",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+        }
+      },
+      "n": 26,
+      "medianPchembl": 7.76,
+      "minPchembl": 4.6,
+      "maxPchembl": 8.15,
+      "rank": 7,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 12.25,
+          "pchembl": 7.91,
+          "source": {
+            "id": "chembl-act:17775429",
+            "database": "ChEMBL",
+            "label": "Activity 17775429 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775430",
+            "database": "ChEMBL",
+            "label": "Activity 17775430 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 9.29,
+          "pchembl": 8.03,
+          "source": {
+            "id": "chembl-act:17775431",
+            "database": "ChEMBL",
+            "label": "Activity 17775431 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775432",
+            "database": "ChEMBL",
+            "label": "Activity 17775432 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775433",
+            "database": "ChEMBL",
+            "label": "Activity 17775433 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775434",
+            "database": "ChEMBL",
+            "label": "Activity 17775434 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775435",
+            "database": "ChEMBL",
+            "label": "Activity 17775435 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775436",
+            "database": "ChEMBL",
+            "label": "Activity 17775436 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17.32,
+          "pchembl": 7.76,
+          "source": {
+            "id": "chembl-act:17775437",
+            "database": "ChEMBL",
+            "label": "Activity 17775437 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 12.53,
+          "pchembl": 7.9,
+          "source": {
+            "id": "chembl-act:17775438",
+            "database": "ChEMBL",
+            "label": "Activity 17775438 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10.77,
+          "pchembl": 7.97,
+          "source": {
+            "id": "chembl-act:17775439",
+            "database": "ChEMBL",
+            "label": "Activity 17775439 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10.77,
+          "pchembl": 7.97,
+          "source": {
+            "id": "chembl-act:17775440",
+            "database": "ChEMBL",
+            "label": "Activity 17775440 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10.77,
+          "pchembl": 7.97,
+          "source": {
+            "id": "chembl-act:17775441",
+            "database": "ChEMBL",
+            "label": "Activity 17775441 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10.77,
+          "pchembl": 7.97,
+          "source": {
+            "id": "chembl-act:17775442",
+            "database": "ChEMBL",
+            "label": "Activity 17775442 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10.77,
+          "pchembl": 7.97,
+          "source": {
+            "id": "chembl-act:17775443",
+            "database": "ChEMBL",
+            "label": "Activity 17775443 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 20.86,
+          "pchembl": 7.68,
+          "source": {
+            "id": "chembl-act:17775444",
+            "database": "ChEMBL",
+            "label": "Activity 17775444 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 20.86,
+          "pchembl": 7.68,
+          "source": {
+            "id": "chembl-act:17775445",
+            "database": "ChEMBL",
+            "label": "Activity 17775445 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 20.86,
+          "pchembl": 7.68,
+          "source": {
+            "id": "chembl-act:17775446",
+            "database": "ChEMBL",
+            "label": "Activity 17775446 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 20.86,
+          "pchembl": 7.68,
+          "source": {
+            "id": "chembl-act:17775447",
+            "database": "ChEMBL",
+            "label": "Activity 17775447 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 26.04,
+          "pchembl": 7.58,
+          "source": {
+            "id": "chembl-act:17775448",
+            "database": "ChEMBL",
+            "label": "Activity 17775448 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 26.04,
+          "pchembl": 7.58,
+          "source": {
+            "id": "chembl-act:17775449",
+            "database": "ChEMBL",
+            "label": "Activity 17775449 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 26.04,
+          "pchembl": 7.58,
+          "source": {
+            "id": "chembl-act:17775450",
+            "database": "ChEMBL",
+            "label": "Activity 17775450 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 8.557,
+          "pchembl": 8.07,
+          "source": {
+            "id": "chembl-act:17775451",
+            "database": "ChEMBL",
+            "label": "Activity 17775451 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL3888593",
+          "assayDescription": "Caliper Mobility-Shift Assay: To a 96-well plate, 20 μL, of 10 μM FL-cGMP as the substrate was added; then 1 μL, of solution of the compound in DMSO or DMSO solution without compound was added, and then 29 μL of 1.38 ng/μL PDE-5A enzyme buffer (100 mM Hepes pH 7.5, 5 mM MgCl2, 0.002% Brij-35) was added. The maximum final concentration of the compound was 10 μM. The plate was incubated at 30° C. for 1 h, and 20 μL of 70 μM EDTA was then added to stop the reaction. 26 μL of solution of each well was transferred to a 384-well plate.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6.993,
+          "pchembl": 8.15,
+          "source": {
+            "id": "chembl-act:17775452",
+            "database": "ChEMBL",
+            "label": "Activity 17775452 (CHEMBL3888593)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL4726490",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5200,
+          "pchembl": 5.28,
+          "source": {
+            "id": "chembl-act:22878830",
+            "database": "ChEMBL",
+            "label": "Activity 22878830 (CHEMBL4726490)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4726490"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1963681",
+          "assayChemblId": "CHEMBL4726490",
+          "assayDescription": "Inhibition of PDE5 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 25000,
+          "pchembl": 4.6,
+          "source": {
+            "id": "chembl-act:22878836",
+            "database": "ChEMBL",
+            "label": "Activity 22878836 (CHEMBL4726490)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4726490"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL19449",
+        "name": "IBUDILAST",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 230.31,
+          "alogp": 3.3,
+          "ro5Violations": 0,
+          "qed": 0.76
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL19449",
+          "database": "ChEMBL",
+          "label": "IBUDILAST",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+        }
+      },
+      "n": 2,
+      "medianPchembl": 5.46,
+      "minPchembl": 5.46,
+      "maxPchembl": 5.46,
+      "rank": 8,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL19449",
+          "assayChemblId": "CHEMBL5715900",
+          "assayDescription": "Selectivity interaction (Enzymatic assay) EUB0002598a PDE5A",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 3510,
+          "pchembl": 5.46,
+          "source": {
+            "id": "chembl-act:26325379",
+            "database": "ChEMBL",
+            "label": "Activity 26325379 (CHEMBL5715900)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5715900"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL19449",
+          "assayChemblId": "CHEMBL5715901",
+          "assayDescription": "Selectivity interaction (Enzymatic assay) EUB0002598a PDE5A",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 3510,
+          "pchembl": 5.46,
+          "source": {
+            "id": "chembl-act:26325380",
+            "database": "ChEMBL",
+            "label": "Activity 26325380 (CHEMBL5715901)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5715901"
+          }
+        }
+      ]
+    }
+  ],
+  "matchedAssays": [
+    {
+      "assayChemblId": "CHEMBL762828",
+      "assayDescription": "Inhibition of Phosphodiesterase 5",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "compoundName": "VARDENAFIL",
+          "pchembl": 9.15,
+          "source": {
+            "id": "chembl-act:902360",
+            "database": "ChEMBL",
+            "label": "Activity 902360 (CHEMBL762828)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762828"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL192",
+          "compoundName": "SILDENAFIL",
+          "pchembl": 8.18,
+          "source": {
+            "id": "chembl-act:869550",
+            "database": "ChEMBL",
+            "label": "Activity 869550 (CHEMBL762828)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762828"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL1930855",
+      "assayDescription": "Inhibition of human PDE5 isolated from corpus cavernosum after 30 to 60 mins by scintillation counting method",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL1928262",
+          "compoundName": "GISADENAFIL",
+          "pchembl": 8.91,
+          "source": {
+            "id": "chembl-act:7971884",
+            "database": "ChEMBL",
+            "label": "Activity 7971884 (CHEMBL1930855)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930855"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL192",
+          "compoundName": "SILDENAFIL",
+          "pchembl": 8.46,
+          "source": {
+            "id": "chembl-act:7972972",
+            "database": "ChEMBL",
+            "label": "Activity 7972972 (CHEMBL1930855)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930855"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL2345130",
+      "assayDescription": "Inhibition of PDE5 (unknown origin) using FAM-cGMP as substrate after 60 mins by fluorescence assay",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "compoundName": "VARDENAFIL",
+          "pchembl": 9,
+          "source": {
+            "id": "chembl-act:12680586",
+            "database": "ChEMBL",
+            "label": "Activity 12680586 (CHEMBL2345130)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2345130"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "compoundName": "TADALAFIL",
+          "pchembl": 8.92,
+          "source": {
+            "id": "chembl-act:12680565",
+            "database": "ChEMBL",
+            "label": "Activity 12680565 (CHEMBL2345130)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2345130"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL192",
+          "compoundName": "SILDENAFIL",
+          "pchembl": 8.66,
+          "source": {
+            "id": "chembl-act:12680607",
+            "database": "ChEMBL",
+            "label": "Activity 12680607 (CHEMBL2345130)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2345130"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL3860975",
+      "assayDescription": "Inhibition of recombinant human PDE5A",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL1520",
+          "compoundName": "VARDENAFIL",
+          "pchembl": 9.05,
+          "source": {
+            "id": "chembl-act:16755421",
+            "database": "ChEMBL",
+            "label": "Activity 16755421 (CHEMBL3860975)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860975"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL192",
+          "compoundName": "SILDENAFIL",
+          "pchembl": 8.07,
+          "source": {
+            "id": "chembl-act:16755420",
+            "database": "ChEMBL",
+            "label": "Activity 16755420 (CHEMBL3860975)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860975"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL779",
+          "compoundName": "TADALAFIL",
+          "pchembl": 8.03,
+          "source": {
+            "id": "chembl-act:16755422",
+            "database": "ChEMBL",
+            "label": "Activity 16755422 (CHEMBL3860975)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860975"
+          }
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "IBUDILAST (n=2), UDENAFIL (n=1), GISADENAFIL (n=1), PF-00489791 (n=1): fewer than 3 comparable measurements; ranking uncertain.",
+    "Comparators are drugs with a ChEMBL mechanism on cGMP-specific 3',5'-cyclic phosphodiesterase, chosen by target, not by indication for \"alzheimer's disease\". None of them has a ChEMBL indication record matching \"alzheimer's disease\".",
+    "2 IC50 measurement(s) from functional (non-binding) assays excluded from the ranking — 0 for the candidate, 2 across the 7 comparators shown.",
+    "36 IC50 measurement(s) from cell-based or non-purified-protein assays excluded from the ranking — 30 for the candidate, 6 across the 7 comparators shown.",
+    "27 IC50 measurement(s) flagged by ChEMBL as potential duplicates or data-validity issues excluded from the ranking — 17 for the candidate, 10 across the 7 comparators shown.",
+    "Measurements come from different assays and labs; ranks are indicative. Matched-assay comparisons are the strongest evidence."
+  ],
+  "candidateTargets": [
+    {
+      "chemblId": "CHEMBL1827",
+      "name": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "n": 68
+    },
+    {
+      "chemblId": "CHEMBL240",
+      "name": "Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "n": 10
+    },
+    {
+      "chemblId": "CHEMBL2717",
+      "name": "Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A",
+      "n": 7
+    },
+    {
+      "chemblId": "CHEMBL3977",
+      "name": "Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha'",
+      "n": 4
+    },
+    {
+      "chemblId": "CHEMBL4409",
+      "name": "cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A",
+      "n": 3
+    }
+  ],
+  "preclinical": [
+    {
+      "assayChemblId": "CHEMBL5580524",
+      "assayDescription": "Disruption of Rluc8-tagged PDE6D (unknown origin)/GFP2-tagged K-Ras G12V mutant (unknown origin) protein-protein interaction transfected in HEK293-EBNA cells by measuring effective concentration incubated for 24 hrs by BRET assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 11400,
+      "units": "nM",
+      "pchembl": 4.94,
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:26022578",
+        "database": "ChEMBL",
+        "label": "Activity 26022578 (CHEMBL5580524)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5580524"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5291859",
+      "assayDescription": "Compound was evaluated for inhibition of human PDE6A in an in vitro cell free assay measured by scintillation proximity assay",
+      "assayType": "F",
+      "assayFormat": "assay format",
+      "activityType": "AC50",
+      "relation": "=",
+      "value": 211.3,
+      "units": "nM",
+      "pchembl": 6.67,
+      "targetName": "Rod cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25115887",
+        "database": "ChEMBL",
+        "label": "Activity 25115887 (CHEMBL5291859)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5291859"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5291814",
+      "assayDescription": "Antagonist activity at human HTR1A in an in vitro cell-based assay measured by fluorescent imaging plate reader",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "AC50",
+      "relation": "=",
+      "value": 50000,
+      "units": "nM",
+      "pchembl": 4.3,
+      "targetName": "5-hydroxytryptamine receptor 1A",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25215736",
+        "database": "ChEMBL",
+        "label": "Activity 25215736 (CHEMBL5291814)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5291814"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4808842",
+      "assayDescription": "Inhibition of recombinant full length GST-tagged PDE5A1 (unknown origin) expressed in baculovirus infected Sf9 insect cells using TAMRA-cGMP as substrate incubated for 1.5 hrs by IMAP-FP assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 3,
+      "units": "nM",
+      "pchembl": 8.52,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2021,
+      "source": {
+        "id": "chembl-act:23143711",
+        "database": "ChEMBL",
+        "label": "Activity 23143711 (CHEMBL4808842)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4808842"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4808841",
+      "assayDescription": "Inhibition of human full length His-tagged PDE5A1 expressed in baculovirus infected Sf9 insect cells using [3H]-cGMP as substrate preincubated for 15 mins followed by snake venom 5'-nucleotidase and further incubated for 10 mins by scintillation counting method",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 3,
+      "units": "nM",
+      "pchembl": 8.52,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2021,
+      "source": {
+        "id": "chembl-act:23143636",
+        "database": "ChEMBL",
+        "label": "Activity 23143636 (CHEMBL4808841)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4808841"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5246775",
+      "assayDescription": "Inhibition of human corpus cavernosum PDE5",
+      "assayType": "B",
+      "assayFormat": "tissue-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 3.6,
+      "units": "nM",
+      "pchembl": 8.44,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2020,
+      "source": {
+        "id": "chembl-act:25048371",
+        "database": "ChEMBL",
+        "label": "Activity 25048371 (CHEMBL5246775)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5246775"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4726493",
+      "assayDescription": "Induction of smooth muscle relaxation in male albino rat corpus-cavernosum assessed as reduction in phenylephrine-induced contraction",
+      "assayType": "F",
+      "assayFormat": "tissue-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 1000,
+      "units": "nM",
+      "pchembl": 6,
+      "targetName": "Corpus cavernosum",
+      "targetOrganism": "Rattus norvegicus",
+      "year": 2020,
+      "source": {
+        "id": "chembl-act:22878873",
+        "database": "ChEMBL",
+        "label": "Activity 22878873 (CHEMBL4726493)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4726493"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4726492",
+      "assayDescription": "Inhibition of PDE5 in human platelets incubated for 30 mins using cGMP as substrate by HPLC analysis relative to sildenafil",
+      "assayType": "B",
+      "assayFormat": "tissue-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 1000,
+      "units": "nM",
+      "pchembl": 6,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2020,
+      "source": {
+        "id": "chembl-act:22878858",
+        "database": "ChEMBL",
+        "label": "Activity 22878858 (CHEMBL4726492)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4726492"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4397429",
+      "assayDescription": "Inhibition of N-terminal GST-tagged human PDE5A1 expressed in baculovirus infected sf9 cells using [3H]cGMP as substrate measured after 30 mins by scintillation proximity assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 4.31,
+      "units": "nM",
+      "pchembl": 8.37,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2019,
+      "source": {
+        "id": "chembl-act:19231666",
+        "database": "ChEMBL",
+        "label": "Activity 19231666 (CHEMBL4397429)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4397429"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4372118",
+      "assayDescription": "Vasorelaxant activity in Wistar rat endothelium intact pulmonary artery rings assessed as inhibition of phenylephrine-induced contraction",
+      "assayType": "F",
+      "assayFormat": "tissue-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 140,
+      "units": "nM",
+      "pchembl": 6.85,
+      "targetName": "Artery",
+      "targetOrganism": "Rattus norvegicus",
+      "year": 2019,
+      "source": {
+        "id": "chembl-act:19117160",
+        "database": "ChEMBL",
+        "label": "Activity 19117160 (CHEMBL4372118)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4372118"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4198189",
+      "assayDescription": "Inhibition of N-terminal GST-tagged full length recombinant human PDE5A1 catalytic domain expressed in Baculovirus infected Sf9 insect cells using FAM-cGMP as substrate after 1 hr by fluorescence polarization assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 3.65,
+      "units": "nM",
+      "pchembl": 8.44,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2018,
+      "source": {
+        "id": "chembl-act:18545236",
+        "database": "ChEMBL",
+        "label": "Activity 18545236 (CHEMBL4198189)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4198189"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4425327",
+      "assayDescription": "Inhibition of recombinant human PDE5A1 catalytic domain (535 to 860 residues) expressed in baculovirus infected sf9 cells using [3H]cGMP as substrate incubated for 15 mins by liquid scintillation counting method",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.2,
+      "units": "nM",
+      "pchembl": 8.66,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2016,
+      "source": {
+        "id": "chembl-act:19400628",
+        "database": "ChEMBL",
+        "label": "Activity 19400628 (CHEMBL4425327)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4425327"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4425330",
+      "assayDescription": "Inhibition of recombinant human His6-tagged PDE5A (535 to 786 residues)/PDE6C expressed in Escherichia coli BL21-CodonPlus cells using [3H]cGMP as substrate",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "Ki",
+      "relation": "=",
+      "value": 25,
+      "units": "nM",
+      "pchembl": 7.6,
+      "targetName": "PDE5A/PDE6C",
+      "targetOrganism": "Homo sapiens",
+      "year": 2016,
+      "source": {
+        "id": "chembl-act:19400622",
+        "database": "ChEMBL",
+        "label": "Activity 19400622 (CHEMBL4425330)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4425330"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL3860990",
+      "assayDescription": "Inhibition of full length recombinant human N-terminal GST-tagged PDE5A1 expressed in baculovirus infected Sf9 cells using cGMP as substrate after 30 mins by HTRF assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 4,
+      "units": "nM",
+      "pchembl": 8.4,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2016,
+      "source": {
+        "id": "chembl-act:16755484",
+        "database": "ChEMBL",
+        "label": "Activity 16755484 (CHEMBL3860990)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3860990"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4425316",
+      "assayDescription": "Inhibition of human His-tagged PDE4B catalytic domain expressed in Escherichia coli BL21-CodonPlus(DE3) cells using [3H]cAMP or [3H]cGMP as substrate incubated for 30 mins by scintillation counting method",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 20000,
+      "units": "nM",
+      "pchembl": 4.7,
+      "targetName": "3',5'-cyclic-AMP phosphodiesterase 4B",
+      "targetOrganism": "Homo sapiens",
+      "year": 2016,
+      "source": {
+        "id": "chembl-act:19400661",
+        "database": "ChEMBL",
+        "label": "Activity 19400661 (CHEMBL4425316)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4425316"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4425324",
+      "assayDescription": "Inhibition of human His-tagged PDE5A catalytic domain expressed in Escherichia coli BL21-CodonPlus(DE3) cells using [3H]cAMP or [3H]cGMP as substrate incubated for 30 mins by scintillation counting method",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.2,
+      "units": "nM",
+      "pchembl": 8.66,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2016,
+      "source": {
+        "id": "chembl-act:19400634",
+        "database": "ChEMBL",
+        "label": "Activity 19400634 (CHEMBL4425324)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4425324"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL3406687",
+      "assayDescription": "Relaxation effect on phenylephrine-induced contractile response in isolated rabbit corpus cavernosum",
+      "assayType": "F",
+      "assayFormat": "assay format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 8.7,
+      "units": "nM",
+      "pchembl": 8.06,
+      "targetName": "Corpus cavernosum",
+      "targetOrganism": "Oryctolagus cuniculus",
+      "year": 2015,
+      "source": {
+        "id": "chembl-act:15178062",
+        "database": "ChEMBL",
+        "label": "Activity 15178062 (CHEMBL3406687)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3406687"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL3405811",
+      "assayDescription": "Inhibition of human PDE5A1 expressed in baculovirus in sf9 cells by PDE Glo phosphodiesterase assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 5.6,
+      "units": "nM",
+      "pchembl": 8.25,
+      "targetName": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "targetOrganism": "Homo sapiens",
+      "year": 2015,
+      "source": {
+        "id": "chembl-act:15184070",
+        "database": "ChEMBL",
+        "label": "Activity 15184070 (CHEMBL3405811)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3405811"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL3430743",
+      "assayDescription": "Inhibition of rapid delayed inward rectifying potassium current (IKr) in Chinese hamster ovary (CHO) cells stable expressing hERG measured using IonWorks Barracuda automated patch clamp platform",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 100000,
+      "units": "nM",
+      "pchembl": 4,
+      "targetName": "Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2014,
+      "source": {
+        "id": "chembl-act:15258064",
+        "database": "ChEMBL",
+        "label": "Activity 15258064 (CHEMBL3430743)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3430743"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL3430345",
+      "assayDescription": "Inhibition of rapid delayed inward rectifying potassium current (IKr) measured using manual patch clamp assay",
+      "assayType": "F",
+      "assayFormat": "assay format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 31622.78,
+      "units": "nM",
+      "pchembl": 4.5,
+      "targetName": "Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2014,
+      "source": {
+        "id": "chembl-act:15258095",
+        "database": "ChEMBL",
+        "label": "Activity 15258095 (CHEMBL3430345)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3430345"
+      }
+    }
+  ],
+  "drugWarnings": []
+}

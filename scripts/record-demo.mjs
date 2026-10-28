@@ -13,6 +13,8 @@ const { values: args } = parseArgs({
     disease: { type: "string", default: "" },
     target: { type: "string" },
     base: { type: "string", default: "http://localhost:3000" },
+    /** Also record the AI report (the graph-first page no longer requests it) */
+    report: { type: "boolean", default: false },
   },
 });
 if (!args.candidate) {
@@ -94,12 +96,15 @@ try {
     console.warn(`  graph skipped: ${e.message}`);
   }
 
-  const report = await call("report", `${args.base}/api/report`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ benchmark, trials, graph }),
-  });
-  await save(reportDemoKey(benchmark.query.candidate, benchmark.query.disease, benchmark.target.chemblId), report);
+  let report = null;
+  if (args.report) {
+    report = await call("report", `${args.base}/api/report`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ benchmark, trials, graph }),
+    });
+    await save(reportDemoKey(benchmark.query.candidate, benchmark.query.disease, benchmark.target.chemblId), report);
+  }
 
   const c = benchmark.candidate;
   const ranked = [c, ...benchmark.comparators].filter((b) => b.n > 0).length;
@@ -108,8 +113,8 @@ try {
       `\n  rank ${c.rank} of ${ranked}, n=${c.n}, median pChEMBL ${c.medianPchembl}` +
       `\n  matched assays: ${benchmark.matchedAssays.length}, warnings: ${benchmark.warnings.length}` +
       `\n  trials: ${trials ? `${trials.trials.length} (${trials.trials.filter((t) => t.hasResults).length} with results)` : "not recorded"}` +
-      `\n  verdict: ${report.verdict} — ${report.headline}` +
-      `\n\nReplay with ?demo=1 (the page forwards it to /api/benchmark, /api/trials and /api/report).`,
+      (report ? `\n  verdict: ${report.verdict} — ${report.headline}` : "\n  report: not recorded (pass --report to include it)") +
+      `\n\nReplay with ?demo=1 (the page forwards it to /api/benchmark, /api/trials and /api/graph).`,
   );
 } catch (e) {
   console.error(`Error: ${e.message}`);

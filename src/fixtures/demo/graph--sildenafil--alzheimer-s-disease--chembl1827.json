@@ -1,0 +1,3851 @@
+{
+  "query": {
+    "candidate": "sildenafil",
+    "disease": "alzheimer's disease",
+    "targetChemblId": "CHEMBL1827"
+  },
+  "nodes": [
+    {
+      "id": "target:CHEMBL1827",
+      "type": "target",
+      "label": "cGMP-specific 3',5'-cyclic phosphodiesterase",
+      "meta": {
+        "chemblId": "CHEMBL1827",
+        "organism": "Homo sapiens",
+        "uniprot": "O76074",
+        "ensemblId": "ENSG00000138735",
+        "symbol": "PDE5A"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL1827",
+        "database": "ChEMBL",
+        "label": "CHEMBL1827",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1827"
+      }
+    },
+    {
+      "id": "drug:CHEMBL192",
+      "type": "drug",
+      "label": "SILDENAFIL",
+      "isCandidate": true,
+      "meta": {
+        "chemblId": "CHEMBL192",
+        "maxPhase": 4,
+        "n": 12,
+        "firstApproval": 1998,
+        "indicationCount": 78,
+        "indications": [
+          "EFO_1001986",
+          "EFO_0004234",
+          "MONDO_0008347",
+          "HP_0000802",
+          "EFO_0001361",
+          "MONDO_0005149",
+          "EFO_0009085",
+          "ORPHANET_848",
+          "EFO_0000373",
+          "EFO_0004225",
+          "MONDO_0100096",
+          "EFO_0000400",
+          "EFO_0000404",
+          "EFO_0009200",
+          "EFO_0000495",
+          "MONDO_0005041",
+          "EFO_0003144",
+          "EFO_0000537",
+          "EFO_0000768",
+          "EFO_1001017",
+          "EFO_0003818",
+          "EFO_0004265",
+          "EFO_1001103",
+          "MONDO_0008315",
+          "EFO_1001145",
+          "EFO_1000657",
+          "EFO_0000717",
+          "EFO_0001365",
+          "MONDO_0010311",
+          "EFO_0000284",
+          "MONDO_0043510",
+          "EFO_0003833",
+          "MONDO_0019091",
+          "EFO_0008493",
+          "EFO_0000341",
+          "EFO_0011023",
+          "MONDO_0009061",
+          "MONDO_0010679",
+          "EFO_0000464",
+          "HP_0001298",
+          "EFO_0000519",
+          "MONDO_0004933",
+          "EFO_0000545",
+          "EFO_0003060",
+          "MONDO_0005180",
+          "EFO_1001827",
+          "EFO_0000668",
+          "EFO_0002950",
+          "EFO_0003917",
+          "EFO_0803321",
+          "HP_0200023",
+          "EFO_1001134",
+          "EFO_1001993",
+          "EFO_0004714",
+          "HP_0200042",
+          "EFO_0009441",
+          "HP_0001919",
+          "EFO_1000824",
+          "EFO_0001422",
+          "EFO_0001645",
+          "HP_0100607",
+          "EFO_0008560",
+          "EFO_1001893",
+          "EFO_0003777",
+          "EFO_0003047",
+          "HP_0002140",
+          "MONDO_0002013",
+          "EFO_0009429",
+          "EFO_0000198",
+          "EFO_0000616",
+          "EFO_0003827",
+          "MONDO_0011382",
+          "EFO_0000712",
+          "HP_0000020",
+          "MONDO_0006058",
+          "MONDO_0005475",
+          "HP_0001655",
+          "EFO_0000701"
+        ]
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "drug:CHEMBL4210847",
+      "type": "drug",
+      "label": "PF-00489791",
+      "meta": {
+        "chemblId": "CHEMBL4210847",
+        "maxPhase": 2,
+        "n": 1,
+        "indicationCount": 5
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL4210847",
+        "database": "ChEMBL",
+        "label": "PF-00489791",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+      }
+    },
+    {
+      "id": "drug:CHEMBL1520",
+      "type": "drug",
+      "label": "VARDENAFIL",
+      "meta": {
+        "chemblId": "CHEMBL1520",
+        "maxPhase": 4,
+        "n": 6,
+        "firstApproval": 2003,
+        "indicationCount": 9
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1520",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+      }
+    },
+    {
+      "id": "drug:CHEMBL1928262",
+      "type": "drug",
+      "label": "GISADENAFIL",
+      "meta": {
+        "chemblId": "CHEMBL1928262",
+        "maxPhase": 2,
+        "n": 1,
+        "indicationCount": 4
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1928262",
+        "database": "ChEMBL",
+        "label": "GISADENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+      }
+    },
+    {
+      "id": "drug:CHEMBL779",
+      "type": "drug",
+      "label": "TADALAFIL",
+      "meta": {
+        "chemblId": "CHEMBL779",
+        "maxPhase": 4,
+        "n": 11,
+        "firstApproval": 2002,
+        "indicationCount": 38
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL779",
+        "database": "ChEMBL",
+        "label": "TADALAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "drug:CHEMBL2103849",
+      "type": "drug",
+      "label": "UDENAFIL",
+      "meta": {
+        "chemblId": "CHEMBL2103849",
+        "maxPhase": 3,
+        "n": 1,
+        "indicationCount": 9
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL2103849",
+        "database": "ChEMBL",
+        "label": "UDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+      }
+    },
+    {
+      "id": "drug:CHEMBL1963681",
+      "type": "drug",
+      "label": "AVANAFIL",
+      "meta": {
+        "chemblId": "CHEMBL1963681",
+        "maxPhase": 4,
+        "n": 26,
+        "firstApproval": 2011,
+        "indicationCount": 3
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1963681",
+        "database": "ChEMBL",
+        "label": "AVANAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+      }
+    },
+    {
+      "id": "drug:CHEMBL19449",
+      "type": "drug",
+      "label": "IBUDILAST",
+      "meta": {
+        "chemblId": "CHEMBL19449",
+        "maxPhase": 4,
+        "n": 2,
+        "firstApproval": 1989,
+        "indicationCount": 14
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL19449",
+        "database": "ChEMBL",
+        "label": "IBUDILAST",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+      }
+    },
+    {
+      "id": "disease:MONDO_0004975",
+      "type": "disease",
+      "label": "alzheimer's disease",
+      "isQueryDisease": true,
+      "meta": {
+        "resolved": true,
+        "efoId": "MONDO_0004975",
+        "otName": "Alzheimer disease"
+      }
+    },
+    {
+      "id": "trial:NCT01940952",
+      "type": "trial",
+      "label": "Zydena on Cognitive Function of Alzheimer's Disease Patients",
+      "meta": {
+        "nctId": "NCT01940952",
+        "phase": "Phase 3",
+        "status": "Unknown status",
+        "hasResults": false,
+        "enrollment": 210,
+        "startDate": "2013-09",
+        "interventions": [
+          "Zydena (Udenafil) 50mg + Donepezil 5mg or 10mg",
+          "Placebo + Donepezil 5mg or 10mg",
+          "Zydena (Udenafil) 100mg + Donepezil 5mg or 10mg"
+        ],
+        "conditions": [
+          "Alzheimer's Disease"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01940952",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01940952",
+        "url": "https://clinicaltrials.gov/study/NCT01940952"
+      }
+    },
+    {
+      "id": "trial:NCT07172815",
+      "type": "trial",
+      "label": "PDE5 Inhibitor for Alzheimer's Disease",
+      "meta": {
+        "nctId": "NCT07172815",
+        "phase": "Phase 2",
+        "status": "Not yet recruiting",
+        "hasResults": false,
+        "enrollment": 244,
+        "startDate": "2025-09",
+        "interventions": [
+          "tadalafil",
+          "Placebo"
+        ],
+        "conditions": [
+          "Alzheimer Disease"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT07172815",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07172815",
+        "url": "https://clinicaltrials.gov/study/NCT07172815"
+      }
+    },
+    {
+      "id": "target:CHEMBL240",
+      "type": "target",
+      "label": "Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "meta": {
+        "chemblId": "CHEMBL240",
+        "organism": "Homo sapiens",
+        "uniprot": "Q12809",
+        "ensemblId": "ENSG00000055118",
+        "symbol": "KCNH2"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL240",
+        "database": "ChEMBL",
+        "label": "Voltage-gated inwardly rectifying potassium channel KCNH2 (CHEMBL240)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL240"
+      }
+    },
+    {
+      "id": "target:CHEMBL2717",
+      "type": "target",
+      "label": "Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A",
+      "meta": {
+        "chemblId": "CHEMBL2717",
+        "organism": "Homo sapiens",
+        "uniprot": "Q9HCR9",
+        "ensemblId": "ENSG00000128655",
+        "symbol": "PDE11A"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL2717",
+        "database": "ChEMBL",
+        "label": "Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A (CHEMBL2717)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2717"
+      }
+    },
+    {
+      "id": "target:CHEMBL3977",
+      "type": "target",
+      "label": "Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha'",
+      "meta": {
+        "chemblId": "CHEMBL3977",
+        "organism": "Homo sapiens",
+        "uniprot": "P51160",
+        "ensemblId": "ENSG00000095464",
+        "symbol": "PDE6C"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL3977",
+        "database": "ChEMBL",
+        "label": "Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha' (CHEMBL3977)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL3977"
+      }
+    },
+    {
+      "id": "disease:MONDO_0005362",
+      "type": "disease",
+      "label": "erectile dysfunction",
+      "meta": {
+        "efoId": "MONDO_0005362",
+        "nAncestors": 8,
+        "therapeuticAreas": [
+          "phenotype",
+          "reproductive system or breast disease"
+        ],
+        "altIds": [
+          "EFO_0004234"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0015924",
+      "type": "disease",
+      "label": "pulmonary arterial hypertension",
+      "meta": {
+        "efoId": "MONDO_0015924",
+        "nAncestors": 11,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ],
+        "altIds": [
+          "EFO_0001361"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0010811",
+      "type": "disease",
+      "label": "benign prostatic hyperplasia",
+      "meta": {
+        "efoId": "MONDO_0010811",
+        "nAncestors": 6,
+        "therapeuticAreas": [
+          "cancer or benign tumor",
+          "reproductive system or breast disease"
+        ],
+        "altIds": [
+          "EFO_0000284"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005149",
+      "type": "disease",
+      "label": "pulmonary hypertension",
+      "meta": {
+        "efoId": "MONDO_0005149",
+        "nAncestors": 10,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005098",
+      "type": "disease",
+      "label": "stroke disorder",
+      "meta": {
+        "efoId": "MONDO_0005098",
+        "nAncestors": 16,
+        "therapeuticAreas": [
+          "nervous system disorder",
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005295",
+      "type": "disease",
+      "label": "intermittent vascular claudication",
+      "meta": {
+        "efoId": "MONDO_0005295",
+        "nAncestors": 6,
+        "therapeuticAreas": [
+          "cardiovascular disorder"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005044",
+      "type": "disease",
+      "label": "hypertensive disorder",
+      "meta": {
+        "efoId": "MONDO_0005044",
+        "nAncestors": 9,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0019171",
+      "type": "disease",
+      "label": "familial long QT syndrome",
+      "meta": {
+        "efoId": "MONDO_0019171",
+        "nAncestors": 5,
+        "therapeuticAreas": [
+          "genetic, familial or congenital disease",
+          "cardiovascular disorder"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0000453",
+      "type": "disease",
+      "label": "short QT syndrome",
+      "meta": {
+        "efoId": "MONDO_0000453",
+        "nAncestors": 14,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "genetic, familial or congenital disease",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0004981",
+      "type": "disease",
+      "label": "atrial fibrillation",
+      "meta": {
+        "efoId": "MONDO_0004981",
+        "nAncestors": 8,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:EFO_0004269",
+      "type": "disease",
+      "label": "cardiac arrhythmia",
+      "meta": {
+        "efoId": "EFO_0004269",
+        "nAncestors": 7,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:HP_0001657",
+      "type": "disease",
+      "label": "Prolonged QT interval",
+      "meta": {
+        "efoId": "HP_0001657",
+        "nAncestors": 6,
+        "therapeuticAreas": [
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0000190",
+      "type": "disease",
+      "label": "ventricular fibrillation",
+      "meta": {
+        "efoId": "MONDO_0000190",
+        "nAncestors": 9,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005310",
+      "type": "disease",
+      "label": "atrial flutter",
+      "meta": {
+        "efoId": "MONDO_0005310",
+        "nAncestors": 9,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005477",
+      "type": "disease",
+      "label": "ventricular tachycardia",
+      "meta": {
+        "efoId": "MONDO_0005477",
+        "nAncestors": 8,
+        "therapeuticAreas": [
+          "cardiovascular disorder",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0001384",
+      "type": "disease",
+      "label": "myopia",
+      "meta": {
+        "efoId": "MONDO_0001384",
+        "nAncestors": 7,
+        "therapeuticAreas": [
+          "disorder of visual system",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0018852",
+      "type": "disease",
+      "label": "achromatopsia",
+      "meta": {
+        "efoId": "MONDO_0018852",
+        "nAncestors": 10,
+        "therapeuticAreas": [
+          "nervous system disorder",
+          "disorder of visual system",
+          "genetic, familial or congenital disease"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0015993",
+      "type": "disease",
+      "label": "cone-rod dystrophy",
+      "meta": {
+        "efoId": "MONDO_0015993",
+        "nAncestors": 18,
+        "therapeuticAreas": [
+          "nervous system disorder",
+          "genetic, familial or congenital disease",
+          "disorder of visual system",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0019118",
+      "type": "disease",
+      "label": "inherited retinal dystrophy",
+      "meta": {
+        "efoId": "MONDO_0019118",
+        "nAncestors": 14,
+        "therapeuticAreas": [
+          "nervous system disorder",
+          "genetic, familial or congenital disease",
+          "disorder of visual system",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0000455",
+      "type": "disease",
+      "label": "cone dystrophy",
+      "meta": {
+        "efoId": "MONDO_0000455",
+        "nAncestors": 18,
+        "therapeuticAreas": [
+          "nervous system disorder",
+          "genetic, familial or congenital disease",
+          "disorder of visual system",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "route:oral",
+      "type": "route",
+      "label": "Oral"
+    },
+    {
+      "id": "route:parenteral",
+      "type": "route",
+      "label": "Parenteral"
+    },
+    {
+      "id": "disease:EFO_1000899",
+      "type": "disease",
+      "label": "diastolic heart failure",
+      "meta": {
+        "efoId": "EFO_1000899"
+      }
+    },
+    {
+      "id": "disease:EFO_1000781",
+      "type": "disease",
+      "label": "overactive bladder",
+      "meta": {
+        "efoId": "EFO_1000781"
+      }
+    },
+    {
+      "id": "disease:EFO_0009085",
+      "type": "disease",
+      "label": "arterial occlusive disease",
+      "meta": {
+        "efoId": "EFO_0009085",
+        "generic": true,
+        "nAncestors": 2
+      }
+    },
+    {
+      "id": "disease:EFO_0000401",
+      "type": "disease",
+      "label": "diabetic nephropathy",
+      "meta": {
+        "efoId": "EFO_0000401"
+      }
+    },
+    {
+      "id": "disease:EFO_0000537",
+      "type": "disease",
+      "label": "hypertension",
+      "meta": {
+        "efoId": "EFO_0000537"
+      }
+    },
+    {
+      "id": "disease:HP_0000802",
+      "type": "disease",
+      "label": "Impotence",
+      "meta": {
+        "efoId": "HP_0000802"
+      }
+    },
+    {
+      "id": "disease:EFO_0003086",
+      "type": "disease",
+      "label": "kidney disease",
+      "meta": {
+        "efoId": "EFO_0003086"
+      }
+    },
+    {
+      "id": "disease:EFO_1001986",
+      "type": "disease",
+      "label": "connective tissue disease",
+      "meta": {
+        "efoId": "EFO_1001986"
+      }
+    },
+    {
+      "id": "disease:MONDO_0008347",
+      "type": "disease",
+      "label": "idiopathic and/or familial pulmonary arterial hypertension",
+      "meta": {
+        "efoId": "MONDO_0008347"
+      }
+    },
+    {
+      "id": "disease:MONDO_0007079",
+      "type": "disease",
+      "label": "alcohol dependence",
+      "meta": {
+        "efoId": "MONDO_0007079",
+        "nAncestors": 5
+      }
+    },
+    {
+      "id": "disease:ORPHANET_848",
+      "type": "disease",
+      "label": "Beta-thalassemia",
+      "meta": {
+        "efoId": "ORPHANET_848"
+      }
+    },
+    {
+      "id": "disease:EFO_0003875",
+      "type": "disease",
+      "label": "peripheral vascular disease",
+      "meta": {
+        "efoId": "EFO_0003875"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:measured_against:drug:CHEMBL192:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL192",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 8.37,
+      "label": "median pChEMBL 8.37 (n=12)",
+      "meta": {
+        "n": 12,
+        "min": 4.9,
+        "max": 8.85,
+        "activityType": "IC50",
+        "rank": 5,
+        "alsoValid": [
+          "chembl-act:869550",
+          "chembl-act:1523271",
+          "chembl-act:7972972",
+          "chembl-act:12165143",
+          "chembl-act:12680607",
+          "chembl-act:15184080",
+          "chembl-act:16755420",
+          "chembl-act:18269639",
+          "chembl-act:24873452",
+          "chembl-act:25002318",
+          "chembl-act:29085919"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:837349",
+        "database": "ChEMBL",
+        "label": "Activity 837349 (CHEMBL762823)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762823"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL4210847:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL4210847",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 9.3,
+      "label": "median pChEMBL 9.3 (n=1)",
+      "meta": {
+        "n": 1,
+        "min": 9.3,
+        "max": 9.3,
+        "activityType": "IC50",
+        "rank": 1,
+        "alsoValid": []
+      },
+      "source": {
+        "id": "chembl-act:18528097",
+        "database": "ChEMBL",
+        "label": "Activity 18528097 (CHEMBL4194770)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4194770"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL1520:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL1520",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 9.23,
+      "label": "median pChEMBL 9.23 (n=6)",
+      "meta": {
+        "n": 6,
+        "min": 9,
+        "max": 9.77,
+        "activityType": "IC50",
+        "rank": 2,
+        "alsoValid": [
+          "chembl-act:1520505",
+          "chembl-act:12680586",
+          "chembl-act:16755421",
+          "chembl-act:18126527",
+          "chembl-act:18528107"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:902360",
+        "database": "ChEMBL",
+        "label": "Activity 902360 (CHEMBL762828)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762828"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL1928262:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL1928262",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 8.91,
+      "label": "median pChEMBL 8.91 (n=1)",
+      "meta": {
+        "n": 1,
+        "min": 8.91,
+        "max": 8.91,
+        "activityType": "IC50",
+        "rank": 3,
+        "alsoValid": []
+      },
+      "source": {
+        "id": "chembl-act:7971884",
+        "database": "ChEMBL",
+        "label": "Activity 7971884 (CHEMBL1930855)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930855"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL779:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL779",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 8.4,
+      "label": "median pChEMBL 8.4 (n=11)",
+      "meta": {
+        "n": 11,
+        "min": 4.58,
+        "max": 8.92,
+        "activityType": "IC50",
+        "rank": 4,
+        "alsoValid": [
+          "chembl-act:1520620",
+          "chembl-act:2566973",
+          "chembl-act:5187584",
+          "chembl-act:12680565",
+          "chembl-act:16755422",
+          "chembl-act:18528108",
+          "chembl-act:24983026",
+          "chembl-act:25007827",
+          "chembl-act:26335818",
+          "chembl-act:29311697"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:331695",
+        "database": "ChEMBL",
+        "label": "Activity 331695 (CHEMBL762824)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762824"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL2103849:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL2103849",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 8.08,
+      "label": "median pChEMBL 8.08 (n=1)",
+      "meta": {
+        "n": 1,
+        "min": 8.08,
+        "max": 8.08,
+        "activityType": "IC50",
+        "rank": 6,
+        "alsoValid": []
+      },
+      "source": {
+        "id": "chembl-act:24872434",
+        "database": "ChEMBL",
+        "label": "Activity 24872434 (CHEMBL5153400)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5153400"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL1963681:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL1963681",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 7.76,
+      "label": "median pChEMBL 7.76 (n=26)",
+      "meta": {
+        "n": 26,
+        "min": 4.6,
+        "max": 8.15,
+        "activityType": "IC50",
+        "rank": 7,
+        "alsoValid": [
+          "chembl-act:17775430",
+          "chembl-act:17775431",
+          "chembl-act:17775432",
+          "chembl-act:17775433",
+          "chembl-act:17775434",
+          "chembl-act:17775435",
+          "chembl-act:17775436",
+          "chembl-act:17775437",
+          "chembl-act:17775438",
+          "chembl-act:17775439",
+          "chembl-act:17775440",
+          "chembl-act:17775441",
+          "chembl-act:17775442",
+          "chembl-act:17775443",
+          "chembl-act:17775444",
+          "chembl-act:17775445",
+          "chembl-act:17775446",
+          "chembl-act:17775447",
+          "chembl-act:17775448",
+          "chembl-act:17775449",
+          "chembl-act:17775450",
+          "chembl-act:17775451",
+          "chembl-act:17775452",
+          "chembl-act:22878830",
+          "chembl-act:22878836"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:17775429",
+        "database": "ChEMBL",
+        "label": "Activity 17775429 (CHEMBL3888593)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL19449:target:CHEMBL1827",
+      "type": "measured_against",
+      "from": "drug:CHEMBL19449",
+      "to": "target:CHEMBL1827",
+      "kind": "measured",
+      "strength": 5.46,
+      "label": "median pChEMBL 5.46 (n=2)",
+      "meta": {
+        "n": 2,
+        "min": 5.46,
+        "max": 5.46,
+        "activityType": "IC50",
+        "rank": 8,
+        "alsoValid": [
+          "chembl-act:26325380"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:26325379",
+        "database": "ChEMBL",
+        "label": "Activity 26325379 (CHEMBL5715900)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5715900"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2103849:trial:NCT01940952",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2103849",
+      "to": "trial:NCT01940952",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Unknown status",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT01940952",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01940952",
+        "url": "https://clinicaltrials.gov/study/NCT01940952"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01940952:disease:MONDO_0004975",
+      "type": "for_disease",
+      "from": "trial:NCT01940952",
+      "to": "disease:MONDO_0004975",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Alzheimer's Disease"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01940952",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01940952",
+        "url": "https://clinicaltrials.gov/study/NCT01940952"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL779:trial:NCT07172815",
+      "type": "tested_in",
+      "from": "drug:CHEMBL779",
+      "to": "trial:NCT07172815",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Not yet recruiting",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Not yet recruiting",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT07172815",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07172815",
+        "url": "https://clinicaltrials.gov/study/NCT07172815"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT07172815:disease:MONDO_0004975",
+      "type": "for_disease",
+      "from": "trial:NCT07172815",
+      "to": "disease:MONDO_0004975",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Alzheimer Disease"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT07172815",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07172815",
+        "url": "https://clinicaltrials.gov/study/NCT07172815"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL192:target:CHEMBL240",
+      "type": "measured_against",
+      "from": "drug:CHEMBL192",
+      "to": "target:CHEMBL240",
+      "kind": "measured",
+      "label": "10 measurements (not ranked)",
+      "meta": {
+        "n": 10,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL192:target:CHEMBL2717",
+      "type": "measured_against",
+      "from": "drug:CHEMBL192",
+      "to": "target:CHEMBL2717",
+      "kind": "measured",
+      "label": "7 measurements (not ranked)",
+      "meta": {
+        "n": 7,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL192:target:CHEMBL3977",
+      "type": "measured_against",
+      "from": "drug:CHEMBL192",
+      "to": "target:CHEMBL3977",
+      "kind": "measured",
+      "label": "4 measurements (not ranked)",
+      "meta": {
+        "n": 4,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0005362",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0005362",
+      "kind": "computed",
+      "strength": 0.6146558976427056,
+      "label": "Open Targets association 0.61",
+      "meta": {
+        "score": 0.615,
+        "ot_literature": 0.287,
+        "ot_clinical": 0.997,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0005362",
+        "database": "Open Targets",
+        "label": "PDE5A – erectile dysfunction (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005362"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0015924",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0015924",
+      "kind": "computed",
+      "strength": 0.6090906079900817,
+      "label": "Open Targets association 0.61",
+      "meta": {
+        "score": 0.609,
+        "ot_literature": 0.526,
+        "ot_clinical": 0.976,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0015924",
+        "database": "Open Targets",
+        "label": "PDE5A – pulmonary arterial hypertension (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0015924"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0010811",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0010811",
+      "kind": "computed",
+      "strength": 0.6067597621427674,
+      "label": "Open Targets association 0.61",
+      "meta": {
+        "score": 0.607,
+        "ot_literature": 0.594,
+        "ot_clinical": 0.968,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0010811",
+        "database": "Open Targets",
+        "label": "PDE5A – benign prostatic hyperplasia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0010811"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0005149",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0005149",
+      "kind": "computed",
+      "strength": 0.5961875499074418,
+      "label": "Open Targets association 0.60",
+      "meta": {
+        "score": 0.596,
+        "ot_literature": 0.243,
+        "ot_clinical": 0.969,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0005149",
+        "database": "Open Targets",
+        "label": "PDE5A – pulmonary hypertension (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005149"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0005098",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0005098",
+      "kind": "computed",
+      "strength": 0.5477404234129247,
+      "label": "Open Targets association 0.55",
+      "meta": {
+        "score": 0.548,
+        "ot_literature": 0.208,
+        "ot_clinical": 0.891,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0005098",
+        "database": "Open Targets",
+        "label": "PDE5A – stroke disorder (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005098"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0005295",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0005295",
+      "kind": "computed",
+      "strength": 0.47917054770579043,
+      "label": "Open Targets association 0.48",
+      "meta": {
+        "score": 0.479,
+        "ot_clinical": 0.788,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0005295",
+        "database": "Open Targets",
+        "label": "PDE5A – intermittent vascular claudication (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005295"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0005044",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0005044",
+      "kind": "computed",
+      "strength": 0.46472128684763186,
+      "label": "Open Targets association 0.46",
+      "meta": {
+        "score": 0.465,
+        "ot_literature": 0.13,
+        "ot_genetic_association": 0.048,
+        "ot_clinical": 0.75,
+        "ensemblId": "ENSG00000138735"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0005044",
+        "database": "Open Targets",
+        "label": "PDE5A – hypertensive disorder (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005044"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0019171",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0019171",
+      "kind": "computed",
+      "strength": 0.8494242971410532,
+      "label": "Open Targets association 0.85",
+      "meta": {
+        "score": 0.849,
+        "ot_genetic_literature": 0.757,
+        "ot_literature": 0.689,
+        "ot_genetic_association": 0.987,
+        "ot_somatic_mutation": 0.696,
+        "ot_animal_model": 0.745,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0019171",
+        "database": "Open Targets",
+        "label": "KCNH2 – familial long QT syndrome (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0019171"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0000453",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0000453",
+      "kind": "computed",
+      "strength": 0.7780744007865633,
+      "label": "Open Targets association 0.78",
+      "meta": {
+        "score": 0.778,
+        "ot_literature": 0.352,
+        "ot_animal_model": 0.685,
+        "ot_genetic_association": 0.852,
+        "ot_genetic_literature": 0.738,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0000453",
+        "database": "Open Targets",
+        "label": "KCNH2 – short QT syndrome (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0000453"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0004981",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0004981",
+      "kind": "computed",
+      "strength": 0.7407809361995509,
+      "label": "Open Targets association 0.74",
+      "meta": {
+        "score": 0.741,
+        "ot_literature": 0.358,
+        "ot_genetic_association": 0.64,
+        "ot_genetic_literature": 0.608,
+        "ot_clinical": 0.947,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0004981",
+        "database": "Open Targets",
+        "label": "KCNH2 – atrial fibrillation (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0004981"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:EFO_0004269",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:EFO_0004269",
+      "kind": "computed",
+      "strength": 0.7293552714504805,
+      "label": "Open Targets association 0.73",
+      "meta": {
+        "score": 0.729,
+        "ot_literature": 0.363,
+        "ot_genetic_association": 0.812,
+        "ot_clinical": 0.907,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:EFO_0004269",
+        "database": "Open Targets",
+        "label": "KCNH2 – cardiac arrhythmia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/EFO_0004269"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:HP_0001657",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:HP_0001657",
+      "kind": "computed",
+      "strength": 0.7127540880412618,
+      "label": "Open Targets association 0.71",
+      "meta": {
+        "score": 0.713,
+        "ot_literature": 0.348,
+        "ot_genetic_association": 0.949,
+        "ot_genetic_literature": 0.608,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:HP_0001657",
+        "database": "Open Targets",
+        "label": "KCNH2 – Prolonged QT interval (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/HP_0001657"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0000190",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0000190",
+      "kind": "computed",
+      "strength": 0.6795678885973767,
+      "label": "Open Targets association 0.68",
+      "meta": {
+        "score": 0.68,
+        "ot_literature": 0.105,
+        "ot_clinical": 0.964,
+        "ot_genetic_literature": 0.608,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0000190",
+        "database": "Open Targets",
+        "label": "KCNH2 – ventricular fibrillation (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0000190"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0005310",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0005310",
+      "kind": "computed",
+      "strength": 0.6098088734525112,
+      "label": "Open Targets association 0.61",
+      "meta": {
+        "score": 0.61,
+        "ot_literature": 0.058,
+        "ot_genetic_association": 0.645,
+        "ot_clinical": 0.841,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0005310",
+        "database": "Open Targets",
+        "label": "KCNH2 – atrial flutter (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0005310"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0005477",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0005477",
+      "kind": "computed",
+      "strength": 0.5853717889087031,
+      "label": "Open Targets association 0.59",
+      "meta": {
+        "score": 0.585,
+        "ot_literature": 0.135,
+        "ot_clinical": 0.956,
+        "ensemblId": "ENSG00000055118"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0005477",
+        "database": "Open Targets",
+        "label": "KCNH2 – ventricular tachycardia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0005477"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2717:disease:MONDO_0001384",
+      "type": "associated_with",
+      "from": "target:CHEMBL2717",
+      "to": "disease:MONDO_0001384",
+      "kind": "computed",
+      "strength": 0.48508444032246156,
+      "label": "Open Targets association 0.49",
+      "meta": {
+        "score": 0.485,
+        "ot_literature": 0.107,
+        "ot_genetic_association": 0.793,
+        "ensemblId": "ENSG00000128655"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000128655:MONDO_0001384",
+        "database": "Open Targets",
+        "label": "PDE11A – myopia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000128655/MONDO_0001384"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL3977:disease:MONDO_0018852",
+      "type": "associated_with",
+      "from": "target:CHEMBL3977",
+      "to": "disease:MONDO_0018852",
+      "kind": "computed",
+      "strength": 0.7939297111569877,
+      "label": "Open Targets association 0.79",
+      "meta": {
+        "score": 0.794,
+        "ot_literature": 0.237,
+        "ot_animal_model": 0.677,
+        "ot_genetic_association": 0.898,
+        "ot_genetic_literature": 0.73,
+        "ensemblId": "ENSG00000095464"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000095464:MONDO_0018852",
+        "database": "Open Targets",
+        "label": "PDE6C – achromatopsia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0018852"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL3977:disease:MONDO_0015993",
+      "type": "associated_with",
+      "from": "target:CHEMBL3977",
+      "to": "disease:MONDO_0015993",
+      "kind": "computed",
+      "strength": 0.7234387962900903,
+      "label": "Open Targets association 0.72",
+      "meta": {
+        "score": 0.723,
+        "ot_literature": 0.066,
+        "ot_animal_model": 0.763,
+        "ot_genetic_association": 0.862,
+        "ot_genetic_literature": 0.608,
+        "ensemblId": "ENSG00000095464"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000095464:MONDO_0015993",
+        "database": "Open Targets",
+        "label": "PDE6C – cone-rod dystrophy (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0015993"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL3977:disease:MONDO_0005098",
+      "type": "associated_with",
+      "from": "target:CHEMBL3977",
+      "to": "disease:MONDO_0005098",
+      "kind": "computed",
+      "strength": 0.5453361497576434,
+      "label": "Open Targets association 0.55",
+      "meta": {
+        "score": 0.545,
+        "ot_genetic_association": 0.058,
+        "ot_clinical": 0.882,
+        "ensemblId": "ENSG00000095464"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000095464:MONDO_0005098",
+        "database": "Open Targets",
+        "label": "PDE6C – stroke disorder (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0005098"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL3977:disease:MONDO_0019118",
+      "type": "associated_with",
+      "from": "target:CHEMBL3977",
+      "to": "disease:MONDO_0019118",
+      "kind": "computed",
+      "strength": 0.5387234331035974,
+      "label": "Open Targets association 0.54",
+      "meta": {
+        "score": 0.539,
+        "ot_literature": 0.029,
+        "ot_genetic_association": 0.885,
+        "ensemblId": "ENSG00000095464"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000095464:MONDO_0019118",
+        "database": "Open Targets",
+        "label": "PDE6C – inherited retinal dystrophy (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0019118"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL3977:disease:MONDO_0000455",
+      "type": "associated_with",
+      "from": "target:CHEMBL3977",
+      "to": "disease:MONDO_0000455",
+      "kind": "computed",
+      "strength": 0.5062404388938022,
+      "label": "Open Targets association 0.51",
+      "meta": {
+        "score": 0.506,
+        "ot_literature": 0.134,
+        "ot_animal_model": 0.711,
+        "ot_genetic_association": 0.599,
+        "ot_genetic_literature": 0.608,
+        "ensemblId": "ENSG00000095464"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000095464:MONDO_0000455",
+        "database": "Open Targets",
+        "label": "PDE6C – cone dystrophy (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0000455"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL3977:disease:MONDO_0005295",
+      "type": "associated_with",
+      "from": "target:CHEMBL3977",
+      "to": "disease:MONDO_0005295",
+      "kind": "computed",
+      "strength": 0.4342563292545246,
+      "label": "Open Targets association 0.43",
+      "meta": {
+        "score": 0.434,
+        "ot_clinical": 0.714,
+        "ensemblId": "ENSG00000095464"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000095464:MONDO_0005295",
+        "database": "Open Targets",
+        "label": "PDE6C – intermittent vascular claudication (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0005295"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL192:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL192",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 1998
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL192:route:parenteral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL192",
+      "to": "route:parenteral",
+      "kind": "clinical",
+      "label": "Approved route: parenteral",
+      "meta": {
+        "route": "parenteral",
+        "firstApproval": 1998
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL192",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL1520:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL1520",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2003
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1520",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL779:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL779",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2002
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL779",
+        "database": "ChEMBL",
+        "label": "TADALAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL1963681:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL1963681",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2011
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1963681",
+        "database": "ChEMBL",
+        "label": "AVANAFIL",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL19449:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL19449",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 1989
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL19449",
+        "database": "ChEMBL",
+        "label": "IBUDILAST",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:MONDO_0005362",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0005362",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:23865",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: erectile dysfunction",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL779:disease:MONDO_0010811",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL779",
+      "to": "disease:MONDO_0010811",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Prostatic Hyperplasia"
+      },
+      "source": {
+        "id": "chembl-ind:23919",
+        "database": "ChEMBL",
+        "label": "TADALAFIL indication: benign prostatic hyperplasia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL779:disease:MONDO_0005362",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL779",
+      "to": "disease:MONDO_0005362",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:23920",
+        "database": "ChEMBL",
+        "label": "TADALAFIL indication: erectile dysfunction",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1963681:disease:MONDO_0005362",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1963681",
+      "to": "disease:MONDO_0005362",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:24171",
+        "database": "ChEMBL",
+        "label": "AVANAFIL indication: erectile dysfunction",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:MONDO_0015924",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0015924",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:24889",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: pulmonary arterial hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL779:disease:MONDO_0015924",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL779",
+      "to": "disease:MONDO_0015924",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:24923",
+        "database": "ChEMBL",
+        "label": "TADALAFIL indication: pulmonary arterial hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL2103849:disease:MONDO_0005362",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL2103849",
+      "to": "disease:MONDO_0005362",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:50404",
+        "database": "ChEMBL",
+        "label": "UDENAFIL indication: erectile dysfunction",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1520:disease:MONDO_0005362",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1520",
+      "to": "disease:MONDO_0005362",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:50601",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL indication: erectile dysfunction",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL2103849:disease:MONDO_0015924",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL2103849",
+      "to": "disease:MONDO_0015924",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:50734",
+        "database": "ChEMBL",
+        "label": "UDENAFIL indication: pulmonary arterial hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:MONDO_0010811",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0010811",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Prostatic Hyperplasia"
+      },
+      "source": {
+        "id": "chembl-ind:53207",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: benign prostatic hyperplasia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL2103849:disease:EFO_1000899",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL2103849",
+      "to": "disease:EFO_1000899",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Heart Failure, Diastolic"
+      },
+      "source": {
+        "id": "chembl-ind:54338",
+        "database": "ChEMBL",
+        "label": "UDENAFIL indication: diastolic heart failure",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1928262:disease:MONDO_0010811",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1928262",
+      "to": "disease:MONDO_0010811",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Prostatic Hyperplasia"
+      },
+      "source": {
+        "id": "chembl-ind:55964",
+        "database": "ChEMBL",
+        "label": "GISADENAFIL indication: benign prostatic hyperplasia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1928262:disease:EFO_1000781",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1928262",
+      "to": "disease:EFO_1000781",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Urinary Bladder, Overactive"
+      },
+      "source": {
+        "id": "chembl-ind:55967",
+        "database": "ChEMBL",
+        "label": "GISADENAFIL indication: overactive bladder",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1520:disease:MONDO_0010811",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1520",
+      "to": "disease:MONDO_0010811",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Prostatic Hyperplasia"
+      },
+      "source": {
+        "id": "chembl-ind:62980",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL indication: benign prostatic hyperplasia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:EFO_0009085",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:EFO_0009085",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Arterial Occlusive Diseases"
+      },
+      "source": {
+        "id": "chembl-ind:111960",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: arterial occlusive disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4210847:disease:EFO_0000401",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4210847",
+      "to": "disease:EFO_0000401",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Diabetic Nephropathies"
+      },
+      "source": {
+        "id": "chembl-ind:114536",
+        "database": "ChEMBL",
+        "label": "PF-00489791 indication: diabetic nephropathy",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4210847:disease:EFO_0000537",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4210847",
+      "to": "disease:EFO_0000537",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Hypertension"
+      },
+      "source": {
+        "id": "chembl-ind:114537",
+        "database": "ChEMBL",
+        "label": "PF-00489791 indication: hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4210847:disease:MONDO_0015924",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4210847",
+      "to": "disease:MONDO_0015924",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:114538",
+        "database": "ChEMBL",
+        "label": "PF-00489791 indication: pulmonary arterial hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1928262:disease:HP_0000802",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1928262",
+      "to": "disease:HP_0000802",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:116451",
+        "database": "ChEMBL",
+        "label": "GISADENAFIL indication: Impotence",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:MONDO_0005149",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0005149",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:117941",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: pulmonary hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL779:disease:HP_0000802",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL779",
+      "to": "disease:HP_0000802",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:120225",
+        "database": "ChEMBL",
+        "label": "TADALAFIL indication: Impotence",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL779:disease:MONDO_0005149",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL779",
+      "to": "disease:MONDO_0005149",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:120229",
+        "database": "ChEMBL",
+        "label": "TADALAFIL indication: pulmonary hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1520:disease:MONDO_0005149",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1520",
+      "to": "disease:MONDO_0005149",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Hypertension, Pulmonary"
+      },
+      "source": {
+        "id": "chembl-ind:120427",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL indication: pulmonary hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1963681:disease:EFO_0003086",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1963681",
+      "to": "disease:EFO_0003086",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Kidney Diseases"
+      },
+      "source": {
+        "id": "chembl-ind:121868",
+        "database": "ChEMBL",
+        "label": "AVANAFIL indication: kidney disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:HP_0000802",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:HP_0000802",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:123560",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: Impotence",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:EFO_1001986",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:EFO_1001986",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Connective Tissue Diseases"
+      },
+      "source": {
+        "id": "chembl-ind:134061",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: connective tissue disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL2103849:disease:MONDO_0004975",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL2103849",
+      "to": "disease:MONDO_0004975",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Alzheimer Disease"
+      },
+      "source": {
+        "id": "chembl-ind:136991",
+        "database": "ChEMBL",
+        "label": "UDENAFIL indication: Alzheimer disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:MONDO_0008347",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0008347",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Familial Primary Pulmonary Hypertension"
+      },
+      "source": {
+        "id": "chembl-ind:137705",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: idiopathic and/or familial pulmonary arterial hypertension",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL19449:disease:MONDO_0007079",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL19449",
+      "to": "disease:MONDO_0007079",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Alcoholism"
+      },
+      "source": {
+        "id": "chembl-ind:138348",
+        "database": "ChEMBL",
+        "label": "IBUDILAST indication: alcohol dependence",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1963681:disease:HP_0000802",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1963681",
+      "to": "disease:HP_0000802",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:145912",
+        "database": "ChEMBL",
+        "label": "AVANAFIL indication: Impotence",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL192:disease:ORPHANET_848",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL192",
+      "to": "disease:ORPHANET_848",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "beta-Thalassemia"
+      },
+      "source": {
+        "id": "chembl-ind:146411",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL indication: Beta-thalassemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1520:disease:HP_0000802",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1520",
+      "to": "disease:HP_0000802",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Erectile Dysfunction"
+      },
+      "source": {
+        "id": "chembl-ind:146568",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL indication: Impotence",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1339"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4210847:disease:EFO_0003875",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4210847",
+      "to": "disease:EFO_0003875",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Peripheral Vascular Diseases"
+      },
+      "source": {
+        "id": "chembl-ind:154847",
+        "database": "ChEMBL",
+        "label": "PF-00489791 indication: peripheral vascular disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL779:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL779",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:185",
+        "database": "ChEMBL",
+        "label": "TADALAFIL: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL1520:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL1520",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:186",
+        "database": "ChEMBL",
+        "label": "VARDENAFIL: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL192:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL192",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:187",
+        "database": "ChEMBL",
+        "label": "SILDENAFIL: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL1963681:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL1963681",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:188",
+        "database": "ChEMBL",
+        "label": "AVANAFIL: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL2103849:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL2103849",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 3
+      },
+      "source": {
+        "id": "chembl-mech:5611",
+        "database": "ChEMBL",
+        "label": "UDENAFIL: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL19449:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL19449",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:7584",
+        "database": "ChEMBL",
+        "label": "IBUDILAST: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL1928262:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL1928262",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 2
+      },
+      "source": {
+        "id": "chembl-mech:8252",
+        "database": "ChEMBL",
+        "label": "GISADENAFIL: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL4210847:target:CHEMBL1827",
+      "type": "mechanism",
+      "from": "drug:CHEMBL4210847",
+      "to": "target:CHEMBL1827",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Phosphodiesterase 5A inhibitor",
+        "maxPhase": 2
+      },
+      "source": {
+        "id": "chembl-mech:8268",
+        "database": "ChEMBL",
+        "label": "PF-00489791: Phosphodiesterase 5A inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0004975",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0004975",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"alzheimer's disease\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0004975",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"alzheimer's disease\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=alzheimer%27s+disease&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0004981",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0004981",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial fibrillation\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0004981",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial fibrillation\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=atrial+fibrillation&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:EFO_0004269",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:EFO_0004269",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cardiac arrhythmia\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:EFO_0004269",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cardiac arrhythmia\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=cardiac+arrhythmia&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0005310",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0005310",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial flutter\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0005310",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial flutter\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=atrial+flutter&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0018852",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0018852",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"achromatopsia\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0018852",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"achromatopsia\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=achromatopsia&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0000455",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0000455",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone dystrophy\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0000455",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone dystrophy\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=cone+dystrophy&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0015993",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0015993",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone-rod dystrophy\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0015993",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone-rod dystrophy\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=cone-rod+dystrophy&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL192:disease:MONDO_0019171",
+      "type": "absent",
+      "from": "drug:CHEMBL192",
+      "to": "disease:MONDO_0019171",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"familial long QT syndrome\""
+      },
+      "source": {
+        "id": "check:CHEMBL192:MONDO_0019171",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"familial long QT syndrome\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=familial+long+QT+syndrome&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1827:disease:MONDO_0004975",
+      "type": "associated_with",
+      "from": "target:CHEMBL1827",
+      "to": "disease:MONDO_0004975",
+      "kind": "computed",
+      "strength": 0.2949401851689432,
+      "label": "Open Targets association 0.29",
+      "meta": {
+        "score": 0.295,
+        "ot_literature": 0.584,
+        "ot_clinical": 0.456,
+        "ensemblId": "ENSG00000138735",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000138735:MONDO_0004975",
+        "database": "Open Targets",
+        "label": "PDE5A – Alzheimer disease (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0004975"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL240:disease:MONDO_0004975",
+      "type": "associated_with",
+      "from": "target:CHEMBL240",
+      "to": "disease:MONDO_0004975",
+      "kind": "computed",
+      "strength": 0.008490879268496178,
+      "label": "Open Targets association 0.01",
+      "meta": {
+        "score": 0.008,
+        "ot_literature": 0.07,
+        "ensemblId": "ENSG00000055118",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000055118:MONDO_0004975",
+        "database": "Open Targets",
+        "label": "KCNH2 – Alzheimer disease (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0004975"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2717:disease:MONDO_0004975",
+      "type": "associated_with",
+      "from": "target:CHEMBL2717",
+      "to": "disease:MONDO_0004975",
+      "kind": "computed",
+      "strength": 0.21803119334500276,
+      "label": "Open Targets association 0.22",
+      "meta": {
+        "score": 0.218,
+        "ot_literature": 0.619,
+        "ot_affected_pathway": 0.328,
+        "ensemblId": "ENSG00000128655",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000128655:MONDO_0004975",
+        "database": "Open Targets",
+        "label": "PDE11A – Alzheimer disease (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000128655/MONDO_0004975"
+      }
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hyp:query",
+      "template": "query_disease",
+      "status": "proposed",
+      "statement": "Sildenafil reaches alzheimer's disease via cGMP-specific 3',5'-cyclic phosphodiesterase (weak link, Open Targets 0.29); no indication or trial found — a weak but open repurposing question",
+      "drugId": "drug:CHEMBL192",
+      "targetId": "target:CHEMBL1827",
+      "diseaseId": "disease:MONDO_0004975",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL1827",
+        "e:associated_with:target:CHEMBL1827:disease:MONDO_0004975",
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL2717",
+        "e:associated_with:target:CHEMBL2717:disease:MONDO_0004975",
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL240",
+        "e:associated_with:target:CHEMBL240:disease:MONDO_0004975",
+        "e:absent:drug:CHEMBL192:disease:MONDO_0004975"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on cGMP-specific 3',5'-cyclic phosphodiesterase",
+          "value": "median pChEMBL 8.37 (n=12, 4.9–8.85)",
+          "sourceIds": [
+            "chembl-act:837349"
+          ]
+        },
+        {
+          "kind": "measured",
+          "label": "Measured potency on Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A",
+          "value": "7 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "measured",
+          "label": "Measured potency on Voltage-gated inwardly rectifying potassium channel KCNH2",
+          "value": "10 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE5A–alzheimer's disease: clinical",
+          "value": "0.46",
+          "sourceIds": [
+            "ot-assoc:ENSG00000138735:MONDO_0004975"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE5A–alzheimer's disease: literature",
+          "value": "0.58",
+          "sourceIds": [
+            "ot-assoc:ENSG00000138735:MONDO_0004975"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for alzheimer's disease",
+          "value": "phase 3 — Udenafil",
+          "sourceIds": [
+            "chembl-ind:136991"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL192:MONDO_0004975"
+          ]
+        }
+      ],
+      "suggestedTest": "Confirm cGMP-specific 3',5'-cyclic phosphodiesterase engagement in a alzheimer's disease-relevant cell model (Open Targets association 0.29 is computed, not measured) before any in vivo work.",
+      "sourceIds": [
+        "chembl-act:837349",
+        "ot-assoc:ENSG00000138735:MONDO_0004975",
+        "chembl-mol:CHEMBL192",
+        "ot-assoc:ENSG00000128655:MONDO_0004975",
+        "ot-assoc:ENSG00000055118:MONDO_0004975",
+        "check:CHEMBL192:MONDO_0004975"
+      ]
+    },
+    {
+      "id": "hyp:1",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Sildenafil could be repurposed for atrial fibrillation via Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "drugId": "drug:CHEMBL192",
+      "targetId": "target:CHEMBL240",
+      "diseaseId": "disease:MONDO_0004981",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL240",
+        "e:associated_with:target:CHEMBL240:disease:MONDO_0004981",
+        "e:absent:drug:CHEMBL192:disease:MONDO_0004981"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Voltage-gated inwardly rectifying potassium channel KCNH2",
+          "value": "10 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial fibrillation: genetic association",
+          "value": "0.64",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0004981"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial fibrillation: genetic literature",
+          "value": "0.61",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0004981"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial fibrillation: clinical",
+          "value": "0.95",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0004981"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial fibrillation: literature",
+          "value": "0.36",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0004981"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for atrial fibrillation",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Sildenafil",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Sildenafil",
+          "value": "Oral, Parenteral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL192:MONDO_0004981"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a atrial fibrillation-relevant cell model; nearest existing measurement: Voltage-gated inwardly rectifying potassium channel KCNH2 / IC50 100000 nM (CHEMBL3430743).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL192",
+        "ot-assoc:ENSG00000055118:MONDO_0004981",
+        "check:CHEMBL192:MONDO_0004981"
+      ]
+    },
+    {
+      "id": "hyp:2",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Sildenafil could be repurposed for cardiac arrhythmia via Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "drugId": "drug:CHEMBL192",
+      "targetId": "target:CHEMBL240",
+      "diseaseId": "disease:EFO_0004269",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL240",
+        "e:associated_with:target:CHEMBL240:disease:EFO_0004269",
+        "e:absent:drug:CHEMBL192:disease:EFO_0004269"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Voltage-gated inwardly rectifying potassium channel KCNH2",
+          "value": "10 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–cardiac arrhythmia: genetic association",
+          "value": "0.81",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:EFO_0004269"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–cardiac arrhythmia: clinical",
+          "value": "0.91",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:EFO_0004269"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–cardiac arrhythmia: literature",
+          "value": "0.36",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:EFO_0004269"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for cardiac arrhythmia",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Sildenafil",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Sildenafil",
+          "value": "Oral, Parenteral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL192:EFO_0004269"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a cardiac arrhythmia-relevant cell model; nearest existing measurement: Voltage-gated inwardly rectifying potassium channel KCNH2 / IC50 100000 nM (CHEMBL3430743).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL192",
+        "ot-assoc:ENSG00000055118:EFO_0004269",
+        "check:CHEMBL192:EFO_0004269"
+      ]
+    },
+    {
+      "id": "hyp:3",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Sildenafil could be repurposed for atrial flutter via Voltage-gated inwardly rectifying potassium channel KCNH2",
+      "drugId": "drug:CHEMBL192",
+      "targetId": "target:CHEMBL240",
+      "diseaseId": "disease:MONDO_0005310",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL240",
+        "e:associated_with:target:CHEMBL240:disease:MONDO_0005310",
+        "e:absent:drug:CHEMBL192:disease:MONDO_0005310"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Voltage-gated inwardly rectifying potassium channel KCNH2",
+          "value": "10 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial flutter: genetic association",
+          "value": "0.65",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0005310"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial flutter: clinical",
+          "value": "0.84",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0005310"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KCNH2–atrial flutter: literature",
+          "value": "0.06",
+          "sourceIds": [
+            "ot-assoc:ENSG00000055118:MONDO_0005310"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for atrial flutter",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Sildenafil",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Sildenafil",
+          "value": "Oral, Parenteral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL192:MONDO_0005310"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a atrial flutter-relevant cell model; nearest existing measurement: Voltage-gated inwardly rectifying potassium channel KCNH2 / IC50 100000 nM (CHEMBL3430743).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL192",
+        "ot-assoc:ENSG00000055118:MONDO_0005310",
+        "check:CHEMBL192:MONDO_0005310"
+      ]
+    },
+    {
+      "id": "hyp:4",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Sildenafil could be repurposed for achromatopsia via Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha'",
+      "drugId": "drug:CHEMBL192",
+      "targetId": "target:CHEMBL3977",
+      "diseaseId": "disease:MONDO_0018852",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL3977",
+        "e:associated_with:target:CHEMBL3977:disease:MONDO_0018852",
+        "e:absent:drug:CHEMBL192:disease:MONDO_0018852"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha'",
+          "value": "4 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–achromatopsia: genetic association",
+          "value": "0.90",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0018852"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–achromatopsia: genetic literature",
+          "value": "0.73",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0018852"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–achromatopsia: animal model",
+          "value": "0.68",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0018852"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–achromatopsia: literature",
+          "value": "0.24",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0018852"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for achromatopsia",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Sildenafil",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Sildenafil",
+          "value": "Oral, Parenteral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL192:MONDO_0018852"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a achromatopsia-relevant cell model; nearest existing measurement: 5-hydroxytryptamine receptor 1A / AC50 50000 nM (CHEMBL5291814).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL192",
+        "ot-assoc:ENSG00000095464:MONDO_0018852",
+        "check:CHEMBL192:MONDO_0018852"
+      ]
+    },
+    {
+      "id": "hyp:5",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Sildenafil could be repurposed for cone dystrophy via Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha'",
+      "drugId": "drug:CHEMBL192",
+      "targetId": "target:CHEMBL3977",
+      "diseaseId": "disease:MONDO_0000455",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL192:target:CHEMBL3977",
+        "e:associated_with:target:CHEMBL3977:disease:MONDO_0000455",
+        "e:absent:drug:CHEMBL192:disease:MONDO_0000455"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha'",
+          "value": "4 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–cone dystrophy: genetic association",
+          "value": "0.60",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0000455"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–cone dystrophy: genetic literature",
+          "value": "0.61",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0000455"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–cone dystrophy: animal model",
+          "value": "0.71",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0000455"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDE6C–cone dystrophy: literature",
+          "value": "0.13",
+          "sourceIds": [
+            "ot-assoc:ENSG00000095464:MONDO_0000455"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for cone dystrophy",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Sildenafil",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Sildenafil",
+          "value": "Oral, Parenteral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL192"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL192:MONDO_0000455"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a cone dystrophy-relevant cell model; nearest existing measurement: 5-hydroxytryptamine receptor 1A / AC50 50000 nM (CHEMBL5291814).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL192",
+        "ot-assoc:ENSG00000095464:MONDO_0000455",
+        "check:CHEMBL192:MONDO_0000455"
+      ]
+    }
+  ],
+  "builtAt": "2026-10-28T23:01:27.145Z",
+  "sources": [
+    {
+      "id": "chembl-target:CHEMBL1827",
+      "database": "ChEMBL",
+      "label": "CHEMBL1827",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1827"
+    },
+    {
+      "id": "chembl-mol:CHEMBL192",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+    },
+    {
+      "id": "chembl-act:837349",
+      "database": "ChEMBL",
+      "label": "Activity 837349 (CHEMBL762823)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762823"
+    },
+    {
+      "id": "chembl-mol:CHEMBL4210847",
+      "database": "ChEMBL",
+      "label": "PF-00489791",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "chembl-act:18528097",
+      "database": "ChEMBL",
+      "label": "Activity 18528097 (CHEMBL4194770)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4194770"
+    },
+    {
+      "id": "chembl-mol:CHEMBL1520",
+      "database": "ChEMBL",
+      "label": "VARDENAFIL",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+    },
+    {
+      "id": "chembl-act:902360",
+      "database": "ChEMBL",
+      "label": "Activity 902360 (CHEMBL762828)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762828"
+    },
+    {
+      "id": "chembl-mol:CHEMBL1928262",
+      "database": "ChEMBL",
+      "label": "GISADENAFIL",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+    },
+    {
+      "id": "chembl-act:7971884",
+      "database": "ChEMBL",
+      "label": "Activity 7971884 (CHEMBL1930855)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930855"
+    },
+    {
+      "id": "chembl-mol:CHEMBL779",
+      "database": "ChEMBL",
+      "label": "TADALAFIL",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-act:331695",
+      "database": "ChEMBL",
+      "label": "Activity 331695 (CHEMBL762824)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL762824"
+    },
+    {
+      "id": "chembl-mol:CHEMBL2103849",
+      "database": "ChEMBL",
+      "label": "UDENAFIL",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+    },
+    {
+      "id": "chembl-act:24872434",
+      "database": "ChEMBL",
+      "label": "Activity 24872434 (CHEMBL5153400)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5153400"
+    },
+    {
+      "id": "chembl-mol:CHEMBL1963681",
+      "database": "ChEMBL",
+      "label": "AVANAFIL",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+    },
+    {
+      "id": "chembl-act:17775429",
+      "database": "ChEMBL",
+      "label": "Activity 17775429 (CHEMBL3888593)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3888593"
+    },
+    {
+      "id": "chembl-mol:CHEMBL19449",
+      "database": "ChEMBL",
+      "label": "IBUDILAST",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+    },
+    {
+      "id": "chembl-act:26325379",
+      "database": "ChEMBL",
+      "label": "Activity 26325379 (CHEMBL5715900)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5715900"
+    },
+    {
+      "id": "nct:NCT01940952",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01940952",
+      "url": "https://clinicaltrials.gov/study/NCT01940952"
+    },
+    {
+      "id": "nct:NCT07172815",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT07172815",
+      "url": "https://clinicaltrials.gov/study/NCT07172815"
+    },
+    {
+      "id": "chembl-target:CHEMBL240",
+      "database": "ChEMBL",
+      "label": "Voltage-gated inwardly rectifying potassium channel KCNH2 (CHEMBL240)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL240"
+    },
+    {
+      "id": "chembl-target:CHEMBL2717",
+      "database": "ChEMBL",
+      "label": "Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A (CHEMBL2717)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2717"
+    },
+    {
+      "id": "chembl-target:CHEMBL3977",
+      "database": "ChEMBL",
+      "label": "Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha' (CHEMBL3977)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL3977"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0005362",
+      "database": "Open Targets",
+      "label": "PDE5A – erectile dysfunction (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005362"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0015924",
+      "database": "Open Targets",
+      "label": "PDE5A – pulmonary arterial hypertension (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0015924"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0010811",
+      "database": "Open Targets",
+      "label": "PDE5A – benign prostatic hyperplasia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0010811"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0005149",
+      "database": "Open Targets",
+      "label": "PDE5A – pulmonary hypertension (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005149"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0005098",
+      "database": "Open Targets",
+      "label": "PDE5A – stroke disorder (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005098"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0005295",
+      "database": "Open Targets",
+      "label": "PDE5A – intermittent vascular claudication (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005295"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0005044",
+      "database": "Open Targets",
+      "label": "PDE5A – hypertensive disorder (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0005044"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0019171",
+      "database": "Open Targets",
+      "label": "KCNH2 – familial long QT syndrome (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0019171"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0000453",
+      "database": "Open Targets",
+      "label": "KCNH2 – short QT syndrome (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0000453"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0004981",
+      "database": "Open Targets",
+      "label": "KCNH2 – atrial fibrillation (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0004981"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:EFO_0004269",
+      "database": "Open Targets",
+      "label": "KCNH2 – cardiac arrhythmia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/EFO_0004269"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:HP_0001657",
+      "database": "Open Targets",
+      "label": "KCNH2 – Prolonged QT interval (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/HP_0001657"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0000190",
+      "database": "Open Targets",
+      "label": "KCNH2 – ventricular fibrillation (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0000190"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0005310",
+      "database": "Open Targets",
+      "label": "KCNH2 – atrial flutter (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0005310"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0005477",
+      "database": "Open Targets",
+      "label": "KCNH2 – ventricular tachycardia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0005477"
+    },
+    {
+      "id": "ot-assoc:ENSG00000128655:MONDO_0001384",
+      "database": "Open Targets",
+      "label": "PDE11A – myopia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000128655/MONDO_0001384"
+    },
+    {
+      "id": "ot-assoc:ENSG00000095464:MONDO_0018852",
+      "database": "Open Targets",
+      "label": "PDE6C – achromatopsia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0018852"
+    },
+    {
+      "id": "ot-assoc:ENSG00000095464:MONDO_0015993",
+      "database": "Open Targets",
+      "label": "PDE6C – cone-rod dystrophy (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0015993"
+    },
+    {
+      "id": "ot-assoc:ENSG00000095464:MONDO_0005098",
+      "database": "Open Targets",
+      "label": "PDE6C – stroke disorder (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0005098"
+    },
+    {
+      "id": "ot-assoc:ENSG00000095464:MONDO_0019118",
+      "database": "Open Targets",
+      "label": "PDE6C – inherited retinal dystrophy (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0019118"
+    },
+    {
+      "id": "ot-assoc:ENSG00000095464:MONDO_0000455",
+      "database": "Open Targets",
+      "label": "PDE6C – cone dystrophy (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0000455"
+    },
+    {
+      "id": "ot-assoc:ENSG00000095464:MONDO_0005295",
+      "database": "Open Targets",
+      "label": "PDE6C – intermittent vascular claudication (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000095464/MONDO_0005295"
+    },
+    {
+      "id": "chembl-ind:23865",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: erectile dysfunction",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+    },
+    {
+      "id": "chembl-ind:23919",
+      "database": "ChEMBL",
+      "label": "TADALAFIL indication: benign prostatic hyperplasia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-ind:23920",
+      "database": "ChEMBL",
+      "label": "TADALAFIL indication: erectile dysfunction",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-ind:24171",
+      "database": "ChEMBL",
+      "label": "AVANAFIL indication: erectile dysfunction",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+    },
+    {
+      "id": "chembl-ind:24889",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: pulmonary arterial hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+    },
+    {
+      "id": "chembl-ind:24923",
+      "database": "ChEMBL",
+      "label": "TADALAFIL indication: pulmonary arterial hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-ind:50404",
+      "database": "ChEMBL",
+      "label": "UDENAFIL indication: erectile dysfunction",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+    },
+    {
+      "id": "chembl-ind:50601",
+      "database": "ChEMBL",
+      "label": "VARDENAFIL indication: erectile dysfunction",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+    },
+    {
+      "id": "chembl-ind:50734",
+      "database": "ChEMBL",
+      "label": "UDENAFIL indication: pulmonary arterial hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+    },
+    {
+      "id": "chembl-ind:53207",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: benign prostatic hyperplasia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+    },
+    {
+      "id": "chembl-ind:54338",
+      "database": "ChEMBL",
+      "label": "UDENAFIL indication: diastolic heart failure",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+    },
+    {
+      "id": "chembl-ind:55964",
+      "database": "ChEMBL",
+      "label": "GISADENAFIL indication: benign prostatic hyperplasia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+    },
+    {
+      "id": "chembl-ind:55967",
+      "database": "ChEMBL",
+      "label": "GISADENAFIL indication: overactive bladder",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+    },
+    {
+      "id": "chembl-ind:62980",
+      "database": "ChEMBL",
+      "label": "VARDENAFIL indication: benign prostatic hyperplasia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+    },
+    {
+      "id": "chembl-ind:111960",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: arterial occlusive disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+    },
+    {
+      "id": "chembl-ind:114536",
+      "database": "ChEMBL",
+      "label": "PF-00489791 indication: diabetic nephropathy",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "chembl-ind:114537",
+      "database": "ChEMBL",
+      "label": "PF-00489791 indication: hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "chembl-ind:114538",
+      "database": "ChEMBL",
+      "label": "PF-00489791 indication: pulmonary arterial hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "chembl-ind:116451",
+      "database": "ChEMBL",
+      "label": "GISADENAFIL indication: Impotence",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+    },
+    {
+      "id": "chembl-ind:117941",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: pulmonary hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+    },
+    {
+      "id": "chembl-ind:120225",
+      "database": "ChEMBL",
+      "label": "TADALAFIL indication: Impotence",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-ind:120229",
+      "database": "ChEMBL",
+      "label": "TADALAFIL indication: pulmonary hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-ind:120427",
+      "database": "ChEMBL",
+      "label": "VARDENAFIL indication: pulmonary hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+    },
+    {
+      "id": "chembl-ind:121868",
+      "database": "ChEMBL",
+      "label": "AVANAFIL indication: kidney disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+    },
+    {
+      "id": "chembl-ind:123560",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: Impotence",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+    },
+    {
+      "id": "chembl-ind:134061",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: connective tissue disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+    },
+    {
+      "id": "chembl-ind:136991",
+      "database": "ChEMBL",
+      "label": "UDENAFIL indication: Alzheimer disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+    },
+    {
+      "id": "chembl-ind:137705",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: idiopathic and/or familial pulmonary arterial hypertension",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1737"
+    },
+    {
+      "id": "chembl-ind:138348",
+      "database": "ChEMBL",
+      "label": "IBUDILAST indication: alcohol dependence",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+    },
+    {
+      "id": "chembl-ind:145912",
+      "database": "ChEMBL",
+      "label": "AVANAFIL indication: Impotence",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+    },
+    {
+      "id": "chembl-ind:146411",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL indication: Beta-thalassemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+    },
+    {
+      "id": "chembl-ind:146568",
+      "database": "ChEMBL",
+      "label": "VARDENAFIL indication: Impotence",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1339"
+    },
+    {
+      "id": "chembl-ind:154847",
+      "database": "ChEMBL",
+      "label": "PF-00489791 indication: peripheral vascular disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "chembl-mech:185",
+      "database": "ChEMBL",
+      "label": "TADALAFIL: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL779"
+    },
+    {
+      "id": "chembl-mech:186",
+      "database": "ChEMBL",
+      "label": "VARDENAFIL: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1520"
+    },
+    {
+      "id": "chembl-mech:187",
+      "database": "ChEMBL",
+      "label": "SILDENAFIL: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL192"
+    },
+    {
+      "id": "chembl-mech:188",
+      "database": "ChEMBL",
+      "label": "AVANAFIL: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1963681"
+    },
+    {
+      "id": "chembl-mech:5611",
+      "database": "ChEMBL",
+      "label": "UDENAFIL: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2103849"
+    },
+    {
+      "id": "chembl-mech:7584",
+      "database": "ChEMBL",
+      "label": "IBUDILAST: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL19449"
+    },
+    {
+      "id": "chembl-mech:8252",
+      "database": "ChEMBL",
+      "label": "GISADENAFIL: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1928262"
+    },
+    {
+      "id": "chembl-mech:8268",
+      "database": "ChEMBL",
+      "label": "PF-00489791: Phosphodiesterase 5A inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0004975",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"alzheimer's disease\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=alzheimer%27s+disease&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0004981",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial fibrillation\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=atrial+fibrillation&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:EFO_0004269",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cardiac arrhythmia\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=cardiac+arrhythmia&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0005310",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial flutter\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=atrial+flutter&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0018852",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"achromatopsia\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=achromatopsia&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0000455",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone dystrophy\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=cone+dystrophy&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0015993",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone-rod dystrophy\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=cone-rod+dystrophy&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "check:CHEMBL192:MONDO_0019171",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"familial long QT syndrome\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Sildenafil&cond=familial+long+QT+syndrome&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "chembl-act:15258064",
+      "database": "ChEMBL",
+      "label": "Activity 15258064 (CHEMBL3430743)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3430743"
+    },
+    {
+      "id": "chembl-act:25215736",
+      "database": "ChEMBL",
+      "label": "Activity 25215736 (CHEMBL5291814)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5291814"
+    },
+    {
+      "id": "chembl-act:23143711",
+      "database": "ChEMBL",
+      "label": "Activity 23143711 (CHEMBL4808842)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4808842"
+    },
+    {
+      "id": "ot-assoc:ENSG00000138735:MONDO_0004975",
+      "database": "Open Targets",
+      "label": "PDE5A – Alzheimer disease (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000138735/MONDO_0004975"
+    },
+    {
+      "id": "ot-assoc:ENSG00000055118:MONDO_0004975",
+      "database": "Open Targets",
+      "label": "KCNH2 – Alzheimer disease (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000055118/MONDO_0004975"
+    },
+    {
+      "id": "ot-assoc:ENSG00000128655:MONDO_0004975",
+      "database": "Open Targets",
+      "label": "PDE11A – Alzheimer disease (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000128655/MONDO_0004975"
+    }
+  ]
+}

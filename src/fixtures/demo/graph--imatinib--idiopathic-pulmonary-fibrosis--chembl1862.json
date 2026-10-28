@@ -1,0 +1,4979 @@
+{
+  "query": {
+    "candidate": "imatinib",
+    "disease": "idiopathic pulmonary fibrosis",
+    "targetChemblId": "CHEMBL1862"
+  },
+  "nodes": [
+    {
+      "id": "target:CHEMBL1862",
+      "type": "target",
+      "label": "Tyrosine-protein kinase ABL1",
+      "meta": {
+        "chemblId": "CHEMBL1862",
+        "organism": "Homo sapiens",
+        "uniprot": "P00519",
+        "ensemblId": "ENSG00000097007",
+        "symbol": "ABL1"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL1862",
+        "database": "ChEMBL",
+        "label": "CHEMBL1862",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1862"
+      }
+    },
+    {
+      "id": "drug:CHEMBL941",
+      "type": "drug",
+      "label": "IMATINIB",
+      "isCandidate": true,
+      "meta": {
+        "chemblId": "CHEMBL941",
+        "maxPhase": 4,
+        "n": 17,
+        "firstApproval": 2001,
+        "indicationCount": 108,
+        "indications": [
+          "EFO_0000220",
+          "EFO_0000094",
+          "EFO_1000131",
+          "MONDO_0000870",
+          "EFO_0000339",
+          "MONDO_0011934",
+          "MONDO_0011719",
+          "EFO_1001467",
+          "MONDO_0000873",
+          "MONDO_0020077",
+          "EFO_0000272",
+          "MONDO_0004992",
+          "MONDO_0100096",
+          "EFO_0000519",
+          "MONDO_0013730",
+          "EFO_0007328",
+          "EFO_0000565",
+          "EFO_0004289",
+          "MONDO_0004643",
+          "EFO_0000616",
+          "EFO_1001814",
+          "EFO_0003106",
+          "EFO_0001361",
+          "MONDO_0005149",
+          "EFO_0000691",
+          "EFO_0000712",
+          "EFO_0000209",
+          "EFO_0000222",
+          "MONDO_0002676",
+          "MONDO_0004979",
+          "MONDO_0007254",
+          "EFO_0000313",
+          "EFO_1000158",
+          "EFO_0000333",
+          "MONDO_0008978",
+          "MONDO_0020547",
+          "EFO_0002428",
+          "EFO_0004288",
+          "EFO_0000389",
+          "EFO_0009907",
+          "HP_0001880",
+          "MONDO_0002158",
+          "EFO_0000497",
+          "EFO_0000503",
+          "MONDO_0001056",
+          "EFO_1001465",
+          "EFO_0006859",
+          "EFO_0000768",
+          "MONDO_0002367",
+          "EFO_1001361",
+          "EFO_1000729",
+          "MONDO_0008903",
+          "EFO_0000574",
+          "EFO_0006861",
+          "MONDO_0021063",
+          "MONDO_0018364",
+          "EFO_0000760",
+          "EFO_0000756",
+          "EFO_1001471",
+          "EFO_0000588",
+          "EFO_0002617",
+          "MONDO_0005301",
+          "MONDO_0018975",
+          "EFO_0005952",
+          "EFO_0003060",
+          "MONDO_0008170",
+          "EFO_0002618",
+          "EFO_0000641",
+          "MONDO_0002087",
+          "EFO_0007444",
+          "EFO_0000658",
+          "EFO_0002429",
+          "MONDO_0008315",
+          "EFO_1000657",
+          "EFO_0000685",
+          "EFO_1001993",
+          "EFO_0004198",
+          "EFO_0000702",
+          "EFO_1001919",
+          "EFO_0003897",
+          "EFO_0000717",
+          "MONDO_0044917",
+          "MONDO_0002108",
+          "MONDO_0018076",
+          "MONDO_0005147",
+          "EFO_1000613",
+          "EFO_0004610",
+          "EFO_0003032",
+          "MONDO_0810000",
+          "EFO_0001422",
+          "EFO_0000349",
+          "EFO_0000365",
+          "MONDO_0005575",
+          "EFO_1000895",
+          "MONDO_0011962",
+          "EFO_0002087",
+          "MONDO_0044881",
+          "MONDO_0011705",
+          "EFO_1000359",
+          "EFO_0002430",
+          "EFO_0000673",
+          "MONDO_0009937",
+          "EFO_0003956",
+          "MONDO_0011382",
+          "EFO_0001376",
+          "EFO_1000576",
+          "MONDO_0002715",
+          "EFO_0000181"
+        ]
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "drug:CHEMBL288441",
+      "type": "drug",
+      "label": "BOSUTINIB",
+      "meta": {
+        "chemblId": "CHEMBL288441",
+        "maxPhase": 4,
+        "n": 3,
+        "firstApproval": 2012,
+        "indicationCount": 22
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL288441",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+      }
+    },
+    {
+      "id": "drug:CHEMBL1421",
+      "type": "drug",
+      "label": "DASATINIB",
+      "meta": {
+        "chemblId": "CHEMBL1421",
+        "maxPhase": 4,
+        "n": 8,
+        "firstApproval": 2006,
+        "indicationCount": 88
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1421",
+        "database": "ChEMBL",
+        "label": "DASATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "drug:CHEMBL255863",
+      "type": "drug",
+      "label": "NILOTINIB",
+      "meta": {
+        "chemblId": "CHEMBL255863",
+        "maxPhase": 4,
+        "n": 5,
+        "firstApproval": 2007,
+        "indicationCount": 30
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL255863",
+        "database": "ChEMBL",
+        "label": "NILOTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "drug:CHEMBL4208229",
+      "type": "drug",
+      "label": "ASCIMINIB",
+      "meta": {
+        "chemblId": "CHEMBL4208229",
+        "maxPhase": 4,
+        "n": 1,
+        "firstApproval": 2021,
+        "indicationCount": 6
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL4208229",
+        "database": "ChEMBL",
+        "label": "ASCIMINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+      }
+    },
+    {
+      "id": "drug:CHEMBL217092",
+      "type": "drug",
+      "label": "SARACATINIB",
+      "meta": {
+        "chemblId": "CHEMBL217092",
+        "maxPhase": 3,
+        "n": 1,
+        "indicationCount": 21
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL217092",
+        "database": "ChEMBL",
+        "label": "SARACATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+      }
+    },
+    {
+      "id": "warning:1330",
+      "type": "warning",
+      "label": "Black Box Warning (cardiotoxicity)",
+      "meta": {
+        "warningClass": "cardiotoxicity",
+        "year": null,
+        "country": "United States",
+        "description": null
+      },
+      "source": {
+        "id": "chembl-warn:1330",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6093952a-5248-45cb-ad17-33716a411146"
+      }
+    },
+    {
+      "id": "warning:5218",
+      "type": "warning",
+      "label": "Black Box Warning (musculoskeletal toxicity)",
+      "meta": {
+        "warningClass": "musculoskeletal toxicity",
+        "year": null,
+        "country": "United States",
+        "description": null
+      },
+      "source": {
+        "id": "chembl-warn:5218",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Black Box Warning (musculoskeletal toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "disease:EFO_0000768",
+      "type": "disease",
+      "label": "idiopathic pulmonary fibrosis",
+      "isQueryDisease": true,
+      "meta": {
+        "resolved": true,
+        "efoId": "EFO_0000768",
+        "otName": "idiopathic pulmonary fibrosis"
+      }
+    },
+    {
+      "id": "trial:NCT00131274",
+      "type": "trial",
+      "label": "Gleevec Idiopathic Pulmonary Fibrosis (IPF) Study",
+      "meta": {
+        "nctId": "NCT00131274",
+        "phase": "Phase 2/3",
+        "status": "Completed",
+        "hasResults": false,
+        "enrollment": 120,
+        "startDate": "2003-04",
+        "interventions": [
+          "Imatinib Mesylate (Gleevec)"
+        ],
+        "conditions": [
+          "Idiopathic Pulmonary Fibrosis",
+          "Lung Disease",
+          "Pulmonary Fibrosis"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00131274",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00131274",
+        "url": "https://clinicaltrials.gov/study/NCT00131274"
+      }
+    },
+    {
+      "id": "trial:NCT04598919",
+      "type": "trial",
+      "label": "Saracatinib in the Treatment of Idiopathic Pulmonary Fibrosis",
+      "meta": {
+        "nctId": "NCT04598919",
+        "phase": "Phase 1/2",
+        "status": "Active, not recruiting",
+        "hasResults": false,
+        "enrollment": 49,
+        "startDate": "2020-11-12",
+        "interventions": [
+          "Saracatinab",
+          "Placebo"
+        ],
+        "conditions": [
+          "Idiopathic Pulmonary Fibrosis (IPF)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04598919",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04598919",
+        "url": "https://clinicaltrials.gov/study/NCT04598919"
+      }
+    },
+    {
+      "id": "trial:NCT02874989",
+      "type": "trial",
+      "label": "Targeting Pro-Inflammatory Cells in Idiopathic Pulmonary Fibrosis: a Human Trial",
+      "meta": {
+        "nctId": "NCT02874989",
+        "phase": "Phase 1",
+        "status": "Completed",
+        "hasResults": false,
+        "enrollment": 26,
+        "startDate": "2016-12-16",
+        "interventions": [
+          "Dasatinib + Quercetin",
+          "Placebo"
+        ],
+        "conditions": [
+          "Idiopathic Pulmonary Fibrosis (IPF)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02874989",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02874989",
+        "url": "https://clinicaltrials.gov/study/NCT02874989"
+      }
+    },
+    {
+      "id": "target:CHEMBL1936",
+      "type": "target",
+      "label": "Mast/stem cell growth factor receptor Kit",
+      "meta": {
+        "chemblId": "CHEMBL1936",
+        "organism": "Homo sapiens",
+        "uniprot": "P10721",
+        "ensemblId": "ENSG00000157404",
+        "symbol": "KIT"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL1936",
+        "database": "ChEMBL",
+        "label": "Mast/stem cell growth factor receptor Kit (CHEMBL1936)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1936"
+      }
+    },
+    {
+      "id": "target:CHEMBL2007",
+      "type": "target",
+      "label": "Platelet-derived growth factor receptor alpha",
+      "meta": {
+        "chemblId": "CHEMBL2007",
+        "organism": "Homo sapiens",
+        "uniprot": "P16234",
+        "ensemblId": "ENSG00000134853",
+        "symbol": "PDGFRA"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL2007",
+        "database": "ChEMBL",
+        "label": "Platelet-derived growth factor receptor alpha (CHEMBL2007)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2007"
+      }
+    },
+    {
+      "id": "target:CHEMBL4014",
+      "type": "target",
+      "label": "Tyrosine-protein kinase ABL2",
+      "meta": {
+        "chemblId": "CHEMBL4014",
+        "organism": "Homo sapiens",
+        "uniprot": "P42684",
+        "ensemblId": "ENSG00000143322",
+        "symbol": "ABL2"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL4014",
+        "database": "ChEMBL",
+        "label": "Tyrosine-protein kinase ABL2 (CHEMBL4014)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL4014"
+      }
+    },
+    {
+      "id": "disease:MONDO_0011996",
+      "type": "disease",
+      "label": "chronic myeloid leukemia",
+      "meta": {
+        "efoId": "MONDO_0011996",
+        "nAncestors": 31,
+        "therapeuticAreas": [
+          "genetic, familial or congenital disease",
+          "musculoskeletal or connective tissue disease",
+          "immune system disorder",
+          "hematologic disorder",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0004967",
+      "type": "disease",
+      "label": "acute lymphoblastic leukemia",
+      "meta": {
+        "efoId": "MONDO_0004967",
+        "nAncestors": 15,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "cancer or benign tumor"
+        ],
+        "altIds": [
+          "EFO_0000220"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0011719",
+      "type": "disease",
+      "label": "gastrointestinal stromal tumor",
+      "meta": {
+        "efoId": "MONDO_0011719",
+        "nAncestors": 13,
+        "therapeuticAreas": [
+          "genetic, familial or congenital disease",
+          "gastrointestinal disease",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005575",
+      "type": "disease",
+      "label": "colorectal cancer",
+      "meta": {
+        "efoId": "MONDO_0005575",
+        "nAncestors": 13,
+        "therapeuticAreas": [
+          "gastrointestinal disease",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0015691",
+      "type": "disease",
+      "label": "hypereosinophilic syndrome",
+      "meta": {
+        "efoId": "MONDO_0015691",
+        "nAncestors": 13,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "immune system disorder",
+          "cardiovascular disorder",
+          "musculoskeletal or connective tissue disease"
+        ],
+        "altIds": [
+          "EFO_1001467"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0011934",
+      "type": "disease",
+      "label": "dermatofibrosarcoma protuberans",
+      "meta": {
+        "efoId": "MONDO_0011934",
+        "nAncestors": 17,
+        "therapeuticAreas": [
+          "integumentary system disorder",
+          "cancer or benign tumor",
+          "musculoskeletal or connective tissue disease"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0020077",
+      "type": "disease",
+      "label": "myelodysplastic/myeloproliferative disease",
+      "meta": {
+        "efoId": "MONDO_0020077",
+        "nAncestors": 6,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0018906",
+      "type": "disease",
+      "label": "follicular lymphoma",
+      "meta": {
+        "efoId": "MONDO_0018906",
+        "nAncestors": 16,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "immune system disorder",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0008244",
+      "type": "disease",
+      "label": "piebaldism",
+      "meta": {
+        "efoId": "MONDO_0008244",
+        "nAncestors": 17,
+        "therapeuticAreas": [
+          "disorder of visual system",
+          "integumentary system disorder",
+          "genetic, familial or congenital disease",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0019023",
+      "type": "disease",
+      "label": "cutaneous mastocytosis",
+      "meta": {
+        "efoId": "MONDO_0019023",
+        "nAncestors": 27,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "immune system disorder",
+          "integumentary system disorder",
+          "cancer or benign tumor",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0018874",
+      "type": "disease",
+      "label": "acute myeloid leukemia",
+      "meta": {
+        "efoId": "MONDO_0018874",
+        "nAncestors": 31,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "immune system disorder",
+          "cancer or benign tumor",
+          "genetic, familial or congenital disease",
+          "musculoskeletal or connective tissue disease"
+        ],
+        "altIds": [
+          "EFO_0000222"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0007256",
+      "type": "disease",
+      "label": "hepatocellular carcinoma",
+      "meta": {
+        "efoId": "MONDO_0007256",
+        "nAncestors": 22,
+        "therapeuticAreas": [
+          "gastrointestinal disease",
+          "endocrine system disorder",
+          "hepatobiliary disorder",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0007950",
+      "type": "disease",
+      "label": "mastocytosis",
+      "meta": {
+        "efoId": "MONDO_0007950",
+        "nAncestors": 10,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "immune system disorder",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0016586",
+      "type": "disease",
+      "label": "systemic mastocytosis",
+      "meta": {
+        "efoId": "MONDO_0016586",
+        "nAncestors": 11,
+        "therapeuticAreas": [
+          "hematologic disorder",
+          "immune system disorder",
+          "cancer or benign tumor"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0018078",
+      "type": "disease",
+      "label": "soft tissue sarcoma",
+      "meta": {
+        "efoId": "MONDO_0018078",
+        "nAncestors": 8,
+        "therapeuticAreas": [
+          "cancer or benign tumor"
+        ],
+        "altIds": [
+          "EFO_1001968"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005086",
+      "type": "disease",
+      "label": "renal cell carcinoma",
+      "meta": {
+        "efoId": "MONDO_0005086",
+        "nAncestors": 19,
+        "therapeuticAreas": [
+          "urinary system disorder",
+          "cancer or benign tumor",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005233",
+      "type": "disease",
+      "label": "non-small cell lung carcinoma",
+      "meta": {
+        "efoId": "MONDO_0005233",
+        "nAncestors": 21,
+        "therapeuticAreas": [
+          "respiratory or thoracic disease",
+          "cancer or benign tumor",
+          "phenotype"
+        ],
+        "altIds": [
+          "EFO_0003060"
+        ]
+      }
+    },
+    {
+      "id": "disease:MONDO_0005100",
+      "type": "disease",
+      "label": "systemic sclerosis",
+      "meta": {
+        "efoId": "MONDO_0005100",
+        "nAncestors": 16,
+        "therapeuticAreas": [
+          "integumentary system disorder",
+          "immune system disorder",
+          "musculoskeletal or connective tissue disease",
+          "phenotype"
+        ]
+      }
+    },
+    {
+      "id": "route:oral",
+      "type": "route",
+      "label": "Oral"
+    },
+    {
+      "id": "disease:EFO_0000339",
+      "type": "disease",
+      "label": "chronic myelogenous leukemia",
+      "meta": {
+        "efoId": "EFO_0000339"
+      }
+    },
+    {
+      "id": "disease:MONDO_0000870",
+      "type": "disease",
+      "label": "childhood acute lymphoblastic leukemia",
+      "meta": {
+        "efoId": "MONDO_0000870",
+        "nAncestors": 21
+      }
+    },
+    {
+      "id": "disease:MONDO_0007254",
+      "type": "disease",
+      "label": "breast cancer",
+      "meta": {
+        "efoId": "MONDO_0007254",
+        "nAncestors": 9
+      }
+    },
+    {
+      "id": "disease:EFO_0000094",
+      "type": "disease",
+      "label": "B-cell acute lymphoblastic leukemia",
+      "meta": {
+        "efoId": "EFO_0000094"
+      }
+    },
+    {
+      "id": "disease:MONDO_0004975",
+      "type": "disease",
+      "label": "Alzheimer disease",
+      "meta": {
+        "efoId": "MONDO_0004975",
+        "nAncestors": 16
+      }
+    },
+    {
+      "id": "disease:EFO_1000131",
+      "type": "disease",
+      "label": "Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+      "meta": {
+        "efoId": "EFO_1000131"
+      }
+    },
+    {
+      "id": "disease:MONDO_0004643",
+      "type": "disease",
+      "label": "myeloid leukemia",
+      "meta": {
+        "efoId": "MONDO_0004643",
+        "nAncestors": 29
+      }
+    },
+    {
+      "id": "trial:NCT00763763",
+      "type": "trial",
+      "label": "Imatinib Mesylate With Vincristine and Dexamethasone in Acute Lymphoblastic Leukemias With BCR-ABL Positive",
+      "meta": {
+        "nctId": "NCT00763763",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00763763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00763763",
+        "url": "https://clinicaltrials.gov/study/NCT00763763"
+      }
+    },
+    {
+      "id": "trial:NCT00101595",
+      "type": "trial",
+      "label": "Dasatinib (BMS-354825) in Subjects With Lymphoid Blast Phase Chronic Myeloid Leukemia or Philadelphia Chromosome Positive Acute Lymphoblastic Leukemia",
+      "meta": {
+        "nctId": "NCT00101595",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00101595",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00101595",
+        "url": "https://clinicaltrials.gov/study/NCT00101595"
+      }
+    },
+    {
+      "id": "trial:NCT01077544",
+      "type": "trial",
+      "label": "A Pharmacokinetic (PK) Study of Nilotinib in Pediatric Patients With Philadelphia Chromosome-positive (Ph+) Chronic Myelogenous Leukemia (CML) or Acute Lymphoblastic Leukemia (ALL)",
+      "meta": {
+        "nctId": "NCT01077544",
+        "phase": "Phase 1",
+        "status": "Completed",
+        "hasResults": true,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT01077544",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01077544",
+        "url": "https://clinicaltrials.gov/study/NCT01077544"
+      }
+    },
+    {
+      "id": "trial:NCT00171912",
+      "type": "trial",
+      "label": "Imatinib Mesylate in Patients With Various Types of Malignancies Involving Activated Tyrosine Kinase Enzymes",
+      "meta": {
+        "nctId": "NCT00171912",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00171912",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00171912",
+        "url": "https://clinicaltrials.gov/study/NCT00171912"
+      }
+    },
+    {
+      "id": "trial:NCT02413736",
+      "type": "trial",
+      "label": "Three Versus Five Years of Adjuvant Imatinib as Treatment of Patients With Operable GIST",
+      "meta": {
+        "nctId": "NCT02413736",
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT02413736",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02413736",
+        "url": "https://clinicaltrials.gov/study/NCT02413736"
+      }
+    },
+    {
+      "id": "trial:NCT00084630",
+      "type": "trial",
+      "label": "Imatinib Mesylate in Treating Patients With Locally Recurrent or Metastatic Dermatofibrosarcoma Protuberans",
+      "meta": {
+        "nctId": "NCT00084630",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00084630",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00084630",
+        "url": "https://clinicaltrials.gov/study/NCT00084630"
+      }
+    },
+    {
+      "id": "trial:NCT00222144",
+      "type": "trial",
+      "label": "Study of Gleevec and Taxotere in Recurrent Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT00222144",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00222144",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00222144",
+        "url": "https://clinicaltrials.gov/study/NCT00222144"
+      }
+    },
+    {
+      "id": "trial:NCT01011075",
+      "type": "trial",
+      "label": "Study of Gleevec and Weekly Paclitaxel in Patients Aged 70 or Older With Advanced Non-small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT01011075",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT01011075",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01011075",
+        "url": "https://clinicaltrials.gov/study/NCT01011075"
+      }
+    },
+    {
+      "id": "trial:NCT00425646",
+      "type": "trial",
+      "label": "Imatinib Mesylate and Bevacizumab After First-Line Chemotherapy and Bevacizumab in Treating Patients With Stage IIIB or Stage IV Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT00425646",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00425646",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00425646",
+        "url": "https://clinicaltrials.gov/study/NCT00425646"
+      }
+    },
+    {
+      "id": "trial:NCT00109707",
+      "type": "trial",
+      "label": "A Study of Oral AMN107 in Adults With Chronic Myelogenous Leukemia (CML) or Other Hematologic Malignancies",
+      "meta": {
+        "nctId": "NCT00109707",
+        "phase": "Phase 1/2",
+        "status": "Completed",
+        "hasResults": true,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00109707",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00109707",
+        "url": "https://clinicaltrials.gov/study/NCT00109707"
+      }
+    },
+    {
+      "id": "trial:NCT00154388",
+      "type": "trial",
+      "label": "Phase II Study of Imatinib Mesylate in Patients With Life Threatening Malignant Rare Diseases",
+      "meta": {
+        "nctId": "NCT00154388",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00154388",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00154388",
+        "url": "https://clinicaltrials.gov/study/NCT00154388"
+      }
+    },
+    {
+      "id": "trial:NCT00038675",
+      "type": "trial",
+      "label": "Therapy of HES, PV, Atypical Chronic Myelocytic Leukemia (CML) or Chronic Myelomonocytic Leukemia (CMML), and Mastocytosis With Imatinib Mesylate",
+      "meta": {
+        "nctId": "NCT00038675",
+        "phase": "N/A",
+        "status": "Completed",
+        "hasResults": true,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00038675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00038675",
+        "url": "https://clinicaltrials.gov/study/NCT00038675"
+      }
+    },
+    {
+      "id": "trial:NCT05970900",
+      "type": "trial",
+      "label": "Preoperative Imatinib Mesylate Combined With Rectal-sparing Surgery in Patients With c-KIT Gene-mutant Rectal GIST",
+      "meta": {
+        "nctId": "NCT05970900",
+        "phase": "Phase 3",
+        "status": "Not yet recruiting",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT05970900",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05970900",
+        "url": "https://clinicaltrials.gov/study/NCT05970900"
+      }
+    },
+    {
+      "id": "trial:NCT00237185",
+      "type": "trial",
+      "label": "A Study of the Efficacy and Safety of Imatinib Mesylate in Patients With Unresectable or Metastatic Gastrointestinal Stromal Tumors Expressing C-kit Gene",
+      "meta": {
+        "nctId": "NCT00237185",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT00237185",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00237185",
+        "url": "https://clinicaltrials.gov/study/NCT00237185"
+      }
+    },
+    {
+      "id": "trial:NCT01126814",
+      "type": "trial",
+      "label": "A Study of Imatinib With Reinduction Chemotherapy Using Mitoxantrone, Etoposide and Cytarabine in Patients With Relapsed/Refractory C-kit Positive (AML) Acute Myeloid Leukemia",
+      "meta": {
+        "nctId": "NCT01126814",
+        "phase": "Phase 1/2",
+        "status": "Completed",
+        "hasResults": false,
+        "foundBy": "gap check"
+      },
+      "source": {
+        "id": "nct:NCT01126814",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01126814",
+        "url": "https://clinicaltrials.gov/study/NCT01126814"
+      }
+    },
+    {
+      "id": "target:CHEMBL1913",
+      "type": "target",
+      "label": "Platelet-derived growth factor receptor beta",
+      "meta": {
+        "chemblId": "CHEMBL1913",
+        "organism": "Homo sapiens",
+        "uniprot": "P09619",
+        "ensemblId": "ENSG00000113721",
+        "symbol": "PDGFRB",
+        "foundBy": "disease side"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL1913",
+        "database": "ChEMBL",
+        "label": "Platelet-derived growth factor receptor beta (CHEMBL1913)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1913"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:measured_against:drug:CHEMBL941:target:CHEMBL1862",
+      "type": "measured_against",
+      "from": "drug:CHEMBL941",
+      "to": "target:CHEMBL1862",
+      "kind": "measured",
+      "strength": 6.63,
+      "label": "median pChEMBL 6.63 (n=17)",
+      "meta": {
+        "n": 17,
+        "min": 5.96,
+        "max": 7.6,
+        "activityType": "IC50",
+        "rank": 6,
+        "alsoValid": [
+          "chembl-act:1735313",
+          "chembl-act:1907590",
+          "chembl-act:2280412",
+          "chembl-act:2356930",
+          "chembl-act:2449764",
+          "chembl-act:3186283",
+          "chembl-act:3447172",
+          "chembl-act:7954956",
+          "chembl-act:12657917",
+          "chembl-act:12657919",
+          "chembl-act:14545491",
+          "chembl-act:15760056",
+          "chembl-act:24788695",
+          "chembl-act:26325592",
+          "chembl-act:26325697",
+          "chembl-act:29002793"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:909963",
+        "database": "ChEMBL",
+        "label": "Activity 909963 (CHEMBL846547)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL846547"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL288441:target:CHEMBL1862",
+      "type": "measured_against",
+      "from": "drug:CHEMBL288441",
+      "to": "target:CHEMBL1862",
+      "kind": "measured",
+      "strength": 9,
+      "label": "median pChEMBL 9 (n=3)",
+      "meta": {
+        "n": 3,
+        "min": 8.96,
+        "max": 9.3,
+        "activityType": "IC50",
+        "rank": 1,
+        "alsoValid": [
+          "chembl-act:3446181",
+          "chembl-act:16595582"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:1615494",
+        "database": "ChEMBL",
+        "label": "Activity 1615494 (CHEMBL882911)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL882911"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL1421:target:CHEMBL1862",
+      "type": "measured_against",
+      "from": "drug:CHEMBL1421",
+      "to": "target:CHEMBL1862",
+      "kind": "measured",
+      "strength": 8.39,
+      "label": "median pChEMBL 8.39 (n=8)",
+      "meta": {
+        "n": 8,
+        "min": 6.57,
+        "max": 9.22,
+        "activityType": "IC50",
+        "rank": 2,
+        "alsoValid": [
+          "chembl-act:2150088",
+          "chembl-act:16814199",
+          "chembl-act:22892179",
+          "chembl-act:24788696",
+          "chembl-act:24789038",
+          "chembl-act:26325594",
+          "chembl-act:26325699"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:2000756",
+        "database": "ChEMBL",
+        "label": "Activity 2000756 (CHEMBL901542)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL901542"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL255863:target:CHEMBL1862",
+      "type": "measured_against",
+      "from": "drug:CHEMBL255863",
+      "to": "target:CHEMBL1862",
+      "kind": "measured",
+      "strength": 7.82,
+      "label": "median pChEMBL 7.82 (n=5)",
+      "meta": {
+        "n": 5,
+        "min": 7.42,
+        "max": 8.26,
+        "activityType": "IC50",
+        "rank": 3,
+        "alsoValid": [
+          "chembl-act:20609025",
+          "chembl-act:26325593",
+          "chembl-act:26325698",
+          "chembl-act:29002790"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:3186251",
+        "database": "ChEMBL",
+        "label": "Activity 3186251 (CHEMBL1110556)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1110556"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL4208229:target:CHEMBL1862",
+      "type": "measured_against",
+      "from": "drug:CHEMBL4208229",
+      "to": "target:CHEMBL1862",
+      "kind": "measured",
+      "strength": 7.8,
+      "label": "median pChEMBL 7.8 (n=1)",
+      "meta": {
+        "n": 1,
+        "min": 7.8,
+        "max": 7.8,
+        "activityType": "IC50",
+        "rank": 4,
+        "alsoValid": []
+      },
+      "source": {
+        "id": "chembl-act:29002802",
+        "database": "ChEMBL",
+        "label": "Activity 29002802 (CHEMBL5739300)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL217092:target:CHEMBL1862",
+      "type": "measured_against",
+      "from": "drug:CHEMBL217092",
+      "to": "target:CHEMBL1862",
+      "kind": "measured",
+      "strength": 7.52,
+      "label": "median pChEMBL 7.52 (n=1)",
+      "meta": {
+        "n": 1,
+        "min": 7.52,
+        "max": 7.52,
+        "activityType": "IC50",
+        "rank": 5,
+        "alsoValid": []
+      },
+      "source": {
+        "id": "chembl-act:1779385",
+        "database": "ChEMBL",
+        "label": "Activity 1779385 (CHEMBL854973)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL854973"
+      }
+    },
+    {
+      "id": "e:has_warning:drug:CHEMBL255863:warning:1330",
+      "type": "has_warning",
+      "from": "drug:CHEMBL255863",
+      "to": "warning:1330",
+      "kind": "clinical",
+      "label": "Black Box Warning",
+      "source": {
+        "id": "chembl-warn:1330",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6093952a-5248-45cb-ad17-33716a411146"
+      }
+    },
+    {
+      "id": "e:has_warning:drug:CHEMBL255863:warning:5218",
+      "type": "has_warning",
+      "from": "drug:CHEMBL255863",
+      "to": "warning:5218",
+      "kind": "clinical",
+      "label": "Black Box Warning",
+      "source": {
+        "id": "chembl-warn:5218",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Black Box Warning (musculoskeletal toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00131274",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00131274",
+      "kind": "clinical",
+      "strength": 2.5,
+      "label": "Phase 2/3 · Completed",
+      "meta": {
+        "phase": "Phase 2/3",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00131274",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00131274",
+        "url": "https://clinicaltrials.gov/study/NCT00131274"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00131274:disease:EFO_0000768",
+      "type": "for_disease",
+      "from": "trial:NCT00131274",
+      "to": "disease:EFO_0000768",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Idiopathic Pulmonary Fibrosis",
+          "Lung Disease",
+          "Pulmonary Fibrosis"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00131274",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00131274",
+        "url": "https://clinicaltrials.gov/study/NCT00131274"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04598919:disease:EFO_0000768",
+      "type": "for_disease",
+      "from": "trial:NCT04598919",
+      "to": "disease:EFO_0000768",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Idiopathic Pulmonary Fibrosis (IPF)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04598919",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04598919",
+        "url": "https://clinicaltrials.gov/study/NCT04598919"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL1421:trial:NCT02874989",
+      "type": "tested_in",
+      "from": "drug:CHEMBL1421",
+      "to": "trial:NCT02874989",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Phase 1 · Completed",
+      "meta": {
+        "phase": "Phase 1",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02874989",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02874989",
+        "url": "https://clinicaltrials.gov/study/NCT02874989"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02874989:disease:EFO_0000768",
+      "type": "for_disease",
+      "from": "trial:NCT02874989",
+      "to": "disease:EFO_0000768",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Idiopathic Pulmonary Fibrosis (IPF)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02874989",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02874989",
+        "url": "https://clinicaltrials.gov/study/NCT02874989"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL941:target:CHEMBL1936",
+      "type": "measured_against",
+      "from": "drug:CHEMBL941",
+      "to": "target:CHEMBL1936",
+      "kind": "measured",
+      "label": "64 measurements (not ranked)",
+      "meta": {
+        "n": 64,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL941:target:CHEMBL2007",
+      "type": "measured_against",
+      "from": "drug:CHEMBL941",
+      "to": "target:CHEMBL2007",
+      "kind": "measured",
+      "label": "18 measurements (not ranked)",
+      "meta": {
+        "n": 18,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL941:target:CHEMBL4014",
+      "type": "measured_against",
+      "from": "drug:CHEMBL941",
+      "to": "target:CHEMBL4014",
+      "kind": "measured",
+      "label": "11 measurements (not ranked)",
+      "meta": {
+        "n": 11,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0011996",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0011996",
+      "kind": "computed",
+      "strength": 0.8255666818618372,
+      "label": "Open Targets association 0.83",
+      "meta": {
+        "score": 0.826,
+        "ot_clinical": 0.994,
+        "ot_genetic_literature": 0.608,
+        "ot_affected_pathway": 0.967,
+        "ot_literature": 0.996,
+        "ot_genetic_association": 0.863,
+        "ot_somatic_mutation": 0.602,
+        "ot_animal_model": 0.531,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0011996",
+        "database": "Open Targets",
+        "label": "ABL1 – chronic myeloid leukemia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0011996"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0004967",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0004967",
+      "kind": "computed",
+      "strength": 0.7150775830798172,
+      "label": "Open Targets association 0.72",
+      "meta": {
+        "score": 0.715,
+        "ot_literature": 0.99,
+        "ot_affected_pathway": 0.907,
+        "ot_somatic_mutation": 0.608,
+        "ot_clinical": 0.962,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0004967",
+        "database": "Open Targets",
+        "label": "ABL1 – acute lymphoblastic leukemia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0004967"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0011719",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0011719",
+      "kind": "computed",
+      "strength": 0.5885317945566818,
+      "label": "Open Targets association 0.59",
+      "meta": {
+        "score": 0.589,
+        "ot_literature": 0.654,
+        "ot_clinical": 0.935,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0011719",
+        "database": "Open Targets",
+        "label": "ABL1 – gastrointestinal stromal tumor (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0011719"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0005575",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0005575",
+      "kind": "computed",
+      "strength": 0.5733092530942028,
+      "label": "Open Targets association 0.57",
+      "meta": {
+        "score": 0.573,
+        "ot_literature": 0.13,
+        "ot_clinical": 0.937,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0005575",
+        "database": "Open Targets",
+        "label": "ABL1 – colorectal cancer (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0005575"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0015691",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0015691",
+      "kind": "computed",
+      "strength": 0.568728916747228,
+      "label": "Open Targets association 0.57",
+      "meta": {
+        "score": 0.569,
+        "ot_literature": 0.119,
+        "ot_animal_model": 0.366,
+        "ot_clinical": 0.915,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0015691",
+        "database": "Open Targets",
+        "label": "ABL1 – hypereosinophilic syndrome (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0015691"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0011934",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0011934",
+      "kind": "computed",
+      "strength": 0.5636871663082939,
+      "label": "Open Targets association 0.56",
+      "meta": {
+        "score": 0.564,
+        "ot_literature": 0.038,
+        "ot_clinical": 0.925,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0011934",
+        "database": "Open Targets",
+        "label": "ABL1 – dermatofibrosarcoma protuberans (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0011934"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0020077",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0020077",
+      "kind": "computed",
+      "strength": 0.5517416586159614,
+      "label": "Open Targets association 0.55",
+      "meta": {
+        "score": 0.552,
+        "ot_literature": 0.018,
+        "ot_clinical": 0.907,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0020077",
+        "database": "Open Targets",
+        "label": "ABL1 – myelodysplastic/myeloproliferative disease (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0020077"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:MONDO_0018906",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:MONDO_0018906",
+      "kind": "computed",
+      "strength": 0.5247984419433518,
+      "label": "Open Targets association 0.52",
+      "meta": {
+        "score": 0.525,
+        "ot_literature": 0.044,
+        "ot_clinical": 0.861,
+        "ensemblId": "ENSG00000097007"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:MONDO_0018906",
+        "database": "Open Targets",
+        "label": "ABL1 – follicular lymphoma (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0018906"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0011719",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0011719",
+      "kind": "computed",
+      "strength": 0.8928988641486041,
+      "label": "Open Targets association 0.89",
+      "meta": {
+        "score": 0.893,
+        "ot_genetic_literature": 0.817,
+        "ot_clinical": 0.984,
+        "ot_affected_pathway": 0.899,
+        "ot_literature": 0.995,
+        "ot_genetic_association": 0.909,
+        "ot_somatic_mutation": 0.781,
+        "ot_animal_model": 0.482,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0011719",
+        "database": "Open Targets",
+        "label": "KIT – gastrointestinal stromal tumor (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0011719"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0008244",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0008244",
+      "kind": "computed",
+      "strength": 0.8159092686104038,
+      "label": "Open Targets association 0.82",
+      "meta": {
+        "score": 0.816,
+        "ot_literature": 0.049,
+        "ot_animal_model": 0.56,
+        "ot_genetic_association": 0.914,
+        "ot_genetic_literature": 0.72,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0008244",
+        "database": "Open Targets",
+        "label": "KIT – piebaldism (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0008244"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0019023",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0019023",
+      "kind": "computed",
+      "strength": 0.8102590382749962,
+      "label": "Open Targets association 0.81",
+      "meta": {
+        "score": 0.81,
+        "ot_genetic_literature": 0.76,
+        "ot_clinical": 0.426,
+        "ot_literature": 0.517,
+        "ot_genetic_association": 0.916,
+        "ot_somatic_mutation": 0.669,
+        "ot_animal_model": 0.641,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0019023",
+        "database": "Open Targets",
+        "label": "KIT – cutaneous mastocytosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0019023"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0018874",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0018874",
+      "kind": "computed",
+      "strength": 0.7413231976631857,
+      "label": "Open Targets association 0.74",
+      "meta": {
+        "score": 0.741,
+        "ot_genetic_literature": 0.608,
+        "ot_clinical": 0.912,
+        "ot_affected_pathway": 0.827,
+        "ot_literature": 0.987,
+        "ot_genetic_association": 0.316,
+        "ot_somatic_mutation": 0.622,
+        "ot_animal_model": 0.616,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0018874",
+        "database": "Open Targets",
+        "label": "KIT – acute myeloid leukemia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0018874"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0011996",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0011996",
+      "kind": "computed",
+      "strength": 0.6977508455521532,
+      "label": "Open Targets association 0.70",
+      "meta": {
+        "score": 0.698,
+        "ot_clinical": 0.987,
+        "ot_affected_pathway": 0.608,
+        "ot_literature": 0.808,
+        "ot_somatic_mutation": 0.456,
+        "ot_animal_model": 0.397,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0011996",
+        "database": "Open Targets",
+        "label": "KIT – chronic myeloid leukemia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0011996"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0007256",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0007256",
+      "kind": "computed",
+      "strength": 0.6699584493010969,
+      "label": "Open Targets association 0.67",
+      "meta": {
+        "score": 0.67,
+        "ot_literature": 0.806,
+        "ot_genetic_association": 0,
+        "ot_somatic_mutation": 0.456,
+        "ot_clinical": 0.97,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0007256",
+        "database": "Open Targets",
+        "label": "KIT – hepatocellular carcinoma (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0007256"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0007950",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0007950",
+      "kind": "computed",
+      "strength": 0.6629482007995897,
+      "label": "Open Targets association 0.66",
+      "meta": {
+        "score": 0.663,
+        "ot_genetic_literature": 0.608,
+        "ot_clinical": 0.781,
+        "ot_literature": 0.843,
+        "ot_genetic_association": 0.671,
+        "ot_somatic_mutation": 0.547,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0007950",
+        "database": "Open Targets",
+        "label": "KIT – mastocytosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0007950"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:MONDO_0016586",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:MONDO_0016586",
+      "kind": "computed",
+      "strength": 0.6289509077379037,
+      "label": "Open Targets association 0.63",
+      "meta": {
+        "score": 0.629,
+        "ot_literature": 0.908,
+        "ot_genetic_association": 0.182,
+        "ot_somatic_mutation": 0.608,
+        "ot_clinical": 0.851,
+        "ensemblId": "ENSG00000157404"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:MONDO_0016586",
+        "database": "Open Targets",
+        "label": "KIT – systemic mastocytosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0016586"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0011719",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0011719",
+      "kind": "computed",
+      "strength": 0.8245011384733189,
+      "label": "Open Targets association 0.82",
+      "meta": {
+        "score": 0.825,
+        "ot_genetic_literature": 0.547,
+        "ot_clinical": 0.979,
+        "ot_affected_pathway": 0.961,
+        "ot_literature": 0.971,
+        "ot_genetic_association": 0.647,
+        "ot_somatic_mutation": 0.762,
+        "ot_animal_model": 0.259,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0011719",
+        "database": "Open Targets",
+        "label": "PDGFRA – gastrointestinal stromal tumor (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0011719"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0018874",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0018874",
+      "kind": "computed",
+      "strength": 0.6323963150767845,
+      "label": "Open Targets association 0.63",
+      "meta": {
+        "score": 0.632,
+        "ot_literature": 0.728,
+        "ot_genetic_association": 0,
+        "ot_somatic_mutation": 0.456,
+        "ot_clinical": 0.91,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0018874",
+        "database": "Open Targets",
+        "label": "PDGFRA – acute myeloid leukemia (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0018874"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0018078",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0018078",
+      "kind": "computed",
+      "strength": 0.6115440212994495,
+      "label": "Open Targets association 0.61",
+      "meta": {
+        "score": 0.612,
+        "ot_literature": 0.112,
+        "ot_somatic_mutation": 0.456,
+        "ot_clinical": 0.889,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0018078",
+        "database": "Open Targets",
+        "label": "PDGFRA – soft tissue sarcoma (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0018078"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0005086",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0005086",
+      "kind": "computed",
+      "strength": 0.6046594230182863,
+      "label": "Open Targets association 0.60",
+      "meta": {
+        "score": 0.605,
+        "ot_literature": 0.326,
+        "ot_clinical": 0.978,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0005086",
+        "database": "Open Targets",
+        "label": "PDGFRA – renal cell carcinoma (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005086"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0005233",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0005233",
+      "kind": "computed",
+      "strength": 0.5997226610158674,
+      "label": "Open Targets association 0.60",
+      "meta": {
+        "score": 0.6,
+        "ot_literature": 0.479,
+        "ot_somatic_mutation": 0.456,
+        "ot_clinical": 0.862,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0005233",
+        "database": "Open Targets",
+        "label": "PDGFRA – non-small cell lung carcinoma (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005233"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0005575",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0005575",
+      "kind": "computed",
+      "strength": 0.5963082261015059,
+      "label": "Open Targets association 0.60",
+      "meta": {
+        "score": 0.596,
+        "ot_literature": 0.399,
+        "ot_animal_model": 0.396,
+        "ot_genetic_association": 0,
+        "ot_clinical": 0.952,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0005575",
+        "database": "Open Targets",
+        "label": "PDGFRA – colorectal cancer (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005575"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0005100",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0005100",
+      "kind": "computed",
+      "strength": 0.5426236730880218,
+      "label": "Open Targets association 0.54",
+      "meta": {
+        "score": 0.543,
+        "ot_literature": 0.77,
+        "ot_clinical": 0.854,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0005100",
+        "database": "Open Targets",
+        "label": "PDGFRA – systemic sclerosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005100"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:MONDO_0016586",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:MONDO_0016586",
+      "kind": "computed",
+      "strength": 0.5240322645266006,
+      "label": "Open Targets association 0.52",
+      "meta": {
+        "score": 0.524,
+        "ot_literature": 0.262,
+        "ot_clinical": 0.849,
+        "ensemblId": "ENSG00000134853"
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:MONDO_0016586",
+        "database": "Open Targets",
+        "label": "PDGFRA – systemic mastocytosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0016586"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL941:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL941",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2001
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL288441:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL288441",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2012
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL288441",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL1421:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL1421",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2006
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1421",
+        "database": "ChEMBL",
+        "label": "DASATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL255863:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL255863",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2007
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL255863",
+        "database": "ChEMBL",
+        "label": "NILOTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:administered_by:drug:CHEMBL4208229:route:oral",
+      "type": "administered_by",
+      "from": "drug:CHEMBL4208229",
+      "to": "route:oral",
+      "kind": "clinical",
+      "label": "Approved route: oral",
+      "meta": {
+        "route": "oral",
+        "firstApproval": 2021
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL4208229",
+        "database": "ChEMBL",
+        "label": "ASCIMINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0005233",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Carcinoma, Non-Small-Cell Lung"
+      },
+      "source": {
+        "id": "chembl-ind:22984",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: non-small cell lung carcinoma",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:EFO_0000339",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:EFO_0000339",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:23307",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: chronic myelogenous leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0004967",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0004967",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:24517",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL288441:disease:EFO_0000339",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL288441",
+      "to": "disease:EFO_0000339",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:149161",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB indication: chronic myelogenous leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2095206"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0004967",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0004967",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:25896",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0018874",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Leukemia, Myeloid, Acute"
+      },
+      "source": {
+        "id": "chembl-ind:26485",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: acute myeloid leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL217092:disease:MONDO_0005233",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL217092",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Carcinoma, Non-Small-Cell Lung"
+      },
+      "source": {
+        "id": "chembl-ind:45889",
+        "database": "ChEMBL",
+        "label": "SARACATINIB indication: non-small cell lung carcinoma",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:MONDO_0004967",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:MONDO_0004967",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:50212",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:MONDO_0018874",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Leukemia, Myeloid, Acute"
+      },
+      "source": {
+        "id": "chembl-ind:50215",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: acute myeloid leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:EFO_0000339",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:EFO_0000339",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:51607",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: chronic myelogenous leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1201740"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0015691",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0015691",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Hypereosinophilic Syndrome"
+      },
+      "source": {
+        "id": "chembl-ind:52060",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: Hypereosinophilic syndrome",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0018874",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Leukemia, Myeloid, Acute"
+      },
+      "source": {
+        "id": "chembl-ind:57411",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: acute myeloid leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:EFO_0000768",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:EFO_0000768",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Idiopathic Pulmonary Fibrosis"
+      },
+      "source": {
+        "id": "chembl-ind:57419",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: idiopathic pulmonary fibrosis",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0005233",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Carcinoma, Non-Small-Cell Lung"
+      },
+      "source": {
+        "id": "chembl-ind:57428",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: non-small cell lung carcinoma",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:EFO_0000768",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:EFO_0000768",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Idiopathic Pulmonary Fibrosis"
+      },
+      "source": {
+        "id": "chembl-ind:66086",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: idiopathic pulmonary fibrosis",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4208229:disease:MONDO_0004967",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4208229",
+      "to": "disease:MONDO_0004967",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:71240",
+        "database": "ChEMBL",
+        "label": "ASCIMINIB indication: acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4208229:disease:EFO_0000339",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4208229",
+      "to": "disease:EFO_0000339",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:143211",
+        "database": "ChEMBL",
+        "label": "ASCIMINIB indication: chronic myelogenous leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4297220"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL288441:disease:MONDO_0005233",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL288441",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Carcinoma, Non-Small-Cell Lung"
+      },
+      "source": {
+        "id": "chembl-ind:110956",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB indication: non-small cell lung carcinoma",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:MONDO_0018078",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:MONDO_0018078",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Sarcoma"
+      },
+      "source": {
+        "id": "chembl-ind:111015",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: soft tissue sarcoma",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0000870",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0000870",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:117423",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: childhood acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0016586",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0016586",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Mastocytosis, Systemic"
+      },
+      "source": {
+        "id": "chembl-ind:122243",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: systemic mastocytosis",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0018906",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0018906",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Lymphoma, Follicular"
+      },
+      "source": {
+        "id": "chembl-ind:122244",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: follicular lymphoma",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL288441:disease:MONDO_0018874",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL288441",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Leukemia, Myeloid, Acute"
+      },
+      "source": {
+        "id": "chembl-ind:128621",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB indication: acute myeloid leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2095206"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL217092:disease:MONDO_0007254",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL217092",
+      "to": "disease:MONDO_0007254",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Breast Neoplasms"
+      },
+      "source": {
+        "id": "chembl-ind:133716",
+        "database": "ChEMBL",
+        "label": "SARACATINIB indication: breast cancer",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:EFO_0000094",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:EFO_0000094",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:150492",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: B-cell acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL217092:disease:MONDO_0004975",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL217092",
+      "to": "disease:MONDO_0004975",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Alzheimer Disease"
+      },
+      "source": {
+        "id": "chembl-ind:136964",
+        "database": "ChEMBL",
+        "label": "SARACATINIB indication: Alzheimer disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0011719",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0011719",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Gastrointestinal Stromal Tumors"
+      },
+      "source": {
+        "id": "chembl-ind:137424",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: gastrointestinal stromal tumor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0011934",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0011934",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Dermatofibrosarcoma"
+      },
+      "source": {
+        "id": "chembl-ind:137425",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: dermatofibrosarcoma protuberans",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0011719",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0011719",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Indicated (phase 2)",
+      "meta": {
+        "maxPhaseForInd": 2,
+        "meshHeading": "Gastrointestinal Stromal Tumors"
+      },
+      "source": {
+        "id": "chembl-ind:140483",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: gastrointestinal stromal tumor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:MONDO_0004975",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:MONDO_0004975",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Alzheimer Disease"
+      },
+      "source": {
+        "id": "chembl-ind:140491",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: Alzheimer disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:MONDO_0011719",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:MONDO_0011719",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Indicated (phase 3)",
+      "meta": {
+        "maxPhaseForInd": 3,
+        "meshHeading": "Gastrointestinal Stromal Tumors"
+      },
+      "source": {
+        "id": "chembl-ind:140495",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: gastrointestinal stromal tumor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:EFO_1000131",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:EFO_1000131",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:145990",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL4208229:disease:EFO_1000131",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL4208229",
+      "to": "disease:EFO_1000131",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:147791",
+        "database": "ChEMBL",
+        "label": "ASCIMINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4297220"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL288441:disease:MONDO_0004643",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL288441",
+      "to": "disease:MONDO_0004643",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myeloid"
+      },
+      "source": {
+        "id": "chembl-ind:149162",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB indication: myeloid leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2095206"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:EFO_1000131",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:EFO_1000131",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:150494",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0020077",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0020077",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Myelodysplastic-Myeloproliferative Diseases"
+      },
+      "source": {
+        "id": "chembl-ind:150496",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: myelodysplastic/myeloproliferative disease",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:MONDO_0005575",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:MONDO_0005575",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Colorectal Neoplasms"
+      },
+      "source": {
+        "id": "chembl-ind:152741",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: colorectal cancer",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL941:disease:MONDO_0005575",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0005575",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Indicated (phase 1)",
+      "meta": {
+        "maxPhaseForInd": 1,
+        "meshHeading": "Colorectal Neoplasms"
+      },
+      "source": {
+        "id": "chembl-ind:153480",
+        "database": "ChEMBL",
+        "label": "IMATINIB indication: colorectal cancer",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL255863:disease:EFO_1000131",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL255863",
+      "to": "disease:EFO_1000131",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive"
+      },
+      "source": {
+        "id": "chembl-ind:153907",
+        "database": "ChEMBL",
+        "label": "NILOTINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1201740"
+      }
+    },
+    {
+      "id": "e:indicated_for:drug:CHEMBL1421:disease:EFO_0000094",
+      "type": "indicated_for",
+      "from": "drug:CHEMBL1421",
+      "to": "disease:EFO_0000094",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Indicated (approved)",
+      "meta": {
+        "maxPhaseForInd": 4,
+        "meshHeading": "Precursor Cell Lymphoblastic Leukemia-Lymphoma"
+      },
+      "source": {
+        "id": "chembl-ind:157295",
+        "database": "ChEMBL",
+        "label": "DASATINIB indication: B-cell acute lymphoblastic leukemia",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL5416410"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL255863:target:CHEMBL1862",
+      "type": "mechanism",
+      "from": "drug:CHEMBL255863",
+      "to": "target:CHEMBL1862",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Tyrosine-protein kinase ABL inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:300",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Tyrosine-protein kinase ABL inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL1421:target:CHEMBL1862",
+      "type": "mechanism",
+      "from": "drug:CHEMBL1421",
+      "to": "target:CHEMBL1862",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Tyrosine-protein kinase ABL inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:301",
+        "database": "ChEMBL",
+        "label": "DASATINIB: Tyrosine-protein kinase ABL inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL288441:target:CHEMBL1862",
+      "type": "mechanism",
+      "from": "drug:CHEMBL288441",
+      "to": "target:CHEMBL1862",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Tyrosine-protein kinase ABL inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:302",
+        "database": "ChEMBL",
+        "label": "BOSUTINIB: Tyrosine-protein kinase ABL inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL941:target:CHEMBL1862",
+      "type": "mechanism",
+      "from": "drug:CHEMBL941",
+      "to": "target:CHEMBL1862",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Tyrosine-protein kinase ABL inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:304",
+        "database": "ChEMBL",
+        "label": "IMATINIB: Tyrosine-protein kinase ABL inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL4208229:target:CHEMBL1862",
+      "type": "mechanism",
+      "from": "drug:CHEMBL4208229",
+      "to": "target:CHEMBL1862",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Tyrosine-protein kinase ABL inhibitor",
+        "maxPhase": 4
+      },
+      "source": {
+        "id": "chembl-mech:4093",
+        "database": "ChEMBL",
+        "label": "ASCIMINIB: Tyrosine-protein kinase ABL inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+      }
+    },
+    {
+      "id": "e:mechanism:drug:CHEMBL217092:target:CHEMBL1862",
+      "type": "mechanism",
+      "from": "drug:CHEMBL217092",
+      "to": "target:CHEMBL1862",
+      "kind": "clinical",
+      "label": "INHIBITOR",
+      "meta": {
+        "directInteraction": true,
+        "mechanismOfAction": "Tyrosine-protein kinase ABL inhibitor",
+        "maxPhase": 3
+      },
+      "source": {
+        "id": "chembl-mech:5254",
+        "database": "ChEMBL",
+        "label": "SARACATINIB: Tyrosine-protein kinase ABL inhibitor",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL941:disease:MONDO_0007256",
+      "type": "absent",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0007256",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.293Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"hepatocellular carcinoma\""
+      },
+      "source": {
+        "id": "check:CHEMBL941:MONDO_0007256",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"hepatocellular carcinoma\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Imatinib&cond=hepatocellular+carcinoma&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00763763",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00763763",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00763763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00763763",
+        "url": "https://clinicaltrials.gov/study/NCT00763763"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00763763:disease:MONDO_0018874",
+      "type": "for_disease",
+      "from": "trial:NCT00763763",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"acute myeloid leukemia\""
+      },
+      "source": {
+        "id": "nct:NCT00763763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00763763",
+        "url": "https://clinicaltrials.gov/study/NCT00763763"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00101595",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00101595",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00101595",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00101595",
+        "url": "https://clinicaltrials.gov/study/NCT00101595"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00101595:disease:MONDO_0018874",
+      "type": "for_disease",
+      "from": "trial:NCT00101595",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"acute myeloid leukemia\""
+      },
+      "source": {
+        "id": "nct:NCT00101595",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00101595",
+        "url": "https://clinicaltrials.gov/study/NCT00101595"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT01077544",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT01077544",
+      "kind": "clinical",
+      "strength": 1,
+      "label": "Phase 1 · Completed",
+      "meta": {
+        "phase": "Phase 1",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01077544",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01077544",
+        "url": "https://clinicaltrials.gov/study/NCT01077544"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01077544:disease:MONDO_0018874",
+      "type": "for_disease",
+      "from": "trial:NCT01077544",
+      "to": "disease:MONDO_0018874",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"acute myeloid leukemia\""
+      },
+      "source": {
+        "id": "nct:NCT01077544",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01077544",
+        "url": "https://clinicaltrials.gov/study/NCT01077544"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00171912",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00171912",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00171912",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00171912",
+        "url": "https://clinicaltrials.gov/study/NCT00171912"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00171912:disease:MONDO_0018078",
+      "type": "for_disease",
+      "from": "trial:NCT00171912",
+      "to": "disease:MONDO_0018078",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"soft tissue sarcoma\""
+      },
+      "source": {
+        "id": "nct:NCT00171912",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00171912",
+        "url": "https://clinicaltrials.gov/study/NCT00171912"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT02413736",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT02413736",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Active, not recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02413736",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02413736",
+        "url": "https://clinicaltrials.gov/study/NCT02413736"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02413736:disease:MONDO_0018078",
+      "type": "for_disease",
+      "from": "trial:NCT02413736",
+      "to": "disease:MONDO_0018078",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"soft tissue sarcoma\""
+      },
+      "source": {
+        "id": "nct:NCT02413736",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02413736",
+        "url": "https://clinicaltrials.gov/study/NCT02413736"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00084630",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00084630",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00084630",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00084630",
+        "url": "https://clinicaltrials.gov/study/NCT00084630"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00084630:disease:MONDO_0018078",
+      "type": "for_disease",
+      "from": "trial:NCT00084630",
+      "to": "disease:MONDO_0018078",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"soft tissue sarcoma\""
+      },
+      "source": {
+        "id": "nct:NCT00084630",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00084630",
+        "url": "https://clinicaltrials.gov/study/NCT00084630"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00222144",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00222144",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00222144",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00222144",
+        "url": "https://clinicaltrials.gov/study/NCT00222144"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00222144:disease:MONDO_0005233",
+      "type": "for_disease",
+      "from": "trial:NCT00222144",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"non-small cell lung carcinoma\""
+      },
+      "source": {
+        "id": "nct:NCT00222144",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00222144",
+        "url": "https://clinicaltrials.gov/study/NCT00222144"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT01011075",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT01011075",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01011075",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01011075",
+        "url": "https://clinicaltrials.gov/study/NCT01011075"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01011075:disease:MONDO_0005233",
+      "type": "for_disease",
+      "from": "trial:NCT01011075",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"non-small cell lung carcinoma\""
+      },
+      "source": {
+        "id": "nct:NCT01011075",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01011075",
+        "url": "https://clinicaltrials.gov/study/NCT01011075"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00425646",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00425646",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00425646",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00425646",
+        "url": "https://clinicaltrials.gov/study/NCT00425646"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00425646:disease:MONDO_0005233",
+      "type": "for_disease",
+      "from": "trial:NCT00425646",
+      "to": "disease:MONDO_0005233",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"non-small cell lung carcinoma\""
+      },
+      "source": {
+        "id": "nct:NCT00425646",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00425646",
+        "url": "https://clinicaltrials.gov/study/NCT00425646"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00171912:disease:MONDO_0016586",
+      "type": "for_disease",
+      "from": "trial:NCT00171912",
+      "to": "disease:MONDO_0016586",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"systemic mastocytosis\""
+      },
+      "source": {
+        "id": "nct:NCT00171912",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00171912",
+        "url": "https://clinicaltrials.gov/study/NCT00171912"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00109707",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00109707",
+      "kind": "clinical",
+      "strength": 1.5,
+      "label": "Phase 1/2 · Completed",
+      "meta": {
+        "phase": "Phase 1/2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00109707",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00109707",
+        "url": "https://clinicaltrials.gov/study/NCT00109707"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00109707:disease:MONDO_0016586",
+      "type": "for_disease",
+      "from": "trial:NCT00109707",
+      "to": "disease:MONDO_0016586",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"systemic mastocytosis\""
+      },
+      "source": {
+        "id": "nct:NCT00109707",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00109707",
+        "url": "https://clinicaltrials.gov/study/NCT00109707"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00154388",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00154388",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT00154388",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00154388",
+        "url": "https://clinicaltrials.gov/study/NCT00154388"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00154388:disease:MONDO_0016586",
+      "type": "for_disease",
+      "from": "trial:NCT00154388",
+      "to": "disease:MONDO_0016586",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"systemic mastocytosis\""
+      },
+      "source": {
+        "id": "nct:NCT00154388",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00154388",
+        "url": "https://clinicaltrials.gov/study/NCT00154388"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00171912:disease:MONDO_0007950",
+      "type": "for_disease",
+      "from": "trial:NCT00171912",
+      "to": "disease:MONDO_0007950",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"mastocytosis\""
+      },
+      "source": {
+        "id": "nct:NCT00171912",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00171912",
+        "url": "https://clinicaltrials.gov/study/NCT00171912"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00038675",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00038675",
+      "kind": "clinical",
+      "label": "N/A · Completed",
+      "meta": {
+        "phase": "N/A",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00038675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00038675",
+        "url": "https://clinicaltrials.gov/study/NCT00038675"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00038675:disease:MONDO_0007950",
+      "type": "for_disease",
+      "from": "trial:NCT00038675",
+      "to": "disease:MONDO_0007950",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"mastocytosis\""
+      },
+      "source": {
+        "id": "nct:NCT00038675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00038675",
+        "url": "https://clinicaltrials.gov/study/NCT00038675"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00109707:disease:MONDO_0007950",
+      "type": "for_disease",
+      "from": "trial:NCT00109707",
+      "to": "disease:MONDO_0007950",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"mastocytosis\""
+      },
+      "source": {
+        "id": "nct:NCT00109707",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00109707",
+        "url": "https://clinicaltrials.gov/study/NCT00109707"
+      }
+    },
+    {
+      "id": "e:absent:drug:CHEMBL941:disease:MONDO_0019023",
+      "type": "absent",
+      "from": "drug:CHEMBL941",
+      "to": "disease:MONDO_0019023",
+      "kind": "absent",
+      "label": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+      "meta": {
+        "checked": [
+          "indication",
+          "trial"
+        ],
+        "checkedAt": "2026-10-28T23:01:27.293Z",
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"cutaneous mastocytosis\""
+      },
+      "source": {
+        "id": "check:CHEMBL941:MONDO_0019023",
+        "database": "ClinicalTrials.gov",
+        "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"cutaneous mastocytosis\"; no ChEMBL drug_indication row",
+        "url": "https://clinicaltrials.gov/search?intr=Imatinib&cond=cutaneous+mastocytosis&aggFilters=studyType%3Aint"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT05970900",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT05970900",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Not yet recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Not yet recruiting",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT05970900",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05970900",
+        "url": "https://clinicaltrials.gov/study/NCT05970900"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT05970900:disease:MONDO_0008244",
+      "type": "for_disease",
+      "from": "trial:NCT05970900",
+      "to": "disease:MONDO_0008244",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"piebaldism\""
+      },
+      "source": {
+        "id": "nct:NCT05970900",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05970900",
+        "url": "https://clinicaltrials.gov/study/NCT05970900"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT00237185",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT00237185",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00237185",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00237185",
+        "url": "https://clinicaltrials.gov/study/NCT00237185"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00237185:disease:MONDO_0008244",
+      "type": "for_disease",
+      "from": "trial:NCT00237185",
+      "to": "disease:MONDO_0008244",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"piebaldism\""
+      },
+      "source": {
+        "id": "nct:NCT00237185",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00237185",
+        "url": "https://clinicaltrials.gov/study/NCT00237185"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL941:trial:NCT01126814",
+      "type": "tested_in",
+      "from": "drug:CHEMBL941",
+      "to": "trial:NCT01126814",
+      "kind": "clinical",
+      "strength": 1.5,
+      "label": "Phase 1/2 · Completed",
+      "meta": {
+        "phase": "Phase 1/2",
+        "status": "Completed",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT01126814",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01126814",
+        "url": "https://clinicaltrials.gov/study/NCT01126814"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01126814:disease:MONDO_0008244",
+      "type": "for_disease",
+      "from": "trial:NCT01126814",
+      "to": "disease:MONDO_0008244",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"piebaldism\""
+      },
+      "source": {
+        "id": "nct:NCT01126814",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01126814",
+        "url": "https://clinicaltrials.gov/study/NCT01126814"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1862:disease:EFO_0000768",
+      "type": "associated_with",
+      "from": "target:CHEMBL1862",
+      "to": "disease:EFO_0000768",
+      "kind": "computed",
+      "strength": 0.2031251945775419,
+      "label": "Open Targets association 0.20",
+      "meta": {
+        "score": 0.203,
+        "ot_literature": 0.012,
+        "ot_clinical": 0.334,
+        "ensemblId": "ENSG00000097007",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000097007:EFO_0000768",
+        "database": "Open Targets",
+        "label": "ABL1 – idiopathic pulmonary fibrosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000097007/EFO_0000768"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1936:disease:EFO_0000768",
+      "type": "associated_with",
+      "from": "target:CHEMBL1936",
+      "to": "disease:EFO_0000768",
+      "kind": "computed",
+      "strength": 0.20406136088167245,
+      "label": "Open Targets association 0.20",
+      "meta": {
+        "score": 0.204,
+        "ot_literature": 0.026,
+        "ot_clinical": 0.334,
+        "ensemblId": "ENSG00000157404",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000157404:EFO_0000768",
+        "database": "Open Targets",
+        "label": "KIT – idiopathic pulmonary fibrosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000157404/EFO_0000768"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL2007:disease:EFO_0000768",
+      "type": "associated_with",
+      "from": "target:CHEMBL2007",
+      "to": "disease:EFO_0000768",
+      "kind": "computed",
+      "strength": 0.5997321825732761,
+      "label": "Open Targets association 0.60",
+      "meta": {
+        "score": 0.6,
+        "ot_literature": 0.036,
+        "ot_animal_model": 0.403,
+        "ot_clinical": 0.966,
+        "ensemblId": "ENSG00000134853",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000134853:EFO_0000768",
+        "database": "Open Targets",
+        "label": "PDGFRA – idiopathic pulmonary fibrosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000134853/EFO_0000768"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL941:target:CHEMBL1913",
+      "type": "measured_against",
+      "from": "drug:CHEMBL941",
+      "to": "target:CHEMBL1913",
+      "kind": "measured",
+      "label": "10 measurements (not ranked)",
+      "meta": {
+        "n": 10,
+        "ranked": false
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    {
+      "id": "e:associated_with:target:CHEMBL1913:disease:EFO_0000768",
+      "type": "associated_with",
+      "from": "target:CHEMBL1913",
+      "to": "disease:EFO_0000768",
+      "kind": "computed",
+      "strength": 0.5906636037832488,
+      "label": "Open Targets association 0.59",
+      "meta": {
+        "score": 0.591,
+        "ot_literature": 0.105,
+        "ot_clinical": 0.966,
+        "ensemblId": "ENSG00000113721",
+        "direct": true
+      },
+      "source": {
+        "id": "ot-assoc:ENSG00000113721:EFO_0000768",
+        "database": "Open Targets",
+        "label": "PDGFRB – idiopathic pulmonary fibrosis (Open Targets)",
+        "url": "https://platform.opentargets.org/evidence/ENSG00000113721/EFO_0000768"
+      }
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hyp:query",
+      "template": "query_disease",
+      "status": "already_tested",
+      "statement": "Imatinib for idiopathic pulmonary fibrosis via Platelet-derived growth factor receptor alpha (Open Targets 0.6) was already tested (NCT00131274)",
+      "drugId": "drug:CHEMBL941",
+      "targetId": "target:CHEMBL2007",
+      "diseaseId": "disease:EFO_0000768",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL2007",
+        "e:associated_with:target:CHEMBL2007:disease:EFO_0000768",
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL1913",
+        "e:associated_with:target:CHEMBL1913:disease:EFO_0000768",
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL1936",
+        "e:associated_with:target:CHEMBL1936:disease:EFO_0000768",
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL1862",
+        "e:associated_with:target:CHEMBL1862:disease:EFO_0000768",
+        "e:indicated_for:drug:CHEMBL941:disease:EFO_0000768",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00131274",
+        "e:for_disease:trial:NCT00131274:disease:EFO_0000768"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Platelet-derived growth factor receptor alpha",
+          "value": "18 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "measured",
+          "label": "Measured potency on Platelet-derived growth factor receptor beta",
+          "value": "10 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "measured",
+          "label": "Measured potency on Mast/stem cell growth factor receptor Kit",
+          "value": "64 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "measured",
+          "label": "Measured potency on Tyrosine-protein kinase ABL1",
+          "value": "median pChEMBL 6.63 (n=17, 5.96–7.6)",
+          "sourceIds": [
+            "chembl-act:909963"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–idiopathic pulmonary fibrosis: animal model",
+          "value": "0.40",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:EFO_0000768"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–idiopathic pulmonary fibrosis: clinical",
+          "value": "0.97",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:EFO_0000768"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–idiopathic pulmonary fibrosis: literature",
+          "value": "0.04",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:EFO_0000768"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for idiopathic pulmonary fibrosis",
+          "value": "phase 1 — Dasatinib",
+          "sourceIds": [
+            "chembl-ind:66086"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Gap check",
+          "value": "interventional trial(s) found: NCT00131274",
+          "sourceIds": [
+            "nct:NCT00131274"
+          ]
+        }
+      ],
+      "suggestedTest": "Read the posted trial(s) NCT00131274 before proposing a new study.",
+      "sourceIds": [
+        "chembl-mol:CHEMBL941",
+        "ot-assoc:ENSG00000134853:EFO_0000768",
+        "ot-assoc:ENSG00000113721:EFO_0000768",
+        "ot-assoc:ENSG00000157404:EFO_0000768",
+        "chembl-act:909963",
+        "ot-assoc:ENSG00000097007:EFO_0000768",
+        "chembl-ind:57419",
+        "nct:NCT00131274"
+      ]
+    },
+    {
+      "id": "hyp:1",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Imatinib could be repurposed for hepatocellular carcinoma via Mast/stem cell growth factor receptor Kit",
+      "drugId": "drug:CHEMBL941",
+      "targetId": "target:CHEMBL1936",
+      "diseaseId": "disease:MONDO_0007256",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL1936",
+        "e:associated_with:target:CHEMBL1936:disease:MONDO_0007256",
+        "e:absent:drug:CHEMBL941:disease:MONDO_0007256"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Mast/stem cell growth factor receptor Kit",
+          "value": "64 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–hepatocellular carcinoma: genetic association",
+          "value": "< 0.01",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0007256"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–hepatocellular carcinoma: somatic mutation",
+          "value": "0.46",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0007256"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–hepatocellular carcinoma: clinical",
+          "value": "0.97",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0007256"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–hepatocellular carcinoma: literature",
+          "value": "0.81",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0007256"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for hepatocellular carcinoma",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Imatinib",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Imatinib",
+          "value": "Oral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL941:MONDO_0007256"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a hepatocellular carcinoma-relevant cell model; nearest existing measurement: Mast/stem cell growth factor receptor Kit / IC50 59 nM (CHEMBL5381729).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL941",
+        "ot-assoc:ENSG00000157404:MONDO_0007256",
+        "check:CHEMBL941:MONDO_0007256"
+      ]
+    },
+    {
+      "id": "hyp:2",
+      "template": "off_target_hop",
+      "status": "proposed",
+      "statement": "Imatinib could be repurposed for cutaneous mastocytosis via Mast/stem cell growth factor receptor Kit",
+      "drugId": "drug:CHEMBL941",
+      "targetId": "target:CHEMBL1936",
+      "diseaseId": "disease:MONDO_0019023",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL1936",
+        "e:associated_with:target:CHEMBL1936:disease:MONDO_0019023",
+        "e:absent:drug:CHEMBL941:disease:MONDO_0019023"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Mast/stem cell growth factor receptor Kit",
+          "value": "64 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–cutaneous mastocytosis: genetic association",
+          "value": "0.92",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0019023"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–cutaneous mastocytosis: somatic mutation",
+          "value": "0.67",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0019023"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–cutaneous mastocytosis: genetic literature",
+          "value": "0.76",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0019023"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–cutaneous mastocytosis: animal model",
+          "value": "0.64",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0019023"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–cutaneous mastocytosis: clinical",
+          "value": "0.43",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0019023"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–cutaneous mastocytosis: literature",
+          "value": "0.52",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0019023"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for cutaneous mastocytosis",
+          "value": "none in the retrieved records",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Imatinib",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Imatinib",
+          "value": "Oral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "absent",
+          "label": "Gap check",
+          "value": "Not found: no ChEMBL indication and no interventional trial (searched 2026-10-28)",
+          "sourceIds": [
+            "check:CHEMBL941:MONDO_0019023"
+          ]
+        }
+      ],
+      "suggestedTest": "Run a cutaneous mastocytosis-relevant cell model; nearest existing measurement: Mast/stem cell growth factor receptor Kit / IC50 59 nM (CHEMBL5381729).",
+      "sourceIds": [
+        "chembl-mol:CHEMBL941",
+        "ot-assoc:ENSG00000157404:MONDO_0019023",
+        "check:CHEMBL941:MONDO_0019023"
+      ]
+    },
+    {
+      "id": "hyp:3",
+      "template": "off_target_hop",
+      "status": "already_tested",
+      "statement": "Imatinib for acute myeloid leukemia via Mast/stem cell growth factor receptor Kit was already tested (NCT00763763, NCT00101595, NCT01077544)",
+      "drugId": "drug:CHEMBL941",
+      "targetId": "target:CHEMBL1936",
+      "diseaseId": "disease:MONDO_0018874",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL1936",
+        "e:associated_with:target:CHEMBL1936:disease:MONDO_0018874",
+        "e:indicated_for:drug:CHEMBL941:disease:MONDO_0018874",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00763763",
+        "e:for_disease:trial:NCT00763763:disease:MONDO_0018874",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00101595",
+        "e:for_disease:trial:NCT00101595:disease:MONDO_0018874",
+        "e:tested_in:drug:CHEMBL941:trial:NCT01077544",
+        "e:for_disease:trial:NCT01077544:disease:MONDO_0018874"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Mast/stem cell growth factor receptor Kit",
+          "value": "64 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: genetic association",
+          "value": "0.32",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: somatic mutation",
+          "value": "0.62",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: genetic literature",
+          "value": "0.61",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: animal model",
+          "value": "0.62",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: clinical",
+          "value": "0.91",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: affected pathway",
+          "value": "0.83",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets KIT–acute myeloid leukemia: literature",
+          "value": "0.99",
+          "sourceIds": [
+            "ot-assoc:ENSG00000157404:MONDO_0018874"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for acute myeloid leukemia",
+          "value": "phase 3 — Dasatinib",
+          "sourceIds": [
+            "chembl-ind:26485"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Imatinib",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Imatinib",
+          "value": "Oral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Gap check",
+          "value": "interventional trial(s) found: NCT00763763, NCT00101595, NCT01077544",
+          "sourceIds": [
+            "nct:NCT00763763",
+            "nct:NCT00101595",
+            "nct:NCT01077544"
+          ]
+        }
+      ],
+      "suggestedTest": "Read the posted trial(s) NCT00763763, NCT00101595, NCT01077544 before proposing a new study.",
+      "sourceIds": [
+        "chembl-mol:CHEMBL941",
+        "ot-assoc:ENSG00000157404:MONDO_0018874",
+        "chembl-ind:57411",
+        "nct:NCT00763763",
+        "nct:NCT00101595",
+        "nct:NCT01077544"
+      ]
+    },
+    {
+      "id": "hyp:4",
+      "template": "off_target_hop",
+      "status": "already_tested",
+      "statement": "Imatinib for soft tissue sarcoma via Platelet-derived growth factor receptor alpha was already tested (NCT00171912, NCT02413736, NCT00084630)",
+      "drugId": "drug:CHEMBL941",
+      "targetId": "target:CHEMBL2007",
+      "diseaseId": "disease:MONDO_0018078",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL2007",
+        "e:associated_with:target:CHEMBL2007:disease:MONDO_0018078",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00171912",
+        "e:for_disease:trial:NCT00171912:disease:MONDO_0018078",
+        "e:tested_in:drug:CHEMBL941:trial:NCT02413736",
+        "e:for_disease:trial:NCT02413736:disease:MONDO_0018078",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00084630",
+        "e:for_disease:trial:NCT00084630:disease:MONDO_0018078"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Platelet-derived growth factor receptor alpha",
+          "value": "18 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–soft tissue sarcoma: somatic mutation",
+          "value": "0.46",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:MONDO_0018078"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–soft tissue sarcoma: clinical",
+          "value": "0.89",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:MONDO_0018078"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–soft tissue sarcoma: literature",
+          "value": "0.11",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:MONDO_0018078"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for soft tissue sarcoma",
+          "value": "phase 3 — Nilotinib",
+          "sourceIds": [
+            "chembl-ind:111015"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Imatinib",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Imatinib",
+          "value": "Oral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Gap check",
+          "value": "interventional trial(s) found: NCT00171912, NCT02413736, NCT00084630",
+          "sourceIds": [
+            "nct:NCT00171912",
+            "nct:NCT02413736",
+            "nct:NCT00084630"
+          ]
+        }
+      ],
+      "suggestedTest": "Read the posted trial(s) NCT00171912, NCT02413736, NCT00084630 before proposing a new study.",
+      "sourceIds": [
+        "chembl-mol:CHEMBL941",
+        "ot-assoc:ENSG00000134853:MONDO_0018078",
+        "nct:NCT00171912",
+        "nct:NCT02413736",
+        "nct:NCT00084630"
+      ]
+    },
+    {
+      "id": "hyp:5",
+      "template": "off_target_hop",
+      "status": "already_tested",
+      "statement": "Imatinib for non-small cell lung carcinoma via Platelet-derived growth factor receptor alpha was already tested (NCT00222144, NCT01011075, NCT00425646)",
+      "drugId": "drug:CHEMBL941",
+      "targetId": "target:CHEMBL2007",
+      "diseaseId": "disease:MONDO_0005233",
+      "pathEdgeIds": [
+        "e:measured_against:drug:CHEMBL941:target:CHEMBL2007",
+        "e:associated_with:target:CHEMBL2007:disease:MONDO_0005233",
+        "e:indicated_for:drug:CHEMBL941:disease:MONDO_0005233",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00222144",
+        "e:for_disease:trial:NCT00222144:disease:MONDO_0005233",
+        "e:tested_in:drug:CHEMBL941:trial:NCT01011075",
+        "e:for_disease:trial:NCT01011075:disease:MONDO_0005233",
+        "e:tested_in:drug:CHEMBL941:trial:NCT00425646",
+        "e:for_disease:trial:NCT00425646:disease:MONDO_0005233"
+      ],
+      "ladder": [
+        {
+          "kind": "measured",
+          "label": "Measured potency on Platelet-derived growth factor receptor alpha",
+          "value": "18 measurement(s), not ranked against comparators",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–non-small cell lung carcinoma: somatic mutation",
+          "value": "0.46",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:MONDO_0005233"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–non-small cell lung carcinoma: clinical",
+          "value": "0.86",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:MONDO_0005233"
+          ]
+        },
+        {
+          "kind": "computed",
+          "label": "Open Targets PDGFRA–non-small cell lung carcinoma: literature",
+          "value": "0.48",
+          "sourceIds": [
+            "ot-assoc:ENSG00000134853:MONDO_0005233"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Clinical precedent: highest phase of a same-target drug for non-small cell lung carcinoma",
+          "value": "phase 2 — Dasatinib",
+          "sourceIds": [
+            "chembl-ind:22984"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety flags on Imatinib",
+          "value": "no ChEMBL drug warning recorded",
+          "sourceIds": []
+        },
+        {
+          "kind": "clinical",
+          "label": "Approved route(s) of Imatinib",
+          "value": "Oral",
+          "sourceIds": [
+            "chembl-mol:CHEMBL941"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Gap check",
+          "value": "interventional trial(s) found: NCT00222144, NCT01011075, NCT00425646",
+          "sourceIds": [
+            "nct:NCT00222144",
+            "nct:NCT01011075",
+            "nct:NCT00425646"
+          ]
+        }
+      ],
+      "suggestedTest": "Read the posted trial(s) NCT00222144, NCT01011075, NCT00425646 before proposing a new study.",
+      "sourceIds": [
+        "chembl-mol:CHEMBL941",
+        "ot-assoc:ENSG00000134853:MONDO_0005233",
+        "chembl-ind:57428",
+        "nct:NCT00222144",
+        "nct:NCT01011075",
+        "nct:NCT00425646"
+      ]
+    }
+  ],
+  "builtAt": "2026-10-28T23:01:27.295Z",
+  "sources": [
+    {
+      "id": "chembl-target:CHEMBL1862",
+      "database": "ChEMBL",
+      "label": "CHEMBL1862",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1862"
+    },
+    {
+      "id": "chembl-mol:CHEMBL941",
+      "database": "ChEMBL",
+      "label": "IMATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+    },
+    {
+      "id": "chembl-act:909963",
+      "database": "ChEMBL",
+      "label": "Activity 909963 (CHEMBL846547)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL846547"
+    },
+    {
+      "id": "chembl-mol:CHEMBL288441",
+      "database": "ChEMBL",
+      "label": "BOSUTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+    },
+    {
+      "id": "chembl-act:1615494",
+      "database": "ChEMBL",
+      "label": "Activity 1615494 (CHEMBL882911)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL882911"
+    },
+    {
+      "id": "chembl-mol:CHEMBL1421",
+      "database": "ChEMBL",
+      "label": "DASATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-act:2000756",
+      "database": "ChEMBL",
+      "label": "Activity 2000756 (CHEMBL901542)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL901542"
+    },
+    {
+      "id": "chembl-mol:CHEMBL255863",
+      "database": "ChEMBL",
+      "label": "NILOTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-act:3186251",
+      "database": "ChEMBL",
+      "label": "Activity 3186251 (CHEMBL1110556)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1110556"
+    },
+    {
+      "id": "chembl-mol:CHEMBL4208229",
+      "database": "ChEMBL",
+      "label": "ASCIMINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+    },
+    {
+      "id": "chembl-act:29002802",
+      "database": "ChEMBL",
+      "label": "Activity 29002802 (CHEMBL5739300)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+    },
+    {
+      "id": "chembl-mol:CHEMBL217092",
+      "database": "ChEMBL",
+      "label": "SARACATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+    },
+    {
+      "id": "chembl-act:1779385",
+      "database": "ChEMBL",
+      "label": "Activity 1779385 (CHEMBL854973)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL854973"
+    },
+    {
+      "id": "chembl-warn:1330",
+      "database": "ChEMBL",
+      "label": "NILOTINIB: Black Box Warning (cardiotoxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6093952a-5248-45cb-ad17-33716a411146"
+    },
+    {
+      "id": "chembl-warn:5218",
+      "database": "ChEMBL",
+      "label": "NILOTINIB: Black Box Warning (musculoskeletal toxicity)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "nct:NCT00131274",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00131274",
+      "url": "https://clinicaltrials.gov/study/NCT00131274"
+    },
+    {
+      "id": "nct:NCT04598919",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04598919",
+      "url": "https://clinicaltrials.gov/study/NCT04598919"
+    },
+    {
+      "id": "nct:NCT02874989",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02874989",
+      "url": "https://clinicaltrials.gov/study/NCT02874989"
+    },
+    {
+      "id": "chembl-target:CHEMBL1936",
+      "database": "ChEMBL",
+      "label": "Mast/stem cell growth factor receptor Kit (CHEMBL1936)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1936"
+    },
+    {
+      "id": "chembl-target:CHEMBL2007",
+      "database": "ChEMBL",
+      "label": "Platelet-derived growth factor receptor alpha (CHEMBL2007)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL2007"
+    },
+    {
+      "id": "chembl-target:CHEMBL4014",
+      "database": "ChEMBL",
+      "label": "Tyrosine-protein kinase ABL2 (CHEMBL4014)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL4014"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0011996",
+      "database": "Open Targets",
+      "label": "ABL1 – chronic myeloid leukemia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0011996"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0004967",
+      "database": "Open Targets",
+      "label": "ABL1 – acute lymphoblastic leukemia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0004967"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0011719",
+      "database": "Open Targets",
+      "label": "ABL1 – gastrointestinal stromal tumor (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0011719"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0005575",
+      "database": "Open Targets",
+      "label": "ABL1 – colorectal cancer (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0005575"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0015691",
+      "database": "Open Targets",
+      "label": "ABL1 – hypereosinophilic syndrome (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0015691"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0011934",
+      "database": "Open Targets",
+      "label": "ABL1 – dermatofibrosarcoma protuberans (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0011934"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0020077",
+      "database": "Open Targets",
+      "label": "ABL1 – myelodysplastic/myeloproliferative disease (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0020077"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:MONDO_0018906",
+      "database": "Open Targets",
+      "label": "ABL1 – follicular lymphoma (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/MONDO_0018906"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0011719",
+      "database": "Open Targets",
+      "label": "KIT – gastrointestinal stromal tumor (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0011719"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0008244",
+      "database": "Open Targets",
+      "label": "KIT – piebaldism (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0008244"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0019023",
+      "database": "Open Targets",
+      "label": "KIT – cutaneous mastocytosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0019023"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0018874",
+      "database": "Open Targets",
+      "label": "KIT – acute myeloid leukemia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0018874"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0011996",
+      "database": "Open Targets",
+      "label": "KIT – chronic myeloid leukemia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0011996"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0007256",
+      "database": "Open Targets",
+      "label": "KIT – hepatocellular carcinoma (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0007256"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0007950",
+      "database": "Open Targets",
+      "label": "KIT – mastocytosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0007950"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:MONDO_0016586",
+      "database": "Open Targets",
+      "label": "KIT – systemic mastocytosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/MONDO_0016586"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0011719",
+      "database": "Open Targets",
+      "label": "PDGFRA – gastrointestinal stromal tumor (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0011719"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0018874",
+      "database": "Open Targets",
+      "label": "PDGFRA – acute myeloid leukemia (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0018874"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0018078",
+      "database": "Open Targets",
+      "label": "PDGFRA – soft tissue sarcoma (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0018078"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0005086",
+      "database": "Open Targets",
+      "label": "PDGFRA – renal cell carcinoma (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005086"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0005233",
+      "database": "Open Targets",
+      "label": "PDGFRA – non-small cell lung carcinoma (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005233"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0005575",
+      "database": "Open Targets",
+      "label": "PDGFRA – colorectal cancer (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005575"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0005100",
+      "database": "Open Targets",
+      "label": "PDGFRA – systemic sclerosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0005100"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:MONDO_0016586",
+      "database": "Open Targets",
+      "label": "PDGFRA – systemic mastocytosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/MONDO_0016586"
+    },
+    {
+      "id": "chembl-ind:22984",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: non-small cell lung carcinoma",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:23307",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: chronic myelogenous leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:24517",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:149161",
+      "database": "ChEMBL",
+      "label": "BOSUTINIB indication: chronic myelogenous leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2095206"
+    },
+    {
+      "id": "chembl-ind:25896",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:26485",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: acute myeloid leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:45889",
+      "database": "ChEMBL",
+      "label": "SARACATINIB indication: non-small cell lung carcinoma",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+    },
+    {
+      "id": "chembl-ind:50212",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-ind:50215",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: acute myeloid leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-ind:51607",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: chronic myelogenous leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1201740"
+    },
+    {
+      "id": "chembl-ind:52060",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: Hypereosinophilic syndrome",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:57411",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: acute myeloid leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:57419",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: idiopathic pulmonary fibrosis",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:57428",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: non-small cell lung carcinoma",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:66086",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: idiopathic pulmonary fibrosis",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:71240",
+      "database": "ChEMBL",
+      "label": "ASCIMINIB indication: acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+    },
+    {
+      "id": "chembl-ind:143211",
+      "database": "ChEMBL",
+      "label": "ASCIMINIB indication: chronic myelogenous leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4297220"
+    },
+    {
+      "id": "chembl-ind:110956",
+      "database": "ChEMBL",
+      "label": "BOSUTINIB indication: non-small cell lung carcinoma",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+    },
+    {
+      "id": "chembl-ind:111015",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: soft tissue sarcoma",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-ind:117423",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: childhood acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:122243",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: systemic mastocytosis",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:122244",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: follicular lymphoma",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:128621",
+      "database": "ChEMBL",
+      "label": "BOSUTINIB indication: acute myeloid leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2095206"
+    },
+    {
+      "id": "chembl-ind:133716",
+      "database": "ChEMBL",
+      "label": "SARACATINIB indication: breast cancer",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+    },
+    {
+      "id": "chembl-ind:150492",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: B-cell acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:136964",
+      "database": "ChEMBL",
+      "label": "SARACATINIB indication: Alzheimer disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+    },
+    {
+      "id": "chembl-ind:137424",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: gastrointestinal stromal tumor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:137425",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: dermatofibrosarcoma protuberans",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:140483",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: gastrointestinal stromal tumor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:140491",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: Alzheimer disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-ind:140495",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: gastrointestinal stromal tumor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-ind:145990",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:147791",
+      "database": "ChEMBL",
+      "label": "ASCIMINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4297220"
+    },
+    {
+      "id": "chembl-ind:149162",
+      "database": "ChEMBL",
+      "label": "BOSUTINIB indication: myeloid leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2095206"
+    },
+    {
+      "id": "chembl-ind:150494",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:150496",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: myelodysplastic/myeloproliferative disease",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1642"
+    },
+    {
+      "id": "chembl-ind:152741",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: colorectal cancer",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-ind:153480",
+      "database": "ChEMBL",
+      "label": "IMATINIB indication: colorectal cancer",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+    },
+    {
+      "id": "chembl-ind:153907",
+      "database": "ChEMBL",
+      "label": "NILOTINIB indication: Blast Phase Chronic Myelogenous Leukemia, BCR-ABL1 Positive",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1201740"
+    },
+    {
+      "id": "chembl-ind:157295",
+      "database": "ChEMBL",
+      "label": "DASATINIB indication: B-cell acute lymphoblastic leukemia",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL5416410"
+    },
+    {
+      "id": "chembl-mech:300",
+      "database": "ChEMBL",
+      "label": "NILOTINIB: Tyrosine-protein kinase ABL inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+    },
+    {
+      "id": "chembl-mech:301",
+      "database": "ChEMBL",
+      "label": "DASATINIB: Tyrosine-protein kinase ABL inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+    },
+    {
+      "id": "chembl-mech:302",
+      "database": "ChEMBL",
+      "label": "BOSUTINIB: Tyrosine-protein kinase ABL inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+    },
+    {
+      "id": "chembl-mech:304",
+      "database": "ChEMBL",
+      "label": "IMATINIB: Tyrosine-protein kinase ABL inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+    },
+    {
+      "id": "chembl-mech:4093",
+      "database": "ChEMBL",
+      "label": "ASCIMINIB: Tyrosine-protein kinase ABL inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+    },
+    {
+      "id": "chembl-mech:5254",
+      "database": "ChEMBL",
+      "label": "SARACATINIB: Tyrosine-protein kinase ABL inhibitor",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+    },
+    {
+      "id": "check:CHEMBL941:MONDO_0007256",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"hepatocellular carcinoma\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Imatinib&cond=hepatocellular+carcinoma&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "nct:NCT00763763",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00763763",
+      "url": "https://clinicaltrials.gov/study/NCT00763763"
+    },
+    {
+      "id": "nct:NCT00101595",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00101595",
+      "url": "https://clinicaltrials.gov/study/NCT00101595"
+    },
+    {
+      "id": "nct:NCT01077544",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01077544",
+      "url": "https://clinicaltrials.gov/study/NCT01077544"
+    },
+    {
+      "id": "nct:NCT00171912",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00171912",
+      "url": "https://clinicaltrials.gov/study/NCT00171912"
+    },
+    {
+      "id": "nct:NCT02413736",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02413736",
+      "url": "https://clinicaltrials.gov/study/NCT02413736"
+    },
+    {
+      "id": "nct:NCT00084630",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00084630",
+      "url": "https://clinicaltrials.gov/study/NCT00084630"
+    },
+    {
+      "id": "nct:NCT00222144",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00222144",
+      "url": "https://clinicaltrials.gov/study/NCT00222144"
+    },
+    {
+      "id": "nct:NCT01011075",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01011075",
+      "url": "https://clinicaltrials.gov/study/NCT01011075"
+    },
+    {
+      "id": "nct:NCT00425646",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00425646",
+      "url": "https://clinicaltrials.gov/study/NCT00425646"
+    },
+    {
+      "id": "nct:NCT00109707",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00109707",
+      "url": "https://clinicaltrials.gov/study/NCT00109707"
+    },
+    {
+      "id": "nct:NCT00154388",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00154388",
+      "url": "https://clinicaltrials.gov/study/NCT00154388"
+    },
+    {
+      "id": "nct:NCT00038675",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00038675",
+      "url": "https://clinicaltrials.gov/study/NCT00038675"
+    },
+    {
+      "id": "check:CHEMBL941:MONDO_0019023",
+      "database": "ClinicalTrials.gov",
+      "label": "Not found on 2026-10-28: ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"cutaneous mastocytosis\"; no ChEMBL drug_indication row",
+      "url": "https://clinicaltrials.gov/search?intr=Imatinib&cond=cutaneous+mastocytosis&aggFilters=studyType%3Aint"
+    },
+    {
+      "id": "nct:NCT05970900",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT05970900",
+      "url": "https://clinicaltrials.gov/study/NCT05970900"
+    },
+    {
+      "id": "nct:NCT00237185",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00237185",
+      "url": "https://clinicaltrials.gov/study/NCT00237185"
+    },
+    {
+      "id": "nct:NCT01126814",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01126814",
+      "url": "https://clinicaltrials.gov/study/NCT01126814"
+    },
+    {
+      "id": "chembl-act:25688582",
+      "database": "ChEMBL",
+      "label": "Activity 25688582 (CHEMBL5381729)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5381729"
+    },
+    {
+      "id": "ot-assoc:ENSG00000097007:EFO_0000768",
+      "database": "Open Targets",
+      "label": "ABL1 – idiopathic pulmonary fibrosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000097007/EFO_0000768"
+    },
+    {
+      "id": "ot-assoc:ENSG00000157404:EFO_0000768",
+      "database": "Open Targets",
+      "label": "KIT – idiopathic pulmonary fibrosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000157404/EFO_0000768"
+    },
+    {
+      "id": "ot-assoc:ENSG00000134853:EFO_0000768",
+      "database": "Open Targets",
+      "label": "PDGFRA – idiopathic pulmonary fibrosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000134853/EFO_0000768"
+    },
+    {
+      "id": "chembl-target:CHEMBL1913",
+      "database": "ChEMBL",
+      "label": "Platelet-derived growth factor receptor beta (CHEMBL1913)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1913"
+    },
+    {
+      "id": "ot-assoc:ENSG00000113721:EFO_0000768",
+      "database": "Open Targets",
+      "label": "PDGFRB – idiopathic pulmonary fibrosis (Open Targets)",
+      "url": "https://platform.opentargets.org/evidence/ENSG00000113721/EFO_0000768"
+    }
+  ]
+}
