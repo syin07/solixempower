@@ -192,7 +192,7 @@ export function GraphApp() {
         </Section>
       )}
       {trials.state === "error" && <ErrorNote message={`Trials unavailable: ${trials.error} — the graph is built without them.`} />}
-      {g && <EvidenceGraphSection graph={g} sources={sources} />}
+      {g && <EvidenceGraphSection graph={g} sources={sources} demo={demo} />}
 
       {b && (report.state === "loading" || report.state === "error" || report.state === "done") && (
         <details className="rounded-lg border border-zinc-200 bg-white shadow-sm">
