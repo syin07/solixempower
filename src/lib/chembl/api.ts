@@ -7,6 +7,8 @@ export interface RawMolecule {
   max_phase: string | null;
   molecule_type: string | null;
   molecule_hierarchy: { parent_chembl_id: string } | null;
+  /** Synonyms incl. trade names (e.g. "Tagrisso"); present on search results and molecule lookups */
+  molecule_synonyms?: { molecule_synonym: string }[];
   molecule_properties: {
     full_mwt: string | null;
     alogp: string | null;
@@ -50,20 +52,28 @@ export async function getMolecule(id: string): Promise<RawMolecule> {
   return chemblGet<RawMolecule>(`molecule/${id.toUpperCase()}`);
 }
 
-/** Name or ChEMBL ID → the parent molecule (salt forms map to the parent). */
+/**
+ * Name or ChEMBL ID → the parent molecule (salt forms map to the parent). Names must match a
+ * preferred name or synonym exactly (case-insensitive); otherwise we suggest the search hits.
+ */
 export async function resolveMolecule(query: string): Promise<RawMolecule> {
-  let mol: RawMolecule | undefined;
-  if (isChemblId(query)) {
-    mol = await getMolecule(query);
+  const q = query.trim();
+  let mol: RawMolecule;
+  if (isChemblId(q)) {
+    mol = await getMolecule(q);
   } else {
-    const { molecules } = await chemblGet<{ molecules: RawMolecule[] }>("molecule/search", {
-      q: query.trim(),
-      limit: 10,
-    });
-    const exact = molecules.find((m) => m.pref_name?.toLowerCase() === query.trim().toLowerCase());
-    mol = exact ?? molecules[0];
+    const { molecules } = await chemblGet<{ molecules: RawMolecule[] }>("molecule/search", { q, limit: 10 });
+    const same = (s: string | null | undefined) => s?.trim().toLowerCase() === q.toLowerCase();
+    const exact =
+      molecules.find((m) => same(m.pref_name)) ??
+      molecules.find((m) => m.molecule_synonyms?.some((s) => same(s.molecule_synonym)));
+    if (!exact) {
+      const named = [...molecules.filter((m) => m.pref_name), ...molecules.filter((m) => !m.pref_name)];
+      const hints = [...new Set(named.map((m) => m.pref_name ?? m.molecule_chembl_id))].slice(0, 3);
+      throw new ChemblNotFound(`"${q}"${hints.length ? `. Did you mean: ${hints.join(", ")}?` : ""}`);
+    }
+    mol = exact;
   }
-  if (!mol) throw new ChemblNotFound(query);
   const parent = mol.molecule_hierarchy?.parent_chembl_id;
   return parent && parent !== mol.molecule_chembl_id ? getMolecule(parent) : mol;
 }
@@ -81,7 +91,7 @@ export async function getMolecules(ids: string[]): Promise<RawMolecule[]> {
 }
 
 export async function getTarget(id: string): Promise<RawTarget> {
-  return chemblGet<RawTarget>(`target/${id.toUpperCase()}`);
+  return chemblGet<RawTarget>(`target/${id.toUpperCase()}`); // 404 → "Not found in ChEMBL: target CHEMBL…"
 }
 
 /**
@@ -102,22 +112,75 @@ export async function getActivities(opts: { molecules: string[]; target?: string
   return out;
 }
 
-/** The candidate's most-measured human single-protein target. */
-export async function pickTarget(moleculeId: string): Promise<RawTarget> {
-  const acts = await chemblGetAll<RawActivity>(
-    "activity",
-    "activities",
-    { parent_molecule_chembl_id: moleculeId, pchembl_value__isnull: "false", target_organism: "Homo sapiens" },
-    2000,
-  );
+async function getTargets(ids: string[]): Promise<RawTarget[]> {
+  if (!ids.length) return [];
+  return chemblGetAll<RawTarget>("target", "targets", { target_chembl_id__in: ids.join(",") });
+}
+
+const isHumanProtein = (t: RawTarget) => t.target_type === "SINGLE PROTEIN" && t.organism === "Homo sapiens";
+
+export interface TargetCount {
+  target: RawTarget;
+  /** Candidate's IC50/Ki/Kd/EC50 rows with a pChEMBL value on this target */
+  n: number;
+}
+
+export interface TargetSelection {
+  target: RawTarget;
+  how: "override" | "mechanism" | "mostMeasured";
+  /** Top human single-protein targets by measurement count, plus the selected target */
+  ranked: TargetCount[];
+  /** All of the candidate's recorded mechanism targets (any type), for warnings */
+  mechanismTargets: RawTarget[];
+}
+
+/**
+ * Override if given; else the candidate's own mechanism target (human single protein, most
+ * measured if several; mechanisms are queried by parent so salt-form records count); else the
+ * most-measured human single-protein target. Counts use the first 2000 activity rows.
+ */
+export async function selectTarget(moleculeId: string, override?: string): Promise<TargetSelection> {
+  const [acts, mechs] = await Promise.all([
+    chemblGetAll<{ target_chembl_id: string }>(
+      "activity",
+      "activities",
+      {
+        parent_molecule_chembl_id: moleculeId,
+        pchembl_value__isnull: "false",
+        target_organism: "Homo sapiens",
+        standard_type__in: "IC50,Ki,Kd,EC50",
+        only: "target_chembl_id",
+      },
+      2000,
+    ),
+    override
+      ? []
+      : chemblGetAll<{ target_chembl_id: string | null }>("mechanism", "mechanisms", {
+          parent_molecule_chembl_id: moleculeId,
+        }),
+  ]);
   const counts = new Map<string, number>();
   for (const a of acts) counts.set(a.target_chembl_id, (counts.get(a.target_chembl_id) ?? 0) + 1);
-  const ranked = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5);
-  for (const [id] of ranked) {
-    const t = await getTarget(id);
-    if (t.target_type === "SINGLE PROTEIN") return t;
-  }
-  throw new ChemblNotFound(`a human single-protein target with measurements for ${moleculeId}`);
+  const n = (t: RawTarget) => counts.get(t.target_chembl_id) ?? 0;
+  const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 15).map(([id]) => id);
+  const mechIds = [...new Set(mechs.flatMap((m) => (m.target_chembl_id ? [m.target_chembl_id] : [])))];
+  const byId = new Map((await getTargets([...new Set([...top, ...mechIds])])).map((t) => [t.target_chembl_id, t]));
+
+  const ranked = top.flatMap((id) => {
+    const t = byId.get(id);
+    return t && isHumanProtein(t) ? [{ target: t, n: n(t) }] : [];
+  }).slice(0, 5);
+  const mechanismTargets = mechIds.flatMap((id) => byId.get(id) ?? []);
+  const mechOk = mechanismTargets.filter(isHumanProtein).sort((a, b) => n(b) - n(a));
+
+  let target: RawTarget;
+  let how: TargetSelection["how"];
+  if (override) [target, how] = [await getTarget(override), "override"];
+  else if (mechOk.length) [target, how] = [mechOk[0], "mechanism"];
+  else if (ranked.length) [target, how] = [ranked[0].target, "mostMeasured"];
+  else throw new ChemblNotFound(`a human single-protein target with measurements for ${moleculeId}`);
+  if (!ranked.some((r) => r.target.target_chembl_id === target.target_chembl_id)) ranked.unshift({ target, n: n(target) });
+  return { target, how, ranked, mechanismTargets };
 }
 
 /** Parent IDs of small-molecule drugs with a known mechanism on this target, phase ≥ minPhase. */
@@ -133,4 +196,27 @@ export async function getMechanismDrugs(targetId: string, minPhase = 2): Promise
   );
   const parents = await getMolecules([...parentIds]);
   return parents.filter((m) => Number(m.max_phase ?? 0) >= minPhase);
+}
+
+/**
+ * Which of these parent molecules have a ChEMBL drug-indication record matching the disease text
+ * (word-level substring either way, "cancer" ≈ "carcinoma"). One or two calls.
+ */
+export async function getIndicatedFor(parentIds: string[], disease: string): Promise<Set<string>> {
+  const norm = (s: string) =>
+    ` ${s.toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\bcancer\b/g, "carcinoma").trim()} `;
+  const d = norm(disease);
+  if (!parentIds.length || !d.trim()) return new Set();
+  const rows = await chemblGetAll<{ parent_molecule_chembl_id: string; efo_term: string | null; mesh_heading: string | null }>(
+    "drug_indication",
+    "drug_indications",
+    { parent_molecule_chembl_id__in: parentIds.join(","), only: "parent_molecule_chembl_id,efo_term,mesh_heading" },
+    2000,
+  );
+  const matches = (term: string | null) => {
+    if (!term) return false;
+    const t = norm(term);
+    return t.includes(d) || (t.trim().includes(" ") && d.includes(t));
+  };
+  return new Set(rows.filter((r) => matches(r.efo_term) || matches(r.mesh_heading)).map((r) => r.parent_molecule_chembl_id));
 }

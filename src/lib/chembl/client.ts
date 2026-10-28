@@ -26,7 +26,7 @@ export async function chemblGet<T>(resource: string, params: Params = {}): Promi
     return hit;
   } catch {}
 
-  const data = await fetchWithRetry<T>(url);
+  const data = await fetchWithRetry<T>(url, resource.replace("/", " "));
   memory.set(url, data);
   mkdir(CACHE_DIR, { recursive: true })
     .then(() => writeFile(file, JSON.stringify(data)))
@@ -34,12 +34,12 @@ export async function chemblGet<T>(resource: string, params: Params = {}): Promi
   return data;
 }
 
-async function fetchWithRetry<T>(url: string, attempts = 3): Promise<T> {
+async function fetchWithRetry<T>(url: string, what: string, attempts = 3): Promise<T> {
   let lastError: unknown;
   for (let i = 0; i < attempts; i++) {
     try {
       const res = await fetch(url, { headers: { Accept: "application/json" } });
-      if (res.status === 404) throw new ChemblNotFound(url);
+      if (res.status === 404) throw new ChemblNotFound(what);
       if (!res.ok) throw new Error(`ChEMBL ${res.status} for ${url}`);
       return (await res.json()) as T;
     } catch (e) {
@@ -69,9 +69,10 @@ export async function chemblGetAll<T>(
   return out;
 }
 
+/** A user-facing "can't benchmark this" error (route → 404). `what` names the missing thing, e.g. "target CHEMBL1". */
 export class ChemblNotFound extends Error {
-  constructor(what: string) {
-    super(`Not found in ChEMBL: ${what}`);
+  constructor(what: string, message = `Not found in ChEMBL: ${what}`) {
+    super(message);
   }
 }
 

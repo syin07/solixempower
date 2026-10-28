@@ -15,6 +15,8 @@ export async function GET(req: NextRequest) {
 
   const disease = sp.get("disease")?.trim() ?? "";
   const target = sp.get("target")?.trim() || undefined;
+  if (target && !/^CHEMBL\d+$/i.test(target))
+    return NextResponse.json<ApiError>({ error: `target must be a ChEMBL target ID like CHEMBL203, got "${target}"` }, { status: 400 });
   if (sp.get("demo") === "1") {
     const recorded = await readDemo<BenchmarkResult>(benchmarkDemoKey(candidate, disease, target));
     if (recorded) return NextResponse.json(recorded);

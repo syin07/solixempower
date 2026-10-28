@@ -58,6 +58,10 @@ export interface Measurement {
   source: SourceRef;
 }
 
+/**
+ * When `n === 0` (no comparable measurements), medianPchembl/minPchembl/maxPchembl/rank are 0
+ * placeholders — do not plot or rank them.
+ */
 export interface CompoundBenchmark {
   compound: Compound;
   n: number;
@@ -85,6 +89,12 @@ export interface BenchmarkResult {
   comparators: CompoundBenchmark[];
   matchedAssays: MatchedAssay[];
   warnings: string[];
+  /**
+   * For the target dropdown: the candidate's human single-protein targets ranked by measurement
+   * count (IC50/Ki/Kd/EC50 rows with a pChEMBL value), top ~5, always including the selected target.
+   * Pass `chemblId` back as `target=` to switch.
+   */
+  candidateTargets?: { chemblId: string; name: string; n: number }[];
   isMock?: boolean;
 }
 
