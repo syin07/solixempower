@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Records REAL /api/benchmark + /api/report responses into src/fixtures/demo/ for demo mode (?demo=1).
+// Records REAL /api/benchmark + /api/trials + /api/report responses into src/fixtures/demo/ for demo mode (?demo=1).
 // Needs the dev server running.
 //   node scripts/record-demo.mjs --candidate <name-or-id> --disease "<disease>" [--target CHEMBLxxx] [--base http://localhost:3000]
+import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseArgs } from "node:util";
@@ -28,6 +29,11 @@ const benchmarkDemoKey = (candidate, disease, target) =>
   `benchmark--${slug(candidate)}--${slug(disease)}--${target ? slug(target) : "auto"}`;
 const reportDemoKey = (candidate, disease, targetChemblId) =>
   `report--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
+const trialsDemoKey = (disease, drugs) => {
+  const list = drugs.map((d) => d.trim().toLowerCase()).join(",");
+  const hash = createHash("sha1").update(list).digest("hex").slice(0, 10);
+  return `trials--${slug(disease)}--${slug(drugs[0])}--${hash}`;
+};
 
 async function call(label, url, init) {
   const t0 = performance.now();
@@ -56,10 +62,23 @@ try {
   const benchmark = await call("benchmark", `${args.base}/api/benchmark?${qs}`);
   await save(benchmarkDemoKey(candidate, disease, target), benchmark);
 
+  // Same drug list the UI builds (src/components/BenchmarkApp.tsx): candidate first, then comparators.
+  // The trials route needs a disease; without one (or if it fails) the report is recorded without trials.
+  const drugs = [benchmark.candidate, ...benchmark.comparators].map((c) => c.compound.name);
+  let trials;
+  if (disease) {
+    try {
+      trials = await call("trials", `${args.base}/api/trials?${new URLSearchParams({ disease, drugs: drugs.join(",") })}`);
+      await save(trialsDemoKey(disease, drugs), trials);
+    } catch (e) {
+      console.warn(`  trials skipped: ${e.message}`);
+    }
+  }
+
   const report = await call("report", `${args.base}/api/report`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ benchmark }),
+    body: JSON.stringify({ benchmark, trials }),
   });
   await save(reportDemoKey(benchmark.query.candidate, benchmark.query.disease, benchmark.target.chemblId), report);
 
@@ -69,8 +88,9 @@ try {
     `\n${c.compound.name} (${c.compound.chemblId}) on ${benchmark.target.name} (${benchmark.target.chemblId})` +
       `\n  rank ${c.rank} of ${ranked}, n=${c.n}, median pChEMBL ${c.medianPchembl}` +
       `\n  matched assays: ${benchmark.matchedAssays.length}, warnings: ${benchmark.warnings.length}` +
+      `\n  trials: ${trials ? `${trials.trials.length} (${trials.trials.filter((t) => t.hasResults).length} with results)` : "not recorded"}` +
       `\n  verdict: ${report.verdict} — ${report.headline}` +
-      `\n\nReplay with ?demo=1 (the page must forward it to /api/benchmark and /api/report).`,
+      `\n\nReplay with ?demo=1 (the page forwards it to /api/benchmark, /api/trials and /api/report).`,
   );
 } catch (e) {
   console.error(`Error: ${e.message}`);
