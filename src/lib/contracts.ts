@@ -4,6 +4,11 @@
 
 export type Database = "ChEMBL" | "ClinicalTrials.gov" | "PubChem";
 
+/** Every route returns this with a 4xx/5xx status on failure. Show `error` to the user. */
+export interface ApiError {
+  error: string;
+}
+
 /** How a fact was obtained. The UI must render each kind visibly differently. */
 export type EvidenceKind = "measured" | "computed" | "clinical" | "ai_summary";
 

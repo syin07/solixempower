@@ -46,3 +46,6 @@ next-env.d.ts
 .claude/settings.local.json
 .github/copilot-instructions.md
 .vscode/settings.json
+
+# ChEMBL / API response cache
+.cache/
