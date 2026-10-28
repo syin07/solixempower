@@ -27,6 +27,8 @@ export interface TrialCheck {
   totalCount: number;
   /** The same search on the ClinicalTrials.gov website, for an "open search" link */
   url: string;
+  /** false when no search was possible (e.g. the compound has no name); absence then says nothing about trials */
+  trialSearched?: boolean;
 }
 
 const PAGE_SIZE = 3;

@@ -131,11 +131,27 @@ export async function generateHypotheses(
     const s = statusFromGraph(g, drug, c.disease);
     if (s) status.set(c.disease.id, s);
   }
-  const unchecked = candidates.filter((c) => !status.has(c.disease.id)).sort(compareCandidates);
-  const toCheck = unchecked.slice(0, MAX_TRIAL_CHECKS);
+  // The query disease is checked first: its card is always shown (PRD §13)
+  const unchecked = candidates
+    .filter((c) => !status.has(c.disease.id))
+    .sort((a, b) => Number(Boolean(b.disease.isQueryDisease)) - Number(Boolean(a.disease.isQueryDisease)) || compareCandidates(a, b));
+  // A compound without a preferred name would be searched by its ChEMBL id, which matches nothing: that
+  // is not evidence of absence, so no trial search is run and the absent edge says only the indication was checked
+  const searchable = !/^CHEMBL\d+$/i.test(drug.label.trim());
+  const toCheck = searchable ? unchecked.slice(0, MAX_TRIAL_CHECKS) : unchecked;
   if (unchecked.length > toCheck.length)
     console.log(`[kg/hypotheses] gap-check budget: checking ${toCheck.length} of ${unchecked.length} diseases; the rest are not shown`);
-  const checks = await mapLimit(toCheck, CHECK_CONCURRENCY, async (c) => {
+  const checks = await mapLimit(toCheck, CHECK_CONCURRENCY, async (c): Promise<TrialCheck | null> => {
+    if (!searchable)
+      return {
+        nctIds: [],
+        trials: [],
+        query: `no ClinicalTrials.gov search: ${drug.label} has no drug name to search by`,
+        checkedAt: new Date().toISOString(),
+        totalCount: 0,
+        url: drug.source?.url ?? "https://clinicaltrials.gov/",
+        trialSearched: false,
+      };
     try {
       return await deps.hasTrialFor(displayName(drug.label), c.disease.label);
     } catch (e) {
@@ -307,17 +323,20 @@ function writeCheck(graph: GraphResult, g: Index, drug: GraphNode, disease: Grap
   if (indication) return { status: "already_indicated", edges: [indication], nctIds: [], indicationPhase: phase };
 
   const day = check.checkedAt.slice(0, 10);
+  const searched = check.trialSearched !== false;
   const absent = addEdge(graph, {
     id: edgeId("absent", drug.id, disease.id),
     type: "absent",
     from: drug.id,
     to: disease.id,
     kind: "absent",
-    label: `Not found: no ChEMBL indication and no interventional trial (searched ${day})`,
-    meta: { checked: ["indication", "trial"], checkedAt: check.checkedAt, query: check.query },
+    label: searched
+      ? `Not found: no ChEMBL indication and no interventional trial (searched ${day})`
+      : `Not found: no ChEMBL indication (${day}); trials not searched — no drug name`,
+    meta: { checked: searched ? ["indication", "trial"] : ["indication"], checkedAt: check.checkedAt, query: check.query },
     source: {
       id: `check:${parseNodeId(drug.id)!.key}:${parseNodeId(disease.id)!.key}`,
-      database: "ClinicalTrials.gov",
+      database: searched ? "ClinicalTrials.gov" : "ChEMBL",
       label: `Not found on ${day}: ${check.query}; no ChEMBL drug_indication row`,
       url: check.url,
     },
@@ -387,14 +406,14 @@ function toHypothesis(
     targetId: c.target.id,
     diseaseId: c.disease.id,
     pathEdgeIds,
-    ladder: ladder(graph, g, drug, c, s),
+    ladder: ladder(graph, g, benchmark, drug, c, s),
     suggestedTest: suggestedTest(graph, benchmark, drug, c, s),
     sourceIds: unique(path.map((e) => e.source.id)),
   };
 }
 
 /** Fixed order: potency · target–disease sub-scores · clinical precedent · safety · route · gap check. */
-function ladder(graph: GraphResult, g: Index, drug: GraphNode, c: Candidate, s: Status): LadderRow[] {
+function ladder(graph: GraphResult, g: Index, benchmark: BenchmarkResult, drug: GraphNode, c: Candidate, s: Status): LadderRow[] {
   const rows: LadderRow[] = [];
   const p = c.potency;
   const alsoValid = Array.isArray(p.meta?.alsoValid) ? (p.meta.alsoValid as string[]) : [];
@@ -438,7 +457,11 @@ function ladder(graph: GraphResult, g: Index, drug: GraphNode, c: Candidate, s: 
   rows.push({
     kind: "clinical",
     label: `Safety flags on ${displayName(drug.label)}`,
-    value: warnings.length ? unique(warnings.map((w) => g.node(w.to)?.label ?? w.label)).join("; ") : "no ChEMBL drug warning recorded",
+    value: warnings.length
+      ? unique(warnings.map((w) => g.node(w.to)?.label ?? w.label)).join("; ")
+      : benchmark.drugWarnings
+        ? "no ChEMBL drug warning recorded"
+        : "drug warnings not retrieved",
     sourceIds: unique(warnings.map((w) => w.source.id)),
   });
 
@@ -446,7 +469,11 @@ function ladder(graph: GraphResult, g: Index, drug: GraphNode, c: Candidate, s: 
   rows.push({
     kind: "clinical",
     label: `Approved route(s) of ${displayName(drug.label)}`,
-    value: routes.length ? routes.map((r) => g.node(r.to)?.label ?? r.to).join(", ") : "no approved route recorded (not approved)",
+    value: routes.length
+      ? routes.map((r) => g.node(r.to)?.label ?? r.to).join(", ")
+      : drug.meta?.maxPhase === 4
+        ? "no route flag recorded in ChEMBL"
+        : "no approved route (not approved)",
     sourceIds: unique(routes.map((r) => r.source.id)),
   });
 
@@ -530,7 +557,9 @@ const median = (xs: number[]) => {
 function phaseText(phase: number): string {
   if (phase >= 4) return "approved";
   if (phase <= 0) return "phase n/a";
+  if (phase < 1) return "early phase 1";
   return Number.isInteger(phase) ? `phase ${phase}` : `phase ${Math.floor(phase)}/${Math.ceil(phase)}`;
 }
-/** "POZIOTINIB" → "Poziotinib"; mixed-case names are kept. */
-const displayName = (label: string) => (label === label.toUpperCase() ? label.charAt(0) + label.slice(1).toLowerCase() : label);
+/** "POZIOTINIB" → "Poziotinib"; mixed-case names and ChEMBL ids are kept. */
+const displayName = (label: string) =>
+  label === label.toUpperCase() && !/^CHEMBL\d+$/.test(label) ? label.charAt(0) + label.slice(1).toLowerCase() : label;
