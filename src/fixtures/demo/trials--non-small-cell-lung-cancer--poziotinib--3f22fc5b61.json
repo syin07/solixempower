@@ -1,0 +1,1619 @@
+{
+  "query": {
+    "disease": "non-small cell lung cancer",
+    "drugs": [
+      "POZIOTINIB",
+      "MOBOCERTINIB",
+      "AFATINIB",
+      "NERATINIB",
+      "CANERTINIB",
+      "ICOTINIB",
+      "DACOMITINIB",
+      "LAPATINIB",
+      "GEFITINIB",
+      "ERLOTINIB",
+      "OSIMERTINIB",
+      "BRIGATINIB",
+      "ROCILETINIB"
+    ]
+  },
+  "trials": [
+    {
+      "nctId": "NCT00949910",
+      "title": "An Expanded Access Program of Tarceva (Erlotinib) in Participants With Advanced Non-Small Cell Lung Cancer (NSCLC)",
+      "phase": "Phase 4",
+      "status": "Completed",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Erlotinib"
+      ],
+      "enrollment": 6586,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Percentage of Participants With Objective Response According to Response Evaluation Criteria in Solid Tumors (RECIST)"
+      ],
+      "startDate": "2004-11",
+      "source": {
+        "id": "nct:NCT00949910",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00949910",
+        "url": "https://clinicaltrials.gov/study/NCT00949910"
+      }
+    },
+    {
+      "nctId": "NCT01203917",
+      "title": "Efficacy, Safety, Tolerability of Gefitinib as 1st Line in Caucasian Patients With EGFR Mutation Positive Advanced NSCLC",
+      "phase": "Phase 4",
+      "status": "Completed",
+      "conditions": [
+        "Caucasian Patients With EGFR Mutation Positive Advanced NSCLC"
+      ],
+      "interventions": [
+        "Gefitinib"
+      ],
+      "enrollment": 1060,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Objective Response Rate (ORR) (Investigator)"
+      ],
+      "startDate": "2010-09",
+      "source": {
+        "id": "nct:NCT01203917",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01203917",
+        "url": "https://clinicaltrials.gov/study/NCT01203917"
+      }
+    },
+    {
+      "nctId": "NCT04511533",
+      "title": "Dacomitinib for Treatment of Patients in India With Metastatic Non Small Cell Lung Cancer With EGFR Activating Mutations",
+      "phase": "Phase 4",
+      "status": "Completed",
+      "conditions": [
+        "Metastatic Non Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Dacomitinib"
+      ],
+      "enrollment": 101,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Number of Participants With All-Causality and Treatment-Related Treatment-Emergent Adverse Events (TEAEs)"
+      ],
+      "startDate": "2020-08-27",
+      "source": {
+        "id": "nct:NCT04511533",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04511533",
+        "url": "https://clinicaltrials.gov/study/NCT04511533"
+      }
+    },
+    {
+      "nctId": "NCT04401059",
+      "title": "Synergistic Effect of Elemene Plus TKIs Compared With TKIs in EGFR-mutated Advanced NSCLC：Prospective Study",
+      "phase": "Phase 4",
+      "status": "Unknown status",
+      "conditions": [
+        "Carcinoma",
+        "Non-Small-Cell Lung Cancer",
+        "Adenocarcinoma"
+      ],
+      "interventions": [
+        "Elemene plus first or third generation EGFR-TKIs",
+        "First or third generation EGFR-TKIs"
+      ],
+      "enrollment": 744,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "PFS"
+      ],
+      "startDate": "2020-11-09",
+      "source": {
+        "id": "nct:NCT04401059",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04401059",
+        "url": "https://clinicaltrials.gov/study/NCT04401059"
+      }
+    },
+    {
+      "nctId": "NCT02031601",
+      "title": "Intercalated Combination of Chemotherapy and Tyrosine Kinase Inhibitors as First-line Treatment for Patients With Non-Small-Cell Lung Cancer",
+      "phase": "Phase 4",
+      "status": "Unknown status",
+      "conditions": [
+        "Non-Small-Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Erlotinib",
+        "Gefitinib",
+        "Icotinib",
+        "Docetaxel",
+        "Pemetrexed",
+        "Platinum (cisplatin or carboplatin)"
+      ],
+      "enrollment": 250,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression-free survival (PFS)"
+      ],
+      "startDate": "2014-01",
+      "source": {
+        "id": "nct:NCT02031601",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02031601",
+        "url": "https://clinicaltrials.gov/study/NCT02031601"
+      }
+    },
+    {
+      "nctId": "NCT02404675",
+      "title": "High Dose Icotinib in Advanced Non-small Cell Lung Cancer With EGFR 21 Exon Mutation",
+      "phase": "Phase 4",
+      "status": "Unknown status",
+      "conditions": [
+        "NSCLC"
+      ],
+      "interventions": [
+        "icotinib"
+      ],
+      "enrollment": 240,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression-free survival"
+      ],
+      "startDate": "2015-04",
+      "source": {
+        "id": "nct:NCT02404675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02404675",
+        "url": "https://clinicaltrials.gov/study/NCT02404675"
+      }
+    },
+    {
+      "nctId": "NCT02103257",
+      "title": "Sequential Icotinib Plus Chemotherapy Versus Icotinib Alone as First-line Treatment in Stage IIIB/IV Lung Adenocarcinoma",
+      "phase": "Phase 4",
+      "status": "Unknown status",
+      "conditions": [
+        "EGFR Positive Non-small Cell Lung Cancer",
+        "Adenocarcinoma"
+      ],
+      "interventions": [
+        "Sequential Icotinib Plus Chemotherapy",
+        "Icotinib"
+      ],
+      "enrollment": 192,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression Free Survival"
+      ],
+      "startDate": "2014-03",
+      "source": {
+        "id": "nct:NCT02103257",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02103257",
+        "url": "https://clinicaltrials.gov/study/NCT02103257"
+      }
+    },
+    {
+      "nctId": "NCT07900243",
+      "title": "A Clinical Study Comparing the Efficacy and Safety of Befotertinib Versus Icotinib in Patients With Previously Untreated EGFR-sensitive Mutation-positive Non-small Cell Lung Cancer With ECOG Score ≥2",
+      "phase": "Phase 4",
+      "status": "Not yet recruiting",
+      "conditions": [
+        "Locally Advanced or Metastatic Non-small Cell Lung Cancer With Previously Untreated EGFR-sensitive Mutations and ECOG Performance Status Score ≥2"
+      ],
+      "interventions": [
+        "Befotertinib",
+        "Icotinib"
+      ],
+      "enrollment": 100,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "PFS"
+      ],
+      "startDate": "2026-11-30",
+      "source": {
+        "id": "nct:NCT07900243",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07900243",
+        "url": "https://clinicaltrials.gov/study/NCT07900243"
+      }
+    },
+    {
+      "nctId": "NCT02474355",
+      "title": "Real World Treatment Study of AZD9291 for Advanced/Metastatic EGFR T790M Mutation NSCLC",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Lung Cancer"
+      ],
+      "interventions": [
+        "AZD9291 Dosing"
+      ],
+      "enrollment": 3017,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival (OS)",
+        "Number of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs)"
+      ],
+      "startDate": "2015-09-18",
+      "source": {
+        "id": "nct:NCT02474355",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02474355",
+        "url": "https://clinicaltrials.gov/study/NCT02474355"
+      }
+    },
+    {
+      "nctId": "NCT00364351",
+      "title": "Efficacy Trial Comparing ZD6474 With Erlotinib in NSCLC After Failure of at Least One Prior Chemotherapy",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Vandetanib",
+        "Erlotinib"
+      ],
+      "enrollment": 1574,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-Free Survival (PFS)"
+      ],
+      "startDate": "2006-08",
+      "source": {
+        "id": "nct:NCT00364351",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00364351",
+        "url": "https://clinicaltrials.gov/study/NCT00364351"
+      }
+    },
+    {
+      "nctId": "NCT00322452",
+      "title": "First Line IRESSA™ Versus Carboplatin/Paclitaxel in Asia",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Gefitinib",
+        "Carboplatin",
+        "Paclitaxel"
+      ],
+      "enrollment": 1329,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Median Progression Free Survival (PFS) in Months"
+      ],
+      "startDate": "2006-03",
+      "source": {
+        "id": "nct:NCT00322452",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00322452",
+        "url": "https://clinicaltrials.gov/study/NCT00322452"
+      }
+    },
+    {
+      "nctId": "NCT00373425",
+      "title": "A Study of Erlotinib (Tarceva) After Surgery With or Without Adjuvant Chemotherapy in Non-Small Cell Lung Carcinoma (NSCLC) Patients Who Have Epidermal Growth Factor Receptor (EGFR) Positive Tumors",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Erlotinib",
+        "Placebo"
+      ],
+      "enrollment": 1252,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Disease Free Survival (DFS)",
+        "Disease Free Survival (DFS)"
+      ],
+      "startDate": "2006-09",
+      "source": {
+        "id": "nct:NCT00373425",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00373425",
+        "url": "https://clinicaltrials.gov/study/NCT00373425"
+      }
+    },
+    {
+      "nctId": "NCT01085136",
+      "title": "LUX-Lung 5: Afatinib Plus Weekly Paclitaxel Versus Investigator's Choice of Single Agent Chemotherapy Following Afatinib Monotherapy in Non-small Cell Lung Cancer Patients Failing Erlotinib or Gefitinib",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "Investigator´s choice of chemotherapy",
+        "BIBW 2992"
+      ],
+      "enrollment": 1154,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression Free Survival (Part B)"
+      ],
+      "startDate": "2010-02",
+      "source": {
+        "id": "nct:NCT01085136",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01085136",
+        "url": "https://clinicaltrials.gov/study/NCT01085136"
+      }
+    },
+    {
+      "nctId": "NCT00257608",
+      "title": "A Study Comparing Bevacizumab Therapy With or Without Erlotinib for First-Line Treatment of Non-Small Cell Lung Cancer (ATLAS)",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "bevacizumab",
+        "placebo",
+        "erlotinib HCl"
+      ],
+      "enrollment": 1145,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-free Survival (PFS)"
+      ],
+      "startDate": "2006-01",
+      "source": {
+        "id": "nct:NCT00257608",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00257608",
+        "url": "https://clinicaltrials.gov/study/NCT00257608"
+      }
+    },
+    {
+      "nctId": "NCT04487080",
+      "title": "A Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib in Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Active, not recruiting",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "Amivantamab",
+        "Osimertinib",
+        "Lazertinib",
+        "Placebo"
+      ],
+      "enrollment": 1074,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-Free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)"
+      ],
+      "startDate": "2020-09-30",
+      "source": {
+        "id": "nct:NCT04487080",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04487080",
+        "url": "https://clinicaltrials.gov/study/NCT04487080"
+      }
+    },
+    {
+      "nctId": "NCT01244191",
+      "title": "Tivantinib Plus Erlotinib Versus Placebo Plus Erlotinib for the Treatment of Non-squamous, Non-small-cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Terminated",
+      "conditions": [
+        "Non Squamous, Non-small-cell Lung Cancer"
+      ],
+      "interventions": [
+        "Tivantinib",
+        "Placebo",
+        "Erlotinib"
+      ],
+      "enrollment": 1048,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival Following Treatment With Tivantinib (ARQ 197) Plus Erlotinib Compared to Placebo Plus Erlotinib in Previously Treated Participants With Locally Advanced or Metastatic, Non-Squamous,…"
+      ],
+      "startDate": "2011-01-11",
+      "source": {
+        "id": "nct:NCT01244191",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01244191",
+        "url": "https://clinicaltrials.gov/study/NCT01244191"
+      }
+    },
+    {
+      "nctId": "NCT00457392",
+      "title": "A Study In Patients With Non-Small Cell Lung Cancer To Test If Erlotinib Plus SU011248 Is Better Than Erlotinib Alone",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small Cell Lung"
+      ],
+      "interventions": [
+        "erlotinib",
+        "sunitinib",
+        "placebo"
+      ],
+      "enrollment": 960,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival (OS)"
+      ],
+      "startDate": "2007-07",
+      "source": {
+        "id": "nct:NCT00457392",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00457392",
+        "url": "https://clinicaltrials.gov/study/NCT00457392"
+      }
+    },
+    {
+      "nctId": "NCT00556712",
+      "title": "A Study of Tarceva (Erlotinib) Following Platinum-Based Chemotherapy in Patients With Advanced, Recurrent, or Metastatic Non-Small Cell Lung Cancer (NSCLC)",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "erlotinib [Tarceva]",
+        "Placebo"
+      ],
+      "enrollment": 889,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Percentage of Participants With PD According to Response Evaluation Criteria in Solid Tumors (RECIST) or Death (Data Cutoff 17 May 2008)",
+        "PFS in All Participants (Data Cutoff 17 May 2008)",
+        "Probable Percentage of Participants Remaining Alive and Free of Disease Progression at 6 Months (Data Cutoff 17 May 2008)"
+      ],
+      "startDate": "2006-01",
+      "source": {
+        "id": "nct:NCT00556712",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00556712",
+        "url": "https://clinicaltrials.gov/study/NCT00556712"
+      }
+    },
+    {
+      "nctId": "NCT01360554",
+      "title": "ARCHER 1009 : A Study Of Dacomitinib (PF-00299804) Vs. Erlotinib In The Treatment Of Advanced Non-Small Cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Dacomitinib (PF-00299804)",
+        "Active Comparator (erlotinib)",
+        "Placebo erlotinib",
+        "Placebo PF00299804"
+      ],
+      "enrollment": 878,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-Free Survival (PFS) Per Independent Radiologic Review.",
+        "Progression-Free Survival (PFS) Per Independent Radiologic Review in KRAS Wild-type (WT) Participants."
+      ],
+      "startDate": "2011-06-16",
+      "source": {
+        "id": "nct:NCT01360554",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01360554",
+        "url": "https://clinicaltrials.gov/study/NCT01360554"
+      }
+    },
+    {
+      "nctId": "NCT01523587",
+      "title": "LUX-Lung 8: A Phase III Trial of Afatinib (BIBW 2992) Versus Erlotinib for the Treatment of Squamous Cell Lung Cancer After at Least One Prior Platinum Based Chemotherapy",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "afatinib",
+        "erlotinib"
+      ],
+      "enrollment": 795,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-free Survival, Based on Central Independent Review as Determined by Response Evaluation Criteria in Solid Tumours 1.1"
+      ],
+      "startDate": "2012-03-05",
+      "source": {
+        "id": "nct:NCT01523587",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01523587",
+        "url": "https://clinicaltrials.gov/study/NCT01523587"
+      }
+    },
+    {
+      "nctId": "NCT04988295",
+      "title": "A Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With Epidermal Growth Factor Receptor (EGFR)-Mutated Locally Advanced or Metastatic Non- Small Cell Lung Cancer After Osimertinib Failure",
+      "phase": "Phase 3",
+      "status": "Active, not recruiting",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "Lazertinib",
+        "Amivantamab",
+        "Pemetrexed",
+        "Carboplatin"
+      ],
+      "enrollment": 776,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Main Study: Progression-free Survival (PFS) According to Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1 as Assessed by Blinded Independent Central Review (BICR)",
+        "Main Study + Extension Cohort: Number of Participants With Treatment-emergent Adverse Events (TEAEs) and Treatment-emergent Serious Adverse Events (TESAEs)",
+        "Main Study + Extension Cohort: Progression-free Survival (PFS) as Assessed by Blinded Independent Central Review"
+      ],
+      "startDate": "2021-11-17",
+      "source": {
+        "id": "nct:NCT04988295",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04988295",
+        "url": "https://clinicaltrials.gov/study/NCT04988295"
+      }
+    },
+    {
+      "nctId": "NCT01000025",
+      "title": "PF-00299804 in Stage IIIB or Stage IV Non-Small Cell Lung Cancer Not Responding to Standard Therapy for Advanced or Metastatic Cancer",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Lung Cancer"
+      ],
+      "interventions": [
+        "PF-00299804",
+        "Placebo"
+      ],
+      "enrollment": 720,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival"
+      ],
+      "startDate": "2009-12-23",
+      "source": {
+        "id": "nct:NCT01000025",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01000025",
+        "url": "https://clinicaltrials.gov/study/NCT01000025"
+      }
+    },
+    {
+      "nctId": "NCT02511106",
+      "title": "AZD9291 Versus Placebo in Patients With Stage IB-IIIA Non-small Cell Lung Carcinoma, Following Complete Tumour Resection With or Without Adjuvant Chemotherapy.",
+      "phase": "Phase 3",
+      "status": "Active, not recruiting",
+      "conditions": [
+        "Stage IB-IIIA Non-small Cell Lung Carcinoma"
+      ],
+      "interventions": [
+        "AZD9291 80 mg/40 mg",
+        "Placebo AZD9291 80 mg/40 mg",
+        "Open-label AZD9291 80 mg/40 mg"
+      ],
+      "enrollment": 682,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Assess the Efficacy of AZD9291 Compared to Placebo as Measured by Disease Free Survival (DFS)."
+      ],
+      "startDate": "2015-10-21",
+      "source": {
+        "id": "nct:NCT02511106",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02511106",
+        "url": "https://clinicaltrials.gov/study/NCT02511106"
+      }
+    },
+    {
+      "nctId": "NCT02296125",
+      "title": "AZD9291 Versus Gefitinib or Erlotinib in Patients With Locally Advanced or Metastatic Non-small Cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Locally Advanced or Metastatic EGFR Sensitising Mutation Positive Non Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "AZD9291 80 mg/40 mg + placebo",
+        "Placebo Erlotinib 150/100mg",
+        "Placebo Gefitinib 250 mg",
+        "Erlotinib 150/100 mg",
+        "Gefitinib 250 mg",
+        "Placebo AZD9291 80 mg/ 40 mg"
+      ],
+      "enrollment": 674,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Median Progression Free Survival (PFS) (Months)",
+        "Percentage of Participants in Progression Free Survival at 6, 12, and 18 Months"
+      ],
+      "startDate": "2014-12-03",
+      "source": {
+        "id": "nct:NCT02296125",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02296125",
+        "url": "https://clinicaltrials.gov/study/NCT02296125"
+      }
+    },
+    {
+      "nctId": "NCT01328951",
+      "title": "A Study of First-line Maintenance Erlotinib Versus Erlotinib at Disease Progression in Participants With Advanced Non-Small Cell Lung Cancer (NSCLC) Who Have Not Progressed Following Platinum-Based Chemotherapy",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-Squamous Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Placebo",
+        "Erlotinib",
+        "Second-Line Chemotherapy"
+      ],
+      "enrollment": 643,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Percentage of Participants Who Died During the Overall Study",
+        "Overall Survival (OS) as Median Time to Event During the Overall Study",
+        "Percentage of Participants Event-Free (Alive) at 1 Year During the Overall Study"
+      ],
+      "startDate": "2011-09",
+      "source": {
+        "id": "nct:NCT01328951",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01328951",
+        "url": "https://clinicaltrials.gov/study/NCT01328951"
+      }
+    },
+    {
+      "nctId": "NCT00130728",
+      "title": "A Study to Evaluate the Efficacy of Bevacizumab in Combination With Tarceva for Advanced Non-Small Cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "bevacizumab",
+        "erlotinib HCl",
+        "placebo"
+      ],
+      "enrollment": 636,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival (OS) Among All Randomized Patients"
+      ],
+      "startDate": "2005-06-08",
+      "source": {
+        "id": "nct:NCT00130728",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00130728",
+        "url": "https://clinicaltrials.gov/study/NCT00130728"
+      }
+    },
+    {
+      "nctId": "NCT02352948",
+      "title": "A Global Study to Assess the Effects of MEDI4736 (Durvalumab), Given as Monotherapy or in Combination With Tremelimumab Determined by PD-L1 Expression Versus Standard of Care in Patients With Locally Advanced or Metastatic Non Small Cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non - Small Cell Lung Cancer NSCLC"
+      ],
+      "interventions": [
+        "MEDI4736 (durvalumab)",
+        "Vinorelbine",
+        "Gemcitabine",
+        "Erlotinib",
+        "MEDI4736 (durvalumab) in combination with tremelimumab (anti-CTLA4)",
+        "tremelimumab (anti-CTLA4)"
+      ],
+      "enrollment": 597,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival (OS)",
+        "Progression-Free Survival (PFS)"
+      ],
+      "startDate": "2015-01-13",
+      "source": {
+        "id": "nct:NCT02352948",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02352948",
+        "url": "https://clinicaltrials.gov/study/NCT02352948"
+      }
+    },
+    {
+      "nctId": "NCT04035486",
+      "title": "A Study of Osimertinib With or Without Chemotherapy as 1st Line Treatment in Patients With Mutated Epidermal Growth Factor Receptor Non-Small Cell Lung Cancer (FLAURA2)",
+      "phase": "Phase 3",
+      "status": "Active, not recruiting",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Osimertinib",
+        "Pemetrexed/Carboplatin",
+        "Pemetrexed/Cisplatin"
+      ],
+      "enrollment": 587,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Adverse Events Graded by Common Terminology Criteria for Adverse Event v5 (Safety Run-In Treatment Arms Only)",
+        "Progression-free Survival (PFS) (Randomized Component)",
+        "Sensitivity Analysis for Progression-free Survival (PFS) by Blinded Independent Central Review (BICR) Assessment (Randomized Component)"
+      ],
+      "startDate": "2019-07-02",
+      "source": {
+        "id": "nct:NCT04035486",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04035486",
+        "url": "https://clinicaltrials.gov/study/NCT04035486"
+      }
+    },
+    {
+      "nctId": "NCT00656136",
+      "title": "BIBW 2992 and BSC Versus Placebo and BSC in Non-small Cell Lung Cancer Patients Failing Erlotinib or Gefitinib (LUX-LUNG 1)",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "placebo",
+        "BIBW 2992"
+      ],
+      "enrollment": 585,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival"
+      ],
+      "startDate": "2008-04",
+      "source": {
+        "id": "nct:NCT00656136",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00656136",
+        "url": "https://clinicaltrials.gov/study/NCT00656136"
+      }
+    },
+    {
+      "nctId": "NCT00673049",
+      "title": "Trial Of CP-751, 871 And Erlotinib In Refractory Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Terminated",
+      "conditions": [
+        "Carcinoma, Large Cell",
+        "Carcinoma, Non-Small-Cell Lung",
+        "Carcinoma, Squamous Cell",
+        "Carcinoma, Adenosquamous Cell"
+      ],
+      "interventions": [
+        "CP 751,871 (Figitumumab)",
+        "Erlotinib"
+      ],
+      "enrollment": 583,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival"
+      ],
+      "startDate": "2008-05",
+      "source": {
+        "id": "nct:NCT00673049",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00673049",
+        "url": "https://clinicaltrials.gov/study/NCT00673049"
+      }
+    },
+    {
+      "nctId": "NCT02411448",
+      "title": "A Study of Ramucirumab (LY3009806) in Combination With Erlotinib in Previously Untreated Participants With EGFR Mutation-Positive Metastatic NSCLC (RELAY)",
+      "phase": "Phase 3",
+      "status": "Active, not recruiting",
+      "conditions": [
+        "Metastatic Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Ramucirumab",
+        "Placebo",
+        "Erlotinib",
+        "Gefitinib",
+        "Osimertinib"
+      ],
+      "enrollment": 545,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Part B: Progression Free Survival (PFS)",
+        "Number of Participants With Treatment-Emergent Adverse Events"
+      ],
+      "startDate": "2015-05-06",
+      "source": {
+        "id": "nct:NCT02411448",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02411448",
+        "url": "https://clinicaltrials.gov/study/NCT02411448"
+      }
+    },
+    {
+      "nctId": "NCT01953913",
+      "title": "Afatinib (BIBW 2992) in Advanced Non-Small Cell Lung Cancer Patients With EGFR Mutation",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "Afatinib"
+      ],
+      "enrollment": 542,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Percentage of Participants With Serious Adverse Events (SAEs)"
+      ],
+      "startDate": "2013-09-30",
+      "source": {
+        "id": "nct:NCT01953913",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953913",
+        "url": "https://clinicaltrials.gov/study/NCT01953913"
+      }
+    },
+    {
+      "nctId": "NCT02588261",
+      "title": "A Study of ASP8273 vs. Erlotinib or Gefitinib in First-line Treatment of Patients With Stage IIIB/IV Non-small Cell Lung Cancer Tumors With EGFR Activating Mutations",
+      "phase": "Phase 3",
+      "status": "Terminated",
+      "conditions": [
+        "Non-small Cell Lung Cancer (NSCLC)"
+      ],
+      "interventions": [
+        "naquotinib mesilate",
+        "Erlotinib",
+        "Gefitinib"
+      ],
+      "enrollment": 530,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS) as Assessed by Independent Radiologic Review (IRR)"
+      ],
+      "startDate": "2016-02-11",
+      "source": {
+        "id": "nct:NCT02588261",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02588261",
+        "url": "https://clinicaltrials.gov/study/NCT02588261"
+      }
+    },
+    {
+      "nctId": "NCT00049543",
+      "title": "Gefitinib in Treating Patients With Stage IB, II, or IIIA Non-small Cell Lung Cancer That Was Completely Removed by Surgery",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Adenocarcinoma of the Lung",
+        "Adenosquamous Cell Lung Cancer",
+        "Bronchoalveolar Cell Lung Cancer",
+        "Large Cell Lung Cancer",
+        "Squamous Cell Lung Cancer",
+        "Stage IB Non-small Cell Lung Cancer",
+        "Stage IIA Non-small Cell Lung Cancer",
+        "Stage IIB Non-small Cell Lung Cancer",
+        "Stage IIIA Non-small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "gefitinib"
+      ],
+      "enrollment": 503,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Overall Survival"
+      ],
+      "startDate": "2002-09",
+      "source": {
+        "id": "nct:NCT00049543",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00049543",
+        "url": "https://clinicaltrials.gov/study/NCT00049543"
+      }
+    },
+    {
+      "nctId": "NCT01853826",
+      "title": "An Open Label Trial of Afatinib (Giotrif) in Treatment-naive (1st Line) or Chemotherapy Pre-treated Patients With Locally Advanced or Metastatic Non-small Cell Lung Cancer (NSCLC) Harboring EGFR Mutation(s)",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "Afatinib"
+      ],
+      "enrollment": 481,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Number of Patients With Adverse Events According to Common Terminology Criteria for Adverse Events (CTCAE) Version 3.0"
+      ],
+      "startDate": "2013-07-17",
+      "source": {
+        "id": "nct:NCT01853826",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01853826",
+        "url": "https://clinicaltrials.gov/study/NCT01853826"
+      }
+    },
+    {
+      "nctId": "NCT01774721",
+      "title": "ARCHER1050: A Study of Dacomitinib vs. Gefitinib in 1st-Line Treatment Of Advanced NSCLC.",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-small Cell Lung Cancer With EGFR-Activating Mutations"
+      ],
+      "interventions": [
+        "Dacomitinib (PF-00299804)",
+        "Gefitinib"
+      ],
+      "enrollment": 452,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS) Based on Independent Radiologic Central (IRC) Review"
+      ],
+      "startDate": "2013-05-09",
+      "source": {
+        "id": "nct:NCT01774721",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01774721",
+        "url": "https://clinicaltrials.gov/study/NCT01774721"
+      }
+    },
+    {
+      "nctId": "NCT03849768",
+      "title": "A Study to Evaluate Safety and Efficacy of HS-10296 as First-Line Treatment in Patients",
+      "phase": "Phase 3",
+      "status": "Unknown status",
+      "conditions": [
+        "Non Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "HS-10296",
+        "Gefitinib"
+      ],
+      "enrollment": 429,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS)"
+      ],
+      "startDate": "2019-02-01",
+      "source": {
+        "id": "nct:NCT03849768",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03849768",
+        "url": "https://clinicaltrials.gov/study/NCT03849768"
+      }
+    },
+    {
+      "nctId": "NCT02737501",
+      "title": "ALTA-1L Study: A Study of Brigatinib Versus Crizotinib in Anaplastic Lymphoma Kinase Positive (ALK+) Advanced Non-small Cell Lung Cancer (NSCLC) Participants",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Non-small Cell Lung Cancer",
+        "Lung Cancer",
+        "Advanced Malignancies",
+        "Carcinoma"
+      ],
+      "interventions": [
+        "Brigatinib",
+        "Crizotinib"
+      ],
+      "enrollment": 275,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-free Survival (PFS)"
+      ],
+      "startDate": "2016-05-26",
+      "source": {
+        "id": "nct:NCT02737501",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02737501",
+        "url": "https://clinicaltrials.gov/study/NCT02737501"
+      }
+    },
+    {
+      "nctId": "NCT03596866",
+      "title": "A Study of Brigatinib Compared to Alectinib in Adults With Non-Small-Cell Lung Cancer",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "ALK+ Advanced NSCLC"
+      ],
+      "interventions": [
+        "Brigatinib",
+        "Alectinib"
+      ],
+      "enrollment": 248,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression-free Survival (PFS) as Assessed by Blinded Independent Review Committee (BIRC) Per RECIST v1.1"
+      ],
+      "startDate": "2019-04-19",
+      "source": {
+        "id": "nct:NCT03596866",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03596866",
+        "url": "https://clinicaltrials.gov/study/NCT03596866"
+      }
+    },
+    {
+      "nctId": "NCT02322281",
+      "title": "TIGER-3: Open Label, Multicenter Study of Rociletinib (CO-1686) Mono Therapy Versus Single-agent Cytotoxic Chemotherapy in Patients With Mutant EGFR NSCLC Who Have Failed at Least One Previous EGFR-Directed TKI and Platinum-doublet Chemotherapy",
+      "phase": "Phase 3",
+      "status": "Terminated",
+      "conditions": [
+        "Non-small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Rociletinib",
+        "Pemetrexed or gemcitabine or paclitaxel or docetaxel"
+      ],
+      "enrollment": 149,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS) According to RECIST Version 1.1 as Determined by Investigator Review (invPFS)"
+      ],
+      "startDate": "2015-02",
+      "source": {
+        "id": "nct:NCT02322281",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02322281",
+        "url": "https://clinicaltrials.gov/study/NCT02322281"
+      }
+    },
+    {
+      "nctId": "NCT04129502",
+      "title": "TAK-788 as First-Line Treatment Versus Platinum-Based Chemotherapy for Non-Small Cell Lung Cancer (NSCLC) With EGFR Exon 20 Insertion Mutations",
+      "phase": "Phase 3",
+      "status": "Completed",
+      "conditions": [
+        "Advanced/Metastatic Non-Small Cell Lung Cancer (NSCLC)"
+      ],
+      "interventions": [
+        "TAK-788",
+        "Pemetrexed",
+        "Cisplatin",
+        "Carboplatin"
+      ],
+      "enrollment": 354,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS) as Assessed by Blinded Independent Review Committee (IRC) per Response Evaluation Criteria in Solid Tumors (RECIST) Version 1.1"
+      ],
+      "startDate": "2020-01-10",
+      "source": {
+        "id": "nct:NCT04129502",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04129502",
+        "url": "https://clinicaltrials.gov/study/NCT04129502"
+      }
+    },
+    {
+      "nctId": "NCT05378763",
+      "title": "A Study of Poziotinib in Previously Treated Participants With Locally Advanced or Metastatic NSCLC Harboring HER2 Exon 20 Mutations",
+      "phase": "Phase 3",
+      "status": "Suspended",
+      "conditions": [
+        "NSCLC"
+      ],
+      "interventions": [
+        "Poziotinib",
+        "Docetaxel"
+      ],
+      "enrollment": 268,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS)"
+      ],
+      "startDate": "2022-05-12",
+      "source": {
+        "id": "nct:NCT05378763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05378763",
+        "url": "https://clinicaltrials.gov/study/NCT05378763"
+      }
+    },
+    {
+      "nctId": "NCT02186301",
+      "title": "TIGER-1: Safety and Efficacy Study of Rociletinib (CO-1686) or Erlotinib in Patients With EGFR-mutant/Metastatic NSCLC Who Have Not Had Any Previous EGFR Directed Therapy",
+      "phase": "Phase 2/3",
+      "status": "Terminated",
+      "conditions": [
+        "Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Rociletinib Mono-Therapy",
+        "Erlotinib Mono-Therapy"
+      ],
+      "enrollment": 100,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Progression Free Survival (PFS) According to RECIST Version 1.1 as Determined by Investigator Review (invPFS)"
+      ],
+      "startDate": "2014-11",
+      "source": {
+        "id": "nct:NCT02186301",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02186301",
+        "url": "https://clinicaltrials.gov/study/NCT02186301"
+      }
+    },
+    {
+      "nctId": "NCT03318939",
+      "title": "Phase 2 Study of Poziotinib in Participants With NSCLC Having EGFR or HER2 Exon 20 Insertion Mutation",
+      "phase": "Phase 2",
+      "status": "Terminated",
+      "conditions": [
+        "NSCLC"
+      ],
+      "interventions": [
+        "Poziotinib"
+      ],
+      "enrollment": 648,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Objective Response Rate (ORR)"
+      ],
+      "startDate": "2017-10-11",
+      "source": {
+        "id": "nct:NCT03318939",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03318939",
+        "url": "https://clinicaltrials.gov/study/NCT03318939"
+      }
+    },
+    {
+      "nctId": "NCT01306045",
+      "title": "Molecular Profiling and Targeted Therapy for Advanced Non-Small Cell Lung Cancer, Small Cell Lung Cancer, and Thymic Malignancies",
+      "phase": "Phase 2",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung",
+        "Carcinoma, Small Cell Lung",
+        "Carcinoma, Thymic"
+      ],
+      "interventions": [
+        "AZD6244",
+        "MK-2206",
+        "Lapatinib",
+        "Erlotinib",
+        "Sunitinib"
+      ],
+      "enrollment": 647,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Percentage of Enrolled Participants Testing Positive for Genomic Abnormality",
+        "Number of Evaluable Participants With a Response Based on Molecular Profile Directed Treatments in Non-Small Cell Lung Cancer, (NSCLC), Small Cell Lung Cancer (SCLC), and Thymic Malignancies",
+        "Percentage of Evaluable Participants Overall Response Rate (ORR) Based on the Drug Selected for Their Particular Profile"
+      ],
+      "startDate": "2011-02-08",
+      "source": {
+        "id": "nct:NCT01306045",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01306045",
+        "url": "https://clinicaltrials.gov/study/NCT01306045"
+      }
+    },
+    {
+      "nctId": "NCT01953926",
+      "title": "Basket Study of Neratinib in Participants With Solid Tumors Harboring Somatic HER2 or EGFR Exon 18 Mutations",
+      "phase": "Phase 2",
+      "status": "Terminated",
+      "conditions": [
+        "Solid Tumors Harboring Somatic HER2 or EGFR Exon 18 Mutations"
+      ],
+      "interventions": [
+        "Neratinib",
+        "Fulvestrant",
+        "Trastuzumab",
+        "Paclitaxel"
+      ],
+      "enrollment": 582,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Confirmed Objective Response Rate (ORR) by Independent Central Review (Breast Cancer With Prior CDK46i Cohort)",
+        "Confirmed Objective Response Rate (ORR) by Investigator Review (Cervical Cancer Cohort)",
+        "Objective Response Rate (ORR) at First Assessment by Investigator Review (All Other Cohorts)"
+      ],
+      "startDate": "2013-09-30",
+      "source": {
+        "id": "nct:NCT01953926",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953926",
+        "url": "https://clinicaltrials.gov/study/NCT01953926"
+      }
+    },
+    {
+      "nctId": "NCT02147990",
+      "title": "Multicenter Study of Rociletinib Administered to Patients With Previously Treated Mutant EGFR Non-small Cell Lung Cancer",
+      "phase": "Phase 2",
+      "status": "Terminated",
+      "conditions": [
+        "Non-small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "Rociletinib"
+      ],
+      "enrollment": 318,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Objective Response Rate (ORR) According to RECIST Version 1.1 as Determined by Investigator Assessment"
+      ],
+      "startDate": "2014-06-16",
+      "source": {
+        "id": "nct:NCT02147990",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02147990",
+        "url": "https://clinicaltrials.gov/study/NCT02147990"
+      }
+    },
+    {
+      "nctId": "NCT02094573",
+      "title": "A Study to Evaluate the Efficacy of Brigatinib (AP26113) in Participants With Anaplastic Lymphoma Kinase (ALK)-Positive, Non-small Cell Lung Cancer (NSCLC) Previously Treated With Crizotinib",
+      "phase": "Phase 2",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "Brigatinib"
+      ],
+      "enrollment": 222,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Confirmed Objective Response Rate (ORR) as Assessed by Investigator"
+      ],
+      "startDate": "2014-06-04",
+      "source": {
+        "id": "nct:NCT02094573",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02094573",
+        "url": "https://clinicaltrials.gov/study/NCT02094573"
+      }
+    },
+    {
+      "nctId": "NCT00266877",
+      "title": "Study Evaluating the Safety Of HKI-272 (Neratinib) In Subjects With Advanced Non-Small Cell Lung Cancer",
+      "phase": "Phase 2",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung",
+        "Lung Neoplasms"
+      ],
+      "interventions": [
+        "HKI-272"
+      ],
+      "enrollment": 172,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Objective Response Rate for Neratinib in Patients With Non-small Cell Lung Cancer"
+      ],
+      "startDate": "2005-12",
+      "source": {
+        "id": "nct:NCT00266877",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00266877",
+        "url": "https://clinicaltrials.gov/study/NCT00266877"
+      }
+    },
+    {
+      "nctId": "NCT00073008",
+      "title": "A Study Of Oral GW572016 In Advanced Or Metastatic Non-Small Cell Lung Cancer",
+      "phase": "Phase 2",
+      "status": "Terminated",
+      "conditions": [
+        "Lung Cancer, Non-Small Cell"
+      ],
+      "interventions": [
+        "GW572016 (lapatinib)"
+      ],
+      "enrollment": 131,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Tumor Response in the Targeted Population Through the End of Treatment"
+      ],
+      "startDate": "2003-11",
+      "source": {
+        "id": "nct:NCT00073008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00073008",
+        "url": "https://clinicaltrials.gov/study/NCT00073008"
+      }
+    },
+    {
+      "nctId": "NCT01827267",
+      "title": "Neratinib With and Without Temsirolimus for Patients With HER2 Activating Mutations in Non-Small Cell Lung Cancer",
+      "phase": "Phase 2",
+      "status": "Completed",
+      "conditions": [
+        "HER2-mutant Non-Small Cell Lung Cancer"
+      ],
+      "interventions": [
+        "neratinib",
+        "temsirolimus"
+      ],
+      "enrollment": 62,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Objective Response Rate (ORR)"
+      ],
+      "startDate": "2013-07-01",
+      "source": {
+        "id": "nct:NCT01827267",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01827267",
+        "url": "https://clinicaltrials.gov/study/NCT01827267"
+      }
+    },
+    {
+      "nctId": "NCT04591431",
+      "title": "The Rome Trial From Histology to Target: the Road to Personalize Target Therapy and Immunotherapy",
+      "phase": "Phase 2",
+      "status": "Unknown status",
+      "conditions": [
+        "Breast Cancer",
+        "Gastrointestinal Cancer",
+        "Non Small Cell Lung Cancer",
+        "Other Cancer"
+      ],
+      "interventions": [
+        "Erlotinib",
+        "Trastuzumab",
+        "Trastuzumab emtansine",
+        "Pertuzumab",
+        "Lapatinib",
+        "Everolimus",
+        "Vemurafenib",
+        "Cobimetinib",
+        "Alectinib",
+        "Brigatinib",
+        "Palbociclib",
+        "Ponatinib",
+        "Vismogedib",
+        "Itacitinib",
+        "Ipatasertib",
+        "Entrectinib",
+        "Atezolizumab",
+        "Nivolumab",
+        "Ipilimumab",
+        "Pemigatinib",
+        "Oncology Drugs",
+        "Pralsetinib",
+        "Selpercatinib",
+        "Talazoparib",
+        "Tepotinib",
+        "Alpelisib"
+      ],
+      "enrollment": 400,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "OVERALL RESPONSE RATE (ORR)"
+      ],
+      "startDate": "2020-10-07",
+      "source": {
+        "id": "nct:NCT04591431",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04591431",
+        "url": "https://clinicaltrials.gov/study/NCT04591431"
+      }
+    },
+    {
+      "nctId": "NCT00050830",
+      "title": "A Phase 2, Randomized, Open-Label Study Of Single Agent CI-1033 In Patients With Advanced Non-Small Cell Lung Cancer",
+      "phase": "Phase 2",
+      "status": "Completed",
+      "conditions": [
+        "Lung Neoplasms"
+      ],
+      "interventions": [
+        "CI 1033"
+      ],
+      "enrollment": 163,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "The primary objective is to assess the antitumor activity of CI 1033 in patients with advanced (progressive or recurrent, locally advanced [TNM Stage IIIB] or metastatic [TNM Stage IV]) NSCLC who hav…"
+      ],
+      "startDate": "2003-01",
+      "source": {
+        "id": "nct:NCT00050830",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00050830",
+        "url": "https://clinicaltrials.gov/study/NCT00050830"
+      }
+    },
+    {
+      "nctId": "NCT03066206",
+      "title": "Poziotinib in EGFR Exon 20 Mutant Advanced NSCLC",
+      "phase": "Phase 2",
+      "status": "Terminated",
+      "conditions": [
+        "EGFR Exon 20 Mutation",
+        "ERBB2 Gene Mutation",
+        "Recurrent Lung Non-Small Cell Carcinoma",
+        "Stage IV Non-Small Cell Lung Cancer AJCC v7"
+      ],
+      "interventions": [
+        "Poziotinib"
+      ],
+      "enrollment": 93,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Objective response rate a in patients with estimated glomerular filtration rate (EGFR) exon 20 mutant non-small Cell Lung Cancer (NSCLC) (Cohort 1)",
+        "Objective response rate a in patients with human epidermal growth factor receptor 2 (HER2) exon 20 mutant non-small Cell Lung Cancer (NSCLC) (Cohort 2)"
+      ],
+      "startDate": "2017-03-17",
+      "source": {
+        "id": "nct:NCT03066206",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03066206",
+        "url": "https://clinicaltrials.gov/study/NCT03066206"
+      }
+    },
+    {
+      "nctId": "NCT04044170",
+      "title": "Poziotinib in Patients With NSCLC Having EGFR or HER2 Exon 20 Insertion Mutation",
+      "phase": "Phase 2",
+      "status": "Terminated",
+      "conditions": [
+        "NSCLC"
+      ],
+      "interventions": [
+        "Poziotinib"
+      ],
+      "enrollment": 5,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Objective response rate (ORR)"
+      ],
+      "startDate": "2019-07-30",
+      "source": {
+        "id": "nct:NCT04044170",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04044170",
+        "url": "https://clinicaltrials.gov/study/NCT04044170"
+      }
+    },
+    {
+      "nctId": "NCT04576208",
+      "title": "A Study to Evaluate the Impact of Management Strategies on Gastrointestinal-Related Adverse Events in Participants With Non-Small Cell Lung Cancer Harboring Epidermal Growth Factor Receptor (EGFR) Exon 20 Insertion Mutations Receiving TAK-788",
+      "phase": "Phase 2",
+      "status": "Withdrawn",
+      "conditions": [
+        "Non-Small Cell Lung Cancer (NSCLC)"
+      ],
+      "interventions": [
+        "TAK-788",
+        "Antidiarrheal prophylaxis"
+      ],
+      "enrollment": 0,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Number of Participants with Treatment Emergent Adverse Events (TEAEs) of ≥Grade 3 Diarrhea Occurring During the First 4 Cycles of TAK-788 Dosing"
+      ],
+      "startDate": "2020-11-30",
+      "source": {
+        "id": "nct:NCT04576208",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04576208",
+        "url": "https://clinicaltrials.gov/study/NCT04576208"
+      }
+    },
+    {
+      "nctId": "NCT05045404",
+      "title": "Poziotinib and Ramucirumab for the Treatment of EGFR Exon 20 Mutant Stage IV Non-small Cell Lung Cancer",
+      "phase": "Phase 2",
+      "status": "Withdrawn",
+      "conditions": [
+        "Metastatic Lung Non-Small Cell Carcinoma",
+        "Stage IV Lung Cancer AJCC v8",
+        "Stage IVA Lung Cancer AJCC v8",
+        "Stage IVB Lung Cancer AJCC v8"
+      ],
+      "interventions": [
+        "Poziotinib Hydrochloride",
+        "1429757-68-5, HM781-36B, NOV-1201 Hydrochloride, NOV120101 Hydrochloride, Poziotinib HCl, POZIOTINIB HYDROCHLORIDE"
+      ],
+      "enrollment": 0,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression-free survival"
+      ],
+      "startDate": "2021-06-16",
+      "source": {
+        "id": "nct:NCT05045404",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05045404",
+        "url": "https://clinicaltrials.gov/study/NCT05045404"
+      }
+    },
+    {
+      "nctId": "NCT04402008",
+      "title": "Study of Poziotinib in Japanese Patients With NSCLC",
+      "phase": "Phase 1/2",
+      "status": "Terminated",
+      "conditions": [
+        "NSCLC"
+      ],
+      "interventions": [
+        "Poziotinib Once Daily Dosing",
+        "Poziotinib Twice Daily Dosing",
+        "Poziotinib Once Daily Dosing or Twice Daily Dosing as determined in Phase 1"
+      ],
+      "enrollment": 42,
+      "hasResults": true,
+      "primaryOutcomes": [
+        "Phase 1: Number of Participants With Dose Limiting Toxicities (DLTs)",
+        "Phase 2: Objective Response Rate (ORR)"
+      ],
+      "startDate": "2020-06-23",
+      "source": {
+        "id": "nct:NCT04402008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04402008",
+        "url": "https://clinicaltrials.gov/study/NCT04402008"
+      }
+    },
+    {
+      "nctId": "NCT02716116",
+      "title": "A Study of TAK-788 in Adults With Non-Small Cell Lung Cancer",
+      "phase": "Phase 1/2",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small-Cell Lung"
+      ],
+      "interventions": [
+        "TAK-788"
+      ],
+      "enrollment": 324,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Part 1, Dose Escalation Component: Recommended Phase 2 Dose (RP2D) of Orally Administered TAK-788",
+        "Part 2, Expansion Cohorts 1, 2, 4, 5 and 7: Confirmed Objective Response Rate (ORR) Assessed by the Investigator",
+        "Part 2, Expansion Cohort 3: Intracranial ORR (iORR) Assessed by Independent Review Committee (IRC)"
+      ],
+      "startDate": "2016-06-16",
+      "source": {
+        "id": "nct:NCT02716116",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02716116",
+        "url": "https://clinicaltrials.gov/study/NCT02716116"
+      }
+    },
+    {
+      "nctId": "NCT00174356",
+      "title": "PH 1 Evaluation Of Oral CI-1033 In Combination With Paclitaxel/ Carboplatin As 1st Line Chemotherapy In NSCLC Patients",
+      "phase": "Phase 1",
+      "status": "Completed",
+      "conditions": [
+        "Carcinoma, Non-Small Cell Lung"
+      ],
+      "interventions": [
+        "CI 1033",
+        "PACLITAXEL",
+        "CARBOPLATIN"
+      ],
+      "enrollment": 39,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "The primary objective is to evaluate the overall safety profile, including dose-limiting toxicities and the maximum tolerated dose, of CI 1033 in combination with paclitaxel (225 mg/m2) and carboplat…"
+      ],
+      "startDate": "2002-12",
+      "source": {
+        "id": "nct:NCT00174356",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00174356",
+        "url": "https://clinicaltrials.gov/study/NCT00174356"
+      }
+    }
+  ]
+}

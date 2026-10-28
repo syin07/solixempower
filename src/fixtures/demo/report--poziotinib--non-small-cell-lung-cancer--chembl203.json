@@ -1,0 +1,228 @@
+{
+  "verdict": "mixed",
+  "headline": "Poziotinib ranks 2 of 13 on pooled wild-type EGFR binding potency (median pChEMBL 9.48, 5 measurements), is ahead of afatinib and tied with gefitinib in the two same-assay comparisons, and has extensive cell-based data, but this potency is not clinical evidence and no efficacy or safety outcome data were analysed here.",
+  "sections": [
+    {
+      "layer": "molecular",
+      "summary": "On pooled wild-type EGFR IC50 binding data poziotinib ranks 2 of 13 by median pChEMBL, behind only mobocertinib (2 measurements, so ranking uncertain). Two matched-assay comparisons show it ahead of afatinib and tied with gefitinib. Ranks pool different assays and are indicative only.",
+      "claims": [
+        {
+          "text": "Poziotinib: 5 comparable IC50 binding measurements on EGFR, median pChEMBL 9.48 (range 9.4–9.86), rank 2 of 13 by median.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25078762",
+            "chembl-act:26198959",
+            "chembl-act:26199036",
+            "chembl-act:26199040",
+            "chembl-act:29092502"
+          ]
+        },
+        {
+          "text": "Mobocertinib ranks 1 of 13 (median pChEMBL 10.65, range 10.6–10.7) but rests on only 2 measurements, so its ranking is uncertain.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25098080",
+            "chembl-act:29113771"
+          ]
+        },
+        {
+          "text": "Afatinib ranks 3 of 13 (median pChEMBL 8.86, 10 measurements listed), behind poziotinib in the pooled ranking.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:2246122",
+            "chembl-act:16479890",
+            "chembl-act:19310304",
+            "chembl-act:22894024",
+            "chembl-act:24902244",
+            "chembl-act:24957791",
+            "chembl-act:25078763",
+            "chembl-act:25094728",
+            "chembl-act:26039767",
+            "chembl-act:26941087"
+          ]
+        },
+        {
+          "text": "Gefitinib ranks 9 of 13 (median pChEMBL 7.69), erlotinib 10 of 13 (7.58), osimertinib 11 of 13 (7.57) and lapatinib 8 of 13 (7.87); all rank below poziotinib in the pooled ranking.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:108863",
+            "chembl-act:186630",
+            "chembl-act:129395",
+            "chembl-act:2048876",
+            "chembl-act:18581491",
+            "chembl-act:18722887",
+            "chembl-act:190221",
+            "chembl-act:1766862"
+          ]
+        },
+        {
+          "text": "Same-assay comparison CHEMBL5255141 (wild-type EGFR): poziotinib pChEMBL 9.86 versus afatinib 9.19; poziotinib is ahead of afatinib by 0.67.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25078762",
+            "chembl-act:25078763"
+          ]
+        },
+        {
+          "text": "Same-assay comparison CHEMBL5638814 (wild-type GST-tagged EGFR, ADP-glo): poziotinib pChEMBL 9.6 and gefitinib 9.6; the two are tied.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:26199036",
+            "chembl-act:26199037"
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "preclinical",
+      "summary": "Twenty-plus candidate results are listed from different assay formats and cell systems (cell phosphorylation, Ba/F3 and human cell antiproliferation, recombinant kinase assays). They are NOT comparable to the binding ranking or to each other and must not be ranked or pooled. Values are reported as recorded.",
+      "claims": [
+        {
+          "text": "Inhibition of EGFR phosphorylation in human NCI-H2073 cells (HTRF, 2 hrs): IC50 = 2.512 nM.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:26198971"
+          ]
+        },
+        {
+          "text": "Antiproliferative activity in mouse Ba/F3 EGFR exon 20 insertion models (72 hrs): V769_D770insASV IC50 = 4.8 nM (CCK-8); A763_Y764insFQEA IC50 = 0.7 nM (CCK-8); H773-V774ins_NPH IC50 = 2.2 nM (CCK-8); D770-N771ins_SVD IC50 = 2.7 nM (CCK-8); exon 20 insertion mutant IC50 = 1 nM (Cell Titer-Glo).",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25638110",
+            "chembl-act:25638107",
+            "chembl-act:25638116",
+            "chembl-act:25638113",
+            "chembl-act:25638194"
+          ]
+        },
+        {
+          "text": "Antiproliferative activity in BaF3 cells (72 hrs, CellTiter-Glo): HER2-P780-Y781 ins GSP IC50 = 0.21 nM; HER2-A775-G776 ins YVMA IC50 = 0.43 nM; FL-EGFR A763-Y764 ins FQEA IC50 = 0.58 nM; FL-EGFR D770-N771 ins NPG IC50 = 0.62 nM.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25078806",
+            "chembl-act:25078802",
+            "chembl-act:25078798",
+            "chembl-act:25078794"
+          ]
+        },
+        {
+          "text": "Antiproliferative activity in human cells with EGFR exon 20 mutations (72 hrs, Cell Titer-Glo): YUL-0019 (N771delinsFH) IC50 = 0.3 nM; CUTO14 (V769_D770insASV) IC50 = 1.8 nM.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25638197",
+            "chembl-act:25638196"
+          ]
+        },
+        {
+          "text": "Recombinant kinase assays: GST-tagged EGFR (669–1210) IC50 = 0.27 nM; His-tagged EGFR (676–1255) IC50 = 3.88 nM; HER2 (703–1029) IC50 = 12 nM; HER2-A775_G776insYVMA kinase IC50 = 0.3 nM.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:24848037",
+            "chembl-act:24848044",
+            "chembl-act:22408422",
+            "chembl-act:22408381"
+          ]
+        },
+        {
+          "text": "Further Ba/F3 and cell viability results: EGFR-H773-V774ins_NPH EC50 = 7 nM; Her2-A775_G776insYVMA EC50 = 12 nM; human A-431 cells with wild-type EGFR EC50 = 1445 nM; HER2-G776delinsVC in H1781 cells IC50 = 105 nM.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:24921565",
+            "chembl-act:24921587",
+            "chembl-act:24921609",
+            "chembl-act:22408340"
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "clinical",
+      "summary": "Of the 25 listed trials, 6 test poziotinib itself and the rest test only comparators or other agents. Trial facts show development stage only; two poziotinib trials have results posted on ClinicalTrials.gov but outcome data were not retrieved or analysed here, so no efficacy or safety conclusion is made.",
+      "claims": [
+        {
+          "text": "NCT05378763 is a Phase 3 trial of poziotinib versus docetaxel in HER2 exon 20-mutant NSCLC (suspended, enrollment 268, primary endpoint PFS; no results posted).",
+          "kind": "clinical",
+          "sourceIds": [
+            "nct:NCT05378763"
+          ]
+        },
+        {
+          "text": "NCT03318939 (Phase 2, terminated, enrollment 648, primary endpoint ORR) has results posted on ClinicalTrials.gov; outcome data were not retrieved or analysed here.",
+          "kind": "clinical",
+          "sourceIds": [
+            "nct:NCT03318939"
+          ]
+        },
+        {
+          "text": "NCT04402008 (Phase 1/2 in Japanese patients, terminated, enrollment 42) has results posted on ClinicalTrials.gov; outcome data were not retrieved or analysed here.",
+          "kind": "clinical",
+          "sourceIds": [
+            "nct:NCT04402008"
+          ]
+        },
+        {
+          "text": "Other poziotinib trials: NCT03066206 (Phase 2, terminated, enrollment 93), NCT04044170 (Phase 2, terminated, enrollment 5), and NCT05045404 (Phase 2 with ramucirumab, withdrawn, enrollment 0); none have results posted.",
+          "kind": "clinical",
+          "sourceIds": [
+            "nct:NCT03066206",
+            "nct:NCT04044170",
+            "nct:NCT05045404"
+          ]
+        },
+        {
+          "text": "Several poziotinib trials ended as terminated or withdrawn and one Phase 3 is suspended, so the development status is uncertain.",
+          "kind": "ai_summary",
+          "sourceIds": [
+            "nct:NCT05378763",
+            "nct:NCT03318939",
+            "nct:NCT03066206",
+            "nct:NCT04044170",
+            "nct:NCT05045404",
+            "nct:NCT04402008"
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "safety",
+      "summary": "Computed properties are calculated descriptors, not a safety assessment. No regulatory warning is recorded for poziotinib, which is not evidence of safety because it is investigational. Listed warnings belong to comparators.",
+      "claims": [
+        {
+          "text": "Poziotinib computed properties: MW 491.35, AlogP 5.38, 1 Lipinski Ro5 violation, QED 0.37. These are not a safety assessment.",
+          "kind": "computed",
+          "sourceIds": [
+            "chembl-mol:CHEMBL3545154"
+          ]
+        },
+        {
+          "text": "Comparator lapatinib has US Black Box Warnings for hepatotoxicity and hematological toxicity; this describes lapatinib, not poziotinib.",
+          "kind": "clinical",
+          "sourceIds": [
+            "chembl-warn:1043",
+            "chembl-warn:5118"
+          ]
+        },
+        {
+          "text": "Comparator mobocertinib has US Black Box Warnings, including one for cardiotoxicity; this describes mobocertinib, not poziotinib.",
+          "kind": "clinical",
+          "sourceIds": [
+            "chembl-warn:2847",
+            "chembl-warn:3784"
+          ]
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Potency was measured on wild-type EGFR and in cell models, and the clinical setting is mutation-driven; does the binding ranking reflect exon 20 activity?",
+    "Does the high potency on wild-type EGFR indicate limited selectivity over normal tissue? The A-431 wild-type cell EC50 of 1445 nM is a single value and not comparable to other assays.",
+    "What were the outcomes of the completed trials with results posted? They were not retrieved here.",
+    "Only two same-assay comparisons exist (afatinib, gefitinib); how does poziotinib compare with osimertinib or mobocertinib in matched assays?"
+  ],
+  "nextSteps": [
+    "Retrieve and analyse posted results for NCT03318939 and NCT04402008, including response rates and adverse events.",
+    "Seek matched-assay comparisons against osimertinib, mobocertinib and other exon 20-active agents on mutant EGFR and HER2.",
+    "Review selectivity data against wild-type EGFR in matched cell systems.",
+    "Review the regulatory and trial status of the suspended Phase 3 trial NCT05378763."
+  ]
+}
