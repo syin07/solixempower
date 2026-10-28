@@ -32,3 +32,5 @@ Phase 2 (T+3:30 → T+7, all three): trials layer, AI report hardening, UI polis
 - Small commits, frequent PRs to `main`. Sandy merges.
 
 @.claude/role.md
+
+Next.js version notes: @AGENTS.md
