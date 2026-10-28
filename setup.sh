@@ -54,7 +54,11 @@ check_prereqs() {
     command -v claude >/dev/null || echo "! Claude Code not found — install: npm i -g @anthropic-ai/claude-code"
   elif ! command -v code >/dev/null; then
     echo "! VS Code 'code' command not found — in VS Code: Cmd+Shift+P → 'Shell Command: Install code command in PATH'"
-  elif ! code --list-extensions 2>/dev/null | grep -qi '^github\.copilot'; then
+  # Avoid grep -q here: with pipefail, grep can close the pipe after finding
+  # Copilot and make code exit with SIGPIPE, which looks like a failed check.
+  elif ! code --list-extensions 2>/dev/null | grep -i '^github\.copilot' >/dev/null &&
+       [[ ! -d "${XDG_CONFIG_HOME:-$HOME/.config}/Code/User/globalStorage/github.copilot-chat" ]] &&
+       [[ ! -d "$HOME/.var/app/com.visualstudio.code/config/Code/User/globalStorage/github.copilot-chat" ]]; then
     echo "! GitHub Copilot extension not found — install: code --install-extension GitHub.copilot-chat"
   fi
 }
