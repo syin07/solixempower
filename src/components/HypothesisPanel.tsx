@@ -11,6 +11,7 @@ const STATUS: Record<HypothesisStatus, { label: string; className: string }> = {
   proposed: { label: "Proposed", className: "border-emerald-600 bg-emerald-50 text-emerald-800" },
   already_tested: { label: "Already tested", className: "border-amber-500 bg-amber-50 text-amber-900" },
   already_indicated: { label: "Already indicated", className: "border-zinc-400 bg-zinc-100 text-zinc-700" },
+  no_path: { label: "No path found", className: "border-red-500 bg-red-50 text-red-800" },
 };
 
 const TEMPLATE: Record<HypothesisTemplate, string> = {
@@ -18,6 +19,7 @@ const TEMPLATE: Record<HypothesisTemplate, string> = {
   comparator_hop: "via a comparator drug",
   off_target_hop: "via a secondary target",
   route_hop: "formulation / route",
+  query_disease: "for the disease you asked about",
 };
 
 const CHIPS_SHOWN = 4;
@@ -31,59 +33,67 @@ export function HypothesisPanel({
   sources: Map<string, SourceRef>;
   onHover: (id: string | null) => void;
 }) {
-  const [open, setOpen] = useState<string | null>(hypotheses[0]?.id ?? null);
-  const proposed = hypotheses.filter((h) => h.status === "proposed").length;
+  const query = hypotheses.find((h) => h.template === "query_disease");
+  const rest = hypotheses.filter((h) => h.template !== "query_disease");
+  const [open, setOpen] = useState<string | null>(query?.id ?? rest[0]?.id ?? null);
+  const proposed = rest.filter((h) => h.status === "proposed").length;
+
+  const item = (h: Hypothesis, pinned: boolean) => (
+    <li
+      key={h.id}
+      className={`px-4 py-3 hover:bg-blue-50/40 ${pinned ? "border-l-4 border-l-blue-600 bg-blue-50/20" : ""}`}
+      onMouseEnter={() => onHover(h.id)}
+      onMouseLeave={() => onHover(null)}
+    >
+      <button type="button" className="w-full text-left" onClick={() => setOpen(open === h.id ? null : h.id)}>
+        <div className="flex items-start gap-2">
+          <span className={`mt-0.5 shrink-0 rounded border px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${STATUS[h.status].className}`}>
+            {STATUS[h.status].label}
+          </span>
+          <span className="text-sm font-medium text-zinc-900">{h.statement}</span>
+        </div>
+        <div className="mt-1 text-[11px] uppercase tracking-wide text-zinc-500">{TEMPLATE[h.template]}</div>
+      </button>
+      {open === h.id && (
+        <div className="mt-2 flex flex-col gap-2">
+          <dl className="flex flex-col gap-1.5 text-xs">
+            {h.ladder.map((row, i) => (
+              <RowBadge key={i} kind={row.kind} label={row.label} value={row.value} />
+            ))}
+          </dl>
+          <div className="rounded border border-blue-200 bg-blue-50 px-2.5 py-2 text-xs text-blue-900">
+            <span className="font-semibold">Suggested test: </span>
+            {h.suggestedTest}
+          </div>
+          <SourceChips ids={h.sourceIds} sources={sources} />
+        </div>
+      )}
+    </li>
+  );
 
   return (
     <div className="rounded-md border border-zinc-200 bg-white">
+      {query && (
+        <>
+          <div className="border-b border-zinc-100 px-4 py-2.5 text-sm font-semibold text-zinc-900">Your question</div>
+          <ol className="border-b border-zinc-200">{item(query, true)}</ol>
+        </>
+      )}
       <div className="flex items-baseline justify-between border-b border-zinc-100 px-4 py-2.5">
         <div className="text-sm font-semibold text-zinc-900">Repurposing hypotheses</div>
         <span
           className="text-xs text-zinc-500"
           title="Ordered by status, then genetic evidence, then clinical score; never summed into one score"
         >
-          {hypotheses.length} found · {proposed} open
+          {rest.length} found · {proposed} open
         </span>
       </div>
-      {hypotheses.length === 0 ? (
+      {rest.length === 0 ? (
         <p className="px-4 py-3 text-sm text-zinc-500">
           No repurposing gap found within two hops. Expand a target or disease node to look further.
         </p>
       ) : (
-        <ol className="divide-y divide-zinc-100">
-          {hypotheses.map((h) => (
-            <li
-              key={h.id}
-              className="px-4 py-3 hover:bg-blue-50/40"
-              onMouseEnter={() => onHover(h.id)}
-              onMouseLeave={() => onHover(null)}
-            >
-              <button type="button" className="w-full text-left" onClick={() => setOpen(open === h.id ? null : h.id)}>
-                <div className="flex items-start gap-2">
-                  <span className={`mt-0.5 shrink-0 rounded border px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${STATUS[h.status].className}`}>
-                    {STATUS[h.status].label}
-                  </span>
-                  <span className="text-sm font-medium text-zinc-900">{h.statement}</span>
-                </div>
-                <div className="mt-1 text-[11px] uppercase tracking-wide text-zinc-500">{TEMPLATE[h.template]}</div>
-              </button>
-              {open === h.id && (
-                <div className="mt-2 flex flex-col gap-2">
-                  <dl className="flex flex-col gap-1.5 text-xs">
-                    {h.ladder.map((row, i) => (
-                      <RowBadge key={i} kind={row.kind} label={row.label} value={row.value} />
-                    ))}
-                  </dl>
-                  <div className="rounded border border-blue-200 bg-blue-50 px-2.5 py-2 text-xs text-blue-900">
-                    <span className="font-semibold">Suggested test: </span>
-                    {h.suggestedTest}
-                  </div>
-                  <SourceChips ids={h.sourceIds} sources={sources} />
-                </div>
-              )}
-            </li>
-          ))}
-        </ol>
+        <ol className="divide-y divide-zinc-100">{rest.map((h) => item(h, false))}</ol>
       )}
     </div>
   );

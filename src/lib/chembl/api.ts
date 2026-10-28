@@ -198,6 +198,9 @@ export async function selectTarget(moleculeId: string, override?: string): Promi
   else if (familyMembers.length) [target, how] = [familyMembers[0], "mechanismFamily"];
   else if (ranked.length) [target, how] = [ranked[0].target, "mostMeasured"];
   else throw new ChemblNotFound(`a human single-protein target with measurements for ${moleculeId}`);
+  // A mechanism target with no measurements anchors nothing (acetaminophen → FAAH, n=0): prefer the
+  // most-measured target when one has data. An explicit override is never replaced.
+  if (how !== "override" && n(target) === 0 && ranked.length && ranked[0].n > 0) [target, how] = [ranked[0].target, "mostMeasured"];
   if (!ranked.some((r) => r.target.target_chembl_id === target.target_chembl_id)) ranked.unshift({ target, n: n(target) });
   return { target, how, ranked, mechanismTargets };
 }

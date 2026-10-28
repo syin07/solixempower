@@ -196,3 +196,42 @@ export async function associatedTargets(efoId: string, size = 8): Promise<Target
     datatypeScores: Object.fromEntries(r.datatypeScores.map((d) => [d.id, d.score])),
   }));
 }
+
+/**
+ * Direct target → disease pair lookup (any score, no filter): the association rows of `ensemblId` for
+ * exactly these disease ids. Used for the "is there an opening for this drug in this disease?" card.
+ */
+export async function pairAssociations(ensemblId: string, efoIds: string[]): Promise<{ symbol: string; rows: DiseaseAssociation[] }> {
+  const ids = [...new Set(efoIds.map(normalizeEfo))];
+  if (!ids.length) return { symbol: "", rows: [] };
+  const data = await gql<{
+    target: {
+      approvedSymbol: string;
+      associatedDiseases: {
+        rows: {
+          score: number;
+          disease: { id: string; name: string; ancestors: string[]; therapeuticAreas: { name: string }[] };
+          datatypeScores: { id: string; score: number }[];
+        }[];
+      };
+    } | null;
+  }>(
+    `query Pair($id: String!, $bs: [String!]!, $size: Int!) { target(ensemblId: $id) { approvedSymbol associatedDiseases(Bs: $bs, page: { index: 0, size: $size }) { rows { score disease { id name ancestors therapeuticAreas { name } } datatypeScores { id score } } } } }`,
+    { id: ensemblId, bs: ids, size: ids.length },
+  );
+  return {
+    symbol: data.target?.approvedSymbol ?? "",
+    rows: (data.target?.associatedDiseases.rows ?? []).map((r) => ({
+      efoId: normalizeEfo(r.disease.id),
+      name: r.disease.name,
+      score: r.score,
+      datatypeScores: Object.fromEntries(r.datatypeScores.map((d) => [d.id, d.score])),
+      nAncestors: r.disease.ancestors?.length ?? 0,
+      ancestors: r.disease.ancestors ?? [],
+      therapeuticAreas: (r.disease.therapeuticAreas ?? []).map((t) => t.name),
+    })),
+  };
+}
+
+/** Disease → its top targets with Swiss-Prot accessions (same shape as associatedTargets, larger page). */
+export const diseaseTargets = (efoId: string, size = 25): Promise<TargetAssociation[]> => associatedTargets(efoId, size);
