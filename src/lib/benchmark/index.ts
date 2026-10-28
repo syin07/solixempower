@@ -52,16 +52,26 @@ export async function buildBenchmark(query: {
     toBenchmark(molById.get(id)!, acts, id === candidateId),
   );
 
-  // Keep the most advanced, best-measured comparators, then rank candidate + comparators together
+  // Keep the most advanced comparators — within a phase, prefer ones sharing an assay with the
+  // candidate, then the best-measured — then rank candidate + comparators together
+  const candidateAssays = new Set(byCompound.get(candidateId)?.map((a) => a.assay_chembl_id));
+  const sharesAssay = (b: CompoundBenchmark) => b.measurements.some((m) => candidateAssays.has(m.assayChemblId));
   const comparators = benchmarks
     .filter((b) => !b.compound.isCandidate)
-    .sort((a, b) => Number(b.compound.maxPhase ?? 0) - Number(a.compound.maxPhase ?? 0) || b.n - a.n)
+    .sort(
+      (a, b) =>
+        Number(b.compound.maxPhase ?? 0) - Number(a.compound.maxPhase ?? 0) ||
+        Number(sharesAssay(b)) - Number(sharesAssay(a)) ||
+        b.n - a.n,
+    )
     .slice(0, MAX_COMPARATORS);
   const candidateBench = benchmarks.find((b) => b.compound.isCandidate);
   const ranked = [...comparators, ...(candidateBench ? [candidateBench] : [])]
     .sort((a, b) => b.medianPchembl - a.medianPchembl)
     .map((b, i) => ({ ...b, rank: i + 1 }));
   const candidate = ranked.find((b) => b.compound.isCandidate) ?? emptyBenchmark(toCompound(candidateMol, true));
+  // Matched assays and exclusion counts cover only the compounds actually shown
+  const shownIds = new Set([candidateId, ...comparators.map((b) => b.compound.chemblId)]);
 
   return {
     query: { candidate: query.candidate, disease: query.disease, targetChemblId: target.target_chembl_id },
@@ -79,8 +89,21 @@ export async function buildBenchmark(query: {
     activityType,
     candidate,
     comparators: ranked.filter((b) => !b.compound.isCandidate),
-    matchedAssays: findMatchedAssays(kept, candidateId, molById),
-    warnings: buildWarnings({ candidate, comparators, excluded, activityType, comparatorCount: comparatorMols.length }),
+    matchedAssays: findMatchedAssays(
+      kept.filter((a) => shownIds.has(a.parent_molecule_chembl_id)),
+      candidateId,
+      molById,
+    ),
+    warnings: buildWarnings({
+      candidate,
+      comparators,
+      activityType,
+      candidateExcluded: excludedFor(excluded, [candidateId]),
+      comparatorExcluded: excludedFor(
+        excluded,
+        comparators.map((b) => b.compound.chemblId),
+      ),
+    }),
   };
 }
 
@@ -96,9 +119,12 @@ function pickActivityType(candidateActs: RawActivity[]): ActivityType {
 }
 
 type ExclusionReason = "mutant" | "nonBinding" | "notPurified" | "inexact" | "flagged" | "otherType";
+type ExclusionCounts = Record<ExclusionReason, number>;
+const noExclusions = (): ExclusionCounts => ({ mutant: 0, nonBinding: 0, notPurified: 0, inexact: 0, flagged: 0, otherType: 0 });
 
+/** Keeps comparable measurements; counts exclusions per parent compound. */
 function filterComparable(acts: RawActivity[], type: ActivityType) {
-  const excluded: Record<ExclusionReason, number> = { mutant: 0, nonBinding: 0, notPurified: 0, inexact: 0, flagged: 0, otherType: 0 };
+  const excluded = new Map<string, ExclusionCounts>();
   const kept = acts.filter((a) => {
     let reason: ExclusionReason | null = null;
     if (a.standard_type !== type) reason = "otherType";
@@ -108,10 +134,24 @@ function filterComparable(acts: RawActivity[], type: ActivityType) {
     else if (a.standard_relation !== "=") reason = "inexact";
     else if (a.assay_variant_mutation) reason = "mutant";
     else if (a.data_validity_comment || a.potential_duplicate) reason = "flagged";
-    if (reason) excluded[reason]++;
+    if (reason) {
+      const counts = excluded.get(a.parent_molecule_chembl_id) ?? noExclusions();
+      counts[reason]++;
+      excluded.set(a.parent_molecule_chembl_id, counts);
+    }
     return reason === null && a.pchembl_value !== null;
   });
   return { kept, excluded };
+}
+
+function excludedFor(excluded: Map<string, ExclusionCounts>, ids: string[]): ExclusionCounts {
+  const total = noExclusions();
+  for (const id of ids) {
+    const counts = excluded.get(id);
+    if (!counts) continue;
+    for (const k of Object.keys(total) as ExclusionReason[]) total[k] += counts[k];
+  }
+  return total;
 }
 
 function toCompound(m: RawMolecule, isCandidate: boolean): Compound {
@@ -201,12 +241,20 @@ function findMatchedAssays(
   return out;
 }
 
+const EXCLUSION_LABELS: [Exclude<ExclusionReason, "otherType">, string][] = [
+  ["mutant", "against mutant target variants (not comparable to wild-type)"],
+  ["nonBinding", "from functional (non-binding) assays"],
+  ["notPurified", "from cell-based or non-purified-protein assays"],
+  ["inexact", 'censored (e.g. ">10 µM")'],
+  ["flagged", "flagged by ChEMBL as potential duplicates or data-validity issues"],
+];
+
 function buildWarnings(x: {
   candidate: CompoundBenchmark;
   comparators: CompoundBenchmark[];
-  excluded: Record<ExclusionReason, number>;
   activityType: ActivityType;
-  comparatorCount: number;
+  candidateExcluded: ExclusionCounts;
+  comparatorExcluded: ExclusionCounts;
 }): string[] {
   const w: string[] = [];
   if (x.candidate.n === 0)
@@ -215,16 +263,15 @@ function buildWarnings(x: {
     w.push(`Candidate has only ${x.candidate.n} comparable measurement(s); its ranking is uncertain.`);
   if (x.comparators.length === 0)
     w.push("No approved or clinical drugs with comparable measurements on this target were found.");
-  if (x.excluded.mutant)
-    w.push(`${x.excluded.mutant} measurement(s) against mutant target variants were excluded (not comparable to wild-type).`);
-  if (x.excluded.nonBinding)
-    w.push(`${x.excluded.nonBinding} functional measurement(s) excluded from the potency ranking.`);
-  if (x.excluded.notPurified)
-    w.push(`${x.excluded.notPurified} cell-based or non-purified-protein measurement(s) excluded from the potency ranking.`);
-  if (x.excluded.inexact)
-    w.push(`${x.excluded.inexact} censored measurement(s) (e.g. ">10 µM") excluded.`);
-  if (x.excluded.flagged)
-    w.push(`${x.excluded.flagged} measurement(s) flagged by ChEMBL as potential duplicates or data-validity issues excluded.`);
+  for (const [reason, label] of EXCLUSION_LABELS) {
+    const c = x.candidateExcluded[reason];
+    const k = x.comparatorExcluded[reason];
+    if (c + k === 0) continue;
+    w.push(
+      `${c + k} ${x.activityType} measurement(s) ${label} excluded from the ranking — ` +
+        `${c} for the candidate, ${k} across the ${x.comparators.length} comparators shown.`,
+    );
+  }
   w.push(
     `Measurements come from different assays and labs; ranks are indicative. Matched-assay comparisons are the strongest evidence.`,
   );

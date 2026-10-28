@@ -84,13 +84,16 @@ export async function getTarget(id: string): Promise<RawTarget> {
   return chemblGet<RawTarget>(`target/${id.toUpperCase()}`);
 }
 
-/** All activities with a pChEMBL value for the given molecules (and optionally one target). */
+/**
+ * All activities with a pChEMBL value for the given parent molecules (and optionally one target).
+ * Queries by parent ID so measurements recorded on salt forms (e.g. erlotinib HCl) are included.
+ */
 export async function getActivities(opts: { molecules: string[]; target?: string }): Promise<RawActivity[]> {
   const out: RawActivity[] = [];
   for (let i = 0; i < opts.molecules.length; i += 25) {
     out.push(
       ...(await chemblGetAll<RawActivity>("activity", "activities", {
-        molecule_chembl_id__in: opts.molecules.slice(i, i + 25).join(","),
+        parent_molecule_chembl_id__in: opts.molecules.slice(i, i + 25).join(","),
         target_chembl_id: opts.target,
         pchembl_value__isnull: "false",
       })),
@@ -104,7 +107,7 @@ export async function pickTarget(moleculeId: string): Promise<RawTarget> {
   const acts = await chemblGetAll<RawActivity>(
     "activity",
     "activities",
-    { molecule_chembl_id: moleculeId, pchembl_value__isnull: "false", target_organism: "Homo sapiens" },
+    { parent_molecule_chembl_id: moleculeId, pchembl_value__isnull: "false", target_organism: "Homo sapiens" },
     2000,
   );
   const counts = new Map<string, number>();
