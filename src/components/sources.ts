@@ -11,6 +11,8 @@ export function indexSources(benchmark: BenchmarkResult | null, trials: TrialsRe
       cb.measurements.forEach((m) => add(m.source));
     }
     benchmark.matchedAssays.forEach((a) => a.rows.forEach((r) => add(r.source)));
+    benchmark.preclinical?.forEach((a) => add(a.source));
+    benchmark.drugWarnings?.forEach((w) => add(w.source));
   }
   trials?.trials.forEach((t) => add(t.source));
   return index;

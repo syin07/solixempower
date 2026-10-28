@@ -80,6 +80,52 @@ export interface MatchedAssay {
   rows: { compoundChemblId: string; compoundName: string; pchembl: number; source: SourceRef }[];
 }
 
+/**
+ * Preclinical layer (PRD §3 B): one of the candidate's functional (F) or cell-/organism-based binding
+ * assay results, on any target or cell line. EvidenceKind "measured". These formats are NOT comparable
+ * to the binding ranking or to each other — show them as a separate, unranked list.
+ */
+export interface PreclinicalAssay {
+  assayChemblId: string;
+  assayDescription: string;
+  /** F = functional; B = binding measured in a cell-based / organism-based format */
+  assayType: "B" | "F";
+  /** ChEMBL BAO format label, e.g. "cell-based format", "organism-based format" */
+  assayFormat?: string;
+  /** ChEMBL standard_type as recorded, e.g. "IC50", "GI50", "Inhibition" */
+  activityType: string;
+  /** "=", "<", ">", … — censored values are shown as recorded */
+  relation: string | null;
+  value: number | null;
+  units: string | null;
+  /** Present only when ChEMBL could normalize the value */
+  pchembl?: number;
+  /** Target or cell line as recorded by ChEMBL, e.g. "A-431" or "Epidermal growth factor receptor" */
+  targetName?: string;
+  targetOrganism?: string;
+  year?: number;
+  source: SourceRef;
+}
+
+/**
+ * Safety layer: a ChEMBL regulatory drug warning (e.g. black box, withdrawn) for the candidate or a
+ * shown comparator. A regulatory/clinical record — EvidenceKind "clinical", not "measured".
+ */
+export interface DrugWarning {
+  compoundChemblId: string;
+  compoundName: string;
+  isCandidate: boolean;
+  /** e.g. "Black Box Warning", "Withdrawn" */
+  warningType: string;
+  /** e.g. "hepatotoxicity" */
+  warningClass?: string;
+  description?: string;
+  country?: string;
+  year?: number;
+  /** id "chembl-warn:<warning_id>"; url = the label/reference when ChEMBL has one, else the compound page */
+  source: SourceRef;
+}
+
 /** GET /api/benchmark?candidate=&disease=&target= */
 export interface BenchmarkResult {
   query: { candidate: string; disease: string; targetChemblId?: string };
@@ -95,6 +141,10 @@ export interface BenchmarkResult {
    * Pass `chemblId` back as `target=` to switch.
    */
   candidateTargets?: { chemblId: string; name: string; n: number }[];
+  /** Candidate's functional / cell-based assay results, up to ~20, unranked. Absent if not retrieved. */
+  preclinical?: PreclinicalAssay[];
+  /** ChEMBL drug warnings for the candidate + shown comparators. Absent if not retrieved; [] = none recorded. */
+  drugWarnings?: DrugWarning[];
   isMock?: boolean;
 }
 

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { EvidenceLayer, EvidenceReport as Report, SourceRef } from "@/lib/contracts";
 import { EvidenceBadge } from "./EvidenceBadge";
 import { MockBanner } from "./MockBanner";
@@ -47,11 +50,7 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
                       <EvidenceBadge kind={c.kind} />
                       <span className="text-zinc-800">{c.text}</span>
                     </div>
-                    <div className="mt-1 flex flex-wrap gap-1 pl-1">
-                      {c.sourceIds.map((id) => (
-                        <SourceChip key={id} id={id} source={sources.get(id)} />
-                      ))}
-                    </div>
+                    <SourceChips ids={c.sourceIds} sources={sources} />
                   </li>
                 ))}
               </ul>
@@ -67,6 +66,31 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
         </div>
       )}
     </Section>
+  );
+}
+
+const CHIPS_SHOWN = 4;
+
+/** First few source chips, with a "+N more" toggle for claims that cite many records. */
+function SourceChips({ ids, sources }: { ids: string[]; sources: Map<string, SourceRef> }) {
+  const [open, setOpen] = useState(false);
+  const shown = open ? ids : ids.slice(0, CHIPS_SHOWN);
+  const hidden = ids.length - CHIPS_SHOWN;
+  return (
+    <div className="mt-1 flex flex-wrap gap-1 pl-1">
+      {shown.map((id) => (
+        <SourceChip key={id} id={id} source={sources.get(id)} />
+      ))}
+      {hidden > 0 && (
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="rounded border border-zinc-300 px-1.5 py-0.5 text-[11px] text-zinc-600 hover:border-blue-500 hover:text-blue-700"
+        >
+          {open ? "show fewer" : `+${hidden} more`}
+        </button>
+      )}
+    </div>
   );
 }
 

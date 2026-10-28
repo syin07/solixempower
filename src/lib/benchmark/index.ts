@@ -2,11 +2,15 @@
 // comparable measurements (PRD §7). Every exclusion is counted and surfaced as a warning.
 import {
   getActivities,
+  getAssayActivities,
+  getDrugWarnings,
   getIndicatedFor,
   getMechanismDrugs,
   resolveMolecule,
   selectTarget,
   type RawActivity,
+  type RawAssayActivity,
+  type RawDrugWarning,
   type RawMolecule,
   type RawTarget,
   type TargetSelection,
@@ -17,12 +21,18 @@ import type {
   BenchmarkResult,
   Compound,
   CompoundBenchmark,
+  DrugWarning,
   MatchedAssay,
   Measurement,
+  PreclinicalAssay,
 } from "@/lib/contracts";
 
 const ACTIVITY_TYPES: ActivityType[] = ["IC50", "Ki", "Kd", "EC50"];
 const MAX_COMPARATORS = 12;
+const MAX_PRECLINICAL = 20;
+/** Binding assays in these formats are cell/organism data, not purified-protein potency */
+const PLACEHOLDER_TARGETS = new Set(["Unchecked", "NON-PROTEIN TARGET", "Unknown"]);
+const PRECLINICAL_B_FORMATS = new Set(["cell-based format", "organism-based format", "tissue-based format"]);
 const SALT_SUFFIX = /(\s+(ANHYDROUS|HYDROCHLORIDE|MESYLATE|MALEATE|DIMALEATE|TOSYLATE|MONOHYDRATE|HYDRATE|SODIUM))+$/i;
 /** Display name: preferred name without trailing salt/hydrate words, else the ChEMBL ID. */
 const displayName = (m: RawMolecule) => m.pref_name?.replace(SALT_SUFFIX, "") || m.molecule_chembl_id;
@@ -41,6 +51,11 @@ export async function buildBenchmark(query: {
       `${displayName(candidateMol)} is ${article} ${type.toLowerCase()} (biologic); ChEMBL potency benchmarking here covers small molecules.`,
     );
   }
+  // Preclinical assays don't depend on the target: start fetching now (failure → field omitted)
+  const assayActsP = getAssayActivities(candidateMol.molecule_chembl_id).catch((e) => {
+    console.warn("[benchmark] preclinical assays unavailable:", e);
+    return null;
+  });
   const selection = await selectTarget(candidateMol.molecule_chembl_id, query.target);
   const target = selection.target;
   const comparatorMols = (await getMechanismDrugs(target.target_chembl_id)).filter(
@@ -83,12 +98,19 @@ export async function buildBenchmark(query: {
   const candidate = ranked.find((b) => b.compound.isCandidate) ?? emptyBenchmark(toCompound(candidateMol, true));
   // Matched assays and exclusion counts cover only the compounds actually shown
   const shownIds = new Set([candidateId, ...comparators.map((b) => b.compound.chemblId)]);
-  const indicated = query.disease
-    ? await getIndicatedFor(
-        comparators.map((b) => b.compound.chemblId),
-        query.disease,
-      ).catch(() => null)
-    : null;
+  const [indicated, rawWarnings, assayActs] = await Promise.all([
+    query.disease
+      ? getIndicatedFor(
+          comparators.map((b) => b.compound.chemblId),
+          query.disease,
+        ).catch(() => null)
+      : null,
+    getDrugWarnings([...shownIds]).catch((e) => {
+      console.warn("[benchmark] drug warnings unavailable:", e);
+      return null;
+    }),
+    assayActsP,
+  ]);
 
   return {
     query: { candidate: query.candidate, disease: query.disease, targetChemblId: target.target_chembl_id },
@@ -126,7 +148,87 @@ export async function buildBenchmark(query: {
       excludedVariants: topVariants(excluded.filter((x) => x.reason === "mutant" && shownIds.has(x.a.parent_molecule_chembl_id))),
     }),
     candidateTargets: selection.ranked.map(({ target: t, n }) => ({ chemblId: t.target_chembl_id, name: t.pref_name, n })),
+    ...(assayActs ? { preclinical: toPreclinical(assayActs) } : {}),
+    ...(rawWarnings ? { drugWarnings: toDrugWarnings(rawWarnings, molById, candidateId) } : {}),
   };
+}
+
+/**
+ * The candidate's functional / cell-based results (PRD §3 layer B): F assays, plus B assays run in
+ * cells or organisms. One row per assay + activity type; rows with a pChEMBL value are preferred,
+ * then the newest. Returned newest first — a list, not a ranking.
+ */
+function toPreclinical(acts: RawAssayActivity[]): PreclinicalAssay[] {
+  const eligible = acts.filter(
+    (a) =>
+      (a.assay_type === "F" || (a.assay_type === "B" && PRECLINICAL_B_FORMATS.has(a.bao_label ?? ""))) &&
+      !a.data_validity_comment &&
+      (a.standard_value != null || a.pchembl_value != null),
+  );
+  const perAssay = new Map<string, RawAssayActivity>();
+  for (const a of eligible) {
+    const key = `${a.assay_chembl_id}|${a.standard_type}`;
+    const prev = perAssay.get(key);
+    if (!prev || (prev.pchembl_value == null && a.pchembl_value != null)) perAssay.set(key, a);
+  }
+  const year = (a: RawAssayActivity) => a.document_year ?? 0;
+  return [...perAssay.values()]
+    .sort((a, b) => Number(b.pchembl_value != null) - Number(a.pchembl_value != null) || year(b) - year(a))
+    .slice(0, MAX_PRECLINICAL)
+    .sort((a, b) => year(b) - year(a))
+    .map((a) => ({
+      assayChemblId: a.assay_chembl_id,
+      assayDescription: a.assay_description,
+      assayType: a.assay_type as "B" | "F",
+      assayFormat: a.bao_label ?? undefined,
+      activityType: a.standard_type,
+      relation: a.standard_relation,
+      value: a.standard_value == null ? null : Number(a.standard_value),
+      units: a.standard_units,
+      pchembl: a.pchembl_value == null ? undefined : Number(a.pchembl_value),
+      // ChEMBL placeholders ("Unchecked", "NON-PROTEIN TARGET") say nothing about the cell line/target
+      targetName: a.target_pref_name && !PLACEHOLDER_TARGETS.has(a.target_pref_name) ? a.target_pref_name : undefined,
+      targetOrganism: a.target_organism ?? undefined,
+      year: a.document_year ?? undefined,
+      source: {
+        id: `chembl-act:${a.activity_id}`,
+        database: "ChEMBL",
+        label: `Activity ${a.activity_id} (${a.assay_chembl_id})`,
+        url: chemblUrl.assay(a.assay_chembl_id),
+      },
+    }));
+}
+
+/** Regulatory warnings, candidate first; duplicates across salt forms collapsed. */
+function toDrugWarnings(rows: RawDrugWarning[], molById: Map<string, RawMolecule>, candidateId: string): DrugWarning[] {
+  const seen = new Set<string>();
+  const out: DrugWarning[] = [];
+  for (const w of rows) {
+    const id = w.parent_molecule_chembl_id;
+    const key = [id, w.warning_type, w.warning_class, w.warning_country].join("|");
+    if (seen.has(key) || !w.warning_type) continue;
+    seen.add(key);
+    const mol = molById.get(id);
+    const name = mol ? displayName(mol) : id;
+    const ref = w.warning_refs?.find((r) => r.ref_url)?.ref_url;
+    out.push({
+      compoundChemblId: id,
+      compoundName: name,
+      isCandidate: id === candidateId,
+      warningType: w.warning_type,
+      warningClass: w.warning_class ?? undefined,
+      description: w.warning_description ?? undefined,
+      country: w.warning_country ?? undefined,
+      year: w.warning_year ?? undefined,
+      source: {
+        id: `chembl-warn:${w.warning_id}`,
+        database: "ChEMBL",
+        label: `${name}: ${w.warning_type}${w.warning_class ? ` (${w.warning_class})` : ""}`,
+        url: ref ?? chemblUrl.compound(id),
+      },
+    });
+  }
+  return out.sort((a, b) => Number(b.isCandidate) - Number(a.isCandidate));
 }
 
 /** The activity type with the most comparable candidate measurements (IC50 wins ties). */
@@ -305,6 +407,13 @@ function buildWarnings(x: {
   const w: string[] = [];
   const name = x.candidate.compound.name;
   const t = x.selection.target;
+  if (x.selection.how === "mechanismFamily") {
+    const fam = x.selection.mechanismTargets.find((m) => m.target_type !== "SINGLE PROTEIN");
+    w.push(
+      `ChEMBL records ${name}'s mechanism on the ${fam?.pref_name ?? "target"} ${fam?.target_type.toLowerCase() ?? "family"}` +
+        `${fam ? ` (${fam.target_chembl_id})` : ""}; benchmarking on its member ${t.pref_name} (${t.target_chembl_id}).`,
+    );
+  }
   if (x.selection.how === "mostMeasured") {
     const mech = x.selection.mechanismTargets.map(
       (m: RawTarget) => `${m.pref_name} [${m.target_chembl_id}, ${m.target_type.toLowerCase()}, ${m.organism}]`,

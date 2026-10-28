@@ -4,10 +4,12 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { BenchmarkResult, EvidenceReport as Report, TrialsResult } from "@/lib/contracts";
 import { CompoundCard } from "./CompoundCard";
+import { DrugWarningsPanel } from "./DrugWarningsPanel";
 import { EvidenceReport } from "./EvidenceReport";
 import { MatchedAssayTable } from "./MatchedAssayTable";
 import { MockBanner } from "./MockBanner";
 import { PotencyChart } from "./PotencyChart";
+import { PreclinicalTable } from "./PreclinicalTable";
 import { SearchBar } from "./SearchBar";
 import { ErrorNote, Loading, Section } from "./Section";
 import { indexSources } from "./sources";
@@ -139,6 +141,14 @@ export function BenchmarkApp() {
             <MatchedAssayTable benchmark={b} />
             <WarningsPanel warnings={b.warnings} />
           </div>
+          {(b.preclinical || b.drugWarnings) && (
+            <div className="grid gap-5 lg:grid-cols-3">
+              <div className={b.drugWarnings ? "lg:col-span-2" : "lg:col-span-3"}>
+                <PreclinicalTable benchmark={b} />
+              </div>
+              <DrugWarningsPanel benchmark={b} />
+            </div>
+          )}
 
           {report.state === "loading" && (
             <Section title="AI evidence report">

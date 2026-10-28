@@ -22,6 +22,8 @@ export interface RawTarget {
   pref_name: string;
   organism: string;
   target_type: string;
+  /** UniProt components; a PROTEIN FAMILY / complex lists each member protein */
+  target_components?: { accession: string | null }[];
 }
 
 export interface RawActivity {
@@ -127,7 +129,8 @@ export interface TargetCount {
 
 export interface TargetSelection {
   target: RawTarget;
-  how: "override" | "mechanism" | "mostMeasured";
+  /** mechanismFamily: the mechanism is recorded on a protein family/complex that contains this target */
+  how: "override" | "mechanism" | "mechanismFamily" | "mostMeasured";
   /** Top human single-protein targets by measurement count, plus the selected target */
   ranked: TargetCount[];
   /** All of the candidate's recorded mechanism targets (any type), for warnings */
@@ -172,11 +175,22 @@ export async function selectTarget(moleculeId: string, override?: string): Promi
   }).slice(0, 5);
   const mechanismTargets = mechIds.flatMap((id) => byId.get(id) ?? []);
   const mechOk = mechanismTargets.filter(isHumanProtein).sort((a, b) => n(b) - n(a));
+  // Mechanism on a family/complex (e.g. poziotinib → "EGFR erbB family"): its most-measured member protein
+  const familyAccessions = new Set(
+    mechanismTargets
+      .filter((t) => !isHumanProtein(t))
+      .flatMap((t) => (t.target_components ?? []).flatMap((c) => (c.accession ? [c.accession] : []))),
+  );
+  const familyMembers = top.flatMap((id) => {
+    const t = byId.get(id);
+    return t && isHumanProtein(t) && t.target_components?.some((c) => c.accession && familyAccessions.has(c.accession)) ? [t] : [];
+  });
 
   let target: RawTarget;
   let how: TargetSelection["how"];
   if (override) [target, how] = [await getTarget(override), "override"];
   else if (mechOk.length) [target, how] = [mechOk[0], "mechanism"];
+  else if (familyMembers.length) [target, how] = [familyMembers[0], "mechanismFamily"];
   else if (ranked.length) [target, how] = [ranked[0].target, "mostMeasured"];
   else throw new ChemblNotFound(`a human single-protein target with measurements for ${moleculeId}`);
   if (!ranked.some((r) => r.target.target_chembl_id === target.target_chembl_id)) ranked.unshift({ target, n: n(target) });
@@ -219,4 +233,65 @@ export async function getIndicatedFor(parentIds: string[], disease: string): Pro
     return t.includes(d) || (t.trim().includes(" ") && d.includes(t));
   };
   return new Set(rows.filter((r) => matches(r.efo_term) || matches(r.mesh_heading)).map((r) => r.parent_molecule_chembl_id));
+}
+
+export interface RawDrugWarning {
+  warning_id: number;
+  molecule_chembl_id: string;
+  parent_molecule_chembl_id: string;
+  warning_type: string | null;
+  warning_class: string | null;
+  warning_description: string | null;
+  warning_country: string | null;
+  warning_year: number | null;
+  warning_refs: { ref_type: string | null; ref_url: string | null }[] | null;
+}
+
+/** ChEMBL regulatory drug warnings (black box, withdrawn) recorded for these parent molecules. */
+export async function getDrugWarnings(parentIds: string[]): Promise<RawDrugWarning[]> {
+  if (!parentIds.length) return [];
+  return chemblGetAll<RawDrugWarning>(
+    "drug_warning",
+    "drug_warnings",
+    { parent_molecule_chembl_id__in: parentIds.join(","), order_by: "warning_id" },
+    2000,
+  );
+}
+
+export type RawAssayActivity = Pick<
+  RawActivity,
+  | "activity_id"
+  | "assay_chembl_id"
+  | "assay_description"
+  | "assay_type"
+  | "bao_label"
+  | "data_validity_comment"
+  | "parent_molecule_chembl_id"
+  | "pchembl_value"
+  | "standard_relation"
+  | "standard_type"
+  | "standard_units"
+  | "standard_value"
+  | "target_organism"
+> & { target_pref_name: string | null; document_year: number | null };
+
+/**
+ * The molecule's functional and binding activities on any target (incl. cell lines and non-protein
+ * targets), newest first, capped at 2000 rows. Used for the preclinical (functional / cell-based) list.
+ */
+export async function getAssayActivities(parentId: string): Promise<RawAssayActivity[]> {
+  return chemblGetAll<RawAssayActivity>(
+    "activity",
+    "activities",
+    {
+      parent_molecule_chembl_id: parentId,
+      assay_type__in: "F,B",
+      order_by: "-document_year",
+      only:
+        "activity_id,assay_chembl_id,assay_description,assay_type,bao_label,data_validity_comment," +
+        "parent_molecule_chembl_id,pchembl_value,standard_relation,standard_type,standard_units,standard_value," +
+        "target_organism,target_pref_name,document_year",
+    },
+    2000,
+  );
 }
