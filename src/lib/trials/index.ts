@@ -126,7 +126,7 @@ const STATUS_LABEL: Record<string, string> = {
 };
 
 /** "NOT_YET_RECRUITING" → "Not yet recruiting". */
-function formatStatus(status?: string): string {
+export function formatStatus(status?: string): string {
   if (!status) return "Unknown status";
   if (STATUS_LABEL[status]) return STATUS_LABEL[status];
   const words = status.toLowerCase().replace(/_/g, " ");
@@ -160,7 +160,7 @@ function mergeNames(a: string[], b: string[]): string[] {
 const clip = (s: string, max: number) => (s.length > max ? s.slice(0, max - 1).trimEnd() + "…" : s);
 
 /** Promise.all with at most `limit` in flight; results keep input order. */
-async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
+export async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
   const out = new Array<R>(items.length);
   let next = 0;
   const worker = async () => {
