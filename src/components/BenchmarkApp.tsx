@@ -150,18 +150,6 @@ export function BenchmarkApp() {
             </div>
           )}
 
-          {report.state === "loading" && (
-            <Section title="AI evidence report">
-              <Loading label="Claude is summarizing the retrieved evidence…" />
-            </Section>
-          )}
-          {report.state === "error" && (
-            <Section title="AI evidence report">
-              <ErrorNote message={report.error} />
-            </Section>
-          )}
-          {report.state === "done" && <EvidenceReport report={report.data} sources={sources} />}
-
           {trials.state === "loading" && (
             <Section title="Clinical landscape">
               <Loading label="Searching ClinicalTrials.gov…" />
@@ -173,6 +161,18 @@ export function BenchmarkApp() {
             </Section>
           )}
           {t && <TrialsTable trials={t} />}
+
+          {report.state === "loading" && (
+            <Section title="AI evidence report">
+              <Loading label="Claude is summarizing the retrieved evidence…" />
+            </Section>
+          )}
+          {report.state === "error" && (
+            <Section title="AI evidence report">
+              <ErrorNote message={report.error} />
+            </Section>
+          )}
+          {report.state === "done" && <EvidenceReport report={report.data} sources={sources} />}
         </>
       )}
     </div>
