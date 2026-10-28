@@ -46,7 +46,7 @@ export function SearchBar({
         disabled={busy || !candidate.trim()}
         className="rounded-md bg-blue-600 px-5 py-2 text-base font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
       >
-        {busy ? "Benchmarking…" : "Benchmark"}
+        {busy ? "Building…" : "Build graph"}
       </button>
     </form>
   );
