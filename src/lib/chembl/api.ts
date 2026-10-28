@@ -28,6 +28,8 @@ export interface RawActivity {
   assay_description: string;
   assay_type: string;
   assay_variant_mutation: string | null;
+  /** e.g. "single protein format", "cell-based format" */
+  bao_label: string | null;
   data_validity_comment: string | null;
   potential_duplicate: number | null;
   molecule_chembl_id: string;

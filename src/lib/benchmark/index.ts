@@ -95,14 +95,16 @@ function pickActivityType(candidateActs: RawActivity[]): ActivityType {
   return best;
 }
 
-type ExclusionReason = "mutant" | "nonBinding" | "inexact" | "flagged" | "otherType";
+type ExclusionReason = "mutant" | "nonBinding" | "notPurified" | "inexact" | "flagged" | "otherType";
 
 function filterComparable(acts: RawActivity[], type: ActivityType) {
-  const excluded: Record<ExclusionReason, number> = { mutant: 0, nonBinding: 0, inexact: 0, flagged: 0, otherType: 0 };
+  const excluded: Record<ExclusionReason, number> = { mutant: 0, nonBinding: 0, notPurified: 0, inexact: 0, flagged: 0, otherType: 0 };
   const kept = acts.filter((a) => {
     let reason: ExclusionReason | null = null;
     if (a.standard_type !== type) reason = "otherType";
     else if (a.assay_type !== "B") reason = "nonBinding";
+    // ChEMBL tags some cell assays as "B"; only purified-protein assays are comparable potency
+    else if (a.bao_label !== "single protein format") reason = "notPurified";
     else if (a.standard_relation !== "=") reason = "inexact";
     else if (a.assay_variant_mutation) reason = "mutant";
     else if (a.data_validity_comment || a.potential_duplicate) reason = "flagged";
@@ -216,7 +218,9 @@ function buildWarnings(x: {
   if (x.excluded.mutant)
     w.push(`${x.excluded.mutant} measurement(s) against mutant target variants were excluded (not comparable to wild-type).`);
   if (x.excluded.nonBinding)
-    w.push(`${x.excluded.nonBinding} functional/cell-based measurement(s) excluded from the potency ranking.`);
+    w.push(`${x.excluded.nonBinding} functional measurement(s) excluded from the potency ranking.`);
+  if (x.excluded.notPurified)
+    w.push(`${x.excluded.notPurified} cell-based or non-purified-protein measurement(s) excluded from the potency ranking.`);
   if (x.excluded.inexact)
     w.push(`${x.excluded.inexact} censored measurement(s) (e.g. ">10 µM") excluded.`);
   if (x.excluded.flagged)
