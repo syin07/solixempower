@@ -3,15 +3,13 @@ import Anthropic from "@anthropic-ai/sdk";
 import fixture from "@/fixtures/report.json";
 import { generateReport } from "@/lib/agent/report";
 import type { ApiError, BenchmarkResult, EvidenceReport, TrialsResult } from "@/lib/contracts";
+import { readDemo, reportDemoKey } from "@/lib/demo";
 
-// POST /api/report  body: { benchmark: BenchmarkResult, trials?: TrialsResult }   (?mock=1 for the fixture)
+// POST /api/report  body: { benchmark: BenchmarkResult, trials?: TrialsResult }   (?mock=1 for the fixture,
+// ?demo=1 for the recording keyed by benchmark.query)
 export async function POST(req: NextRequest) {
   const mockReport = NextResponse.json(fixture as unknown as EvidenceReport);
   if (req.nextUrl.searchParams.get("mock") === "1") return mockReport;
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.warn("ANTHROPIC_API_KEY not set — serving the mock report");
-    return mockReport;
-  }
 
   let body: { benchmark?: BenchmarkResult; trials?: TrialsResult };
   try {
@@ -21,6 +19,16 @@ export async function POST(req: NextRequest) {
   }
   if (!body.benchmark?.candidate) {
     return NextResponse.json<ApiError>({ error: "benchmark is required" }, { status: 400 });
+  }
+
+  if (req.nextUrl.searchParams.get("demo") === "1") {
+    const { candidate, disease } = body.benchmark.query;
+    const recorded = await readDemo<EvidenceReport>(reportDemoKey(candidate, disease));
+    if (recorded) return NextResponse.json(recorded);
+  }
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.warn("ANTHROPIC_API_KEY not set — serving the mock report");
+    return mockReport;
   }
 
   try {

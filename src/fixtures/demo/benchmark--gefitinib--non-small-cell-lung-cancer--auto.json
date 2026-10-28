@@ -1,0 +1,2795 @@
+{
+  "query": {
+    "candidate": "gefitinib",
+    "disease": "non-small cell lung cancer",
+    "targetChemblId": "CHEMBL203"
+  },
+  "target": {
+    "chemblId": "CHEMBL203",
+    "name": "Epidermal growth factor receptor",
+    "organism": "Homo sapiens",
+    "source": {
+      "id": "chembl-target:CHEMBL203",
+      "database": "ChEMBL",
+      "label": "CHEMBL203",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL203"
+    }
+  },
+  "activityType": "IC50",
+  "candidate": {
+    "compound": {
+      "chemblId": "CHEMBL939",
+      "name": "GEFITINIB",
+      "maxPhase": 4,
+      "isCandidate": true,
+      "properties": {
+        "molecularWeight": 446.91,
+        "alogp": 4.28,
+        "ro5Violations": 0,
+        "qed": 0.52
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL939",
+        "database": "ChEMBL",
+        "label": "GEFITINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL939"
+      }
+    },
+    "n": 30,
+    "medianPchembl": 7.69,
+    "minPchembl": 4.81,
+    "maxPchembl": 10,
+    "rank": 9,
+    "measurements": [
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL683041",
+        "assayDescription": "Inhibition of Epidermal Growth Factor Receptor (EGFR) autophosphorylation",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 515,
+        "pchembl": 6.29,
+        "source": {
+          "id": "chembl-act:108863",
+          "database": "ChEMBL",
+          "label": "Activity 108863 (CHEMBL683041)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL674106",
+        "assayDescription": "Inhibitory activity against epidermal growth factor receptor",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 1,
+        "pchembl": 9,
+        "source": {
+          "id": "chembl-act:186630",
+          "database": "ChEMBL",
+          "label": "Activity 186630 (CHEMBL674106)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL892951",
+        "assayDescription": "Inhibition of human EGFR in presence of 1 uM ATP",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 5.4,
+        "pchembl": 8.27,
+        "source": {
+          "id": "chembl-act:1943182",
+          "database": "ChEMBL",
+          "label": "Activity 1943182 (CHEMBL892951)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL892954",
+        "assayDescription": "Inhibition of human EGFR in presence of 1 mM ATP",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 2753,
+        "pchembl": 5.56,
+        "source": {
+          "id": "chembl-act:1943201",
+          "database": "ChEMBL",
+          "label": "Activity 1943201 (CHEMBL892954)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892954"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL924351",
+        "assayDescription": "Inhibition of EGFR",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 39,
+        "pchembl": 7.41,
+        "source": {
+          "id": "chembl-act:2048875",
+          "database": "ChEMBL",
+          "label": "Activity 2048875 (CHEMBL924351)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924351"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL944276",
+        "assayDescription": "Inhibition of human recombinant EGFR",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 22,
+        "pchembl": 7.66,
+        "source": {
+          "id": "chembl-act:2390321",
+          "database": "ChEMBL",
+          "label": "Activity 2390321 (CHEMBL944276)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL944276"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL946651",
+        "assayDescription": "Inhibition of human EGFR",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 20,
+        "pchembl": 7.7,
+        "source": {
+          "id": "chembl-act:2503070",
+          "database": "ChEMBL",
+          "label": "Activity 2503070 (CHEMBL946651)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL946651"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL1071045",
+        "assayDescription": "Inhibition of recombinant EGFR by ELISA",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 21,
+        "pchembl": 7.68,
+        "source": {
+          "id": "chembl-act:3130635",
+          "database": "ChEMBL",
+          "label": "Activity 3130635 (CHEMBL1071045)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1071045"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL1817212",
+        "assayDescription": "Inhibition of EGFR after 1 hrs by luminescence assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 4.2,
+        "pchembl": 8.38,
+        "source": {
+          "id": "chembl-act:6315901",
+          "database": "ChEMBL",
+          "label": "Activity 6315901 (CHEMBL1817212)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1817212"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL1949352",
+        "assayDescription": "Inhibition of EGFR after 50 mins by HTRF assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 7.3,
+        "pchembl": 8.14,
+        "source": {
+          "id": "chembl-act:8017332",
+          "database": "ChEMBL",
+          "label": "Activity 8017332 (CHEMBL1949352)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1949352"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL2383984",
+        "assayDescription": "Inhibition of wild type EGFR (unknown origin) after 1.5 hrs by FRET-based Z'Lyte assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 0.1,
+        "pchembl": 10,
+        "source": {
+          "id": "chembl-act:13297481",
+          "database": "ChEMBL",
+          "label": "Activity 13297481 (CHEMBL2383984)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2383984"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL2428558",
+        "assayDescription": "Inhibition of wild type human EGFR tyrosine kinase assessed as Ulight-CAGAGAIETDKEYYTVKD phosphorylation after 15 mins by time-resolved fluorometry",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 0.6,
+        "pchembl": 9.22,
+        "source": {
+          "id": "chembl-act:13453602",
+          "database": "ChEMBL",
+          "label": "Activity 13453602 (CHEMBL2428558)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2428558"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3226103",
+        "assayDescription": "Inhibition of EGFR (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 70,
+        "pchembl": 7.16,
+        "source": {
+          "id": "chembl-act:14547458",
+          "database": "ChEMBL",
+          "label": "Activity 14547458 (CHEMBL3226103)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3226103"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3375345",
+        "assayDescription": "Inhibition of wild type EGFR (unknown origin) by Z'-Lyte kinase assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 0.45,
+        "pchembl": 9.35,
+        "source": {
+          "id": "chembl-act:14974602",
+          "database": "ChEMBL",
+          "label": "Activity 14974602 (CHEMBL3375345)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3375345"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3385194",
+        "assayDescription": "Inhibition of wild type EGFR (unknown origin) incubated for 5 mins by HTRF assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 76,
+        "pchembl": 7.12,
+        "source": {
+          "id": "chembl-act:15112228",
+          "database": "ChEMBL",
+          "label": "Activity 15112228 (CHEMBL3385194)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3385194"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3418213",
+        "assayDescription": "Inhibition of EGFR (unknown origin) using Poly(Glu:Tyr) 4:1 as substrate after 12 to 16 hrs",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 380,
+        "pchembl": 6.42,
+        "source": {
+          "id": "chembl-act:15229663",
+          "database": "ChEMBL",
+          "label": "Activity 15229663 (CHEMBL3418213)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3418213"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3745460",
+        "assayDescription": "Inhibition of wild-type EGFR tyrosine kinase (unknown origin) assessed as ATP level by luminescence analysis",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 1.3,
+        "pchembl": 8.89,
+        "source": {
+          "id": "chembl-act:16395724",
+          "database": "ChEMBL",
+          "label": "Activity 16395724 (CHEMBL3745460)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3745460"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3776094",
+        "assayDescription": "Inhibition of wildtype EGFR (unknown origin) preincubated for 30 mins followed by addition of 2x ATP-substrate mixture measured after 1 hr by Kinase Glo luminescent kinase assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 11.8,
+        "pchembl": 7.93,
+        "source": {
+          "id": "chembl-act:16499782",
+          "database": "ChEMBL",
+          "label": "Activity 16499782 (CHEMBL3776094)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3776094"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3807186",
+        "assayDescription": "Inhibition of wild type EGFR (unknown origin) autophosphorylation preincubated for 30 mins followed by ATP addition measured after 1 hr by kinase-glo luminescence assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 2.6,
+        "pchembl": 8.59,
+        "source": {
+          "id": "chembl-act:16588547",
+          "database": "ChEMBL",
+          "label": "Activity 16588547 (CHEMBL3807186)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3807186"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL3870704",
+        "assayDescription": "Inhibition of wild-type EGFR (unknown origin) assessed as remaining ATP level measured after 15 mins by luminescence analysis",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 9.6,
+        "pchembl": 8.02,
+        "source": {
+          "id": "chembl-act:16811409",
+          "database": "ChEMBL",
+          "label": "Activity 16811409 (CHEMBL3870704)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3870704"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL4221532",
+        "assayDescription": "Inhibition of EGFR (unknown origin) using peptide substrate after 60 mins by HTRF assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 29.6,
+        "pchembl": 7.53,
+        "source": {
+          "id": "chembl-act:18573667",
+          "database": "ChEMBL",
+          "label": "Activity 18573667 (CHEMBL4221532)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4221532"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL4332282",
+        "assayDescription": "Inhibition of human A431 cell-derived EGFR",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 3.7,
+        "pchembl": 8.43,
+        "source": {
+          "id": "chembl-act:18955275",
+          "database": "ChEMBL",
+          "label": "Activity 18955275 (CHEMBL4332282)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4332282"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL4685759",
+        "assayDescription": "Inhibition of EGFR (unknown origin) using poly (Glu,Tyr) 4:1 as substrate incubated for 8 mins in presence of ATP by colorimetric analysis",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 31,
+        "pchembl": 7.51,
+        "source": {
+          "id": "chembl-act:22473600",
+          "database": "ChEMBL",
+          "label": "Activity 22473600 (CHEMBL4685759)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4685759"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL4729717",
+        "assayDescription": "Inhibition of EGFR (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 37,
+        "pchembl": 7.43,
+        "source": {
+          "id": "chembl-act:22892177",
+          "database": "ChEMBL",
+          "label": "Activity 22892177 (CHEMBL4729717)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4729717"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL4827337",
+        "assayDescription": "Inhibition of EGFR (unknown origin) by ADP-Glo kinase assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 15500,
+        "pchembl": 4.81,
+        "source": {
+          "id": "chembl-act:23232604",
+          "database": "ChEMBL",
+          "label": "Activity 23232604 (CHEMBL4827337)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4827337"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL5230875",
+        "assayDescription": "Inhibition of human EGFR incubated for 2 hrs by ELISA assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 45,
+        "pchembl": 7.35,
+        "source": {
+          "id": "chembl-act:24993667",
+          "database": "ChEMBL",
+          "label": "Activity 24993667 (CHEMBL5230875)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230875"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL5638112",
+        "assayDescription": "Inhibition of human recombinant GST tagged-EGFR using Poly (Glu,Tyr) 4:1 as substrate in presence of ATP by ADP-Glo luminescence kinase assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 43,
+        "pchembl": 7.37,
+        "source": {
+          "id": "chembl-act:26196706",
+          "database": "ChEMBL",
+          "label": "Activity 26196706 (CHEMBL5638112)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638112"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL5638814",
+        "assayDescription": "Inhibition of wild type N-terminal GST-tagged EGFR (669 to 1210 residues) (unknown origin) using poly(Glu, Tyr) 4:1 as substrate preincubated with compound for 15 mins followed by substrate addition and measured after 50 mins in presence of 10 uM of ATP by ADP-glo kinase assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 0.2512,
+        "pchembl": 9.6,
+        "source": {
+          "id": "chembl-act:26199037",
+          "database": "ChEMBL",
+          "label": "Activity 26199037 (CHEMBL5638814)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638814"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL5732709",
+        "assayDescription": "Kinase Assay (EGFR)(T790M)(L858R): Kinase Assay Protocol:Bar-coded Corning, low volume NBS, black 384-well plate (Corning Cat. #4514)1. 2.5 μL—4× Test Compound or 100 nL 100× plus 2.4 μL kinase buffer;2. 5 μL—2× Peptide/Kinase Mixture;3. 2.5 μL—4×ATP Solution;4. 30-second plate shake;5. 60-minute Kinase Reaction incubation at room temperature;6. 5 μL—Development Reagent Solution;7. 30-second plate shake;8. 60-minute Development Reaction incubation at room temperature;9. Read on fluorescence plate reader and analyze the data.Kinase-Specific Assay Conditions: The 2×EGFR (ErbB1) T790M L858R/Tyr 04 mixture is prepared in 50 mM HEPES pH 6.5, 0.01% BRIJ-35, 10 mM MgCl2, 1 mM EGTA, 0.02% NaN3. The final 10 μL Kinase Reaction consists of 0.36-2.96 ng EGFR (ErbB1) T790M L858R and 2 μM Tyr 04 in 50 mM HEPES pH 7.0, 0.01% BRIJ-35, 10 mM MgCl2, 1 mM EGTA, 0.01% NaN3. After the 1 hour Kinase Reaction incubation, 5 μL of a 1:64 dilution of Development Reagent B is added.",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 412,
+        "pchembl": 6.38,
+        "source": {
+          "id": "chembl-act:27322265",
+          "database": "ChEMBL",
+          "label": "Activity 27322265 (CHEMBL5732709)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732709"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL939",
+        "assayChemblId": "CHEMBL6094898",
+        "assayDescription": "Inhibition of recombinant EGFR (unknown origin) using PGT as substrate preincubated for 10 mins followed by substrate addition and measured after 1 hr in presence of ATP by ADP-Glo luminescence assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 0.72,
+        "pchembl": 9.14,
+        "source": {
+          "id": "chembl-act:29131835",
+          "database": "ChEMBL",
+          "label": "Activity 29131835 (CHEMBL6094898)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6094898"
+        }
+      }
+    ]
+  },
+  "comparators": [
+    {
+      "compound": {
+        "chemblId": "CHEMBL4650319",
+        "name": "MOBOCERTINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 585.71,
+          "alogp": 5.08,
+          "ro5Violations": 2,
+          "qed": 0.17
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL4650319",
+          "database": "ChEMBL",
+          "label": "MOBOCERTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+        }
+      },
+      "n": 2,
+      "medianPchembl": 10.65,
+      "minPchembl": 10.6,
+      "maxPchembl": 10.7,
+      "rank": 1,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL4650319",
+          "assayChemblId": "CHEMBL5260455",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) using TK-substrate preincubated with enzyme for 30 mins followed by substrate and ATP addition for 25 mins by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.025,
+          "pchembl": 10.6,
+          "source": {
+            "id": "chembl-act:25098080",
+            "database": "ChEMBL",
+            "label": "Activity 25098080 (CHEMBL5260455)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL4650319",
+          "assayChemblId": "CHEMBL6089387",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.02,
+          "pchembl": 10.7,
+          "source": {
+            "id": "chembl-act:29113771",
+            "database": "ChEMBL",
+            "label": "Activity 29113771 (CHEMBL6089387)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6089387"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL1173655",
+        "name": "AFATINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 485.95,
+          "alogp": 4.39,
+          "ro5Violations": 0,
+          "qed": 0.46
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL1173655",
+          "database": "ChEMBL",
+          "label": "AFATINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1173655"
+        }
+      },
+      "n": 10,
+      "medianPchembl": 8.86,
+      "minPchembl": 7.52,
+      "maxPchembl": 10.1,
+      "rank": 2,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL1009318",
+          "assayDescription": "Inhibition of EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6,
+          "pchembl": 8.22,
+          "source": {
+            "id": "chembl-act:2246122",
+            "database": "ChEMBL",
+            "label": "Activity 2246122 (CHEMBL1009318)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL3766407",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using FAM-labeled peptide as substrate preincubated for 10 mins followed by addition of substrate by mobility shift assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.6,
+          "pchembl": 8.8,
+          "source": {
+            "id": "chembl-act:16479890",
+            "database": "ChEMBL",
+            "label": "Activity 16479890 (CHEMBL3766407)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3766407"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL4416105",
+          "assayDescription": "Inhibition of GST-tagged human EGFR kinase domain (696 to 1022 residues) using poly(Glu, Tyr) 4:1 substrate incubated for 60 mins by kinase-Glo plus luminescent kinase assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 14,
+          "pchembl": 7.85,
+          "source": {
+            "id": "chembl-act:19310304",
+            "database": "ChEMBL",
+            "label": "Activity 19310304 (CHEMBL4416105)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4416105"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL4730144",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) in presence of ATP preincubated 5 mins measured for 30 mins by detection reagent based HTRF analysis",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.2,
+          "pchembl": 8.92,
+          "source": {
+            "id": "chembl-act:22894024",
+            "database": "ChEMBL",
+            "label": "Activity 22894024 (CHEMBL4730144)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4730144"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL5161051",
+          "assayDescription": "Inhibition of wild-type EGFR (14 to 721 residues) (unknown origin) by western blot analysis",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.67,
+          "pchembl": 9.17,
+          "source": {
+            "id": "chembl-act:24902244",
+            "database": "ChEMBL",
+            "label": "Activity 24902244 (CHEMBL5161051)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5161051"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL5214829",
+          "assayDescription": "Selectivity interaction (Enzymatic activity assay) EUB0000596aBDA EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.5,
+          "pchembl": 9.3,
+          "source": {
+            "id": "chembl-act:24957791",
+            "database": "ChEMBL",
+            "label": "Activity 24957791 (CHEMBL5214829)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5214829"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL5255141",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.641,
+          "pchembl": 9.19,
+          "source": {
+            "id": "chembl-act:25078763",
+            "database": "ChEMBL",
+            "label": "Activity 25078763 (CHEMBL5255141)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255141"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL5259686",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) pre-incubated for 10 mins followed by substrate addition measured after 60 mins in presence of ATP by mobility shifting assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.08,
+          "pchembl": 10.1,
+          "source": {
+            "id": "chembl-act:25094728",
+            "database": "ChEMBL",
+            "label": "Activity 25094728 (CHEMBL5259686)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5259686"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL5585679",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 30,
+          "pchembl": 7.52,
+          "source": {
+            "id": "chembl-act:26039767",
+            "database": "ChEMBL",
+            "label": "Activity 26039767 (CHEMBL5585679)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5585679"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1173655",
+          "assayChemblId": "CHEMBL5731383",
+          "assayDescription": "ssay of Inhibitory Activity on Wild Type EGFR and Mutant EGFR Kinase: All reagents used in the following z′-lyte assay were purchased from Invitrogen.The inhibitory activity on T790M/L858R double mutant EGFR kinase (Invitrogen, PV4879) and wild-type EGFR kinase (Invitrogen, PV3872) were determined by the z′-lyte assay.The working concentrations of each component in 10 μL T790M/L858R kinase reaction system were: 25 μM ATP, 0.1 ng/μL T790M/L858R kinase, 2 μM Tyr04 substrate (Invitrogen, PV3193). The concentration of DMSO after addition of the compound prepared in the above examples of the present invention (i.e., the compound to be tested) was 2 vol %.The working concentrations of each component in 10 μL wild-type EGFR kinase reaction system were: 10 μM ATP, 0.8 ng/μL wild-type EGFR kinase, 2 μM Tyr04 substrate (Invitrogen, PV3193). The concentration of DMSO after addition of the compound to be tested was 2 vol %.10 mM drug stock solution was dissolved at room temperature and gradiently diluted to a final concentration of 4-0.002 μM with 8 vol % DMSO solution. 2.5 μL of the solution of the compound to be tested and 5 μL of the mixture of T790M/L858R kinase (or wild-type EGFR kinase) and Tyr04 substrate diluted with the reaction buffer were added to each well. Then 2.5 μl of ATP was added to initiate the reaction. Wherein, ATP was replaced by the reaction buffer in well C1, no drug was added to well C2, and the phosphorylated substrate was added to well C3 according to the instructions. The mixture was allowed to react at 25° C. in a shaker in dark for 60 min. 5 μL of Development Reagent B (Invitrogen, diluted with TR-FRET dilution buffer) was added and allowed to react at room temperature in the shaker for 60 minutes. The plate was read on a Victor X5 plate reader (PerkinElmer) and the absorbance was measured at excitation wavelengths of 405 nm and emission wavelengths of 450 nm and 520 nm (for example, C3520 nrn indicates the absorbance for well C3 at 520 nm).The inhibition rate was calculated according to the following method (refer to the instructions of Invitrogen, PV3193):1. ER=Coumarin Emission (450 nm)/Fluorescein Emission (520 nm)2. Phosphorylation ratio=(1−(ER×C3520 nm−C3450 nm)/((C1450 nm−C3450 nm)+ER×(C3520 nm−C1520 nm))))×100%3. Inhibition ratio (IR)=(1−(phosphorylation ratio of the test compound)/(phosphorylation ratio of C2))×100%The half-inhibitory concentration IC50 was obtained through fitting calculation by using XLFIT 5.0 software (IDBS, UK).",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5,
+          "pchembl": 8.3,
+          "source": {
+            "id": "chembl-act:26941087",
+            "database": "ChEMBL",
+            "label": "Activity 26941087 (CHEMBL5731383)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5731383"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL180022",
+        "name": "NERATINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 557.05,
+          "alogp": 5.93,
+          "ro5Violations": 2,
+          "qed": 0.22
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL180022",
+          "database": "ChEMBL",
+          "label": "NERATINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL180022"
+        }
+      },
+      "n": 8,
+      "medianPchembl": 8.83,
+      "minPchembl": 6.81,
+      "maxPchembl": 10.1,
+      "rank": 3,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL892951",
+          "assayDescription": "Inhibition of human EGFR in presence of 1 uM ATP",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.08,
+          "pchembl": 10.1,
+          "source": {
+            "id": "chembl-act:1943195",
+            "database": "ChEMBL",
+            "label": "Activity 1943195 (CHEMBL892951)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL892954",
+          "assayDescription": "Inhibition of human EGFR in presence of 1 mM ATP",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.18,
+          "pchembl": 9.74,
+          "source": {
+            "id": "chembl-act:1943214",
+            "database": "ChEMBL",
+            "label": "Activity 1943214 (CHEMBL892954)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892954"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL1009318",
+          "assayDescription": "Inhibition of EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1,
+          "pchembl": 9,
+          "source": {
+            "id": "chembl-act:2246121",
+            "database": "ChEMBL",
+            "label": "Activity 2246121 (CHEMBL1009318)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL2390159",
+          "assayDescription": "Inhibition of recombinant EGFR (unknown origin) after 10 mins by DELFIA/time-resolved fluorometry",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2.2,
+          "pchembl": 8.66,
+          "source": {
+            "id": "chembl-act:13322674",
+            "database": "ChEMBL",
+            "label": "Activity 13322674 (CHEMBL2390159)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2390159"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL4836401",
+          "assayDescription": "Inhibition of recombinant wild type EGFR-TK (unknown origin) by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 130,
+          "pchembl": 6.89,
+          "source": {
+            "id": "chembl-act:23276955",
+            "database": "ChEMBL",
+            "label": "Activity 23276955 (CHEMBL4836401)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4836401"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL5162370",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.39,
+          "pchembl": 9.41,
+          "source": {
+            "id": "chembl-act:24907894",
+            "database": "ChEMBL",
+            "label": "Activity 24907894 (CHEMBL5162370)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5162370"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL5626926",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 154,
+          "pchembl": 6.81,
+          "source": {
+            "id": "chembl-act:26154205",
+            "database": "ChEMBL",
+            "label": "Activity 26154205 (CHEMBL5626926)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5626926"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "assayChemblId": "CHEMBL6092696",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6,
+          "pchembl": 8.22,
+          "source": {
+            "id": "chembl-act:29122426",
+            "database": "ChEMBL",
+            "label": "Activity 29122426 (CHEMBL6092696)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6092696"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL31965",
+        "name": "CANERTINIB",
+        "maxPhase": 3,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 485.95,
+          "alogp": 4.39,
+          "ro5Violations": 0,
+          "qed": 0.34
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL31965",
+          "database": "ChEMBL",
+          "label": "CANERTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL31965"
+        }
+      },
+      "n": 11,
+      "medianPchembl": 8.77,
+      "minPchembl": 7.13,
+      "maxPchembl": 9.34,
+      "rank": 4,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL673925",
+          "assayDescription": "Inhibition of phosphorylation of a polyglutamic acid/tyrosine random copolymer by EGFR enzyme (from human A431 carcinoma cell vesicles)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.5,
+          "pchembl": 8.82,
+          "source": {
+            "id": "chembl-act:110479",
+            "database": "ChEMBL",
+            "label": "Activity 110479 (CHEMBL673925)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL673925"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL683041",
+          "assayDescription": "Inhibition of Epidermal Growth Factor Receptor (EGFR) autophosphorylation",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 74,
+          "pchembl": 7.13,
+          "source": {
+            "id": "chembl-act:121735",
+            "database": "ChEMBL",
+            "label": "Activity 121735 (CHEMBL683041)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL674020",
+          "assayDescription": "Inhibition of phosphorylation of a polyglutamic acid/tyrosine random copolymer by EGFR enzyme prepared from human A431 carcinoma cell vesicles by immunoaffinity chromatography",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.5,
+          "pchembl": 8.82,
+          "source": {
+            "id": "chembl-act:790534",
+            "database": "ChEMBL",
+            "label": "Activity 790534 (CHEMBL674020)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674020"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL1009318",
+          "assayDescription": "Inhibition of EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5,
+          "pchembl": 8.3,
+          "source": {
+            "id": "chembl-act:2246120",
+            "database": "ChEMBL",
+            "label": "Activity 2246120 (CHEMBL1009318)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL1026506",
+          "assayDescription": "Inhibition of EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2.3,
+          "pchembl": 8.64,
+          "source": {
+            "id": "chembl-act:2615700",
+            "database": "ChEMBL",
+            "label": "Activity 2615700 (CHEMBL1026506)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1026506"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL3616083",
+          "assayDescription": "Inhibition of epidermal growth factor receptor kinase (unknown origin) using [33P]-ATP after 20 to 30 mins by radiometric assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.8,
+          "pchembl": 9.1,
+          "source": {
+            "id": "chembl-act:15698606",
+            "database": "ChEMBL",
+            "label": "Activity 15698606 (CHEMBL3616083)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3616083"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL4332285",
+          "assayDescription": "Inhibition of human A431 cell-derived EGFR using polyglutamic acid/tyrosine as substrate incubated for 10 mins followed by [32P]ATP addition and measured after 10 mins by beta counting method",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 15,
+          "pchembl": 7.82,
+          "source": {
+            "id": "chembl-act:18955278",
+            "database": "ChEMBL",
+            "label": "Activity 18955278 (CHEMBL4332285)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4332285"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL4342859",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2,
+          "pchembl": 8.7,
+          "source": {
+            "id": "chembl-act:18997546",
+            "database": "ChEMBL",
+            "label": "Activity 18997546 (CHEMBL4342859)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4342859"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL5653821",
+          "assayDescription": "Inhibition of purified ErbB1 (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.8,
+          "pchembl": 9.1,
+          "source": {
+            "id": "chembl-act:26224572",
+            "database": "ChEMBL",
+            "label": "Activity 26224572 (CHEMBL5653821)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5653821"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL5662067",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.7,
+          "pchembl": 8.77,
+          "source": {
+            "id": "chembl-act:26237978",
+            "database": "ChEMBL",
+            "label": "Activity 26237978 (CHEMBL5662067)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5662067"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "assayChemblId": "CHEMBL5734616",
+          "assayDescription": "In Vitro Enzyme Inhibitory Activity: Samples:Controls: Gefitinib, erlotinib hydrochloride, purchased from Anqing worldchem Co., LTD.; lapatinib ditosylate, purchased from Taizhou Xingcheng Chempharm Co., Ltd.; CI-1033 hydrochloride, purchased from Shanghai hanxiangchem, Co., Ltd.; andThe present compounds: lab-made, their chemical names and structural formulae are shown in the preparation examples.Assay Procedures:The abbreviations used in the following assay have the following meanings:HEPES: hydroxyethyl piperazine ethanesulfonic acid;Brij-35: polyoxyethylene lauryl ether;DTT: dithiothreitol;Coating Reagent #3: #3 coating agent;EDTA: ethylene diamine tetraacetic acid, purchased from Sigma Co. Ltd.;FAM labeled peptide: fluorescein labeled peptide 22 (GL Biochem);ATP: adenosine triphosphate (Sigma);DMSO: dimethyl sulfoxide;EGFR: human epidermal growth factor receptor (Carna);HER2: human epidermal growth factor receptor 2 (Carna);HER4: human epidermal growth factor receptor 4 (Carna).1. Formulating the agents to be used in the assay(1) 1.25-fold MnCl2-free kinase buffer (62.5 mM HEPES, PH 7.5, 0.001875% Brij-35, 12.5 mM MgCl2, 2.5 mM DTT);(2) 1.25-fold MnCl2-containing kinase buffer (62.5 mM HEPES, pH 7.5, 0.001875% Brij-35, 12.5 mM MgCl2, 12.5 mM MnCl2, 2.5 mM DTT);(3) Stop buffer (100 mM HEPES, pH 7.5, 0.015% Brij-35, 0.2% Coating Reagent #3, 50 mM EDTA);(4) 2.5-fold kinase solutions (to the 1.25-fold kinase buffers were added the corresponding kinases to formulate 2.5-fold EGFR, HER2, HER4 kinase solutions);(5) 2.5-fold peptide solutions (to the 1.25-fold kinase buffers were added FAM labeled peptide and ATP to formulate the peptide solutions);(6) 5-fold compound solutions (using 100% DMSO to formulate 50-fold compound solutions having different concentration gradients, and diluting with water by 10 times to obtain 5-fold compound solutions having different concentration gradients);2. Adding 5 μL of a 5-fold compound solution to a 384-well plate;3. Adding 10 μL of a 2.5-fold kinase solution to incubate for 10 min;4. Then adding 10 μL of a 2.5-fold peptide solution, and reacting at 28° C. for 1 h; and5. Finally, adding 25 μL of stop buffer to terminate the reaction, and reading the data with Caliper.6. Curve fitting to obtain an IC50 value.The calculated inhibition ratio (%)=(the maximum conversion rate−the conversion rate)/(the maximum conversion rate−the minimum conversion rate)×100The curve fitting was conducted with the Xlfit software to obtain IC50 values.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.46,
+          "pchembl": 9.34,
+          "source": {
+            "id": "chembl-act:27814601",
+            "database": "ChEMBL",
+            "label": "Activity 27814601 (CHEMBL5734616)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5734616"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL2087361",
+        "name": "ICOTINIB",
+        "maxPhase": 3,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 391.43,
+          "alogp": 3.16,
+          "ro5Violations": 0,
+          "qed": 0.67
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL2087361",
+          "database": "ChEMBL",
+          "label": "ICOTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2087361"
+        }
+      },
+      "n": 3,
+      "medianPchembl": 8.7,
+      "minPchembl": 8.3,
+      "maxPchembl": 8.91,
+      "rank": 5,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL2087361",
+          "assayChemblId": "CHEMBL2090277",
+          "assayDescription": "Inhibition of EGFR using GST-Crk as substrate assessed as phosphorylated Crk level after 20 mins by SDS-PAGE analysis",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2,
+          "pchembl": 8.7,
+          "source": {
+            "id": "chembl-act:11022075",
+            "database": "ChEMBL",
+            "label": "Activity 11022075 (CHEMBL2090277)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2090277"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL2087361",
+          "assayChemblId": "CHEMBL4342870",
+          "assayDescription": "Inhibition of EGFR (unknown origin) assessed as reduction of phosphorylation of Crk incubated for 10 mins in ice with gamma-ATP followed by incubated for 20 mins in 30 degC by radioactive phosphorylation assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5,
+          "pchembl": 8.3,
+          "source": {
+            "id": "chembl-act:18997561",
+            "database": "ChEMBL",
+            "label": "Activity 18997561 (CHEMBL4342870)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4342870"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL2087361",
+          "assayChemblId": "CHEMBL5732711",
+          "assayDescription": "Kinase Assay (EGFR): Kinase Assay Protocol:Bar-coded Corning, low volume NBS, black 384-well plate (Corning Cat. #4514)1. 2.5 μL—4× Test Compound or 100 nL 100× plus 2.4 μL kinase buffer;2. 5 μL—2× Peptide/Kinase Mixture;3. 2.5 μL—4×ATP Solution;4. 30-second plate shake;5. 60-minute Kinase Reaction incubation at room temperature;6. 5 μL—Development Reagent Solution;7. 30-second plate shake;8. 60-minute Development Reaction incubation at room temperature;9. Read on fluorescence plate reader and analyze the data.Kinase-Specific Assay Conditions: The 2×EGFR (ErbB1)/Tyr 04 mixture is prepared in 50 mM HEPES pH 7.5, 0.01% BRIJ-35, 10 mM MgCl2, 4 mM MnCl2, 1 mM EGTA, 2 mM DTT. The final 10 μL Kinase Reaction consists of 1.1-8 ng EGFR (ErbB1) and 2 μM Tyr 04 in 50 mM HEPES pH 7.5, 0.01% BRIJ-35, 10 mM MgCl2, 2 mM MnCl2, 1 mM EGTA, 1 mM DTT. After the 1 hour Kinase Reaction incubation, 5 μL of a 1:64 dilution of Development Reagent B is added.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.23,
+          "pchembl": 8.91,
+          "source": {
+            "id": "chembl-act:27322259",
+            "database": "ChEMBL",
+            "label": "Activity 27322259 (CHEMBL5732711)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732711"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL2110732",
+        "name": "DACOMITINIB ANHYDROUS",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 469.95,
+          "alogp": 5.16,
+          "ro5Violations": 1,
+          "qed": 0.47
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL2110732",
+          "database": "ChEMBL",
+          "label": "DACOMITINIB ANHYDROUS",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2110732"
+        }
+      },
+      "n": 4,
+      "medianPchembl": 8.16,
+      "minPchembl": 7.23,
+      "maxPchembl": 8.74,
+      "rank": 6,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL2110732",
+          "assayChemblId": "CHEMBL3625155",
+          "assayDescription": "Inhibition of EGFR (unknown origin) by ELISA method",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.8,
+          "pchembl": 8.74,
+          "source": {
+            "id": "chembl-act:15743462",
+            "database": "ChEMBL",
+            "label": "Activity 15743462 (CHEMBL3625155)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3625155"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL2110732",
+          "assayChemblId": "CHEMBL3705968",
+          "assayDescription": "ELISA-Based Kinase Assay: Inhibition of erbB tyrosine kinase activity was assessed using an ELISA-based receptor tyrosine kinase assay. Kinase reactions (50 mM HEPES, pH 7.4, 125 mM NaCl, 10 mM MgCl2, 100 μM sodium orthovanadate, 2 mM dithiothreitol, 20 uM ATP, test compound or vehicle control and 1-5 nM GST-erbB per 50 uL reaction) were run in 96-well plates coated with 0.25 mg/ml poly-Glu-Tyr (Sigma). The reactions were incubated for 6 minutes at room temperature while shaking. Kinase reactions were stopped by removal of reaction mixture, then wells were washed with wash buffer comprising 3% Bovine Serum Albumin and 0.1% Tween 20 in Phosphate Buffered Saline (PBS). Phosphorylated tyrosine residues were detected by adding 0.2 μg/ml anti-phosphotyrosine antibody (Oncogene Ab-4; 50 μL/well) coupled to Horse Radish Peroxidase (HRP) for 25 minutes while shaking at room temperature.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6.9,
+          "pchembl": 8.16,
+          "source": {
+            "id": "chembl-act:16352077",
+            "database": "ChEMBL",
+            "label": "Activity 16352077 (CHEMBL3705968)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3705968"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL2110732",
+          "assayChemblId": "CHEMBL5729875",
+          "assayDescription": "ELISA-Based Kinase Assay: Inhibition of erbB tyrosine kinase activity was assessed using an ELISA-based receptor tyrosine kinase assay. Kinase reactions (50 mM HEPES, pH 7.4, 125 mM NaCl, 10 mM MgCl2, 100 μM sodium orthovanadate, 2 mM dithiothreitol, 20 uM ATP, test compound or vehicle control and 1-5 nM GST-erbB per 50 uL reaction) were run in 96-well plates coated with 0.25 mg/ml poly-Glu-Tyr (Sigma). The reactions were incubated for 6 minutes at room temperature while shaking. Kinase reactions were stopped by removal of reaction mixture, then wells were washed with wash buffer comprising 3% Bovine Serum Albumin and 0.1% Tween 20 in Phosphate Buffered Saline (PBS). Phosphorylated tyrosine residues were detected by adding 0.2 μg/ml anti-phosphotyrosine antibody (Oncogene Ab-4; 50 μL/well) coupled to Horse Radish Peroxidase (HRP) for 25 minutes while shaking at room temperature.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6.9,
+          "pchembl": 8.16,
+          "source": {
+            "id": "chembl-act:26581692",
+            "database": "ChEMBL",
+            "label": "Activity 26581692 (CHEMBL5729875)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5729875"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL2110732",
+          "assayChemblId": "CHEMBL6092696",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 59,
+          "pchembl": 7.23,
+          "source": {
+            "id": "chembl-act:29122425",
+            "database": "ChEMBL",
+            "label": "Activity 29122425 (CHEMBL6092696)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6092696"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL3647420",
+        "name": "PYROTINIB",
+        "maxPhase": 3,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 583.09,
+          "alogp": 6.47,
+          "ro5Violations": 2,
+          "qed": 0.2
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL3647420",
+          "database": "ChEMBL",
+          "label": "PYROTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3647420"
+        }
+      },
+      "n": 3,
+      "medianPchembl": 7.89,
+      "minPchembl": 7.89,
+      "maxPchembl": 9.32,
+      "rank": 7,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL3647420",
+          "assayChemblId": "CHEMBL3705672",
+          "assayDescription": "Time-Resolved Fluorescence Assay: The following assay may be used to determine the activity of the compounds of the invention for inhibiting EGFR kinase activity. The half maximal inhibitory concentration IC50 (the concentration of the tested compound showing 50% inhibition of the enzyme activity) of each compound was determined by incubating several different concentrations of the tested compounds with a specific enzyme and substrate. EGFR kinase used in this assay is a human-derived recombinant protein (Cell signaling technology, #7908), which was reacted with peptide substrate and different concentrations of tested compounds in a buffer solution containing 60 mM HEPES (pH7.5), 5 mM MgCl2, 5 mM MnCl2, 3 μM Na3VO4, 1.25 M DTT (1000×) and 20 μM ATP at 25° C., for 45 minutes.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 13,
+          "pchembl": 7.89,
+          "source": {
+            "id": "chembl-act:17657272",
+            "database": "ChEMBL",
+            "label": "Activity 17657272 (CHEMBL3705672)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3705672"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3647420",
+          "assayChemblId": "CHEMBL5162370",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.48,
+          "pchembl": 9.32,
+          "source": {
+            "id": "chembl-act:24907895",
+            "database": "ChEMBL",
+            "label": "Activity 24907895 (CHEMBL5162370)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5162370"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3647420",
+          "assayChemblId": "CHEMBL5729933",
+          "assayDescription": "Time-Resolved Fluorescence Assay: The following assay may be used to determine the activity of the compounds of the invention for inhibiting EGFR kinase activity. The half maximal inhibitory concentration IC50 (the concentration of the tested compound showing 50% inhibition of the enzyme activity) of each compound was determined by incubating several different concentrations of the tested compounds with a specific enzyme and substrate. EGFR kinase used in this assay is a human-derived recombinant protein (Cell signaling technology, #7908), which was reacted with peptide substrate and different concentrations of tested compounds in a buffer solution containing 60 mM HEPES (pH7.5), 5 mM MgCl2, 5 mM MnCl2, 3 μM Na3VO4, 1.25 M DTT (1000×) and 20 μM ATP at 25° C., for 45 minutes.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 13,
+          "pchembl": 7.89,
+          "source": {
+            "id": "chembl-act:26589077",
+            "database": "ChEMBL",
+            "label": "Activity 26589077 (CHEMBL5729933)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5729933"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL554",
+        "name": "LAPATINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 581.07,
+          "alogp": 6.14,
+          "ro5Violations": 2,
+          "qed": 0.18
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL554",
+          "database": "ChEMBL",
+          "label": "LAPATINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+        }
+      },
+      "n": 19,
+      "medianPchembl": 7.87,
+      "minPchembl": 6.55,
+      "maxPchembl": 8.3,
+      "rank": 8,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL674106",
+          "assayDescription": "Inhibitory activity against epidermal growth factor receptor",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10,
+          "pchembl": 8,
+          "source": {
+            "id": "chembl-act:190221",
+            "database": "ChEMBL",
+            "label": "Activity 190221 (CHEMBL674106)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL910357",
+          "assayDescription": "Inhibition of ErbB1",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 12,
+          "pchembl": 7.92,
+          "source": {
+            "id": "chembl-act:1766862",
+            "database": "ChEMBL",
+            "label": "Activity 1766862 (CHEMBL910357)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL910357"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1009318",
+          "assayDescription": "Inhibition of EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5,
+          "pchembl": 8.3,
+          "source": {
+            "id": "chembl-act:2246119",
+            "database": "ChEMBL",
+            "label": "Activity 2246119 (CHEMBL1009318)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL944276",
+          "assayDescription": "Inhibition of human recombinant EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 17,
+          "pchembl": 7.77,
+          "source": {
+            "id": "chembl-act:2390320",
+            "database": "ChEMBL",
+            "label": "Activity 2390320 (CHEMBL944276)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL944276"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1028080",
+          "assayDescription": "Inhibition of EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 11,
+          "pchembl": 7.96,
+          "source": {
+            "id": "chembl-act:2489169",
+            "database": "ChEMBL",
+            "label": "Activity 2489169 (CHEMBL1028080)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1028080"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1044055",
+          "assayDescription": "Inhibition of Her1 by fluorescence polarization assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 52,
+          "pchembl": 7.28,
+          "source": {
+            "id": "chembl-act:2943656",
+            "database": "ChEMBL",
+            "label": "Activity 2943656 (CHEMBL1044055)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1044055"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1064921",
+          "assayDescription": "Inhibition of EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 11.2,
+          "pchembl": 7.95,
+          "source": {
+            "id": "chembl-act:3120278",
+            "database": "ChEMBL",
+            "label": "Activity 3120278 (CHEMBL1064921)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1064921"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1116653",
+          "assayDescription": "Inhibition of EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 19,
+          "pchembl": 7.72,
+          "source": {
+            "id": "chembl-act:3222548",
+            "database": "ChEMBL",
+            "label": "Activity 3222548 (CHEMBL1116653)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1116653"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1686143",
+          "assayDescription": "Inhibition of EGFR by homogeneous time-resolved fluorescence assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10,
+          "pchembl": 8,
+          "source": {
+            "id": "chembl-act:5243225",
+            "database": "ChEMBL",
+            "label": "Activity 5243225 (CHEMBL1686143)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1686143"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL1930721",
+          "assayDescription": "Inhibition of EGFR using poly(Glu,Tyr)4:1 as substrate and [gamma33P]ATP after 60 mins by scintillation counting",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 8.9,
+          "pchembl": 8.05,
+          "source": {
+            "id": "chembl-act:7980775",
+            "database": "ChEMBL",
+            "label": "Activity 7980775 (CHEMBL1930721)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930721"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL2439214",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using poly-(Glu4-Tyr) as substrate after 1 hr by ELISA-based spectrophotometry",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 16.3,
+          "pchembl": 7.79,
+          "source": {
+            "id": "chembl-act:13480566",
+            "database": "ChEMBL",
+            "label": "Activity 13480566 (CHEMBL2439214)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2439214"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL3418211",
+          "assayDescription": "Inhibition of EGFR (unknown origin) by Z'-LYTE assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5.5,
+          "pchembl": 8.26,
+          "source": {
+            "id": "chembl-act:15229669",
+            "database": "ChEMBL",
+            "label": "Activity 15229669 (CHEMBL3418211)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3418211"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL3750872",
+          "assayDescription": "Inhibition of His-tagged EGFR cytoplasmic domain (645-1186 aa) (unknown origin) assessed as inhibition of autophosphorylation by TR-fluorometry",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 280,
+          "pchembl": 6.55,
+          "source": {
+            "id": "chembl-act:16416927",
+            "database": "ChEMBL",
+            "label": "Activity 16416927 (CHEMBL3750872)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3750872"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL4628613",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using FAM-labeled peptide as substrate preincubated for 10 mins followed by substrate addition measured after 40 mins in presence of ATP by caliper mobility shift assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 22,
+          "pchembl": 7.66,
+          "source": {
+            "id": "chembl-act:20708043",
+            "database": "ChEMBL",
+            "label": "Activity 20708043 (CHEMBL4628613)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4628613"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL4769431",
+          "assayDescription": "Inhibition of EGFR (unknown origin) by FRET assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 46,
+          "pchembl": 7.34,
+          "source": {
+            "id": "chembl-act:22965630",
+            "database": "ChEMBL",
+            "label": "Activity 22965630 (CHEMBL4769431)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4769431"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL4810017",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 15,
+          "pchembl": 7.82,
+          "source": {
+            "id": "chembl-act:23148927",
+            "database": "ChEMBL",
+            "label": "Activity 23148927 (CHEMBL4810017)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4810017"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL5031645",
+          "assayDescription": "Inhibition of exogenous EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 13.42,
+          "pchembl": 7.87,
+          "source": {
+            "id": "chembl-act:24348823",
+            "database": "ChEMBL",
+            "label": "Activity 24348823 (CHEMBL5031645)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5031645"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL5446212",
+          "assayDescription": "Affinity Biochemical interaction: (Radiometric kinase assay (10 uM ATP)) EUB0001487a EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10.8,
+          "pchembl": 7.97,
+          "source": {
+            "id": "chembl-act:25755867",
+            "database": "ChEMBL",
+            "label": "Activity 25755867 (CHEMBL5446212)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5446212"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "assayChemblId": "CHEMBL5734616",
+          "assayDescription": "In Vitro Enzyme Inhibitory Activity: Samples:Controls: Gefitinib, erlotinib hydrochloride, purchased from Anqing worldchem Co., LTD.; lapatinib ditosylate, purchased from Taizhou Xingcheng Chempharm Co., Ltd.; CI-1033 hydrochloride, purchased from Shanghai hanxiangchem, Co., Ltd.; andThe present compounds: lab-made, their chemical names and structural formulae are shown in the preparation examples.Assay Procedures:The abbreviations used in the following assay have the following meanings:HEPES: hydroxyethyl piperazine ethanesulfonic acid;Brij-35: polyoxyethylene lauryl ether;DTT: dithiothreitol;Coating Reagent #3: #3 coating agent;EDTA: ethylene diamine tetraacetic acid, purchased from Sigma Co. Ltd.;FAM labeled peptide: fluorescein labeled peptide 22 (GL Biochem);ATP: adenosine triphosphate (Sigma);DMSO: dimethyl sulfoxide;EGFR: human epidermal growth factor receptor (Carna);HER2: human epidermal growth factor receptor 2 (Carna);HER4: human epidermal growth factor receptor 4 (Carna).1. Formulating the agents to be used in the assay(1) 1.25-fold MnCl2-free kinase buffer (62.5 mM HEPES, PH 7.5, 0.001875% Brij-35, 12.5 mM MgCl2, 2.5 mM DTT);(2) 1.25-fold MnCl2-containing kinase buffer (62.5 mM HEPES, pH 7.5, 0.001875% Brij-35, 12.5 mM MgCl2, 12.5 mM MnCl2, 2.5 mM DTT);(3) Stop buffer (100 mM HEPES, pH 7.5, 0.015% Brij-35, 0.2% Coating Reagent #3, 50 mM EDTA);(4) 2.5-fold kinase solutions (to the 1.25-fold kinase buffers were added the corresponding kinases to formulate 2.5-fold EGFR, HER2, HER4 kinase solutions);(5) 2.5-fold peptide solutions (to the 1.25-fold kinase buffers were added FAM labeled peptide and ATP to formulate the peptide solutions);(6) 5-fold compound solutions (using 100% DMSO to formulate 50-fold compound solutions having different concentration gradients, and diluting with water by 10 times to obtain 5-fold compound solutions having different concentration gradients);2. Adding 5 μL of a 5-fold compound solution to a 384-well plate;3. Adding 10 μL of a 2.5-fold kinase solution to incubate for 10 min;4. Then adding 10 μL of a 2.5-fold peptide solution, and reacting at 28° C. for 1 h; and5. Finally, adding 25 μL of stop buffer to terminate the reaction, and reading the data with Caliper.6. Curve fitting to obtain an IC50 value.The calculated inhibition ratio (%)=(the maximum conversion rate−the conversion rate)/(the maximum conversion rate−the minimum conversion rate)×100The curve fitting was conducted with the Xlfit software to obtain IC50 values.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 16,
+          "pchembl": 7.8,
+          "source": {
+            "id": "chembl-act:27814598",
+            "database": "ChEMBL",
+            "label": "Activity 27814598 (CHEMBL5734616)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5734616"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL553",
+        "name": "ERLOTINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 393.44,
+          "alogp": 3.41,
+          "ro5Violations": 0,
+          "qed": 0.42
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL553",
+          "database": "ChEMBL",
+          "label": "ERLOTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL553"
+        }
+      },
+      "n": 25,
+      "medianPchembl": 7.58,
+      "minPchembl": 5.21,
+      "maxPchembl": 10.54,
+      "rank": 10,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL683041",
+          "assayDescription": "Inhibition of Epidermal Growth Factor Receptor (EGFR) autophosphorylation",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1450,
+          "pchembl": 5.84,
+          "source": {
+            "id": "chembl-act:129395",
+            "database": "ChEMBL",
+            "label": "Activity 129395 (CHEMBL683041)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL924351",
+          "assayDescription": "Inhibition of EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 23,
+          "pchembl": 7.64,
+          "source": {
+            "id": "chembl-act:2048876",
+            "database": "ChEMBL",
+            "label": "Activity 2048876 (CHEMBL924351)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924351"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL978648",
+          "assayDescription": "Inhibition of EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 3.6,
+          "pchembl": 8.44,
+          "source": {
+            "id": "chembl-act:2194204",
+            "database": "ChEMBL",
+            "label": "Activity 2194204 (CHEMBL978648)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL978648"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL976899",
+          "assayDescription": "Inhibition of EGFR",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.4,
+          "pchembl": 9.4,
+          "source": {
+            "id": "chembl-act:2206757",
+            "database": "ChEMBL",
+            "label": "Activity 2206757 (CHEMBL976899)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL976899"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL1116653",
+          "assayDescription": "Inhibition of EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 15,
+          "pchembl": 7.82,
+          "source": {
+            "id": "chembl-act:3222547",
+            "database": "ChEMBL",
+            "label": "Activity 3222547 (CHEMBL1116653)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1116653"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL1105216",
+          "assayDescription": "Inhibition of wild type EGFR by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.2,
+          "pchembl": 9.7,
+          "source": {
+            "id": "chembl-act:3261330",
+            "database": "ChEMBL",
+            "label": "Activity 3261330 (CHEMBL1105216)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1105216"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL1930721",
+          "assayDescription": "Inhibition of EGFR using poly(Glu,Tyr)4:1 as substrate and [gamma33P]ATP after 60 mins by scintillation counting",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 3.1,
+          "pchembl": 8.51,
+          "source": {
+            "id": "chembl-act:7980774",
+            "database": "ChEMBL",
+            "label": "Activity 7980774 (CHEMBL1930721)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930721"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL3226013",
+          "assayDescription": "Inhibition of recombinant EGFR (unknown origin) using poly-Glu-Tyr peptide as substrate",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5,
+          "pchembl": 8.3,
+          "source": {
+            "id": "chembl-act:14543397",
+            "database": "ChEMBL",
+            "label": "Activity 14543397 (CHEMBL3226013)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3226013"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL3266279",
+          "assayDescription": "Inhibition of recombinant EGFR (unknown origin) using poly-GT peptide as substrate by Transcreener assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 16,
+          "pchembl": 7.8,
+          "source": {
+            "id": "chembl-act:14652523",
+            "database": "ChEMBL",
+            "label": "Activity 14652523 (CHEMBL3266279)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3266279"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL3745491",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using tyrosine 4 as substrate by fluorescence analysis",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.5,
+          "pchembl": 9.3,
+          "source": {
+            "id": "chembl-act:16410660",
+            "database": "ChEMBL",
+            "label": "Activity 16410660 (CHEMBL3745491)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3745491"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL4156805",
+          "assayDescription": "Inhibition of EGFR in human MCF7 cell lysates after 24 to 48 hrs by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 73,
+          "pchembl": 7.14,
+          "source": {
+            "id": "chembl-act:18439537",
+            "database": "ChEMBL",
+            "label": "Activity 18439537 (CHEMBL4156805)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4156805"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL4370290",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) by bioluminescent ADP-glo kinase assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.5,
+          "pchembl": 8.82,
+          "source": {
+            "id": "chembl-act:19110259",
+            "database": "ChEMBL",
+            "label": "Activity 19110259 (CHEMBL4370290)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4370290"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL4700377",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using Tyrosine 4 peptide and ATP as substrate incubated for 1 hr by Z'-lyte kinase assay based UV-VIS spectrophotometric method",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 239.91,
+          "pchembl": 6.62,
+          "source": {
+            "id": "chembl-act:22753820",
+            "database": "ChEMBL",
+            "label": "Activity 22753820 (CHEMBL4700377)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4700377"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL4729710",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using ATF-2 as substrate after 1 hr by radiometric based ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 152.59,
+          "pchembl": 6.82,
+          "source": {
+            "id": "chembl-act:22892165",
+            "database": "ChEMBL",
+            "label": "Activity 22892165 (CHEMBL4729710)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4729710"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL4769431",
+          "assayDescription": "Inhibition of EGFR (unknown origin) by FRET assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 95,
+          "pchembl": 7.02,
+          "source": {
+            "id": "chembl-act:22965631",
+            "database": "ChEMBL",
+            "label": "Activity 22965631 (CHEMBL4769431)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4769431"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL4821238",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 54.34,
+          "pchembl": 7.26,
+          "source": {
+            "id": "chembl-act:23203418",
+            "database": "ChEMBL",
+            "label": "Activity 23203418 (CHEMBL4821238)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4821238"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5128251",
+          "assayDescription": "Inhibition of EGFR (unknown origin) using poly (glu-tyr) as substrate incubated for 1 hr in presence of ATP measured by ADP-Glo kinase assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 26.09,
+          "pchembl": 7.58,
+          "source": {
+            "id": "chembl-act:24776465",
+            "database": "ChEMBL",
+            "label": "Activity 24776465 (CHEMBL5128251)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5128251"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5133605",
+          "assayDescription": "Inhibition of EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 180,
+          "pchembl": 6.75,
+          "source": {
+            "id": "chembl-act:24796320",
+            "database": "ChEMBL",
+            "label": "Activity 24796320 (CHEMBL5133605)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5133605"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5230835",
+          "assayDescription": "Inhibition of EGFR (unknown origin) incubated for 1 hrs by ELISA assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 520,
+          "pchembl": 6.28,
+          "source": {
+            "id": "chembl-act:24993557",
+            "database": "ChEMBL",
+            "label": "Activity 24993557 (CHEMBL5230835)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230835"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5230879",
+          "assayDescription": "Inhibition of EGFR (unknown origin) incubated for 1 hrs in presence of ATP by ELISA assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 6210,
+          "pchembl": 5.21,
+          "source": {
+            "id": "chembl-act:24993675",
+            "database": "ChEMBL",
+            "label": "Activity 24993675 (CHEMBL5230879)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230879"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5260455",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) using TK-substrate preincubated with enzyme for 30 mins followed by substrate and ATP addition for 25 mins by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.029,
+          "pchembl": 10.54,
+          "source": {
+            "id": "chembl-act:25098074",
+            "database": "ChEMBL",
+            "label": "Activity 25098074 (CHEMBL5260455)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5320277",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) preincubated for 5 mins followed by substrate and ATP addition and further incubated for 30 mins by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 320,
+          "pchembl": 6.5,
+          "source": {
+            "id": "chembl-act:25456679",
+            "database": "ChEMBL",
+            "label": "Activity 25456679 (CHEMBL5320277)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5320277"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5386905",
+          "assayDescription": "Inhibition of recombinant EGFR (unknown origin) by kinase glo detection reagent based assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 37,
+          "pchembl": 7.43,
+          "source": {
+            "id": "chembl-act:25706595",
+            "database": "ChEMBL",
+            "label": "Activity 25706595 (CHEMBL5386905)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5386905"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5553676",
+          "assayDescription": "Inhibition of EGFR (unknown origin) mediated phosphorylation incubated for 2 hrs in presence of ATP by Z-LYTE assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 135.29,
+          "pchembl": 6.87,
+          "source": {
+            "id": "chembl-act:26001397",
+            "database": "ChEMBL",
+            "label": "Activity 26001397 (CHEMBL5553676)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5553676"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "assayChemblId": "CHEMBL5734616",
+          "assayDescription": "In Vitro Enzyme Inhibitory Activity: Samples:Controls: Gefitinib, erlotinib hydrochloride, purchased from Anqing worldchem Co., LTD.; lapatinib ditosylate, purchased from Taizhou Xingcheng Chempharm Co., Ltd.; CI-1033 hydrochloride, purchased from Shanghai hanxiangchem, Co., Ltd.; andThe present compounds: lab-made, their chemical names and structural formulae are shown in the preparation examples.Assay Procedures:The abbreviations used in the following assay have the following meanings:HEPES: hydroxyethyl piperazine ethanesulfonic acid;Brij-35: polyoxyethylene lauryl ether;DTT: dithiothreitol;Coating Reagent #3: #3 coating agent;EDTA: ethylene diamine tetraacetic acid, purchased from Sigma Co. Ltd.;FAM labeled peptide: fluorescein labeled peptide 22 (GL Biochem);ATP: adenosine triphosphate (Sigma);DMSO: dimethyl sulfoxide;EGFR: human epidermal growth factor receptor (Carna);HER2: human epidermal growth factor receptor 2 (Carna);HER4: human epidermal growth factor receptor 4 (Carna).1. Formulating the agents to be used in the assay(1) 1.25-fold MnCl2-free kinase buffer (62.5 mM HEPES, PH 7.5, 0.001875% Brij-35, 12.5 mM MgCl2, 2.5 mM DTT);(2) 1.25-fold MnCl2-containing kinase buffer (62.5 mM HEPES, pH 7.5, 0.001875% Brij-35, 12.5 mM MgCl2, 12.5 mM MnCl2, 2.5 mM DTT);(3) Stop buffer (100 mM HEPES, pH 7.5, 0.015% Brij-35, 0.2% Coating Reagent #3, 50 mM EDTA);(4) 2.5-fold kinase solutions (to the 1.25-fold kinase buffers were added the corresponding kinases to formulate 2.5-fold EGFR, HER2, HER4 kinase solutions);(5) 2.5-fold peptide solutions (to the 1.25-fold kinase buffers were added FAM labeled peptide and ATP to formulate the peptide solutions);(6) 5-fold compound solutions (using 100% DMSO to formulate 50-fold compound solutions having different concentration gradients, and diluting with water by 10 times to obtain 5-fold compound solutions having different concentration gradients);2. Adding 5 μL of a 5-fold compound solution to a 384-well plate;3. Adding 10 μL of a 2.5-fold kinase solution to incubate for 10 min;4. Then adding 10 μL of a 2.5-fold peptide solution, and reacting at 28° C. for 1 h; and5. Finally, adding 25 μL of stop buffer to terminate the reaction, and reading the data with Caliper.6. Curve fitting to obtain an IC50 value.The calculated inhibition ratio (%)=(the maximum conversion rate−the conversion rate)/(the maximum conversion rate−the minimum conversion rate)×100The curve fitting was conducted with the Xlfit software to obtain IC50 values.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.3,
+          "pchembl": 8.89,
+          "source": {
+            "id": "chembl-act:27814595",
+            "database": "ChEMBL",
+            "label": "Activity 27814595 (CHEMBL5734616)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5734616"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL3353410",
+        "name": "OSIMERTINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 499.62,
+          "alogp": 4.51,
+          "ro5Violations": 0,
+          "qed": 0.31
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL3353410",
+          "database": "ChEMBL",
+          "label": "OSIMERTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3353410"
+        }
+      },
+      "n": 12,
+      "medianPchembl": 7.57,
+      "minPchembl": 6.71,
+      "maxPchembl": 8.96,
+      "rank": 11,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL4222844",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) using poly (Glu, Tyr) as substrate after 40 mins by kinase-glo plus luminescence assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.4,
+          "pchembl": 8.85,
+          "source": {
+            "id": "chembl-act:18581491",
+            "database": "ChEMBL",
+            "label": "Activity 18581491 (CHEMBL4222844)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4222844"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL4258549",
+          "assayDescription": "Inhibition of Wild type human EGFR using poly(Glu, Tyr) 4 : 1 as substrate after 1 hr by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 142.1,
+          "pchembl": 6.85,
+          "source": {
+            "id": "chembl-act:18722887",
+            "database": "ChEMBL",
+            "label": "Activity 18722887 (CHEMBL4258549)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4258549"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5029925",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) preincubated for 60 mins followed by substrate addition and further incubated for 60 mins in presence of ATP by IMAP-FP assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.1,
+          "pchembl": 8.96,
+          "source": {
+            "id": "chembl-act:24343051",
+            "database": "ChEMBL",
+            "label": "Activity 24343051 (CHEMBL5029925)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5029925"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5037732",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) measured by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 29.6,
+          "pchembl": 7.53,
+          "source": {
+            "id": "chembl-act:24377971",
+            "database": "ChEMBL",
+            "label": "Activity 24377971 (CHEMBL5037732)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5037732"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5046855",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) using flurogenic substrate in presence of ATP by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 8.807,
+          "pchembl": 8.05,
+          "source": {
+            "id": "chembl-act:24413842",
+            "database": "ChEMBL",
+            "label": "Activity 24413842 (CHEMBL5046855)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5046855"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5135826",
+          "assayDescription": "Inhibition of EGFR phosphorylation (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 184,
+          "pchembl": 6.74,
+          "source": {
+            "id": "chembl-act:24805889",
+            "database": "ChEMBL",
+            "label": "Activity 24805889 (CHEMBL5135826)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5135826"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5215097",
+          "assayDescription": "Inhibition of EGFR wildtype (unknown origin) incubated for 40 mins in presence of ATP",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2.2,
+          "pchembl": 8.66,
+          "source": {
+            "id": "chembl-act:24958839",
+            "database": "ChEMBL",
+            "label": "Activity 24958839 (CHEMBL5215097)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5215097"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5341567",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 10,
+          "pchembl": 8,
+          "source": {
+            "id": "chembl-act:25533404",
+            "database": "ChEMBL",
+            "label": "Activity 25533404 (CHEMBL5341567)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5341567"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5620507",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 196.5,
+          "pchembl": 6.71,
+          "source": {
+            "id": "chembl-act:26132485",
+            "database": "ChEMBL",
+            "label": "Activity 26132485 (CHEMBL5620507)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5620507"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL5737313",
+          "assayDescription": "Kinase Inhibition Assay: Reagents and Materials:WT EGFR (Carna, Cat. No. 08-115), EGFR [L858R] (Carna, Cat. No. 08-502), EGFR [L858R/T790M] (Carna, Cat. No. 08-510), ATP (Sigma, Cat. No. A7699-1G), DMSO (Sigma, Cat. No. D2650), 96-well plate (Corning, Cat. No. 3365), 384-well plate (Greiner, Cat. No. 784076), HTRF Kinase TK Kit (Cisbio, Cat. No. 62TK0PEJ), Erlotinib (Selleckchem, Cat. No. S7787), EGFR [d746-750] (Life Technologies, Cat. No. PV6178), 5× Kinase Buffer A (Life Technologies, Cat. No. PV3186), Kinase Tracer 199 (Life Technologies, Cat. No. PV5830), LanthaScreen® Eu-anti-GST antibody (Life Technologies, Cat. No. PV5594).Specific Experimental Protocol:Compound preparation: the test compound was dissolved in DMSO to make a 20 mM stock solution. Then, it was diluted in DMSO with a 3-fold series gradient dilution for 10 times. The dilutions were diluted 10 fold with buffer when dosing.WT EGFR and EGFR [L858R/T790M] kinase assay: WT EGFR or EGFR [L858R/T790M] kinase was mixed with different concentrations of pre-diluted compounds for 10 minutes in 5× Kinase Buffer A in duplicate. The corresponding substrate and ATP were added and reacted at room temperature for 20 minutes (in which a negative and a positive control were set: the negative control is blank and the positive control is erlotinib). After the reaction, the detection reagent (the reagent in the HTRF Kinase TK kit) was added, and after incubation at room temperature for 30 minutes, the enzyme activity in the presence of the compounds of the present disclosure at each concentration was measured by an Evnvision microplate reader, and the inhibition of the enzyme by the compound at each concentrations were calculated. The inhibitions of the enzyme activity by the compounds at different concentrations were then fitted using Graphpad 5.0 software according to the four-parameter equation, and the IC50 values were calculated.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 25,
+          "pchembl": 7.6,
+          "source": {
+            "id": "chembl-act:28497443",
+            "database": "ChEMBL",
+            "label": "Activity 28497443 (CHEMBL5737313)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5737313"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL6105594",
+          "assayDescription": "Inhibition of human wild-type EGFR by Kinase-Glo assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 70,
+          "pchembl": 7.16,
+          "source": {
+            "id": "chembl-act:29159013",
+            "database": "ChEMBL",
+            "label": "Activity 29159013 (CHEMBL6105594)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6105594"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3353410",
+          "assayChemblId": "CHEMBL6107142",
+          "assayDescription": "Inhibition of wild-type EGFR (unknown origin) using Glu/Tyr as substrate incubated for 1 hr by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 34.5,
+          "pchembl": 7.46,
+          "source": {
+            "id": "chembl-act:29163691",
+            "database": "ChEMBL",
+            "label": "Activity 29163691 (CHEMBL6107142)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6107142"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL3545311",
+        "name": "BRIGATINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 584.11,
+          "alogp": 5.09,
+          "ro5Violations": 2,
+          "qed": 0.35
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL3545311",
+          "database": "ChEMBL",
+          "label": "BRIGATINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545311"
+        }
+      },
+      "n": 10,
+      "medianPchembl": 7.07,
+      "minPchembl": 5.88,
+      "maxPchembl": 8.8,
+      "rank": 12,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5031761",
+          "assayDescription": "Inhibition of Wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 21,
+          "pchembl": 7.68,
+          "source": {
+            "id": "chembl-act:24349079",
+            "database": "ChEMBL",
+            "label": "Activity 24349079 (CHEMBL5031761)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5031761"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5165819",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 139.7,
+          "pchembl": 6.86,
+          "source": {
+            "id": "chembl-act:24919508",
+            "database": "ChEMBL",
+            "label": "Activity 24919508 (CHEMBL5165819)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5165819"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5260455",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) using TK-substrate preincubated with enzyme for 30 mins followed by substrate and ATP addition for 25 mins by HTRF assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.6,
+          "pchembl": 8.8,
+          "source": {
+            "id": "chembl-act:25098072",
+            "database": "ChEMBL",
+            "label": "Activity 25098072 (CHEMBL5260455)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5341567",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 124,
+          "pchembl": 6.91,
+          "source": {
+            "id": "chembl-act:25533405",
+            "database": "ChEMBL",
+            "label": "Activity 25533405 (CHEMBL5341567)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5341567"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5374831",
+          "assayDescription": "Inhibition of wild-type EGFR (unknown origin) using polyE4Y1 as substrate incubated for 5 mins with compound followed by substrate addition measured after 60 mins in presence of ATP by ADP-Glo reagent based assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 109,
+          "pchembl": 6.96,
+          "source": {
+            "id": "chembl-act:25665244",
+            "database": "ChEMBL",
+            "label": "Activity 25665244 (CHEMBL5374831)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5374831"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5636480",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) in presence of ATP by FRET assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1302,
+          "pchembl": 5.88,
+          "source": {
+            "id": "chembl-act:26190886",
+            "database": "ChEMBL",
+            "label": "Activity 26190886 (CHEMBL5636480)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5636480"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5705018",
+          "assayDescription": "Inhibition of human EGFR using poly (Glu, Tyr)4:1 as substrate in presence of [gamma33P]-ATP by HotSpot assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 67,
+          "pchembl": 7.17,
+          "source": {
+            "id": "chembl-act:26307836",
+            "database": "ChEMBL",
+            "label": "Activity 26307836 (CHEMBL5705018)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5705018"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5711708",
+          "assayDescription": "Inhibition of EGFR (unknown origin) incubated for 10 mins in presence of ATP by ADP-Glo based luminometer analysis",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 53.1,
+          "pchembl": 7.28,
+          "source": {
+            "id": "chembl-act:26316162",
+            "database": "ChEMBL",
+            "label": "Activity 26316162 (CHEMBL5711708)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5711708"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL5737852",
+          "assayDescription": "Kinase Inhibitory Activity Assay: The inhibitory activity on a C797S-containing epidermal growth factor receptor (EGFR) kinase and an MET kinase was measured for compound 1 obtained in the above Example, and the results are shown in Table 1 below. The kinase inhibitory activity was measured by the following method:1. Each kinase was incubated with 8 mM MOPS (pH 7.0), 0.2 mM EDTA, 250 μM KKKGQEEEYVFIE (SEQ ID NO: 1), 1 mM sodium orthovanadate, 5 mM sodium-6-glycerophosphate, 10 mM magnesium acetate, and [η-33P]-ATP.2. The compound to be evaluated (DMSO solution) and Mg/ATP were added to proceed the reaction.3. After about 40 minutes at room temperature, the reaction was stopped by the addition of 10 μL of 0.5% phosphoric acid.4. 10 μL of 0.5% reaction solution was spotted onto a P30 filtermat.5. Washed 4 times for about 4 minutes in 0.425% phosphoric acid. Washed once in methanol, and then dried and analyzed by scintillation counting to measure IC50 value.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2,
+          "pchembl": 8.7,
+          "source": {
+            "id": "chembl-act:28620149",
+            "database": "ChEMBL",
+            "label": "Activity 28620149 (CHEMBL5737852)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5737852"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545311",
+          "assayChemblId": "CHEMBL6183453",
+          "assayDescription": "Inhibition of wild-type EGFR (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 307.11,
+          "pchembl": 6.51,
+          "source": {
+            "id": "chembl-act:29310114",
+            "database": "ChEMBL",
+            "label": "Activity 29310114 (CHEMBL6183453)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6183453"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL3545308",
+        "name": "ROCILETINIB",
+        "maxPhase": 3,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 555.56,
+          "alogp": 4.78,
+          "ro5Violations": 1,
+          "qed": 0.34
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL3545308",
+          "database": "ChEMBL",
+          "label": "ROCILETINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545308"
+        }
+      },
+      "n": 12,
+      "medianPchembl": 6.99,
+      "minPchembl": 5.6,
+      "maxPchembl": 8.89,
+      "rank": 13,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL3707998",
+          "assayDescription": "Omnia Assay: Briefly, 10x stocks of EGFR-WT (PV3872) from Invitrogen and EGFR-T790M/L858R (40350) from BPS Bioscience, San Diego, Calif., 1.13xATP (AS001A) and appropriate Tyr-Sox conjugated peptide substrates (KCZ1001) were prepared in 1x kinase reaction buffer consisting of 20 mM Tris, pH 7.5, 5 mM MgCl2, 1 mM EGTA, 5 mM beta-glycerophosphate, 5% glycerol (10x stock, KB002A) and 0.2 mM DTT (DS001A). 5 uL of each enzyme were pre-incubated in a Corning (#3574) 384-well, white, non-binding surface microtiter plate (Corning, N.Y.) for 30 min. at 25C. with a 0.5 Î¼L volume of 50% DMSO and serially diluted compounds prepared in 50% DMSO. Kinase reactions were started with the addition of 45 uL of the ATP/Tyr-Sox peptide substrate mix and monitored every 71 seconds for 60 minutes at lamda ex360/lamda em485 in a Synergy4 plate reader from BioTek (Winooski, Vt.). At the conclusion of each assay, progress curves from each well were examined for linear reaction kinetics and fit statistics (R2, 95% confidence interval, absolute sum of squares). Initial velocity (0 minutes to 30 minutes) from each reaction was determined from the slope of a plot of relative fluorescence units vs time (minutes) and then plotted against inhibitor concentration to estimate IC50 from log [Inhibitor] vs Response, Variable Slope model in GraphPad Prism from GraphPad Software (San Diego, Calif.).",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5.5,
+          "pchembl": 8.26,
+          "source": {
+            "id": "chembl-act:16335936",
+            "database": "ChEMBL",
+            "label": "Activity 16335936 (CHEMBL3707998)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3707998"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5230869",
+          "assayDescription": "Inhibition of EGFR (unknown origin) incubated for 60 mins in presence of ATP by ADP-Glo kinase assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 25,
+          "pchembl": 7.6,
+          "source": {
+            "id": "chembl-act:24993651",
+            "database": "ChEMBL",
+            "label": "Activity 24993651 (CHEMBL5230869)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230869"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5731066",
+          "assayDescription": "TBD: TBD",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 412,
+          "pchembl": 6.38,
+          "source": {
+            "id": "chembl-act:26838751",
+            "database": "ChEMBL",
+            "label": "Activity 26838751 (CHEMBL5731066)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5731066"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5731067",
+          "assayDescription": "TBD: TBD",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 179,
+          "pchembl": 6.75,
+          "source": {
+            "id": "chembl-act:26838754",
+            "database": "ChEMBL",
+            "label": "Activity 26838754 (CHEMBL5731067)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5731067"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5732708",
+          "assayDescription": "Kinase Assay (EGFR/L858R): Kinase Assay Protocol:Bar-coded Corning, low volume NBS, black 384-well plate (Corning Cat. #4514)1. 2.5 μL—4× Test Compound or 100 nL 100× plus 2.4 μL kinase buffer;2. 5 μL—2× Peptide/Kinase Mixture;3. 2.5 μL—4×ATP Solution;4. 30-second plate shake;5. 60-minute Kinase Reaction incubation at room temperature;6. 5 μL—Development Reagent Solution;7. 30-second plate shake;8. 60-minute Development Reaction incubation at room temperature;9. Read on fluorescence plate reader and analyze the data.Kinase-Specific Assay Conditions: The 2×EGFR (ErbB1) L858R/Tyr 04 mixture is prepared in 50 mM HEPES pH 7.5, 0.01% BRIJ-35, 10 mM MgCl2, 4 mM MnCl2, 1 mM EGTA, 2 mM DTT. The final 10 μL Kinase Reaction consists of 0.2-3.36 ng EGFR (ErbB1) L858R and 2 μM Tyr 04 in 50 mM HEPES pH 7.5, 0.01% BRIJ-35, 10 mM MgCl2, 2 mM MnCl2, 1 mM EGTA, 1 mM DTT. After the 1 hour Kinase Reaction incubation, 5 μL of a 1:64 dilution of Development Reagent B is added.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 108,
+          "pchembl": 6.97,
+          "source": {
+            "id": "chembl-act:27322277",
+            "database": "ChEMBL",
+            "label": "Activity 27322277 (CHEMBL5732708)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732708"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5732711",
+          "assayDescription": "Kinase Assay (EGFR): Kinase Assay Protocol:Bar-coded Corning, low volume NBS, black 384-well plate (Corning Cat. #4514)1. 2.5 μL—4× Test Compound or 100 nL 100× plus 2.4 μL kinase buffer;2. 5 μL—2× Peptide/Kinase Mixture;3. 2.5 μL—4×ATP Solution;4. 30-second plate shake;5. 60-minute Kinase Reaction incubation at room temperature;6. 5 μL—Development Reagent Solution;7. 30-second plate shake;8. 60-minute Development Reaction incubation at room temperature;9. Read on fluorescence plate reader and analyze the data.Kinase-Specific Assay Conditions: The 2×EGFR (ErbB1)/Tyr 04 mixture is prepared in 50 mM HEPES pH 7.5, 0.01% BRIJ-35, 10 mM MgCl2, 4 mM MnCl2, 1 mM EGTA, 2 mM DTT. The final 10 μL Kinase Reaction consists of 1.1-8 ng EGFR (ErbB1) and 2 μM Tyr 04 in 50 mM HEPES pH 7.5, 0.01% BRIJ-35, 10 mM MgCl2, 2 mM MnCl2, 1 mM EGTA, 1 mM DTT. After the 1 hour Kinase Reaction incubation, 5 μL of a 1:64 dilution of Development Reagent B is added.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 101,
+          "pchembl": 7,
+          "source": {
+            "id": "chembl-act:27322286",
+            "database": "ChEMBL",
+            "label": "Activity 27322286 (CHEMBL5732711)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732711"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5733820",
+          "assayDescription": "Assay on In Vitro Enzyme-Inhibiting Activity: Test compounds: a part of compounds of the invention, the chemical names and preparation methods of which can be found in their preparation examples.Control agent: CO-1686, the structure of which can be found in the Background Art, prepared by the inventors (please refer to Patent WO2012061299A1 for the preparation methods).The meanings represented by the abbreviations in the experiments are described as follows.EDTA: eathylene diamine tetraacetic acidDMSO: dimethyl sulfoxideSD: standard deviationFAM: carboxyfluoresceinBrij-35: polyethylene glycol dodecyl etherHEPES: N-2-hydroxyethylpiperazine-N′-2-ethanesulfonic acidDTT: dithiothreitolExperimental method: the compounds were screened in the presence of Km ATP by Mobility Shift Assay using the kinases EGFR and EGFR_T790M.1. Preparation of Reagents(1) 1-fold kinase buffer for detecting the kinases wild-type EGFR (WT EGFR or WT for short), EGFR (d746-750) (d746-750 for short), EGFR (d746-750)-T790M ((d746-750)-T790M for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 10 mM MgCl2, 10 mM MnCl2, and 2 mM DTT;(2) 1-fold kinase buffer for detecting the kinases EGFR T790M (T790M for short), EGFR L858R (L858R for short), EGFR T790M-L858R (T790M-L858R for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 5 mM MgCl2, and 2 mM DTT.(3) Stop Solution100 mM HEPES (pH 7.5), 0.015% Brij-35, 0.2% Coating Reagent #3, and 50 mM EDTA2. Preparation of a Compound Solution(1) To the second well of a 96-well plate, 5 μL 10 mM compound (dissolved in DMSO) was added, and 95 μL 100% DMSO was added to prepare 100 μL 0.5 mM compound.(2) To other wells, 60 μL 100% DMSO was added. 20 μL compound from the second well was added to the third well, and 4-fold dilution was further performed to get 10 diluted concentrations.(3) To the first well and the twelfth well of the 96-well plate, 100 μL 100% DMSO was separately added, and the two wells were used as control wells.(4) 10 μL from each well of the 96-well plate was added to another 96-well plate, and 90 μL 1-fold kinase buffer was added.(5) 5 μL from the 96-well plate was added to another 384-well plate, for example, transferred from A1 well of the 96-well plate to A1 and A2 wells of the 384-well plate, and transferred from A2 well of the 96-well plate to A3 and A4 wells of the 384-well plate, and so on.3. Kinase reaction(1) Preparation of 2.5-fold enzyme solutionKinase was added to 1-fold kinase buffer to form 2.5-fold enzyme solution.(2) Preparation of 2.5-fold substrate solutionFAM-tagged polypeptide and ATP were added to 1-fold kinase buffer to form 2.5-fold substrate solution.(3) Addition of 2.5-fold enzyme solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold enzyme solution was added, and incubated at room temperature for 10 min.(4) Addition of 2.5-fold substrate solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold substrate solution was added.(5) Kinase reaction and stopAfter incubation at 28° C. for a period of time (depending on kinase), 25 μL stop solution was added.4. Data on percent conversion was read by Caliper.5. Data analysis(1) Data on enzyme activity was obtained by Caliper program;(2) Inhibition rate of enzyme activity was calculated from the data on enzyme activity by the following formula: Inhibition rate(%)=(maximal value−the measured value of a test compound)/(maximal value-minimal value)×100,wherein, the maximal value represents the measured value of DMSO control; and the minimal value represents the measured value of blank control.(3) Calculation of IC50 value by XLFit excel.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 145,
+          "pchembl": 6.84,
+          "source": {
+            "id": "chembl-act:27619415",
+            "database": "ChEMBL",
+            "label": "Activity 27619415 (CHEMBL5733820)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733820"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5733821",
+          "assayDescription": "Assay on In Vitro Enzyme-Inhibiting Activity: Test compounds: a part of compounds of the invention, the chemical names and preparation methods of which can be found in their preparation examples.Control agent: CO-1686, the structure of which can be found in the Background Art, prepared by the inventors (please refer to Patent WO2012061299A1 for the preparation methods).The meanings represented by the abbreviations in the experiments are described as follows.EDTA: eathylene diamine tetraacetic acidDMSO: dimethyl sulfoxideSD: standard deviationFAM: carboxyfluoresceinBrij-35: polyethylene glycol dodecyl etherHEPES: N-2-hydroxyethylpiperazine-N′-2-ethanesulfonic acidDTT: dithiothreitolExperimental method: the compounds were screened in the presence of Km ATP by Mobility Shift Assay using the kinases EGFR and EGFR_T790M.1. Preparation of Reagents(1) 1-fold kinase buffer for detecting the kinases wild-type EGFR (WT EGFR or WT for short), EGFR (d746-750) (d746-750 for short), EGFR (d746-750)-T790M ((d746-750)-T790M for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 10 mM MgCl2, 10 mM MnCl2, and 2 mM DTT;(2) 1-fold kinase buffer for detecting the kinases EGFR T790M (T790M for short), EGFR L858R (L858R for short), EGFR T790M-L858R (T790M-L858R for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 5 mM MgCl2, and 2 mM DTT.(3) Stop Solution100 mM HEPES (pH 7.5), 0.015% Brij-35, 0.2% Coating Reagent #3, and 50 mM EDTA2. Preparation of a Compound Solution(1) To the second well of a 96-well plate, 5 μL 10 mM compound (dissolved in DMSO) was added, and 95 μL 100% DMSO was added to prepare 100 μL 0.5 mM compound.(2) To other wells, 60 μL 100% DMSO was added. 20 μL compound from the second well was added to the third well, and 4-fold dilution was further performed to get 10 diluted concentrations.(3) To the first well and the twelfth well of the 96-well plate, 100 μL 100% DMSO was separately added, and the two wells were used as control wells.(4) 10 μL from each well of the 96-well plate was added to another 96-well plate, and 90 μL 1-fold kinase buffer was added.(5) 5 μL from the 96-well plate was added to another 384-well plate, for example, transferred from A1 well of the 96-well plate to A1 and A2 wells of the 384-well plate, and transferred from A2 well of the 96-well plate to A3 and A4 wells of the 384-well plate, and so on.3. Kinase reaction(1) Preparation of 2.5-fold enzyme solutionKinase was added to 1-fold kinase buffer to form 2.5-fold enzyme solution.(2) Preparation of 2.5-fold substrate solutionFAM-tagged polypeptide and ATP were added to 1-fold kinase buffer to form 2.5-fold substrate solution.(3) Addition of 2.5-fold enzyme solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold enzyme solution was added, and incubated at room temperature for 10 min.(4) Addition of 2.5-fold substrate solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold substrate solution was added.(5) Kinase reaction and stopAfter incubation at 28° C. for a period of time (depending on kinase), 25 μL stop solution was added.4. Data on percent conversion was read by Caliper.5. Data analysis(1) Data on enzyme activity was obtained by Caliper program;(2) Inhibition rate of enzyme activity was calculated from the data on enzyme activity by the following formula: Inhibition rate(%)=(maximal value−the measured value of a test compound)/(maximal value-minimal value)×100,wherein, the maximal value represents the measured value of DMSO control; and the minimal value represents the measured value of blank control.(3) Calculation of IC50 value by XLFit excel.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2.1,
+          "pchembl": 8.68,
+          "source": {
+            "id": "chembl-act:27619418",
+            "database": "ChEMBL",
+            "label": "Activity 27619418 (CHEMBL5733821)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5733821",
+          "assayDescription": "Assay on In Vitro Enzyme-Inhibiting Activity: Test compounds: a part of compounds of the invention, the chemical names and preparation methods of which can be found in their preparation examples.Control agent: CO-1686, the structure of which can be found in the Background Art, prepared by the inventors (please refer to Patent WO2012061299A1 for the preparation methods).The meanings represented by the abbreviations in the experiments are described as follows.EDTA: eathylene diamine tetraacetic acidDMSO: dimethyl sulfoxideSD: standard deviationFAM: carboxyfluoresceinBrij-35: polyethylene glycol dodecyl etherHEPES: N-2-hydroxyethylpiperazine-N′-2-ethanesulfonic acidDTT: dithiothreitolExperimental method: the compounds were screened in the presence of Km ATP by Mobility Shift Assay using the kinases EGFR and EGFR_T790M.1. Preparation of Reagents(1) 1-fold kinase buffer for detecting the kinases wild-type EGFR (WT EGFR or WT for short), EGFR (d746-750) (d746-750 for short), EGFR (d746-750)-T790M ((d746-750)-T790M for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 10 mM MgCl2, 10 mM MnCl2, and 2 mM DTT;(2) 1-fold kinase buffer for detecting the kinases EGFR T790M (T790M for short), EGFR L858R (L858R for short), EGFR T790M-L858R (T790M-L858R for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 5 mM MgCl2, and 2 mM DTT.(3) Stop Solution100 mM HEPES (pH 7.5), 0.015% Brij-35, 0.2% Coating Reagent #3, and 50 mM EDTA2. Preparation of a Compound Solution(1) To the second well of a 96-well plate, 5 μL 10 mM compound (dissolved in DMSO) was added, and 95 μL 100% DMSO was added to prepare 100 μL 0.5 mM compound.(2) To other wells, 60 μL 100% DMSO was added. 20 μL compound from the second well was added to the third well, and 4-fold dilution was further performed to get 10 diluted concentrations.(3) To the first well and the twelfth well of the 96-well plate, 100 μL 100% DMSO was separately added, and the two wells were used as control wells.(4) 10 μL from each well of the 96-well plate was added to another 96-well plate, and 90 μL 1-fold kinase buffer was added.(5) 5 μL from the 96-well plate was added to another 384-well plate, for example, transferred from A1 well of the 96-well plate to A1 and A2 wells of the 384-well plate, and transferred from A2 well of the 96-well plate to A3 and A4 wells of the 384-well plate, and so on.3. Kinase reaction(1) Preparation of 2.5-fold enzyme solutionKinase was added to 1-fold kinase buffer to form 2.5-fold enzyme solution.(2) Preparation of 2.5-fold substrate solutionFAM-tagged polypeptide and ATP were added to 1-fold kinase buffer to form 2.5-fold substrate solution.(3) Addition of 2.5-fold enzyme solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold enzyme solution was added, and incubated at room temperature for 10 min.(4) Addition of 2.5-fold substrate solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold substrate solution was added.(5) Kinase reaction and stopAfter incubation at 28° C. for a period of time (depending on kinase), 25 μL stop solution was added.4. Data on percent conversion was read by Caliper.5. Data analysis(1) Data on enzyme activity was obtained by Caliper program;(2) Inhibition rate of enzyme activity was calculated from the data on enzyme activity by the following formula: Inhibition rate(%)=(maximal value−the measured value of a test compound)/(maximal value-minimal value)×100,wherein, the maximal value represents the measured value of DMSO control; and the minimal value represents the measured value of blank control.(3) Calculation of IC50 value by XLFit excel.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.3,
+          "pchembl": 8.89,
+          "source": {
+            "id": "chembl-act:27619442",
+            "database": "ChEMBL",
+            "label": "Activity 27619442 (CHEMBL5733821)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5733821",
+          "assayDescription": "Assay on In Vitro Enzyme-Inhibiting Activity: Test compounds: a part of compounds of the invention, the chemical names and preparation methods of which can be found in their preparation examples.Control agent: CO-1686, the structure of which can be found in the Background Art, prepared by the inventors (please refer to Patent WO2012061299A1 for the preparation methods).The meanings represented by the abbreviations in the experiments are described as follows.EDTA: eathylene diamine tetraacetic acidDMSO: dimethyl sulfoxideSD: standard deviationFAM: carboxyfluoresceinBrij-35: polyethylene glycol dodecyl etherHEPES: N-2-hydroxyethylpiperazine-N′-2-ethanesulfonic acidDTT: dithiothreitolExperimental method: the compounds were screened in the presence of Km ATP by Mobility Shift Assay using the kinases EGFR and EGFR_T790M.1. Preparation of Reagents(1) 1-fold kinase buffer for detecting the kinases wild-type EGFR (WT EGFR or WT for short), EGFR (d746-750) (d746-750 for short), EGFR (d746-750)-T790M ((d746-750)-T790M for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 10 mM MgCl2, 10 mM MnCl2, and 2 mM DTT;(2) 1-fold kinase buffer for detecting the kinases EGFR T790M (T790M for short), EGFR L858R (L858R for short), EGFR T790M-L858R (T790M-L858R for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 5 mM MgCl2, and 2 mM DTT.(3) Stop Solution100 mM HEPES (pH 7.5), 0.015% Brij-35, 0.2% Coating Reagent #3, and 50 mM EDTA2. Preparation of a Compound Solution(1) To the second well of a 96-well plate, 5 μL 10 mM compound (dissolved in DMSO) was added, and 95 μL 100% DMSO was added to prepare 100 μL 0.5 mM compound.(2) To other wells, 60 μL 100% DMSO was added. 20 μL compound from the second well was added to the third well, and 4-fold dilution was further performed to get 10 diluted concentrations.(3) To the first well and the twelfth well of the 96-well plate, 100 μL 100% DMSO was separately added, and the two wells were used as control wells.(4) 10 μL from each well of the 96-well plate was added to another 96-well plate, and 90 μL 1-fold kinase buffer was added.(5) 5 μL from the 96-well plate was added to another 384-well plate, for example, transferred from A1 well of the 96-well plate to A1 and A2 wells of the 384-well plate, and transferred from A2 well of the 96-well plate to A3 and A4 wells of the 384-well plate, and so on.3. Kinase reaction(1) Preparation of 2.5-fold enzyme solutionKinase was added to 1-fold kinase buffer to form 2.5-fold enzyme solution.(2) Preparation of 2.5-fold substrate solutionFAM-tagged polypeptide and ATP were added to 1-fold kinase buffer to form 2.5-fold substrate solution.(3) Addition of 2.5-fold enzyme solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold enzyme solution was added, and incubated at room temperature for 10 min.(4) Addition of 2.5-fold substrate solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold substrate solution was added.(5) Kinase reaction and stopAfter incubation at 28° C. for a period of time (depending on kinase), 25 μL stop solution was added.4. Data on percent conversion was read by Caliper.5. Data analysis(1) Data on enzyme activity was obtained by Caliper program;(2) Inhibition rate of enzyme activity was calculated from the data on enzyme activity by the following formula: Inhibition rate(%)=(maximal value−the measured value of a test compound)/(maximal value-minimal value)×100,wherein, the maximal value represents the measured value of DMSO control; and the minimal value represents the measured value of blank control.(3) Calculation of IC50 value by XLFit excel.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.3,
+          "pchembl": 8.89,
+          "source": {
+            "id": "chembl-act:27619454",
+            "database": "ChEMBL",
+            "label": "Activity 27619454 (CHEMBL5733821)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL5733821",
+          "assayDescription": "Assay on In Vitro Enzyme-Inhibiting Activity: Test compounds: a part of compounds of the invention, the chemical names and preparation methods of which can be found in their preparation examples.Control agent: CO-1686, the structure of which can be found in the Background Art, prepared by the inventors (please refer to Patent WO2012061299A1 for the preparation methods).The meanings represented by the abbreviations in the experiments are described as follows.EDTA: eathylene diamine tetraacetic acidDMSO: dimethyl sulfoxideSD: standard deviationFAM: carboxyfluoresceinBrij-35: polyethylene glycol dodecyl etherHEPES: N-2-hydroxyethylpiperazine-N′-2-ethanesulfonic acidDTT: dithiothreitolExperimental method: the compounds were screened in the presence of Km ATP by Mobility Shift Assay using the kinases EGFR and EGFR_T790M.1. Preparation of Reagents(1) 1-fold kinase buffer for detecting the kinases wild-type EGFR (WT EGFR or WT for short), EGFR (d746-750) (d746-750 for short), EGFR (d746-750)-T790M ((d746-750)-T790M for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 10 mM MgCl2, 10 mM MnCl2, and 2 mM DTT;(2) 1-fold kinase buffer for detecting the kinases EGFR T790M (T790M for short), EGFR L858R (L858R for short), EGFR T790M-L858R (T790M-L858R for short): 50 mM HEPES (pH 7.5), 0.0015% Brij-35, 5 mM MgCl2, and 2 mM DTT.(3) Stop Solution100 mM HEPES (pH 7.5), 0.015% Brij-35, 0.2% Coating Reagent #3, and 50 mM EDTA2. Preparation of a Compound Solution(1) To the second well of a 96-well plate, 5 μL 10 mM compound (dissolved in DMSO) was added, and 95 μL 100% DMSO was added to prepare 100 μL 0.5 mM compound.(2) To other wells, 60 μL 100% DMSO was added. 20 μL compound from the second well was added to the third well, and 4-fold dilution was further performed to get 10 diluted concentrations.(3) To the first well and the twelfth well of the 96-well plate, 100 μL 100% DMSO was separately added, and the two wells were used as control wells.(4) 10 μL from each well of the 96-well plate was added to another 96-well plate, and 90 μL 1-fold kinase buffer was added.(5) 5 μL from the 96-well plate was added to another 384-well plate, for example, transferred from A1 well of the 96-well plate to A1 and A2 wells of the 384-well plate, and transferred from A2 well of the 96-well plate to A3 and A4 wells of the 384-well plate, and so on.3. Kinase reaction(1) Preparation of 2.5-fold enzyme solutionKinase was added to 1-fold kinase buffer to form 2.5-fold enzyme solution.(2) Preparation of 2.5-fold substrate solutionFAM-tagged polypeptide and ATP were added to 1-fold kinase buffer to form 2.5-fold substrate solution.(3) Addition of 2.5-fold enzyme solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold enzyme solution was added, and incubated at room temperature for 10 min.(4) Addition of 2.5-fold substrate solution to 384-well plateTo 384-well plate, 10 μL 2.5-fold substrate solution was added.(5) Kinase reaction and stopAfter incubation at 28° C. for a period of time (depending on kinase), 25 μL stop solution was added.4. Data on percent conversion was read by Caliper.5. Data analysis(1) Data on enzyme activity was obtained by Caliper program;(2) Inhibition rate of enzyme activity was calculated from the data on enzyme activity by the following formula: Inhibition rate(%)=(maximal value−the measured value of a test compound)/(maximal value-minimal value)×100,wherein, the maximal value represents the measured value of DMSO control; and the minimal value represents the measured value of blank control.(3) Calculation of IC50 value by XLFit excel.",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 2500,
+          "pchembl": 5.6,
+          "source": {
+            "id": "chembl-act:27619472",
+            "database": "ChEMBL",
+            "label": "Activity 27619472 (CHEMBL5733821)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL3545308",
+          "assayChemblId": "CHEMBL6092756",
+          "assayDescription": "Inhibition of wild type EGFR (unknown origin) using poly (Glu:Tyr) as substrate incubated for 1 hr in presence of ATP by ADP-glo kinase assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 636,
+          "pchembl": 6.2,
+          "source": {
+            "id": "chembl-act:29122963",
+            "database": "ChEMBL",
+            "label": "Activity 29122963 (CHEMBL6092756)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6092756"
+          }
+        }
+      ]
+    }
+  ],
+  "matchedAssays": [
+    {
+      "assayChemblId": "CHEMBL683041",
+      "assayDescription": "Inhibition of Epidermal Growth Factor Receptor (EGFR) autophosphorylation",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL31965",
+          "compoundName": "CANERTINIB",
+          "pchembl": 7.13,
+          "source": {
+            "id": "chembl-act:121735",
+            "database": "ChEMBL",
+            "label": "Activity 121735 (CHEMBL683041)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL939",
+          "compoundName": "GEFITINIB",
+          "pchembl": 6.29,
+          "source": {
+            "id": "chembl-act:108863",
+            "database": "ChEMBL",
+            "label": "Activity 108863 (CHEMBL683041)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL553",
+          "compoundName": "ERLOTINIB",
+          "pchembl": 5.84,
+          "source": {
+            "id": "chembl-act:129395",
+            "database": "ChEMBL",
+            "label": "Activity 129395 (CHEMBL683041)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL674106",
+      "assayDescription": "Inhibitory activity against epidermal growth factor receptor",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL939",
+          "compoundName": "GEFITINIB",
+          "pchembl": 9,
+          "source": {
+            "id": "chembl-act:186630",
+            "database": "ChEMBL",
+            "label": "Activity 186630 (CHEMBL674106)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL554",
+          "compoundName": "LAPATINIB",
+          "pchembl": 8,
+          "source": {
+            "id": "chembl-act:190221",
+            "database": "ChEMBL",
+            "label": "Activity 190221 (CHEMBL674106)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL892951",
+      "assayDescription": "Inhibition of human EGFR in presence of 1 uM ATP",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "compoundName": "NERATINIB",
+          "pchembl": 10.1,
+          "source": {
+            "id": "chembl-act:1943195",
+            "database": "ChEMBL",
+            "label": "Activity 1943195 (CHEMBL892951)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL939",
+          "compoundName": "GEFITINIB",
+          "pchembl": 8.27,
+          "source": {
+            "id": "chembl-act:1943182",
+            "database": "ChEMBL",
+            "label": "Activity 1943182 (CHEMBL892951)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL892954",
+      "assayDescription": "Inhibition of human EGFR in presence of 1 mM ATP",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL180022",
+          "compoundName": "NERATINIB",
+          "pchembl": 9.74,
+          "source": {
+            "id": "chembl-act:1943214",
+            "database": "ChEMBL",
+            "label": "Activity 1943214 (CHEMBL892954)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892954"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL939",
+          "compoundName": "GEFITINIB",
+          "pchembl": 5.56,
+          "source": {
+            "id": "chembl-act:1943201",
+            "database": "ChEMBL",
+            "label": "Activity 1943201 (CHEMBL892954)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892954"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL924351",
+      "assayDescription": "Inhibition of EGFR",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL553",
+          "compoundName": "ERLOTINIB",
+          "pchembl": 7.64,
+          "source": {
+            "id": "chembl-act:2048876",
+            "database": "ChEMBL",
+            "label": "Activity 2048876 (CHEMBL924351)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924351"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL939",
+          "compoundName": "GEFITINIB",
+          "pchembl": 7.41,
+          "source": {
+            "id": "chembl-act:2048875",
+            "database": "ChEMBL",
+            "label": "Activity 2048875 (CHEMBL924351)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924351"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL944276",
+      "assayDescription": "Inhibition of human recombinant EGFR",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL554",
+          "compoundName": "LAPATINIB",
+          "pchembl": 7.77,
+          "source": {
+            "id": "chembl-act:2390320",
+            "database": "ChEMBL",
+            "label": "Activity 2390320 (CHEMBL944276)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL944276"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL939",
+          "compoundName": "GEFITINIB",
+          "pchembl": 7.66,
+          "source": {
+            "id": "chembl-act:2390321",
+            "database": "ChEMBL",
+            "label": "Activity 2390321 (CHEMBL944276)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL944276"
+          }
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "200 IC50 measurement(s) against mutant target variants (not comparable to wild-type) excluded from the ranking — 15 for the candidate, 185 across the 12 comparators shown.",
+    "76 IC50 measurement(s) from functional (non-binding) assays excluded from the ranking — 11 for the candidate, 65 across the 12 comparators shown.",
+    "488 IC50 measurement(s) from cell-based or non-purified-protein assays excluded from the ranking — 114 for the candidate, 374 across the 12 comparators shown.",
+    "244 IC50 measurement(s) flagged by ChEMBL as potential duplicates or data-validity issues excluded from the ranking — 65 for the candidate, 179 across the 12 comparators shown.",
+    "Measurements come from different assays and labs; ranks are indicative. Matched-assay comparisons are the strongest evidence."
+  ]
+}
