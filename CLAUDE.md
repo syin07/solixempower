@@ -5,6 +5,8 @@ benchmarks the candidate's **measured** potency against drugs tested on the same
 shows the **clinical** landscape (ClinicalTrials.gov), and generates an AI evidence report where
 every claim cites a retrieved source. Full spec: @PRD.md
 
+**Current phase (from 2026-10-28 afternoon): evidence graph + repurposing hypotheses.** Spec: @docs/KG_PRD.md · Step plan: @docs/KG_PLAN.md. Sandy owns the graph and visualization, Medhansh the hypotheses, agent and report. The original benchmark stays as is.
+
 ## Plan
 Phase 1 (now → T+3:30, Sandy + Gavin): working end-to-end MVP on real data — working over polished.
 Phase 2 (T+3:30 → T+7, all three): trials layer, AI report hardening, UI polish, demo mode, video. Freeze at T+5:30.
