@@ -55,7 +55,12 @@ export function TrialsTable({ trials }: { trials: TrialsResult }) {
                 <th className="px-3 py-2 font-medium">Phase</th>
                 <th className="px-3 py-2 font-medium">Status</th>
                 <th className="px-3 py-2 text-right font-medium">Enrollment</th>
-                <th className="px-3 py-2 font-medium">Results</th>
+                <th
+                  className="cursor-help whitespace-nowrap px-3 py-2 font-medium"
+                  title="The sponsor posted a results summary to ClinicalTrials.gov. This says nothing about whether the trial succeeded."
+                >
+                  Results posted ⓘ
+                </th>
                 <th className="px-3 py-2 font-medium">Primary outcome</th>
               </tr>
             </thead>
@@ -72,7 +77,21 @@ export function TrialsTable({ trials }: { trials: TrialsResult }) {
                   <td className="whitespace-nowrap px-3 py-2">{prettyPhase(t.phase)}</td>
                   <td className="whitespace-nowrap px-3 py-2">{prettyStatus(t.status)}</td>
                   <td className="px-3 py-2 text-right font-mono">{t.enrollment ?? "—"}</td>
-                  <td className="px-3 py-2">{t.hasResults ? <span className="font-semibold text-emerald-700">Yes</span> : "No"}</td>
+                  <td className="whitespace-nowrap px-3 py-2">
+                    {/* Neutral styling on purpose: posted results ≠ a successful trial */}
+                    {t.hasResults ? (
+                      <a
+                        href={`https://clinicaltrials.gov/study/${t.nctId}?tab=results`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-blue-700 underline"
+                      >
+                        View results ↗
+                      </a>
+                    ) : (
+                      <span className="text-zinc-400">Not posted</span>
+                    )}
+                  </td>
                   <td className="px-3 py-2 text-zinc-700">{t.primaryOutcomes[0] ?? "—"}</td>
                 </tr>
               ))}
