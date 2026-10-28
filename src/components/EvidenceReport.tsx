@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import type { EvidenceLayer, EvidenceReport as Report, SourceRef } from "@/lib/contracts";
 import { EvidenceBadge } from "./EvidenceBadge";
 import { MockBanner } from "./MockBanner";
@@ -22,6 +22,8 @@ const LAYER: Record<EvidenceLayer, string> = {
 
 export function EvidenceReport({ report, sources }: { report: Report; sources: Map<string, SourceRef> }) {
   const v = VERDICT[report.verdict];
+  const links = useMemo(() => linkTargets(sources), [sources]);
+  const linked = (text: string) => linkify(text, links);
   return (
     <Section title="AI evidence report" aside={<EvidenceBadge kind="ai_summary" />}>
       {report.isMock && (
@@ -41,14 +43,14 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
         {report.sections.map((s) => (
           <div key={s.layer} className={`rounded-md border border-zinc-200 p-4 ${s.layer === "molecular" ? "lg:col-span-3" : ""}`}>
             <h3 className="font-semibold text-zinc-900">{LAYER[s.layer] ?? s.layer}</h3>
-            <p className="mt-1 text-sm text-zinc-700">{s.summary}</p>
+            <p className="mt-1 text-sm text-zinc-700">{linked(s.summary)}</p>
             {s.claims.length > 0 && (
               <ul className="mt-3 flex flex-col gap-2.5">
                 {s.claims.map((c, i) => (
                   <li key={i} className="text-sm">
                     <div className="flex items-start gap-2">
                       <EvidenceBadge kind={c.kind} />
-                      <span className="text-zinc-800">{c.text}</span>
+                      <span className="text-zinc-800">{linked(c.text)}</span>
                     </div>
                     <SourceChips ids={c.sourceIds} sources={sources} />
                   </li>
@@ -61,8 +63,8 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
 
       {(report.openQuestions.length > 0 || report.nextSteps.length > 0) && (
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          <List title="Open questions" items={report.openQuestions} />
-          <List title="Suggested next steps" items={report.nextSteps} />
+          <List title="Open questions" items={report.openQuestions} render={linked} />
+          <List title="Suggested next steps" items={report.nextSteps} render={linked} />
         </div>
       )}
     </Section>
@@ -114,16 +116,45 @@ function SourceChip({ id, source }: { id: string; source?: SourceRef }) {
   );
 }
 
-function List({ title, items }: { title: string; items: string[] }) {
+function List({ title, items, render }: { title: string; items: string[]; render: (text: string) => ReactNode }) {
   if (items.length === 0) return null;
   return (
     <div>
       <h3 className="text-sm font-semibold text-zinc-900">{title}</h3>
       <ul className="mt-1 list-disc pl-5 text-sm text-zinc-700">
         {items.map((q) => (
-          <li key={q}>{q}</li>
+          <li key={q}>{render(q)}</li>
         ))}
       </ul>
     </div>
   );
+}
+
+// Database codes the AI writes in prose: NCT IDs, ChEMBL IDs, and our own source IDs (chembl-act:123)
+const CODE = /\b(NCT\d{8}|CHEMBL\d+|(?:chembl-(?:act|mol|target|warn)|nct):[A-Za-z0-9]+)\b/g;
+
+/** Code → URL, from the retrieved sources (ChEMBL IDs resolve to their compound/target/assay page). */
+function linkTargets(sources: Map<string, SourceRef>): Map<string, string> {
+  const links = new Map<string, string>();
+  for (const s of sources.values()) {
+    links.set(s.id, s.url);
+    const m = s.url.match(/\/explore\/(?:compound|target|assay)\/(CHEMBL\d+)/);
+    if (m && !links.has(m[1])) links.set(m[1], s.url);
+  }
+  return links;
+}
+
+/** Turns known database codes in AI text into links; unknown codes stay plain text. */
+function linkify(text: string, links: Map<string, string>): ReactNode[] {
+  return text.split(CODE).map((part, i) => {
+    // split() with a capture group puts the matched codes at odd indices
+    const url = i % 2 ? (links.get(part) ?? (/^NCT\d{8}$/.test(part) ? `https://clinicaltrials.gov/study/${part}` : undefined)) : undefined;
+    return url ? (
+      <a key={i} href={url} target="_blank" rel="noreferrer" className="font-mono text-[0.92em] text-blue-700 underline">
+        {part}
+      </a>
+    ) : (
+      part
+    );
+  });
 }

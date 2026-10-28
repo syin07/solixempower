@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import type { BenchmarkResult, CompoundBenchmark } from "@/lib/contracts";
-import { EvidenceBadge } from "./EvidenceBadge";
 import { Section } from "./Section";
 import { phaseLabel } from "./sources";
 
@@ -37,11 +36,11 @@ export function PotencyChart({ benchmark }: { benchmark: BenchmarkResult }) {
       : `${cand.compound.name} has no comparable measurements on this target`;
 
   return (
-    <Section title="Potency benchmark" aside={<EvidenceBadge kind="measured" />}>
+    <Section title="Potency benchmark">
       <p className="text-base font-semibold text-zinc-900">{headline}</p>
       <p className="mb-4 mt-1 text-sm text-zinc-600">
         Only comparable data is ranked: {benchmark.activityType}, binding assays, exact (=) values, human {benchmark.target.name}{" "}
-        wild-type. Bar = range, dot = median, ticks = individual measurements.
+        wild-type. Ticks = individual measurements.
       </p>
 
       <div className="flex flex-col">

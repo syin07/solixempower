@@ -1,11 +1,10 @@
 import type { BenchmarkResult } from "@/lib/contracts";
-import { EvidenceBadge } from "./EvidenceBadge";
 import { Section } from "./Section";
 
 export function MatchedAssayTable({ benchmark }: { benchmark: BenchmarkResult }) {
   const candidateId = benchmark.candidate.compound.chemblId;
   return (
-    <Section title="Measured in the same assay" aside={<EvidenceBadge kind="measured" />}>
+    <Section title="Measured in the same assay">
       <p className="mb-3 text-sm text-zinc-600">
         Candidate and comparator tested side by side in one assay: same lab and protocol. This is the strongest comparison available.
       </p>

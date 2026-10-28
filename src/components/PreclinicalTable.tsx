@@ -1,5 +1,4 @@
 import type { BenchmarkResult } from "@/lib/contracts";
-import { EvidenceBadge } from "./EvidenceBadge";
 import { Section } from "./Section";
 
 /** Candidate's functional / cell-based results (PRD §3 layer B): a separate, unranked list. */
@@ -7,7 +6,7 @@ export function PreclinicalTable({ benchmark }: { benchmark: BenchmarkResult }) 
   const rows = benchmark.preclinical;
   if (!rows) return null;
   return (
-    <Section title={`Preclinical: functional & cell-based assays (${rows.length})`} aside={<EvidenceBadge kind="measured" />}>
+    <Section title={`Preclinical: functional & cell-based assays (${rows.length})`}>
       <p className="mb-3 text-sm text-zinc-600">
         {benchmark.candidate.compound.name} in functional and cell-based assays, newest first.{" "}
         <span className="font-semibold text-zinc-800">
