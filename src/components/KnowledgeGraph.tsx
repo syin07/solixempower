@@ -7,7 +7,17 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import cytoscape, { type Core, type ElementDefinition, type NodeSingular, type StylesheetJson } from "cytoscape";
 import type { GraphEdge, GraphEdgeKind, GraphNode, GraphNodeType, GraphResult } from "@/lib/contracts";
-import { drawnNodes, graphHeight, LANE_WIDTH, LANE_WIDTH_MAX, LANE_WIDTH_MIN, laneOf, positions, type Positions } from "@/lib/kg/layout";
+import {
+  drawnNodes,
+  GRAPH_HEIGHT_MAX,
+  graphHeight,
+  LANE_WIDTH,
+  LANE_WIDTH_MAX,
+  LANE_WIDTH_MIN,
+  laneOf,
+  positions,
+  type Positions,
+} from "@/lib/kg/layout";
 
 export interface KnowledgeGraphProps {
   graph: GraphResult;
@@ -134,19 +144,30 @@ const truncate = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1) + "
 
 function nodeElement(n: GraphNode, pos: { x: number; y: number }, labelLeft = false): ElementDefinition {
   const label = truncate(n.label, LABEL_MAX[n.type] ?? 30);
-  const classes = [n.type, n.isCandidate ? "candidate" : "", n.isQueryDisease ? "query-disease" : "", labelLeft ? "label-left" : ""]
+  const classes = [
+    n.type,
+    n.isCandidate ? "candidate" : "",
+    n.isQueryDisease ? "query-disease" : "",
+    n.meta?.generic === true ? "generic" : "",
+    labelLeft ? "label-left" : "",
+  ]
     .filter(Boolean)
     .join(" ");
   return { group: "nodes", data: { id: n.id, label, title: n.label, node: n }, position: { ...pos }, classes };
 }
 
-function edgeElement(e: GraphEdge): ElementDefinition {
+/** Comparators' indications and mechanisms duplicate what the measured edges already show: drawn faded. */
+const FADED_UNLESS_CANDIDATE = new Set(["indicated_for", "mechanism"]);
+
+function edgeElement(e: GraphEdge, candidateId: string | undefined): ElementDefinition {
   const color = REGULATORY_TYPES.has(e.type) ? REGULATORY_COLOR : EDGE_COLORS[e.kind];
   const dashed = e.kind === "computed" || e.kind === "absent";
+  const faded = FADED_UNLESS_CANDIDATE.has(e.type) && e.from !== candidateId;
+  const classes = [e.type, dashed ? "dashed" : "", faded ? "faded" : ""].filter(Boolean).join(" ");
   return {
     group: "edges",
     data: { id: e.id, source: e.from, target: e.to, label: edgeShortLabel(e), color, width: edgeWidth(e), edge: e },
-    classes: dashed ? `${e.type} dashed` : e.type,
+    classes,
   };
 }
 
@@ -180,6 +201,7 @@ const STYLE: StylesheetJson = [
   { selector: "node.label-left", style: { "text-halign": "left", "text-margin-x": -6 } },
   { selector: "node.candidate", style: { "border-width": 3, "border-color": "#2563eb", "font-weight": "bold", width: 24, height: 24 } },
   { selector: "node.query-disease", style: { "border-width": 3, "border-color": "#059669", "font-weight": "bold" } },
+  { selector: "node.disease.generic", style: { "background-color": "#fafafa", "border-color": "#d4d4d8", color: "#71717a" } },
   {
     selector: "edge",
     style: {
@@ -206,6 +228,8 @@ const STYLE: StylesheetJson = [
   { selector: "edge.dashed", style: { "line-style": "dashed" } },
   { selector: "edge.for_disease", style: { "target-arrow-shape": "none", opacity: 0.3 } },
   { selector: "edge.tested_in", style: { opacity: 0.3, "arrow-scale": 0.4 } },
+  // Comparators' indication / mechanism edges: faded until hovered, highlighted or selected (classes below win)
+  { selector: "edge.faded", style: { opacity: 0.25 } },
   { selector: ".dim", style: { opacity: 0.18 } },
   { selector: "node.hl", style: { opacity: 1, "border-width": 3, "border-color": "#18181b" } },
   { selector: "node.candidate.hl", style: { "border-color": "#2563eb" } },
@@ -266,17 +290,23 @@ export function KnowledgeGraph({
   }, [onSelectEdge, onSelectNode]);
   const requested = height ?? graphHeight(graph);
   const fitKey = `${graph.builtAt}|${graph.nodes.length}|${requested}`;
-  const h = fitHeight && fitHeight.key === fitKey && fitHeight.h < requested ? fitHeight.h : requested;
+  const h = fitHeight && fitHeight.key === fitKey ? fitHeight.h : requested;
 
   const fit = useCallback(() => cyRef.current?.fit(undefined, FIT_PADDING), []);
-  /** After a fit, shrink the canvas to the content so a wide, short graph does not leave a blank band below. */
+  /**
+   * After every element sync, size the canvas to what the content needs at the zoom a fit will give it
+   * (never above 1): shrinks a wide, short graph so no blank band is left below, and grows back after an
+   * expansion adds rows. The layout itself is computed from `requested`, so this cannot feed back into it.
+   */
   const trimHeight = useCallback(() => {
     const cy = cyRef.current;
     if (!cy || cy.elements().empty()) return;
-    const bb = cy.elements().renderedBoundingBox();
-    const needed = Math.ceil(bb.h + 2 * FIT_PADDING);
-    if (needed >= 420 && needed < requested - 8) setFitHeight({ key: fitKey, h: needed });
-  }, [requested, fitKey]);
+    const bb = cy.elements().boundingBox();
+    const width = cy.width();
+    const zoom = width > 0 && bb.w > 0 ? Math.min(1, (width - 2 * FIT_PADDING) / bb.w) : 1;
+    const needed = clamp(Math.ceil(bb.h * zoom + 2 * FIT_PADDING), 320, GRAPH_HEIGHT_MAX);
+    setFitHeight((prev) => (prev && prev.key === fitKey && Math.abs(prev.h - needed) <= 8 ? prev : { key: fitKey, h: needed }));
+  }, [fitKey]);
 
   // Create the instance once.
   useEffect(() => {
@@ -371,16 +401,17 @@ export function KnowledgeGraph({
   useEffect(() => {
     const cy = cyRef.current;
     if (!cy) return;
-    const pos = positions(graph, { height: h - 48, laneWidth });
+    const pos = positions(graph, { height: requested - 48, laneWidth });
     const nodes = drawnNodes(graph);
     const nodeIds = new Set(nodes.map((n) => n.id));
     const edges = graph.edges.filter((e) => nodeIds.has(e.from) && nodeIds.has(e.to));
+    const candidateId = nodes.find((n) => n.type === "drug" && n.isCandidate)?.id;
 
     const present = new Set(cy.elements().map((el) => el.id()));
     const edgesFor = (added: Set<string>) =>
       edges.filter((e) => !present.has(e.id) && added.has(e.from) && added.has(e.to)).map((e) => {
         present.add(e.id);
-        return edgeElement(e);
+        return edgeElement(e, candidateId);
       });
 
     if (!builtRef.current) {
@@ -430,7 +461,7 @@ export function KnowledgeGraph({
     }, 320);
     timersRef.current.push(t);
     cy.fit(undefined, FIT_PADDING);
-  }, [graph, h, laneWidth, trimHeight]);
+  }, [graph, requested, laneWidth, trimHeight]);
 
   // External highlight (hypothesis card hover): pin the highlight so node hover does not fight it.
   // Re-applied after every staggered batch, since the edges may not exist yet when the prop arrives.

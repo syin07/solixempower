@@ -88,7 +88,7 @@ export function positions(graph: GraphResult, opts: LayoutOptions = {}): Positio
   // --- Targets: the one with most measured edges first
   const targets = nodes.filter((n) => n.type === "target").sort((a, b) => (degree.get(b.id) ?? 0) - (degree.get(a.id) ?? 0));
 
-  // --- Diseases: query disease pinned first, then those the candidate is indicated for, then by incident edges
+  // --- Diseases: query disease pinned first, generic ones last, then candidate-indicated, then by incident edges
   const candidateId = drugs.find((d) => d.isCandidate)?.id;
   const candidateIndicated = new Set(edgesOf("indicated_for").filter((e) => e.from === candidateId).map((e) => e.to));
   const diseases = nodes
@@ -96,6 +96,8 @@ export function positions(graph: GraphResult, opts: LayoutOptions = {}): Positio
     .sort(
       (a, b) =>
         Number(!!b.isQueryDisease) - Number(!!a.isQueryDisease) ||
+        // generic terms ("cancer") kept only for the gap check sink to the bottom
+        Number(a.meta?.generic === true) - Number(b.meta?.generic === true) ||
         Number(candidateIndicated.has(b.id)) - Number(candidateIndicated.has(a.id)) ||
         (degree.get(b.id) ?? 0) - (degree.get(a.id) ?? 0) ||
         a.label.localeCompare(b.label),
@@ -169,12 +171,18 @@ export function positions(graph: GraphResult, opts: LayoutOptions = {}): Positio
   return out;
 }
 
-/** Estimated canvas height for a graph (used by the view when no explicit height is given). */
+/** Upper bound for the canvas height; the view trims to the rendered content (and grows back after expansions). */
+export const GRAPH_HEIGHT_MAX = 1400;
+
+/**
+ * Estimated canvas height for a graph (used by the view when no explicit height is given): enough rows for
+ * the tallest lane, so an expansion that adds many diseases gets more room rather than a cramped lane.
+ */
 export function graphHeight(graph: GraphResult): number {
   const drawn = drawnNodes(graph);
   const count = (t: GraphNodeType) => drawn.filter((n) => n.type === t).length;
   const trialRows = count("trial") > TRIAL_SPLIT_AT ? Math.ceil(count("trial") / 2) : count("trial");
-  return Math.min(900, Math.max(420, Math.max(count("drug"), count("disease"), trialRows) * ROW_MIN + 60));
+  return Math.min(GRAPH_HEIGHT_MAX, Math.max(420, Math.max(count("drug"), count("target"), count("disease"), trialRows) * ROW_MIN + 60));
 }
 export const GRAPH_HEIGHT = 560;
 

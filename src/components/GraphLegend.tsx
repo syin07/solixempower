@@ -52,6 +52,7 @@ export function GraphLegend({ graph, expansions = 0 }: { graph: GraphResult; exp
           {r.label}
         </span>
       ))}
+      <span className="text-zinc-500">comparator indications and trials are faded; hover to raise them</span>
       <span className="ml-auto text-zinc-500">{provenance}</span>
     </div>
   );
