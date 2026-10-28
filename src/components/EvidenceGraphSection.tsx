@@ -10,6 +10,7 @@ import { graphHeight } from "@/lib/kg/layout";
 import { mergeDelta, type GraphDelta } from "@/lib/kg/merge";
 import { EdgeDrawer } from "./EdgeDrawer";
 import { GraphLegend } from "./GraphLegend";
+import { HypothesisPanel } from "./HypothesisPanel";
 import { MockBanner } from "./MockBanner";
 import { Section } from "./Section";
 
@@ -70,11 +71,9 @@ export function EvidenceGraphSection({
 
   const [selected, setSelected] = useState<GraphEdge | null>(null);
   const [hovered, setHovered] = useState<string[]>([]);
-  void sources; // used by HypothesisPanel once M3 lands
   void onHoverHypothesis;
   const highlight = highlightEdgeIds?.length ? highlightEdgeIds : hovered;
   const setHighlight = (ids: string[]) => setHovered(ids);
-  void setHighlight; // HypothesisPanel's onHover → setHighlight(hypothesis.pathEdgeIds)
 
   const expand = useCallback(
     async (node: GraphNode) => {
@@ -143,13 +142,11 @@ export function EvidenceGraphSection({
           />
         </div>
         <div className="flex flex-col gap-3">
-          {/* M3: <HypothesisPanel hypotheses={graph.hypotheses} sources={sources} onHover={(id) => setHighlight(id ? graph.hypotheses.find((h) => h.id === id)?.pathEdgeIds ?? [] : [])} /> goes here */}
-          {current.hypotheses.length === 0 && (
-            <div className="rounded-md border border-dashed border-zinc-300 bg-zinc-50 p-4 text-sm text-zinc-500">
-              <div className="font-semibold text-zinc-700">Repurposing hypotheses</div>
-              None generated yet (hypothesis engine pending).
-            </div>
-          )}
+          <HypothesisPanel
+            hypotheses={current.hypotheses}
+            sources={sources}
+            onHover={(id) => setHighlight(id ? (current.hypotheses.find((h) => h.id === id)?.pathEdgeIds ?? []) : [])}
+          />
           <EdgeDrawer edge={selected} graph={current} onClose={() => setSelected(null)} />
         </div>
       </div>
