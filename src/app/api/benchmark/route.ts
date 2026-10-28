@@ -28,8 +28,15 @@ export async function GET(req: NextRequest) {
   } catch (e) {
     const notFound = e instanceof ChemblNotFound;
     console.error(e);
+    // selectTarget's "no target" case reads like a lookup failure; say what it means for the user.
+    const message =
+      notFound && /human single-protein target with measurements for (CHEMBL\d+)/.test(e.message)
+        ? `ChEMBL has no measured human protein target for ${candidate} (${/for (CHEMBL\d+)/.exec(e.message)?.[1]}), so there is no potency data to build a graph on. Try a drug with a known protein target.`
+        : notFound
+          ? e.message
+          : "ChEMBL request failed — try again.";
     return NextResponse.json<ApiError>(
-      { error: notFound ? e.message : "ChEMBL request failed — try again." },
+      { error: message },
       { status: notFound ? 404 : 502 },
     );
   }

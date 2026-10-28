@@ -47,9 +47,12 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
         renameNode(graph, QUERY_DISEASE_ID, queryDiseaseId);
         queryNode.meta = { ...queryNode.meta, resolved: true, efoId: hit.id, otName: hit.name };
         queryAncestors = await diseaseAncestors(hit.id);
+      } else {
+        queryNode.meta = { ...queryNode.meta, resolved: false, resolution: "no_match" };
       }
     } catch (e) {
       warn("disease resolution", e);
+      queryNode.meta = { ...queryNode.meta, resolved: false, resolution: "lookup_failed" };
     }
   }
 
@@ -149,16 +152,43 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
       const prev = best.get(key);
       if (!prev || Number(r.max_phase_for_ind ?? 0) > Number(prev.max_phase_for_ind ?? 0)) best.set(key, r);
     }
-    // Keep the graph readable: every indication of the candidate (the gap check needs them all), but for
-    // comparators only indications for diseases already in the graph (query disease, Open Targets hits).
-    const present = new Set(graph.nodes.filter((n) => n.type === "disease").map((n) => normName(n.label)));
-    for (const d of drugNodes()) d.meta = { ...d.meta, indicationCount: [...best.values()].filter((r) => r.parent_molecule_chembl_id === d.meta?.chemblId).length };
+    // Keep the graph readable (imatinib alone has 100+ trial indications in ChEMBL): an indicated_for
+    // edge is kept only when the disease is the query disease, is already linked to a target (Open
+    // Targets), or is among the drug's top indications by phase (candidate 8, comparators 3). Every drug
+    // keeps its full count in meta.indicationCount; the candidate also keeps the full id list in
+    // meta.indications so a gap check can consult it without the edges.
+    const KEEP_CANDIDATE = 8;
+    const KEEP_COMPARATOR = 3;
+    const linkedIds = new Set(graph.nodes.filter((n) => n.type === "disease").map((n) => n.id));
+    const linkedNames = new Set(graph.nodes.filter((n) => n.type === "disease").map((n) => normName(n.label)));
+    const queryId = graph.nodes.find((n) => n.type === "disease" && n.isQueryDisease)?.id;
+    const byDrug = new Map<string, (typeof rows)[number][]>();
+    for (const r of best.values()) {
+      const list = byDrug.get(r.parent_molecule_chembl_id) ?? [];
+      list.push(r);
+      byDrug.set(r.parent_molecule_chembl_id, list);
+    }
+    const kept = new Set<string>();
+    for (const d of drugNodes()) {
+      const list = (byDrug.get(String(d.meta?.chemblId ?? "")) ?? []).sort(
+        (a, b) => Number(b.max_phase_for_ind ?? 0) - Number(a.max_phase_for_ind ?? 0) || (a.efo_term ?? "").localeCompare(b.efo_term ?? ""),
+      );
+      const top = list.slice(0, d.isCandidate ? KEEP_CANDIDATE : KEEP_COMPARATOR);
+      for (const r of top) kept.add(`${r.parent_molecule_chembl_id}|${normalizeEfo(r.efo_id!)}`);
+      d.meta = {
+        ...d.meta,
+        indicationCount: list.length,
+        ...(d.isCandidate ? { indications: list.map((r) => normalizeEfo(r.efo_id!)) } : {}),
+      };
+    }
     for (const r of best.values()) {
       const drug = graph.nodes.find((n) => n.id === nodeId("drug", r.parent_molecule_chembl_id));
       if (!drug) continue;
       const efo = normalizeEfo(r.efo_id!);
-      const known = graph.nodes.some((n) => n.id === nodeId("disease", efo)) || present.has(normName(r.efo_term ?? r.mesh_heading ?? ""));
-      if (!drug.isCandidate && !known) continue;
+      const id = nodeId("disease", efo);
+      const linked =
+        id === queryId || linkedIds.has(id) || linkedNames.has(normName(r.efo_term ?? r.mesh_heading ?? ""));
+      if (!linked && !kept.has(`${r.parent_molecule_chembl_id}|${efo}`)) continue;
       const disease = addNode(graph, {
         id: nodeId("disease", efo),
         type: "disease",

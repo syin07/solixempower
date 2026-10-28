@@ -120,6 +120,12 @@ export function EvidenceGraphSection({
       aside={<span className="text-xs text-zinc-500">{current.hypotheses.length} repurposing hypotheses</span>}
     >
       {current.isMock && <MockBanner what="this graph" />}
+      {!current.edges.some((e) => e.type === "associated_with") && (
+        <p className="mb-3 rounded border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+          No Open Targets associations were retrieved (service unavailable or no links) — hypotheses are limited to
+          indications and trials.
+        </p>
+      )}
       <p className="mb-3 text-sm text-zinc-600">
         Every edge is a retrieved record. Lanes: drugs → targets → diseases → trials. Hover a node; click an edge to open
         its source; click a target or disease and press <span className="font-medium text-violet-700">Expand +</span> to

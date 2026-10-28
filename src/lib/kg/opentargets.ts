@@ -5,7 +5,11 @@ import { normalizeEfo } from "./ids";
 
 const ENDPOINT = "https://api.platform.opentargets.org/api/v4/graphql";
 
+/** Set OPENTARGETS_DISABLED=1 to make every call fail fast (used to test the outage path). */
+const DISABLED = process.env.OPENTARGETS_DISABLED === "1";
+
 async function gql<T>(query: string, variables: Record<string, unknown>): Promise<T> {
+  if (DISABLED) throw new Error("Open Targets disabled (OPENTARGETS_DISABLED=1)");
   const key = JSON.stringify({ query, variables });
   return cachedJson<T>("opentargets", key, async () => {
     let lastError: unknown;
