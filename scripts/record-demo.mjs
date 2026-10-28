@@ -26,7 +26,8 @@ const slug = (s) =>
   (s ?? "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "none";
 const benchmarkDemoKey = (candidate, disease, target) =>
   `benchmark--${slug(candidate)}--${slug(disease)}--${target ? slug(target) : "auto"}`;
-const reportDemoKey = (candidate, disease) => `report--${slug(candidate)}--${slug(disease)}`;
+const reportDemoKey = (candidate, disease, targetChemblId) =>
+  `report--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
 
 async function call(label, url, init) {
   const t0 = performance.now();
@@ -60,7 +61,7 @@ try {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ benchmark }),
   });
-  await save(reportDemoKey(benchmark.query.candidate, benchmark.query.disease), report);
+  await save(reportDemoKey(benchmark.query.candidate, benchmark.query.disease, benchmark.target.chemblId), report);
 
   const c = benchmark.candidate;
   const ranked = [c, ...benchmark.comparators].filter((b) => b.n > 0).length;

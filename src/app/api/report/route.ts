@@ -6,24 +6,23 @@ import type { ApiError, BenchmarkResult, EvidenceReport, TrialsResult } from "@/
 import { readDemo, reportDemoKey } from "@/lib/demo";
 
 // POST /api/report  body: { benchmark: BenchmarkResult, trials?: TrialsResult }   (?mock=1 for the fixture,
-// ?demo=1 for the recording keyed by benchmark.query)
+// ?demo=1 for the recording keyed by benchmark.query + resolved target)
 export async function POST(req: NextRequest) {
   const mockReport = NextResponse.json(fixture as unknown as EvidenceReport);
   if (req.nextUrl.searchParams.get("mock") === "1") return mockReport;
 
-  let body: { benchmark?: BenchmarkResult; trials?: TrialsResult };
+  let body: { benchmark: BenchmarkResult; trials?: TrialsResult };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json<ApiError>({ error: "Body must be JSON: { benchmark, trials? }" }, { status: 400 });
   }
-  if (!body.benchmark?.candidate) {
-    return NextResponse.json<ApiError>({ error: "benchmark is required" }, { status: 400 });
-  }
+  const invalid = validateBody(body);
+  if (invalid) return NextResponse.json<ApiError>({ error: invalid }, { status: 400 });
 
   if (req.nextUrl.searchParams.get("demo") === "1") {
     const { candidate, disease } = body.benchmark.query;
-    const recorded = await readDemo<EvidenceReport>(reportDemoKey(candidate, disease));
+    const recorded = await readDemo<EvidenceReport>(reportDemoKey(candidate, disease, body.benchmark.target.chemblId));
     if (recorded) return NextResponse.json(recorded);
   }
   if (!process.env.ANTHROPIC_API_KEY) {
@@ -32,7 +31,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    return NextResponse.json<EvidenceReport>(await generateReport(body.benchmark, body.trials));
+    return NextResponse.json<EvidenceReport>(await generateReport(body.benchmark, body.trials ?? undefined));
   } catch (e) {
     console.error(e);
     const message =
@@ -45,4 +44,19 @@ export async function POST(req: NextRequest) {
             : "Report generation failed.";
     return NextResponse.json<ApiError>({ error: message }, { status: 502 });
   }
+}
+
+/** Shape check before anything dereferences the body; returns the error message, or null if OK. */
+function validateBody(body: unknown): string | null {
+  const isObj = (v: unknown): v is Record<string, unknown> => typeof v === "object" && v !== null && !Array.isArray(v);
+  if (!isObj(body) || !isObj(body.benchmark)) return "Body must be an object: { benchmark, trials? }";
+  const b = body.benchmark;
+  if (!isObj(b.candidate) || !isObj(b.candidate.compound)) return "benchmark.candidate.compound is required";
+  if (!Array.isArray(b.comparators)) return "benchmark.comparators must be an array";
+  if (!Array.isArray(b.matchedAssays)) return "benchmark.matchedAssays must be an array";
+  if (!isObj(b.target)) return "benchmark.target is required";
+  if (!isObj(b.query)) return "benchmark.query is required";
+  if (body.trials != null && (!isObj(body.trials) || !Array.isArray(body.trials.trials)))
+    return "trials, if sent, must be { trials: Trial[] }";
+  return null;
 }

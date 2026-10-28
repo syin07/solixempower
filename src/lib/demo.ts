@@ -12,7 +12,9 @@ const slug = (s: string | undefined) =>
 export const benchmarkDemoKey = (candidate: string, disease: string, target?: string) =>
   `benchmark--${slug(candidate)}--${slug(disease)}--${target ? slug(target) : "auto"}`;
 
-export const reportDemoKey = (candidate: string, disease: string) => `report--${slug(candidate)}--${slug(disease)}`;
+/** Keyed on the RESOLVED target (benchmark.target.chemblId), so a target override gets its own report. */
+export const reportDemoKey = (candidate: string, disease: string, targetChemblId: string) =>
+  `report--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
 
 /** The recorded response for `key`, or null (with a warning) so the caller falls through to live. */
 export async function readDemo<T>(key: string): Promise<T | null> {
