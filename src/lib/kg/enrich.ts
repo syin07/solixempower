@@ -8,6 +8,7 @@ import type { BenchmarkResult, GraphNode, GraphResult, SourceRef } from "@/lib/c
 import { addEdge, addNode, QUERY_DISEASE_ID } from "./build";
 import { formatCount, getFaersSummary } from "./faers";
 import { edgeId, nodeId, normalizeEfo, openTargetsEvidenceUrl, parseNodeId } from "./ids";
+import { getIpStatus } from "./patents";
 import {
   associatedDiseases,
   diseaseAncestorCounts,
@@ -266,6 +267,13 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
     warn("FAERS", e);
   }
 
+  // h. IP status for the candidate (FDA Orange Book, PubChem fallback)
+  try {
+    await addPatentStatus(graph, benchmark);
+  } catch (e) {
+    warn("IP status", e);
+  }
+
   graph.builtAt = new Date().toISOString();
   return graph;
 }
@@ -452,4 +460,70 @@ function mergeDiseasesByName(graph: GraphResult): void {
 /** The SourceRef of an edge or node, for callers that only have an id. */
 export function sourceOf(graph: GraphResult, id: string): SourceRef | undefined {
   return graph.sources.find((s) => s.id === id);
+}
+
+/**
+ * IP status satellite for the candidate: one "patent" node + a has_patent_status edge whose source is
+ * the FDA Orange Book (approved drugs) or PubChem's patent cross-references (everything else).
+ * Answers "can you own it if the hypothesis works?" — Orange Book scope only; not a freedom-to-operate search.
+ */
+export async function addPatentStatus(graph: GraphResult, benchmark: BenchmarkResult): Promise<GraphResult> {
+  const candidate = graph.nodes.find((n) => n.type === "drug" && n.isCandidate);
+  if (!candidate) return graph;
+  const key = parseNodeId(candidate.id)?.key ?? benchmark.candidate.compound.chemblId;
+  const ip = await getIpStatus(benchmark.candidate.compound.name);
+  if (ip.source === "none") return graph;
+
+  const yr = (iso?: string) => (iso && /^\d{4}/.test(iso) ? iso.slice(0, 4) : undefined);
+  const short =
+    ip.source === "orange_book"
+      ? `IP: ${ip.genericAvailable ? "generic" : "no generics"}, ${
+          ip.unexpiredPatents ? `${ip.substancePatents ? "substance" : ip.useCodeOnly ? "use" : "product"} patents to ${yr(ip.latestExpiry)}` : "no listed patents"
+        }`
+      : `IP: unapproved, ${ip.pubchemPatentCount?.toLocaleString("en-US") ?? "?"} patent docs`;
+  const sourceId = ip.source === "orange_book" ? `ob:${ip.matched[0] ?? key}` : `pubchem-pat:${ip.pubchemCid}`;
+  const source: SourceRef = {
+    id: sourceId,
+    database: ip.source === "orange_book" ? "FDA Orange Book" : "PubChem",
+    label:
+      ip.source === "orange_book"
+        ? `${ip.matched.join(", ")}: Orange Book products, patents and exclusivity`
+        : `${benchmark.candidate.compound.name}: PubChem patent cross-references`,
+    url: ip.url,
+  };
+  const node = addNode(graph, {
+    id: nodeId("patent", key),
+    type: "patent",
+    label: short,
+    meta: {
+      source: ip.source,
+      summary: ip.summary,
+      genericAvailable: ip.genericAvailable,
+      unexpiredPatents: ip.unexpiredPatents,
+      latestExpiry: ip.latestExpiry ?? null,
+      useCodeOnly: ip.useCodeOnly,
+      substancePatents: ip.substancePatents,
+      firstApproval: ip.firstApproval ?? null,
+      ndaCount: ip.ndaCount,
+      andaCount: ip.andaCount,
+      exclusivityUntil: ip.exclusivityUntil ?? null,
+      pubchemCid: ip.pubchemCid ?? null,
+      pubchemPatentCount: ip.pubchemPatentCount ?? null,
+      matched: ip.matched,
+      // "patentNo|expires|useCode|substance|product" per unexpired listed patent (≤ 6)
+      patents: ip.patents.map((p) => [p.patentNo, p.expires, p.useCode ?? "", p.substance ? "1" : "0", p.product ? "1" : "0"].join("|")),
+    },
+    source,
+  });
+  addEdge(graph, {
+    id: edgeId("has_patent_status", candidate.id, node.id),
+    type: "has_patent_status",
+    from: candidate.id,
+    to: node.id,
+    kind: "clinical",
+    label: ip.source === "orange_book" ? "FDA Orange Book listing" : "PubChem patent references",
+    meta: { summary: ip.summary, unexpiredPatents: ip.unexpiredPatents, genericAvailable: ip.genericAvailable },
+    source,
+  });
+  return graph;
 }

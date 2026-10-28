@@ -444,6 +444,18 @@ function buildLadder(
     });
   }
 
+  // IP status (Orange Book / PubChem) — can the drug be owned if the hypothesis works?
+  const ipEdge = out(drug.id, "has_patent_status")[0];
+  const ip = ipEdge ? node(ipEdge.to) : undefined;
+  if (ip && typeof ip.meta?.summary === "string") {
+    rows.push({
+      kind: "clinical",
+      label: ip.meta.source === "orange_book" ? "IP status (Orange Book)" : "IP status (PubChem patents)",
+      value: ip.meta.summary,
+      sourceIds: [ipEdge.source.id],
+    });
+  }
+
   if (s.status === "proposed") rows.push({ kind: "absent", label: "Gap check", value: s.edges[0].label, sourceIds: [s.edges[0].source.id] });
   else if (s.status === "already_tested")
     rows.push({ kind: "clinical", label: "Gap check", value: `interventional trial(s) found: ${s.nctIds.join(", ")}`, sourceIds: s.nctIds.map((n) => `nct:${n}`) });
