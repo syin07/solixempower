@@ -1,11 +1,12 @@
 import { Suspense } from "react";
-import { BenchmarkApp } from "@/components/BenchmarkApp";
+import { GraphApp } from "@/components/GraphApp";
 
-// BenchmarkApp reads ?demo=1 / ?candidate= via useSearchParams, so it renders inside Suspense.
+// GraphApp reads ?demo=1 / ?candidate= via useSearchParams, so it renders inside Suspense.
+// The previous dashboard page lives on in BenchmarkApp.tsx (not routed).
 export default function Home() {
   return (
     <Suspense fallback={<div className="p-6 text-sm text-zinc-500">Loading…</div>}>
-      <BenchmarkApp />
+      <GraphApp />
     </Suspense>
   );
 }

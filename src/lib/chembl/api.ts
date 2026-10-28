@@ -346,3 +346,28 @@ export interface RawMechanism {
 export async function getMechanisms(targetId: string): Promise<RawMechanism[]> {
   return chemblGetAll<RawMechanism>("mechanism", "mechanisms", { target_chembl_id: targetId }, 2000);
 }
+
+/** The human single-protein ChEMBL target for a UniProt accession, or null. One cached call. */
+export async function getTargetByAccession(accession: string): Promise<RawTarget | null> {
+  const page = await chemblGet<{ targets: RawTarget[] }>("target", {
+    target_components__accession: accession,
+    target_type: "SINGLE PROTEIN",
+    organism: "Homo sapiens",
+    limit: 5,
+  });
+  return page.targets?.[0] ?? null;
+}
+
+/** ChEMBL drug-indication rows for one disease (EFO colon form, e.g. "EFO:0000768"), phase ≥ minPhase. */
+export async function getIndicationsForDisease(efoColonId: string, minPhase = 2, max = 200): Promise<RawIndication[]> {
+  return chemblGetAll<RawIndication>(
+    "drug_indication",
+    "drug_indications",
+    {
+      efo_id: efoColonId,
+      max_phase_for_ind__gte: minPhase,
+      only: "drugind_id,molecule_chembl_id,parent_molecule_chembl_id,efo_id,efo_term,mesh_heading,max_phase_for_ind",
+    },
+    max,
+  );
+}

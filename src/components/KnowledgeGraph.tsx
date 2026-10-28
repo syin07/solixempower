@@ -4,10 +4,10 @@
 // Cytoscape touches `window`, so the parent must load this with
 //   const KnowledgeGraph = dynamic(() => import("./KnowledgeGraph"), { ssr: false });
 // from inside a client component (next/dynamic's ssr:false is not allowed in server components).
-import { useEffect, useRef } from "react";
-import cytoscape, { type Core, type ElementDefinition, type StylesheetJson } from "cytoscape";
+import { useCallback, useEffect, useRef, useState } from "react";
+import cytoscape, { type Core, type ElementDefinition, type NodeSingular, type StylesheetJson } from "cytoscape";
 import type { GraphEdge, GraphEdgeKind, GraphNode, GraphNodeType, GraphResult } from "@/lib/contracts";
-import { graphHeight, isDrawn, laneOf, LANE_WIDTH, positions, type Positions } from "@/lib/kg/layout";
+import { drawnNodes, graphHeight, LANE_WIDTH, LANE_WIDTH_MAX, LANE_WIDTH_MIN, laneOf, positions, type Positions } from "@/lib/kg/layout";
 
 export interface KnowledgeGraphProps {
   graph: GraphResult;
@@ -16,6 +16,13 @@ export interface KnowledgeGraphProps {
   onSelectEdge?: (edge: GraphEdge | null) => void;
   onSelectNode?: (node: GraphNode) => void;
   height?: number;
+  /** Which nodes offer an "Expand" button in the click chip (expand-on-click, docs/KG_PRD.md R1) */
+  expandable?: (node: GraphNode) => boolean;
+  onExpand?: (node: GraphNode) => void;
+  /** Node currently being expanded: its chip shows a spinner instead of the button */
+  expandingNodeId?: string | null;
+  /** Node id that newly added elements grow out of (they animate from its position to their lane slot) */
+  growFrom?: string | null;
 }
 
 /** Edge colors: the EvidenceBadge palette (src/components/EvidenceBadge.tsx), plus amber for regulatory records. */
@@ -39,9 +46,23 @@ export const NODE_FILLS: Record<GraphNodeType, string> = {
   hypothesis: "#f4f4f5",
 };
 
+const NODE_TYPE_LABEL: Record<GraphNodeType, string> = {
+  drug: "Drug",
+  target: "Target",
+  disease: "Disease",
+  trial: "Clinical trial",
+  route: "Route of administration",
+  warning: "Drug warning",
+  hypothesis: "Hypothesis",
+};
+
 const STAGGER_MS = 250;
 /** Insertion order on first mount: the graph visibly builds lane by lane. */
 const LANE_ORDER: GraphNodeType[][] = [["drug"], ["route", "warning"], ["target"], ["disease"], ["trial"]];
+/** Space reserved for the satellites on the left and the trial labels on the right when sizing lanes. */
+const LEFT_GUTTER = 110;
+const RIGHT_GUTTER = 190;
+const FIT_PADDING = 24;
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 export function edgeWidth(e: GraphEdge): number {
@@ -59,8 +80,38 @@ export function edgeWidth(e: GraphEdge): number {
   }
 }
 
+/** Short edge label shown only when the edge is highlighted or hovered. */
+export function edgeShortLabel(e: GraphEdge): string {
+  const s = e.strength;
+  switch (e.type) {
+    case "measured_against":
+      return s == null ? "measured" : `pChEMBL ${s.toFixed(1)}`;
+    case "associated_with":
+      return s == null ? "OT" : `OT ${s.toFixed(2)}`;
+    case "tested_in":
+      return s == null ? "trial" : `Phase ${Number.isInteger(s) ? s : s.toFixed(1)}`;
+    case "indicated_for":
+      return s == null ? "indicated" : s >= 4 ? "approved" : `phase ${s}`;
+    case "mechanism":
+      return typeof e.meta?.actionType === "string" ? String(e.meta.actionType).toLowerCase() : "mechanism";
+    case "administered_by":
+      return "route";
+    case "has_warning":
+      return "warning";
+    case "absent":
+      return "not found";
+    default:
+      return e.type.replace(/_/g, " ");
+  }
+}
+
+/** Lane spacing that lets four lanes plus gutters fill the container, within the layout's bounds. */
+export const laneWidthFor = (containerWidth: number) =>
+  containerWidth > 0 ? clamp((containerWidth - LEFT_GUTTER - RIGHT_GUTTER) / 3, LANE_WIDTH_MIN, LANE_WIDTH_MAX) : LANE_WIDTH;
+
 /** Trials in the left sub-column of a split trial lane get their label on the left so the two columns do not collide. */
-const labelLeft = (n: GraphNode, pos: Positions) => n.type === "trial" && (pos.get(n.id)?.x ?? 0) < laneOf("trial") * LANE_WIDTH;
+const labelLeft = (n: GraphNode, pos: Positions, laneWidth: number) =>
+  n.type === "trial" && (pos.get(n.id)?.x ?? 0) < laneOf("trial") * laneWidth;
 
 function applyHighlight(cy: Core, ids: string[]) {
   cy.elements().removeClass("hl dim");
@@ -78,10 +129,11 @@ function applyHighlight(cy: Core, ids: string[]) {
   sel.removeClass("dim").addClass("hl");
 }
 
+const LABEL_MAX: Partial<Record<GraphNodeType, number>> = { trial: 26, disease: 26, drug: 24, target: 34, route: 14, warning: 22 };
 const truncate = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 
 function nodeElement(n: GraphNode, pos: { x: number; y: number }, labelLeft = false): ElementDefinition {
-  const label = n.type === "trial" ? truncate(n.label, 26) : truncate(n.label, 40);
+  const label = truncate(n.label, LABEL_MAX[n.type] ?? 30);
   const classes = [n.type, n.isCandidate ? "candidate" : "", n.isQueryDisease ? "query-disease" : "", labelLeft ? "label-left" : ""]
     .filter(Boolean)
     .join(" ");
@@ -93,7 +145,7 @@ function edgeElement(e: GraphEdge): ElementDefinition {
   const dashed = e.kind === "computed" || e.kind === "absent";
   return {
     group: "edges",
-    data: { id: e.id, source: e.from, target: e.to, label: e.label, color, width: edgeWidth(e), edge: e },
+    data: { id: e.id, source: e.from, target: e.to, label: edgeShortLabel(e), color, width: edgeWidth(e), edge: e },
     classes: dashed ? `${e.type} dashed` : e.type,
   };
 }
@@ -115,7 +167,7 @@ const STYLE: StylesheetJson = [
       "border-color": "#a1a1aa",
       width: 18,
       height: 18,
-      "transition-property": "opacity",
+      "transition-property": "opacity, border-width",
       "transition-duration": 150,
     },
   },
@@ -140,6 +192,15 @@ const STYLE: StylesheetJson = [
       opacity: 0.8,
       "transition-property": "opacity, width",
       "transition-duration": 150,
+      // Labels only when highlighted or hovered (see edge.hl / edge.hover below)
+      label: "",
+      "font-size": 9,
+      color: "#3f3f46",
+      "text-rotation": "autorotate",
+      "text-background-color": "#ffffff",
+      "text-background-opacity": 0.85,
+      "text-background-padding": "2px",
+      "text-background-shape": "roundrectangle",
     },
   },
   { selector: "edge.dashed", style: { "line-style": "dashed" } },
@@ -148,22 +209,74 @@ const STYLE: StylesheetJson = [
   { selector: ".dim", style: { opacity: 0.18 } },
   { selector: "node.hl", style: { opacity: 1, "border-width": 3, "border-color": "#18181b" } },
   { selector: "node.candidate.hl", style: { "border-color": "#2563eb" } },
-  { selector: "edge.hl", style: { opacity: 1, "line-style": "solid", width: "mapData(width, 1, 5, 2.5, 7)", "z-index": 10 } },
-  { selector: "edge:selected", style: { opacity: 1, "line-color": "#18181b", "target-arrow-color": "#18181b" } },
+  { selector: "edge.hl", style: { opacity: 1, "line-style": "solid", width: "mapData(width, 1, 5, 2.5, 7)", "z-index": 10, label: "data(label)" } },
+  { selector: "edge.hover", style: { opacity: 1, "z-index": 11, label: "data(label)" } },
+  { selector: "edge:selected", style: { opacity: 1, "line-color": "#18181b", "target-arrow-color": "#18181b", label: "data(label)" } },
   { selector: "node:selected", style: { "border-color": "#18181b", "border-width": 3 } },
 ];
 
-export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelectNode, height }: KnowledgeGraphProps) {
+interface Chip {
+  node: GraphNode;
+  x: number;
+  y: number;
+}
+interface Tip {
+  text: string;
+  x: number;
+  y: number;
+}
+
+/** One-shot pulse of the candidate's ring when it first appears (no continuous animation). */
+function pulse(node: NodeSingular) {
+  node
+    .animate({ style: { "border-width": 9 } }, { duration: 350, easing: "ease-out" })
+    .animate({ style: { "border-width": 3 } }, { duration: 450, easing: "ease-in" });
+}
+
+export function KnowledgeGraph({
+  graph,
+  highlightEdgeIds,
+  onSelectEdge,
+  onSelectNode,
+  height,
+  expandable,
+  onExpand,
+  expandingNodeId,
+  growFrom,
+}: KnowledgeGraphProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<Core | null>(null);
   const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const builtRef = useRef(false);
   const highlightRef = useRef<string[]>([]);
   const callbacks = useRef({ onSelectEdge, onSelectNode });
+  const growFromRef = useRef<string | null | undefined>(growFrom);
+  // Declared before the element-sync effect so it runs first when both change in the same render.
+  useEffect(() => {
+    growFromRef.current = growFrom;
+  }, [growFrom]);
+  const [laneWidth, setLaneWidth] = useState<number>(LANE_WIDTH);
+  const [containerWidth, setContainerWidth] = useState<number>(0);
+  /** Canvas height trimmed to the rendered content after a build, keyed to the graph it was measured for. */
+  const [fitHeight, setFitHeight] = useState<{ key: string; h: number } | null>(null);
+  const [chip, setChip] = useState<Chip | null>(null);
+  const [tip, setTip] = useState<Tip | null>(null);
   useEffect(() => {
     callbacks.current = { onSelectEdge, onSelectNode };
   }, [onSelectEdge, onSelectNode]);
-  const h = height ?? graphHeight(graph);
+  const requested = height ?? graphHeight(graph);
+  const fitKey = `${graph.builtAt}|${graph.nodes.length}|${requested}`;
+  const h = fitHeight && fitHeight.key === fitKey && fitHeight.h < requested ? fitHeight.h : requested;
+
+  const fit = useCallback(() => cyRef.current?.fit(undefined, FIT_PADDING), []);
+  /** After a fit, shrink the canvas to the content so a wide, short graph does not leave a blank band below. */
+  const trimHeight = useCallback(() => {
+    const cy = cyRef.current;
+    if (!cy || cy.elements().empty()) return;
+    const bb = cy.elements().renderedBoundingBox();
+    const needed = Math.ceil(bb.h + 2 * FIT_PADDING);
+    if (needed >= 420 && needed < requested - 8) setFitHeight({ key: fitKey, h: needed });
+  }, [requested, fitKey]);
 
   // Create the instance once.
   useEffect(() => {
@@ -185,18 +298,46 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
       cy.elements().removeClass("hl dim");
     };
     cy.on("mouseover", "node", (ev) => {
+      const node = ev.target as NodeSingular;
+      const data = node.data("node") as GraphNode;
+      if (data && node.data("label") !== data.label) {
+        const p = node.renderedPosition();
+        setTip({ text: data.label, x: p.x, y: p.y });
+      }
       if (cy.data("pinned")) return;
-      const node = ev.target;
       const hood = node.closedNeighborhood();
       cy.elements().addClass("dim");
       hood.removeClass("dim").addClass("hl");
     });
-    cy.on("mouseout", "node", clearHover);
-    cy.on("tap", "edge", (ev) => callbacks.current.onSelectEdge?.(ev.target.data("edge") as GraphEdge));
-    cy.on("tap", "node", (ev) => callbacks.current.onSelectNode?.(ev.target.data("node") as GraphNode));
-    cy.on("tap", (ev) => {
-      if (ev.target === cy) callbacks.current.onSelectEdge?.(null);
+    cy.on("mouseout", "node", () => {
+      setTip(null);
+      clearHover();
     });
+    cy.on("mouseover", "edge", (ev) => ev.target.addClass("hover"));
+    cy.on("mouseout", "edge", (ev) => ev.target.removeClass("hover"));
+    cy.on("tap", "edge", (ev) => {
+      setChip(null);
+      callbacks.current.onSelectEdge?.(ev.target.data("edge") as GraphEdge);
+    });
+    cy.on("tap", "node", (ev) => {
+      const node = ev.target as NodeSingular;
+      const data = node.data("node") as GraphNode;
+      const p = node.renderedPosition();
+      setChip({ node: data, x: p.x, y: p.y });
+      callbacks.current.onSelectNode?.(data);
+    });
+    cy.on("tap", (ev) => {
+      if (ev.target === cy) {
+        setChip(null);
+        callbacks.current.onSelectEdge?.(null);
+      }
+    });
+    // The chip is anchored in rendered pixels; hide it when the viewport moves rather than track it.
+    cy.on("pan zoom", () => {
+      setChip(null);
+      setTip(null);
+    });
+    cy.on("drag", "node", () => setChip(null));
 
     return () => {
       timersRef.current.forEach(clearTimeout);
@@ -207,12 +348,31 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
     };
   }, []);
 
+  // Lane spacing follows the container width (mount + resize); a hidden container (mobile) keeps the default.
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    const update = () => {
+      const w = el.clientWidth;
+      if (w > 0) {
+        setLaneWidth(laneWidthFor(w));
+        setContainerWidth(w);
+      }
+      cyRef.current?.resize();
+      cyRef.current?.fit(undefined, FIT_PADDING);
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   // Sync elements with the graph: staggered lane-by-lane build on first mount, diff-by-id afterwards.
   useEffect(() => {
     const cy = cyRef.current;
     if (!cy) return;
-    const pos = positions(graph, { height: h - 48 });
-    const nodes = graph.nodes.filter(isDrawn);
+    const pos = positions(graph, { height: h - 48, laneWidth });
+    const nodes = drawnNodes(graph);
     const nodeIds = new Set(nodes.map((n) => n.id));
     const edges = graph.edges.filter((e) => nodeIds.has(e.from) && nodeIds.has(e.to));
 
@@ -233,9 +393,11 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
             present.add(n.id);
             added.add(n.id);
           });
-          cy.add(batch.map((n) => nodeElement(n, pos.get(n.id) ?? { x: laneOf(n.type) * LANE_WIDTH, y: 0 }, labelLeft(n, pos))));
+          cy.add(batch.map((n) => nodeElement(n, pos.get(n.id) ?? { x: laneOf(n.type) * laneWidth, y: 0 }, labelLeft(n, pos, laneWidth))));
           cy.add(edgesFor(added));
-          cy.fit(undefined, 24);
+          cy.fit(undefined, FIT_PADDING);
+          if (i === 0) cy.nodes(".candidate").forEach(pulse);
+          if (i === LANE_ORDER.length - 1) trimHeight();
           if (highlightRef.current.length) applyHighlight(cy, highlightRef.current);
         }, STAGGER_MS * i);
         timersRef.current.push(t);
@@ -243,19 +405,32 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
       return;
     }
 
-    // Later updates (e.g. expand): add what is new, drop what is gone, re-place everything.
+    // Later updates (expand, resize): add what is new, drop what is gone, re-place everything.
     const keep = new Set([...nodeIds, ...edges.map((e) => e.id)]);
     cy.elements().filter((el) => !keep.has(el.id())).remove();
     const fresh = nodes.filter((n) => !present.has(n.id));
     fresh.forEach((n) => present.add(n.id));
-    cy.add(fresh.map((n) => nodeElement(n, pos.get(n.id) ?? { x: 0, y: 0 }, labelLeft(n, pos))));
+    // New elements grow out of the expanded node: start at its position, then animate to their lane slot.
+    const origin = growFromRef.current ? cy.getElementById(growFromRef.current) : null;
+    const start = origin && origin.nonempty() ? origin.position() : null;
+    cy.add(fresh.map((n) => nodeElement(n, start ?? pos.get(n.id) ?? { x: 0, y: 0 }, labelLeft(n, pos, laneWidth))));
     cy.add(edgesFor(new Set(nodes.map((n) => n.id))));
     cy.nodes().forEach((n) => {
       const p = pos.get(n.id());
-      if (p) n.animate({ position: p }, { duration: 300 });
+      if (p) n.stop(true).animate({ position: p }, { duration: 300 });
     });
-    cy.fit(undefined, 24);
-  }, [graph, h]);
+    const t = setTimeout(() => {
+      // Pin the final positions (animations can be interrupted by a re-run of this effect), then fit.
+      cy.nodes().forEach((n) => {
+        const p = pos.get(n.id());
+        if (p) n.stop(true).position(p);
+      });
+      cy.fit(undefined, FIT_PADDING);
+      trimHeight();
+    }, 320);
+    timersRef.current.push(t);
+    cy.fit(undefined, FIT_PADDING);
+  }, [graph, h, laneWidth, trimHeight]);
 
   // External highlight (hypothesis card hover): pin the highlight so node hover does not fight it.
   // Re-applied after every staggered batch, since the edges may not exist yet when the prop arrives.
@@ -264,17 +439,74 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
     if (cyRef.current) applyHighlight(cyRef.current, highlightRef.current);
   }, [highlightEdgeIds, graph]);
 
+  const chipUrl = chip?.node.source?.url;
+  const chipExpandable = chip ? Boolean(expandable?.(chip.node) && onExpand) : false;
+  const chipExpanding = chip ? expandingNodeId === chip.node.id : false;
   return (
-    <div className="relative w-full overflow-hidden rounded-md border border-zinc-200 bg-white" style={{ height: h }}>
-      <div ref={containerRef} className="h-full w-full" />
-      <button
-        type="button"
-        onClick={() => cyRef.current?.fit(undefined, 24)}
-        className="absolute right-2 top-2 rounded border border-zinc-300 bg-white px-2 py-1 text-xs text-zinc-700 shadow-sm hover:bg-zinc-50"
-      >
-        Fit
-      </button>
-    </div>
+    <>
+      <div className="relative hidden w-full overflow-hidden rounded-md border border-zinc-200 bg-white min-[900px]:block" style={{ height: h }}>
+        <div ref={containerRef} className="h-full w-full" />
+        <button
+          type="button"
+          onClick={fit}
+          className="absolute right-2 top-2 rounded border border-zinc-300 bg-white px-2 py-1 text-xs text-zinc-700 shadow-sm hover:bg-zinc-50"
+        >
+          Fit
+        </button>
+        {tip && !chip && (
+          <div
+            className="pointer-events-none absolute z-10 max-w-xs -translate-x-1/2 rounded bg-zinc-900 px-2 py-1 text-xs text-white shadow"
+            style={{ left: tip.x, top: Math.max(0, tip.y - 34) }}
+          >
+            {tip.text}
+          </div>
+        )}
+        {chip && (
+          <div
+            className="absolute z-20 flex max-w-xs -translate-x-1/2 flex-col gap-0.5 rounded-md border border-zinc-300 bg-white px-2.5 py-1.5 text-xs shadow-md"
+            style={{ left: clamp(chip.x, 90, Math.max(90, (containerWidth || 400) - 90)), top: chip.y + 14 }}
+          >
+            <span className="text-[10px] uppercase tracking-wide text-zinc-500">{NODE_TYPE_LABEL[chip.node.type]}</span>
+            <span className="font-medium text-zinc-900">{chip.node.label}</span>
+            <span className="flex items-center gap-3">
+              {chipUrl ? (
+                <a href={chipUrl} target="_blank" rel="noreferrer" className="font-medium text-blue-700 hover:underline">
+                  Open record ↗
+                </a>
+              ) : (
+                <span className="text-zinc-400">no record link</span>
+              )}
+              {chipExpanding ? (
+                <span className="inline-flex items-center gap-1 text-zinc-600">
+                  <span
+                    aria-hidden
+                    className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-zinc-300 border-t-zinc-700"
+                  />
+                  Expanding…
+                </span>
+              ) : (
+                chipExpandable && (
+                  <button
+                    type="button"
+                    onClick={() => chip && onExpand?.(chip.node)}
+                    className="rounded border border-violet-500 px-1.5 py-0.5 font-medium text-violet-700 hover:bg-violet-50"
+                    title="Fetch this node's next hop live and add it to the graph"
+                  >
+                    Expand +
+                  </button>
+                )
+              )}
+              <button type="button" onClick={() => setChip(null)} className="ml-auto text-zinc-500 hover:text-zinc-800">
+                ✕
+              </button>
+            </span>
+          </div>
+        )}
+      </div>
+      <p className="rounded-md border border-dashed border-zinc-300 bg-zinc-50 p-3 text-sm text-zinc-500 min-[900px]:hidden">
+        Graph view needs a wider screen; hypotheses and sources are listed below.
+      </p>
+    </>
   );
 }
 

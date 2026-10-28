@@ -3,17 +3,19 @@ import { EvidenceBadge } from "./EvidenceBadge";
 
 const isEvidenceKind = (k: string): k is EvidenceKind => k === "measured" || k === "computed" || k === "clinical" || k === "ai_summary";
 
+/** Edge type in words, as the drawer heading. */
 const TYPE_LABEL: Record<string, string> = {
-  measured_against: "Measured against",
-  mechanism: "Mechanism of action",
-  indicated_for: "Indicated for",
-  tested_in: "Tested in",
-  for_disease: "Trial for",
-  associated_with: "Associated with",
-  administered_by: "Administered by",
-  has_warning: "Drug warning",
-  absent: "Checked, not found",
+  measured_against: "measured against (ChEMBL)",
+  mechanism: "mechanism of action (ChEMBL)",
+  indicated_for: "indicated for (ChEMBL)",
+  tested_in: "tested in (ClinicalTrials.gov)",
+  for_disease: "trial for (ClinicalTrials.gov)",
+  associated_with: "associated with (Open Targets)",
+  administered_by: "administered by (regulatory route)",
+  has_warning: "drug warning (regulatory)",
+  absent: "checked, not found",
 };
+const typeLabel = (type: string) => TYPE_LABEL[type] ?? type.replace(/_/g, " ");
 
 function MetaValue({ v }: { v: string | number | boolean | string[] | null }) {
   if (v == null) return <span className="text-zinc-400">—</span>;
@@ -33,13 +35,13 @@ export function EdgeDrawer({ edge, graph, onClose }: { edge: GraphEdge | null; g
   }
   const label = (id: string) => graph.nodes.find((n) => n.id === id)?.label ?? id;
   const meta = Object.entries(edge.meta ?? {});
-  const subScores = meta.filter(([k, v]) => k.startsWith("ot_") && typeof v === "number") as [string, number][];
+  const subScores = (meta.filter(([k, v]) => k.startsWith("ot_") && typeof v === "number") as [string, number][]).sort((a, b) => b[1] - a[1]);
   const rest = meta.filter(([k]) => !k.startsWith("ot_") && k !== "alsoValid");
   return (
     <aside className="flex flex-col gap-3 rounded-md border border-zinc-200 bg-white p-4 text-sm">
       <div className="flex items-start justify-between gap-2">
         <div>
-          <div className="text-xs uppercase tracking-wide text-zinc-500">{TYPE_LABEL[edge.type] ?? edge.type}</div>
+          <div className="text-xs uppercase tracking-wide text-zinc-500">{typeLabel(edge.type)}</div>
           <div className="font-medium text-zinc-900">{edge.label}</div>
         </div>
         {isEvidenceKind(edge.kind) ? (

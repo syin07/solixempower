@@ -1,4 +1,5 @@
 import type { GraphResult } from "@/lib/contracts";
+import { drawnTrialIds } from "@/lib/kg/layout";
 import { EDGE_COLORS, REGULATORY_COLOR } from "./KnowledgeGraph";
 
 const EDGE_ROWS: { label: string; color: string; dashed?: boolean; note: string }[] = [
@@ -23,11 +24,15 @@ const hhmm = (iso: string) => {
 };
 
 /** Legend for the evidence graph: text + swatch for every edge kind and node shape, never color alone. */
-export function GraphLegend({ graph }: { graph: GraphResult }) {
-  const drawnNodes = graph.nodes.filter((n) => n.type !== "hypothesis").length;
-  const provenance = `${drawnNodes} nodes · ${graph.edges.length} edges · ${
+export function GraphLegend({ graph, expansions = 0 }: { graph: GraphResult; expansions?: number }) {
+  const nodes = graph.nodes.filter((n) => n.type !== "hypothesis").length;
+  const trials = graph.nodes.filter((n) => n.type === "trial").length;
+  const drawnTrials = drawnTrialIds(graph).size;
+  const trialNote = drawnTrials < trials ? ` · showing ${drawnTrials} of ${trials} trials (candidate's first)` : "";
+  const expandNote = expansions > 0 ? ` · expanded ×${expansions}` : "";
+  const provenance = `${nodes} nodes · ${graph.edges.length} edges${trialNote} · ${
     graph.isMock ? "replayed recording" : `built ${hhmm(graph.builtAt)} from live APIs`
-  }`;
+  }${expandNote}`;
   return (
     <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-zinc-700">
       {EDGE_ROWS.map((r) => (

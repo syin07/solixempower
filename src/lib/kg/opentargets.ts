@@ -116,6 +116,27 @@ export async function diseaseAncestors(efoId: string): Promise<string[]> {
   }
 }
 
+/**
+ * Ancestor counts for several diseases in one call (`diseases(efoIds)`), used to spot generic terms added
+ * via ChEMBL indications ("cancer" has 3 ancestors, "neoplasm" 2). Ids that Open Targets does not know
+ * are absent from the map. MONDO ids are valid efoIds.
+ */
+export async function diseaseAncestorCounts(efoIds: string[]): Promise<Map<string, number>> {
+  const out = new Map<string, number>();
+  const ids = [...new Set(efoIds.map(normalizeEfo).filter(Boolean))];
+  if (!ids.length) return out;
+  try {
+    const data = await gql<{ diseases: { id: string; ancestors: string[] | null }[] }>(
+      `query AncCounts($ids: [String!]!) { diseases(efoIds: $ids) { id ancestors } }`,
+      { ids },
+    );
+    for (const d of data.diseases ?? []) out.set(normalizeEfo(d.id), d.ancestors?.length ?? 0);
+  } catch (e) {
+    console.warn("[kg/opentargets] ancestor counts unavailable:", e instanceof Error ? e.message : e);
+  }
+  return out;
+}
+
 export interface DiseaseFilterOptions {
   /** The query disease id and its ancestors: never a repurposing candidate */
   excludeIds?: Iterable<string>;
@@ -138,4 +159,40 @@ export function filterDiseaseRows(rows: DiseaseAssociation[], opts: DiseaseFilte
   return rows
     .filter((r) => r.score >= minScore && hasEvidence(r.datatypeScores) && r.nAncestors >= minAncestors && !exclude.has(r.efoId))
     .slice(0, keep);
+}
+
+export interface TargetAssociation {
+  ensemblId: string;
+  symbol: string;
+  name: string;
+  /** Canonical (Swiss-Prot) UniProt accession, used to find the ChEMBL target; null if none */
+  uniprot: string | null;
+  score: number;
+  datatypeScores: Record<string, number>;
+}
+
+/** Disease → targets (Open Targets), top `size` by overall association score. Used by expand-on-click. */
+export async function associatedTargets(efoId: string, size = 8): Promise<TargetAssociation[]> {
+  const data = await gql<{
+    disease: {
+      associatedTargets: {
+        rows: {
+          score: number;
+          target: { id: string; approvedSymbol: string; approvedName: string; proteinIds: { id: string; source: string }[] };
+          datatypeScores: { id: string; score: number }[];
+        }[];
+      };
+    } | null;
+  }>(
+    `query AssocTargets($id: String!, $size: Int!) { disease(efoId: $id) { associatedTargets(page: { index: 0, size: $size }) { rows { score target { id approvedSymbol approvedName proteinIds { id source } } datatypeScores { id score } } } } }`,
+    { id: normalizeEfo(efoId), size },
+  );
+  return (data.disease?.associatedTargets.rows ?? []).map((r) => ({
+    ensemblId: r.target.id,
+    symbol: r.target.approvedSymbol,
+    name: r.target.approvedName,
+    uniprot: r.target.proteinIds?.find((p) => p.source === "uniprot_swissprot")?.id ?? null,
+    score: r.score,
+    datatypeScores: Object.fromEntries(r.datatypeScores.map((d) => [d.id, d.score])),
+  }));
 }

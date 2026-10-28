@@ -9,6 +9,7 @@ import { addEdge, addNode, QUERY_DISEASE_ID } from "./build";
 import { edgeId, nodeId, normalizeEfo, openTargetsEvidenceUrl, parseNodeId } from "./ids";
 import {
   associatedDiseases,
+  diseaseAncestorCounts,
   diseaseAncestors,
   filterDiseaseRows,
   mapUniprotToEnsembl,
@@ -17,6 +18,10 @@ import {
 } from "./opentargets";
 
 const SECONDARY_TARGETS = 3;
+/** Indication-only disease nodes with fewer ancestors than this are too generic to draw (PRD §5) */
+const MIN_ANCESTORS = 5;
+/** Names treated as generic when Open Targets cannot tell us the ancestor count */
+const GENERIC_NAMES = /^(malignant )?(carcinoma|neoplasm|tumou?r|solid tumou?r|disease|disorder|syndrome|infection|pain|inflammation)s?$/;
 const ROUTES = { oral: "Oral", parenteral: "Parenteral", topical: "Topical" } as const;
 const fmt = (n: number) => n.toFixed(2);
 const warn = (what: string, e: unknown) => console.warn(`[kg/enrich] ${what} unavailable:`, e instanceof Error ? e.message : e);
@@ -100,31 +105,7 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
           warn(`Open Targets associations for ${mapped.symbol}`, e);
           return;
         }
-        for (const r of rows) {
-          const disease = addNode(graph, {
-            id: nodeId("disease", r.efoId),
-            type: "disease",
-            label: r.name,
-            meta: { efoId: r.efoId, nAncestors: r.nAncestors, therapeuticAreas: r.therapeuticAreas },
-          });
-          const sub = Object.fromEntries(Object.entries(r.datatypeScores).map(([k, v]) => [`ot_${k}`, Number(v.toFixed(3))]));
-          addEdge(graph, {
-            id: edgeId("associated_with", targetNode.id, disease.id),
-            type: "associated_with",
-            from: targetNode.id,
-            to: disease.id,
-            kind: "computed",
-            strength: r.score,
-            label: `Open Targets association ${fmt(r.score)}`,
-            meta: { score: Number(r.score.toFixed(3)), ...sub, ensemblId: mapped.ensemblId },
-            source: {
-              id: `ot-assoc:${mapped.ensemblId}:${r.efoId}`,
-              database: "Open Targets",
-              label: `${mapped.symbol} – ${r.name} (Open Targets)`,
-              url: openTargetsEvidenceUrl(mapped.ensemblId, r.efoId),
-            },
-          });
-        }
+        for (const r of rows) addDiseaseAssociation(graph, targetNode, mapped, r);
       }),
     );
   } catch (e) {
@@ -206,6 +187,16 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
     warn("indications", e);
   }
 
+  // d2. Drop generic indication-only diseases ("cancer", "neoplasm"): comparators' indications are not
+  // subject to the Open Targets ancestor filter, so apply it here. The query disease and anything the
+  // candidate is indicated for are kept (the gap check needs the candidate's full list) but flagged.
+  try {
+    const dropped = await pruneGenericIndicationDiseases(graph, candidate?.id ?? null);
+    if (dropped.length) console.info(`[kg/enrich] dropped ${dropped.length} generic indication-only disease(s): ${dropped.join(", ")}`);
+  } catch (e) {
+    warn("generic-disease pruning", e);
+  }
+
   // e. Merge disease nodes that are the same disease under different ids (ChEMBL EFO vs Open Targets MONDO)
   mergeDiseasesByName(graph);
 
@@ -241,6 +232,58 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
   return graph;
 }
 
+/**
+ * Adds (or reuses) the disease node for an Open Targets association row and the target→disease
+ * `associated_with` edge (kind computed, strength = overall score, sub-scores in meta as ot_<datatype>).
+ * Shared by enrichGraph and expand-on-click. Returns the disease node.
+ */
+export function addDiseaseAssociation(
+  graph: GraphResult,
+  targetNode: GraphNode,
+  mapped: { ensemblId: string; symbol: string },
+  r: DiseaseAssociation,
+): GraphNode {
+  const disease =
+    findDiseaseNode(graph, r.efoId, r.name) ??
+    addNode(graph, {
+      id: nodeId("disease", r.efoId),
+      type: "disease",
+      label: r.name,
+      meta: { efoId: r.efoId, nAncestors: r.nAncestors, therapeuticAreas: r.therapeuticAreas },
+    });
+  const sub = Object.fromEntries(Object.entries(r.datatypeScores).map(([k, v]) => [`ot_${k}`, Number(v.toFixed(3))]));
+  addEdge(graph, {
+    id: edgeId("associated_with", targetNode.id, disease.id),
+    type: "associated_with",
+    from: targetNode.id,
+    to: disease.id,
+    kind: "computed",
+    strength: r.score,
+    label: `Open Targets association ${fmt(r.score)}`,
+    meta: { score: Number(r.score.toFixed(3)), ...sub, ensemblId: mapped.ensemblId },
+    source: {
+      id: `ot-assoc:${mapped.ensemblId}:${r.efoId}`,
+      database: "Open Targets",
+      label: `${mapped.symbol} – ${r.name} (Open Targets)`,
+      url: openTargetsEvidenceUrl(mapped.ensemblId, r.efoId),
+    },
+  });
+  return disease;
+}
+
+/** An existing disease node matching this ontology id (directly or via meta.altIds) or this name. */
+export function findDiseaseNode(graph: GraphResult, efoId: string, name?: string): GraphNode | undefined {
+  const id = normalizeEfo(efoId);
+  const n = name ? normName(name) : null;
+  return graph.nodes.find(
+    (d) =>
+      d.type === "disease" &&
+      (d.id === nodeId("disease", id) ||
+        (Array.isArray(d.meta?.altIds) && (d.meta!.altIds as string[]).includes(id)) ||
+        (n != null && (normName(d.label) === n || (typeof d.meta?.otName === "string" && normName(d.meta.otName) === n)))),
+  );
+}
+
 /** Gives a node a new id and rewrites every edge that points at it. Merges into an existing node of that id. */
 function renameNode(graph: GraphResult, from: string, to: string): void {
   if (from === to) return;
@@ -264,7 +307,47 @@ function renameNode(graph: GraphResult, from: string, to: string): void {
   graph.edges = graph.edges.filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)));
 }
 
-const normName = (s: string) =>
+/**
+ * Removes disease nodes reachable only through indicated_for edges when they are generic: fewer than
+ * MIN_ANCESTORS ancestors in Open Targets, or unknown to Open Targets and matching GENERIC_NAMES.
+ * Nodes linked from the candidate or marked as the query disease are kept and get meta.generic = true.
+ * Returns the labels dropped (for logging and checks).
+ */
+export async function pruneGenericIndicationDiseases(graph: GraphResult, candidateId: string | null): Promise<string[]> {
+  const linkedBy = (d: GraphNode, type: string) => graph.edges.some((e) => e.type === type && (e.to === d.id || e.from === d.id));
+  const indicationOnly = graph.nodes.filter(
+    (d) => d.type === "disease" && !d.isQueryDisease && d.id !== QUERY_DISEASE_ID && !linkedBy(d, "associated_with") && linkedBy(d, "indicated_for"),
+  );
+  if (!indicationOnly.length) return [];
+  const counts = await diseaseAncestorCounts(indicationOnly.map((d) => parseNodeId(d.id)!.key));
+  const dropped: string[] = [];
+  const remove = new Set<string>();
+  for (const d of indicationOnly) {
+    const key = parseNodeId(d.id)!.key;
+    const n = counts.get(key);
+    const generic = n != null ? n < MIN_ANCESTORS : GENERIC_NAMES.test(normName(d.label));
+    if (!generic) {
+      if (n != null) d.meta = { ...d.meta, nAncestors: n };
+      continue;
+    }
+    const candidateLinked = candidateId != null && graph.edges.some((e) => e.type === "indicated_for" && e.from === candidateId && e.to === d.id);
+    if (candidateLinked) {
+      d.meta = { ...d.meta, generic: true, nAncestors: n ?? null };
+      continue;
+    }
+    remove.add(d.id);
+    dropped.push(d.label);
+  }
+  if (remove.size) {
+    graph.nodes = graph.nodes.filter((n) => !remove.has(n.id));
+    graph.edges = graph.edges.filter((e) => !remove.has(e.from) && !remove.has(e.to));
+    const used = new Set([...graph.nodes.map((n) => n.source?.id), ...graph.edges.map((e) => e.source.id)]);
+    graph.sources = graph.sources.filter((s) => used.has(s.id));
+  }
+  return dropped;
+}
+
+export const normName = (s: string) =>
   s.toLowerCase().replace(/\bcancer\b/g, "carcinoma").replace(/[^a-z0-9]+/g, " ").trim();
 
 /** Same disease name under different ontology ids → one node; the query node wins, else the first. */
