@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Records REAL /api/benchmark + /api/trials + /api/report responses into src/fixtures/demo/ for demo mode (?demo=1).
+// Records REAL /api/benchmark + /api/trials + /api/graph + /api/report responses into src/fixtures/demo/ for demo mode (?demo=1).
 // Needs the dev server running.
 //   node scripts/record-demo.mjs --candidate <name-or-id> --disease "<disease>" [--target CHEMBLxxx] [--base http://localhost:3000]
 import { createHash } from "node:crypto";
@@ -29,6 +29,8 @@ const benchmarkDemoKey = (candidate, disease, target) =>
   `benchmark--${slug(candidate)}--${slug(disease)}--${target ? slug(target) : "auto"}`;
 const reportDemoKey = (candidate, disease, targetChemblId) =>
   `report--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
+const graphDemoKey = (candidate, disease, targetChemblId) =>
+  `graph--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
 const trialsDemoKey = (disease, drugs) => {
   const list = drugs.map((d) => d.trim().toLowerCase()).join(",");
   const hash = createHash("sha1").update(list).digest("hex").slice(0, 10);
@@ -75,10 +77,27 @@ try {
     }
   }
 
+  // Evidence graph (docs/KG_PRD.md): built from the recorded payloads, enriched live.
+  let graph;
+  try {
+    graph = await call("graph", `${args.base}/api/graph`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ benchmark, trials }),
+    });
+    await save(graphDemoKey(benchmark.query.candidate, benchmark.query.disease, benchmark.target.chemblId), graph);
+    const count = (list, key) => list.reduce((m, x) => m.set(x[key], (m.get(x[key]) ?? 0) + 1), new Map());
+    const fmt = (m) => [...m].map(([k, v]) => `${k} ${v}`).join(", ");
+    console.log(`  graph: ${graph.nodes.length} nodes (${fmt(count(graph.nodes, "type"))})`);
+    console.log(`         ${graph.edges.length} edges (${fmt(count(graph.edges, "type"))}), ${graph.hypotheses.length} hypotheses`);
+  } catch (e) {
+    console.warn(`  graph skipped: ${e.message}`);
+  }
+
   const report = await call("report", `${args.base}/api/report`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ benchmark, trials }),
+    body: JSON.stringify({ benchmark, trials, graph }),
   });
   await save(reportDemoKey(benchmark.query.candidate, benchmark.query.disease, benchmark.target.chemblId), report);
 

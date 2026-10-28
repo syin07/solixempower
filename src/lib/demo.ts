@@ -17,6 +17,10 @@ export const benchmarkDemoKey = (candidate: string, disease: string, target?: st
 export const reportDemoKey = (candidate: string, disease: string, targetChemblId: string) =>
   `report--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
 
+/** Evidence graph, keyed like the report on the RESOLVED target. */
+export const graphDemoKey = (candidate: string, disease: string, targetChemblId: string) =>
+  `graph--${slug(candidate)}--${slug(disease)}--${slug(targetChemblId)}`;
+
 /**
  * Keyed on disease + candidate (first drug) + a short hash of the whole drug list as sent. In demo mode
  * the benchmark is replayed too, so the UI sends the identical list; a different list falls through to live.
