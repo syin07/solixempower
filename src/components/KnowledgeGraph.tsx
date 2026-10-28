@@ -44,7 +44,7 @@ export const EDGE_COLORS: Record<GraphEdgeKind, string> = {
   ai_summary: "#71717a",
 };
 export const REGULATORY_COLOR = "#d97706";
-const REGULATORY_TYPES = new Set(["administered_by", "has_warning"]);
+const REGULATORY_TYPES = new Set(["administered_by", "has_warning", "has_adverse_events", "has_patent_status"]);
 
 export const NODE_FILLS: Record<GraphNodeType, string> = {
   drug: "#e4e4e7",
@@ -53,6 +53,8 @@ export const NODE_FILLS: Record<GraphNodeType, string> = {
   trial: "#fafafa",
   route: "#fef3c7",
   warning: "#fee2e2",
+  safety: "#ffedd5",
+  patent: "#ede9fe",
   hypothesis: "#f4f4f5",
 };
 
@@ -63,12 +65,14 @@ const NODE_TYPE_LABEL: Record<GraphNodeType, string> = {
   trial: "Clinical trial",
   route: "Route of administration",
   warning: "Drug warning",
+  safety: "Safety signals (FAERS)",
+  patent: "IP status (Orange Book / patents)",
   hypothesis: "Hypothesis",
 };
 
 const STAGGER_MS = 250;
 /** Insertion order on first mount: the graph visibly builds lane by lane. */
-const LANE_ORDER: GraphNodeType[][] = [["drug"], ["route", "warning"], ["target"], ["disease"], ["trial"]];
+const LANE_ORDER: GraphNodeType[][] = [["drug"], ["route", "warning", "safety", "patent"], ["target"], ["disease"], ["trial"]];
 /** Space reserved for the satellites on the left and the trial labels on the right when sizing lanes. */
 const LEFT_GUTTER = 110;
 const RIGHT_GUTTER = 190;
@@ -108,6 +112,10 @@ export function edgeShortLabel(e: GraphEdge): string {
       return "route";
     case "has_warning":
       return "warning";
+    case "has_adverse_events":
+      return "FAERS";
+    case "has_patent_status":
+      return "IP";
     case "absent":
       return "not found";
     default:
@@ -139,7 +147,7 @@ function applyHighlight(cy: Core, ids: string[]) {
   sel.removeClass("dim").addClass("hl");
 }
 
-const LABEL_MAX: Partial<Record<GraphNodeType, number>> = { trial: 26, disease: 26, drug: 24, target: 34, route: 14, warning: 22 };
+const LABEL_MAX: Partial<Record<GraphNodeType, number>> = { trial: 26, disease: 26, drug: 24, target: 34, route: 14, warning: 22, safety: 22, patent: 22 };
 const truncate = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 
 function nodeElement(n: GraphNode, pos: { x: number; y: number }, labelLeft = false): ElementDefinition {
@@ -198,6 +206,8 @@ const STYLE: StylesheetJson = [
   { selector: "node.trial", style: { shape: "rectangle", "background-color": NODE_FILLS.trial, width: 10, height: 10, "font-size": 9, color: "#52525b" } },
   { selector: "node.route", style: { shape: "round-tag", "background-color": NODE_FILLS.route, "border-color": REGULATORY_COLOR, width: 14, height: 12, "font-size": 9, "text-halign": "left", "text-margin-x": -6 } },
   { selector: "node.warning", style: { shape: "round-tag", "background-color": NODE_FILLS.warning, "border-color": "#dc2626", width: 14, height: 12, "font-size": 9, "text-halign": "left", "text-margin-x": -6 } },
+  { selector: "node.safety", style: { shape: "round-tag", "background-color": NODE_FILLS.safety, "border-color": "#ea580c", width: 14, height: 12, "font-size": 9, "text-halign": "left", "text-margin-x": -6 } },
+  { selector: "node.patent", style: { shape: "round-tag", "background-color": NODE_FILLS.patent, "border-color": "#7c3aed", width: 14, height: 12, "font-size": 9, "text-halign": "left", "text-margin-x": -6 } },
   { selector: "node.label-left", style: { "text-halign": "left", "text-margin-x": -6 } },
   { selector: "node.candidate", style: { "border-width": 3, "border-color": "#2563eb", "font-weight": "bold", width: 24, height: 24 } },
   { selector: "node.query-disease", style: { "border-width": 3, "border-color": "#059669", "font-weight": "bold" } },

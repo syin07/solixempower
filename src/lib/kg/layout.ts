@@ -11,7 +11,9 @@ const ROW_MIN = 34;
 export const MAX_TRIALS_DRAWN = 24;
 /** Trials beyond this count split into two sub-columns within the trial lane. */
 const TRIAL_SPLIT_AT = 25;
-/** Satellites (route / warning) sit this fraction of a lane width left of their drug (90 px at 260). */
+/** Node types drawn as satellites beside their drug rather than in a lane. */
+export const SATELLITE_TYPES = new Set<GraphNodeType>(["route", "warning", "safety", "patent"]);
+/** Satellites (route / warning / safety / patent) sit this fraction of a lane width left of their drug (90 px at 260). */
 const SATELLITE_DX_RATIO = 90 / 260;
 const SATELLITE_DY = 22;
 
@@ -120,7 +122,7 @@ export function positions(graph: GraphResult, opts: LayoutOptions = {}): Positio
   const satellites = new Map<string, GraphNode[]>();
   for (const e of edges) {
     const to = byId.get(e.to);
-    if (!to || (to.type !== "route" && to.type !== "warning")) continue;
+    if (!to || !SATELLITE_TYPES.has(to.type)) continue;
     const list = satellites.get(e.from) ?? [];
     if (!list.some((s) => s.id === to.id)) list.push(to);
     satellites.set(e.from, list);
@@ -165,7 +167,7 @@ export function positions(graph: GraphResult, opts: LayoutOptions = {}): Positio
     });
   }
   // Orphan satellites (no edge to a drawn drug): park them left of the drug lane
-  const orphans = nodes.filter((n) => (n.type === "route" || n.type === "warning") && !out.has(n.id));
+  const orphans = nodes.filter((n) => SATELLITE_TYPES.has(n.type) && !out.has(n.id));
   orphans.forEach((n, i) => out.set(n.id, { x: -satelliteDx, y: ROW_MIN * (i + 1) }));
 
   return out;

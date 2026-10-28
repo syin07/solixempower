@@ -747,6 +747,68 @@
       "meta": {
         "efoId": "EFO_0003875"
       }
+    },
+    {
+      "id": "safety:CHEMBL192",
+      "type": "safety",
+      "label": "FAERS: 126k reports, 67% serious",
+      "meta": {
+        "total": 126456,
+        "serious": 84104,
+        "seriousPct": 67,
+        "field": "generic_name",
+        "topReactions": [
+          "Dyspnoea|13326",
+          "Drug Ineffective|12748",
+          "Headache|10217",
+          "Death|9125",
+          "Diarrhoea|7048",
+          "Nausea|6488",
+          "Fatigue|6389",
+          "Dizziness|5856",
+          "Pneumonia|4977",
+          "Cough|4765"
+        ],
+        "seriousTop": [],
+        "query": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22sildenafil%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      }
+    },
+    {
+      "id": "patent:CHEMBL192",
+      "type": "patent",
+      "label": "IP: generic, product patents to 2038",
+      "meta": {
+        "source": "orange_book",
+        "summary": "Generics approved (49 ANDAs); 6 listed patents unexpired, latest 2038, product/formulation or use claims only; regulatory exclusivity to 2030 — the molecule itself is not claimed (only specific products); a new indication is protectable only by a method-of-use patent.",
+        "genericAvailable": true,
+        "unexpiredPatents": 6,
+        "latestExpiry": "2038-12-24",
+        "useCodeOnly": false,
+        "substancePatents": 0,
+        "firstApproval": "1998-03-27",
+        "ndaCount": 6,
+        "andaCount": 49,
+        "exclusivityUntil": "2030-01-31",
+        "pubchemCid": null,
+        "pubchemPatentCount": null,
+        "matched": [
+          "SILDENAFIL CITRATE"
+        ],
+        "patents": [
+          "11123287|2033-12-16||0|1",
+          "11337979|2038-12-24|U-3582|0|1",
+          "11464778|2038-12-24|U-3582|0|1",
+          "12186321|2038-12-24|U-3582|0|1",
+          "11759468|2038-12-24|U-3582|0|1",
+          "12005062|2038-12-24|U-3582|0|1"
+        ]
+      },
+      "source": {
+        "id": "ob:SILDENAFIL CITRATE",
+        "database": "FDA Orange Book",
+        "label": "SILDENAFIL CITRATE: Orange Book products, patents and exclusivity",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/search_product.cfm"
+      }
     }
   ],
   "edges": [
@@ -2489,6 +2551,45 @@
       }
     },
     {
+      "id": "e:has_adverse_events:drug:CHEMBL192:safety:CHEMBL192",
+      "type": "has_adverse_events",
+      "from": "drug:CHEMBL192",
+      "to": "safety:CHEMBL192",
+      "kind": "clinical",
+      "strength": 126456,
+      "label": "adverse event reports (FAERS)",
+      "meta": {
+        "total": 126456,
+        "serious": 84104,
+        "query": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22sildenafil%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      },
+      "source": {
+        "id": "faers:sildenafil",
+        "database": "FDA FAERS",
+        "label": "openFDA adverse-event reports for sildenafil (126,456)",
+        "url": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22sildenafil%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      }
+    },
+    {
+      "id": "e:has_patent_status:drug:CHEMBL192:patent:CHEMBL192",
+      "type": "has_patent_status",
+      "from": "drug:CHEMBL192",
+      "to": "patent:CHEMBL192",
+      "kind": "clinical",
+      "label": "FDA Orange Book listing",
+      "meta": {
+        "summary": "Generics approved (49 ANDAs); 6 listed patents unexpired, latest 2038, product/formulation or use claims only; regulatory exclusivity to 2030 — the molecule itself is not claimed (only specific products); a new indication is protectable only by a method-of-use patent.",
+        "unexpiredPatents": 6,
+        "genericAvailable": true
+      },
+      "source": {
+        "id": "ob:SILDENAFIL CITRATE",
+        "database": "FDA Orange Book",
+        "label": "SILDENAFIL CITRATE: Orange Book products, patents and exclusivity",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/search_product.cfm"
+      }
+    },
+    {
       "id": "e:absent:drug:CHEMBL192:disease:MONDO_0004975",
       "type": "absent",
       "from": "drug:CHEMBL192",
@@ -2500,7 +2601,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"alzheimer's disease\""
       },
       "source": {
@@ -2522,7 +2623,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial fibrillation\""
       },
       "source": {
@@ -2544,7 +2645,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cardiac arrhythmia\""
       },
       "source": {
@@ -2566,7 +2667,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"atrial flutter\""
       },
       "source": {
@@ -2588,7 +2689,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"achromatopsia\""
       },
       "source": {
@@ -2610,7 +2711,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone dystrophy\""
       },
       "source": {
@@ -2632,7 +2733,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"cone-rod dystrophy\""
       },
       "source": {
@@ -2654,7 +2755,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.141Z",
+        "checkedAt": "2026-10-28T23:55:14.125Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Sildenafil\" × condition \"familial long QT syndrome\""
       },
       "source": {
@@ -2795,6 +2896,22 @@
           "value": "phase 3 — Udenafil",
           "sourceIds": [
             "chembl-ind:136991"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety signals (FAERS)",
+          "value": "126,456 reports, 67% serious; top: dyspnoea, headache, death (spontaneous reports, not rates)",
+          "sourceIds": [
+            "faers:sildenafil"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "IP status (Orange Book)",
+          "value": "Generics approved (49 ANDAs); 6 listed patents unexpired, latest 2038, product/formulation or use claims only; regulatory exclusivity to 2030 — the molecule itself is not claimed (only specific products); a new indication is protectable only by a method-of-use patent.",
+          "sourceIds": [
+            "ob:SILDENAFIL CITRATE"
           ]
         },
         {
@@ -3251,7 +3368,7 @@
       ]
     }
   ],
-  "builtAt": "2026-10-28T23:01:27.145Z",
+  "builtAt": "2026-10-28T23:55:14.125Z",
   "sources": [
     {
       "id": "chembl-target:CHEMBL1827",
@@ -3762,6 +3879,18 @@
       "database": "ChEMBL",
       "label": "PF-00489791: Phosphodiesterase 5A inhibitor",
       "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4210847"
+    },
+    {
+      "id": "faers:sildenafil",
+      "database": "FDA FAERS",
+      "label": "openFDA adverse-event reports for sildenafil (126,456)",
+      "url": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22sildenafil%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+    },
+    {
+      "id": "ob:SILDENAFIL CITRATE",
+      "database": "FDA Orange Book",
+      "label": "SILDENAFIL CITRATE: Orange Book products, patents and exclusivity",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/ob/search_product.cfm"
     },
     {
       "id": "check:CHEMBL192:MONDO_0004975",

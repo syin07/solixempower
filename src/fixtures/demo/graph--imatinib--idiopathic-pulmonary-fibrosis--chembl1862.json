@@ -757,6 +757,63 @@
       }
     },
     {
+      "id": "safety:CHEMBL941",
+      "type": "safety",
+      "label": "FAERS: 41k reports, 81% serious",
+      "meta": {
+        "total": 41410,
+        "serious": 33356,
+        "seriousPct": 81,
+        "field": "generic_name",
+        "topReactions": [
+          "Death|5159",
+          "Nausea|2849",
+          "Drug Ineffective|2817",
+          "Diarrhoea|2509",
+          "Fatigue|2116",
+          "Vomiting|1795",
+          "Dyspnoea|1475",
+          "Malignant Neoplasm Progression|1426",
+          "Rash|1394",
+          "Malaise|1379"
+        ],
+        "seriousTop": [],
+        "query": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22imatinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      }
+    },
+    {
+      "id": "patent:CHEMBL941",
+      "type": "patent",
+      "label": "IP: generic, product patents to 2040",
+      "meta": {
+        "source": "orange_book",
+        "summary": "Generics approved (16 ANDAs); 1 listed patent unexpired, latest 2040, product/formulation or use claims only — the molecule itself is not claimed (only specific products); a new indication is protectable only by a method-of-use patent.",
+        "genericAvailable": true,
+        "unexpiredPatents": 1,
+        "latestExpiry": "2040-04-27",
+        "useCodeOnly": false,
+        "substancePatents": 0,
+        "firstApproval": "2001-05-10",
+        "ndaCount": 3,
+        "andaCount": 16,
+        "exclusivityUntil": null,
+        "pubchemCid": null,
+        "pubchemPatentCount": null,
+        "matched": [
+          "IMATINIB MESYLATE"
+        ],
+        "patents": [
+          "11957681|2040-04-27||0|1"
+        ]
+      },
+      "source": {
+        "id": "ob:IMATINIB MESYLATE",
+        "database": "FDA Orange Book",
+        "label": "IMATINIB MESYLATE: Orange Book products, patents and exclusivity",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/search_product.cfm"
+      }
+    },
+    {
       "id": "trial:NCT00763763",
       "type": "trial",
       "label": "Imatinib Mesylate With Vincristine and Dexamethasone in Acute Lymphoblastic Leukemias With BCR-ABL Positive",
@@ -2913,6 +2970,45 @@
       }
     },
     {
+      "id": "e:has_adverse_events:drug:CHEMBL941:safety:CHEMBL941",
+      "type": "has_adverse_events",
+      "from": "drug:CHEMBL941",
+      "to": "safety:CHEMBL941",
+      "kind": "clinical",
+      "strength": 41410,
+      "label": "adverse event reports (FAERS)",
+      "meta": {
+        "total": 41410,
+        "serious": 33356,
+        "query": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22imatinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      },
+      "source": {
+        "id": "faers:imatinib",
+        "database": "FDA FAERS",
+        "label": "openFDA adverse-event reports for imatinib (41,410)",
+        "url": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22imatinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      }
+    },
+    {
+      "id": "e:has_patent_status:drug:CHEMBL941:patent:CHEMBL941",
+      "type": "has_patent_status",
+      "from": "drug:CHEMBL941",
+      "to": "patent:CHEMBL941",
+      "kind": "clinical",
+      "label": "FDA Orange Book listing",
+      "meta": {
+        "summary": "Generics approved (16 ANDAs); 1 listed patent unexpired, latest 2040, product/formulation or use claims only — the molecule itself is not claimed (only specific products); a new indication is protectable only by a method-of-use patent.",
+        "unexpiredPatents": 1,
+        "genericAvailable": true
+      },
+      "source": {
+        "id": "ob:IMATINIB MESYLATE",
+        "database": "FDA Orange Book",
+        "label": "IMATINIB MESYLATE: Orange Book products, patents and exclusivity",
+        "url": "https://www.accessdata.fda.gov/scripts/cder/ob/search_product.cfm"
+      }
+    },
+    {
       "id": "e:absent:drug:CHEMBL941:disease:MONDO_0007256",
       "type": "absent",
       "from": "drug:CHEMBL941",
@@ -2924,7 +3020,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.293Z",
+        "checkedAt": "2026-10-28T23:55:14.257Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"hepatocellular carcinoma\""
       },
       "source": {
@@ -3440,7 +3536,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.293Z",
+        "checkedAt": "2026-10-28T23:55:14.257Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Imatinib\" × condition \"cutaneous mastocytosis\""
       },
       "source": {
@@ -3754,6 +3850,22 @@
           "value": "phase 1 — Dasatinib",
           "sourceIds": [
             "chembl-ind:66086"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety signals (FAERS)",
+          "value": "41,410 reports, 81% serious; top: death, nausea, diarrhoea (spontaneous reports, not rates)",
+          "sourceIds": [
+            "faers:imatinib"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "IP status (Orange Book)",
+          "value": "Generics approved (16 ANDAs); 1 listed patent unexpired, latest 2040, product/formulation or use claims only — the molecule itself is not claimed (only specific products); a new indication is protectable only by a method-of-use patent.",
+          "sourceIds": [
+            "ob:IMATINIB MESYLATE"
           ]
         },
         {
@@ -4289,7 +4401,7 @@
       ]
     }
   ],
-  "builtAt": "2026-10-28T23:01:27.295Z",
+  "builtAt": "2026-10-28T23:55:14.259Z",
   "sources": [
     {
       "id": "chembl-target:CHEMBL1862",
@@ -4836,6 +4948,18 @@
       "database": "ChEMBL",
       "label": "SARACATINIB: Tyrosine-protein kinase ABL inhibitor",
       "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+    },
+    {
+      "id": "faers:imatinib",
+      "database": "FDA FAERS",
+      "label": "openFDA adverse-event reports for imatinib (41,410)",
+      "url": "https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22imatinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+    },
+    {
+      "id": "ob:IMATINIB MESYLATE",
+      "database": "FDA Orange Book",
+      "label": "IMATINIB MESYLATE: Orange Book products, patents and exclusivity",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/ob/search_product.cfm"
     },
     {
       "id": "check:CHEMBL941:MONDO_0007256",

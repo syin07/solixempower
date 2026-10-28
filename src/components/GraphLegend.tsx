@@ -6,7 +6,7 @@ const EDGE_ROWS: { label: string; color: string; dashed?: boolean; note: string 
   { label: "Measured", color: EDGE_COLORS.measured, note: "ChEMBL activity; width = median pChEMBL" },
   { label: "Computed", color: EDGE_COLORS.computed, dashed: true, note: "Open Targets association; width = score" },
   { label: "Clinical", color: EDGE_COLORS.clinical, note: "indication or trial record" },
-  { label: "Regulatory", color: REGULATORY_COLOR, note: "route of administration, drug warning" },
+  { label: "Regulatory", color: REGULATORY_COLOR, note: "route, drug warning, FAERS safety, IP status" },
   { label: "Not found", color: EDGE_COLORS.absent, dashed: true, note: "checked on the date shown, no record" },
   { label: "AI summary", color: EDGE_COLORS.ai_summary, note: "hypothesis link" },
 ];

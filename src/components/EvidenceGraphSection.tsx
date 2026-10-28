@@ -10,7 +10,10 @@ import { graphHeight } from "@/lib/kg/layout";
 import { mergeDelta, type GraphDelta } from "@/lib/kg/merge";
 import { EdgeDrawer } from "./EdgeDrawer";
 import { GraphLegend } from "./GraphLegend";
+import { AskGraph } from "./AskGraph";
 import { HypothesisPanel } from "./HypothesisPanel";
+import { PatentCard } from "./PatentCard";
+import { SafetyCard } from "./SafetyCard";
 import { MockBanner } from "./MockBanner";
 import { Section } from "./Section";
 
@@ -59,6 +62,8 @@ export function EvidenceGraphSection({
   const [growFrom, setGrowFrom] = useState<string | null>(null);
   const [toast, setToast] = useState<{ text: string; error?: boolean } | null>(null);
   const [hoveredHyp, setHoveredHyp] = useState<string | null>(null);
+  // Edges cited by the latest "ask the graph" answer (lowest priority highlight)
+  const [askHighlight, setAskHighlight] = useState<string[]>([]);
   const [pinned, setPinned] = useState<string | null>(null);
   // "Adjust state when a prop changes" (react.dev): a new graph from the parent replaces the local copy.
   const [seed, setSeed] = useState(graph);
@@ -77,7 +82,7 @@ export function EvidenceGraphSection({
   // Hovered card wins over the pinned one. Expansions only add elements (mergeDelta), so every
   // hypothesis path edge is still in `current` after an expand.
   const activeHyp = current.hypotheses.find((h) => h.id === (hoveredHyp ?? pinned));
-  const highlight = highlightEdgeIds?.length ? highlightEdgeIds : (activeHyp?.pathEdgeIds ?? []);
+  const highlight = highlightEdgeIds?.length ? highlightEdgeIds : activeHyp ? activeHyp.pathEdgeIds : askHighlight;
   const hoverHypothesis = (id: string | null) => {
     setHoveredHyp(id);
     onHoverHypothesis?.(id);
@@ -170,6 +175,9 @@ export function EvidenceGraphSection({
             }}
             expanded={expansions > 0}
           />
+          <SafetyCard graph={current} />
+          <PatentCard graph={current} />
+          <AskGraph graph={current} onHighlight={setAskHighlight} />
           <div id="edge-drawer" className="scroll-mt-4">
             <EdgeDrawer edge={selected} graph={current} onClose={() => setSelected(null)} />
           </div>
