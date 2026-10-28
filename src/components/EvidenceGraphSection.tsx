@@ -10,6 +10,7 @@ import { graphHeight } from "@/lib/kg/layout";
 import { mergeDelta, type GraphDelta } from "@/lib/kg/merge";
 import { EdgeDrawer } from "./EdgeDrawer";
 import { GraphLegend } from "./GraphLegend";
+import { HypothesisPanel } from "./HypothesisPanel";
 import { MockBanner } from "./MockBanner";
 import { Section } from "./Section";
 
@@ -57,6 +58,8 @@ export function EvidenceGraphSection({
   const [expanding, setExpanding] = useState<string | null>(null);
   const [growFrom, setGrowFrom] = useState<string | null>(null);
   const [toast, setToast] = useState<{ text: string; error?: boolean } | null>(null);
+  const [hoveredHyp, setHoveredHyp] = useState<string | null>(null);
+  const [pinned, setPinned] = useState<string | null>(null);
   // "Adjust state when a prop changes" (react.dev): a new graph from the parent replaces the local copy.
   const [seed, setSeed] = useState(graph);
   if (seed !== graph) {
@@ -66,15 +69,19 @@ export function EvidenceGraphSection({
     setExpanding(null);
     setGrowFrom(null);
     setToast(null);
+    setPinned(null);
+    setHoveredHyp(null);
   }
 
   const [selected, setSelected] = useState<GraphEdge | null>(null);
-  const [hovered, setHovered] = useState<string[]>([]);
-  void sources; // used by HypothesisPanel once M3 lands
-  void onHoverHypothesis;
-  const highlight = highlightEdgeIds?.length ? highlightEdgeIds : hovered;
-  const setHighlight = (ids: string[]) => setHovered(ids);
-  void setHighlight; // HypothesisPanel's onHover → setHighlight(hypothesis.pathEdgeIds)
+  // Hovered card wins over the pinned one. Expansions only add elements (mergeDelta), so every
+  // hypothesis path edge is still in `current` after an expand.
+  const activeHyp = current.hypotheses.find((h) => h.id === (hoveredHyp ?? pinned));
+  const highlight = highlightEdgeIds?.length ? highlightEdgeIds : (activeHyp?.pathEdgeIds ?? []);
+  const hoverHypothesis = (id: string | null) => {
+    setHoveredHyp(id);
+    onHoverHypothesis?.(id);
+  };
 
   const expand = useCallback(
     async (node: GraphNode) => {
@@ -143,14 +150,17 @@ export function EvidenceGraphSection({
           />
         </div>
         <div className="flex flex-col gap-3">
-          {/* M3: <HypothesisPanel hypotheses={graph.hypotheses} sources={sources} onHover={(id) => setHighlight(id ? graph.hypotheses.find((h) => h.id === id)?.pathEdgeIds ?? [] : [])} /> goes here */}
-          {current.hypotheses.length === 0 && (
-            <div className="rounded-md border border-dashed border-zinc-300 bg-zinc-50 p-4 text-sm text-zinc-500">
-              <div className="font-semibold text-zinc-700">Repurposing hypotheses</div>
-              None generated yet (hypothesis engine pending).
-            </div>
-          )}
           <EdgeDrawer edge={selected} graph={current} onClose={() => setSelected(null)} />
+          <HypothesisPanel
+            hypotheses={current.hypotheses}
+            graph={current}
+            sources={sources}
+            pinnedId={pinned}
+            onHover={hoverHypothesis}
+            onPin={setPinned}
+            onSelectEdge={setSelected}
+            expanded={expansions > 0}
+          />
         </div>
       </div>
     </Section>

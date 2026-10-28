@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useState, type ReactNode } from "react";
-import type { EvidenceLayer, EvidenceReport as Report, SourceRef } from "@/lib/contracts";
+import { useMemo, type ReactNode } from "react";
+import type { EvidenceLayer, EvidenceReport as Report, Hypothesis, SourceRef } from "@/lib/contracts";
 import { EvidenceBadge } from "./EvidenceBadge";
 import { MockBanner } from "./MockBanner";
+import { ReportHypotheses } from "./ReportHypotheses";
 import { Section } from "./Section";
+import { SourceChips } from "./SourceChips";
 
 const VERDICT: Record<Report["verdict"], { label: string; className: string }> = {
   promising: { label: "Promising", className: "bg-emerald-600 text-white" },
@@ -20,10 +22,22 @@ const LAYER: Record<EvidenceLayer, string> = {
   safety: "Safety & properties",
 };
 
-export function EvidenceReport({ report, sources }: { report: Report; sources: Map<string, SourceRef> }) {
+const isHypClaim = (c: { sourceIds: string[] }) => c.sourceIds.some((id) => /^hyp:\d+$/.test(id));
+
+export function EvidenceReport({
+  report,
+  sources,
+  hypotheses = [],
+}: {
+  report: Report;
+  sources: Map<string, SourceRef>;
+  /** The evidence graph's hypotheses; claims citing them render in the repurposing block */
+  hypotheses?: Hypothesis[];
+}) {
   const v = VERDICT[report.verdict];
   const links = useMemo(() => linkTargets(sources), [sources]);
   const linked = (text: string) => linkify(text, links);
+  const hypClaims = report.sections.flatMap((s) => s.claims.filter(isHypClaim));
   return (
     <Section title="AI evidence report" aside={<EvidenceBadge kind="ai_summary" />}>
       {report.isMock && (
@@ -44,9 +58,9 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
           <div key={s.layer} className={`rounded-md border border-zinc-200 p-4 ${s.layer === "molecular" ? "lg:col-span-3" : ""}`}>
             <h3 className="font-semibold text-zinc-900">{LAYER[s.layer] ?? s.layer}</h3>
             <p className="mt-1 text-sm text-zinc-700">{linked(s.summary)}</p>
-            {s.claims.length > 0 && (
+            {s.claims.some((c) => !isHypClaim(c)) && (
               <ul className="mt-3 flex flex-col gap-2.5">
-                {s.claims.map((c, i) => (
+                {s.claims.filter((c) => !isHypClaim(c)).map((c, i) => (
                   <li key={i} className="text-sm">
                     <div className="flex items-start gap-2">
                       <EvidenceBadge kind={c.kind} />
@@ -61,6 +75,8 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
         ))}
       </div>
 
+      <ReportHypotheses hypotheses={hypotheses} claims={hypClaims} sources={sources} render={linked} />
+
       {(report.openQuestions.length > 0 || report.nextSteps.length > 0) && (
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <List title="Open questions" items={report.openQuestions} render={linked} />
@@ -68,51 +84,6 @@ export function EvidenceReport({ report, sources }: { report: Report; sources: M
         </div>
       )}
     </Section>
-  );
-}
-
-const CHIPS_SHOWN = 4;
-
-/** First few source chips, with a "+N more" toggle for claims that cite many records. */
-function SourceChips({ ids, sources }: { ids: string[]; sources: Map<string, SourceRef> }) {
-  const [open, setOpen] = useState(false);
-  const shown = open ? ids : ids.slice(0, CHIPS_SHOWN);
-  const hidden = ids.length - CHIPS_SHOWN;
-  return (
-    <div className="mt-1 flex flex-wrap gap-1 pl-1">
-      {shown.map((id) => (
-        <SourceChip key={id} id={id} source={sources.get(id)} />
-      ))}
-      {hidden > 0 && (
-        <button
-          type="button"
-          onClick={() => setOpen(!open)}
-          className="rounded border border-zinc-300 px-1.5 py-0.5 text-[11px] text-zinc-600 hover:border-blue-500 hover:text-blue-700"
-        >
-          {open ? "show fewer" : `+${hidden} more`}
-        </button>
-      )}
-    </div>
-  );
-}
-
-function SourceChip({ id, source }: { id: string; source?: SourceRef }) {
-  if (!source)
-    return (
-      <span title="This ID was not in the retrieved evidence" className="rounded border border-red-400 bg-red-50 px-1.5 py-0.5 font-mono text-[11px] text-red-700">
-        unverified: {id}
-      </span>
-    );
-  return (
-    <a
-      href={source.url}
-      target="_blank"
-      rel="noreferrer"
-      title={`${source.database}: ${source.label}`}
-      className="max-w-56 truncate rounded border border-zinc-300 bg-zinc-50 px-1.5 py-0.5 font-mono text-[11px] text-blue-700 hover:border-blue-500 hover:bg-blue-50"
-    >
-      {id}
-    </a>
   );
 }
 
@@ -131,7 +102,7 @@ function List({ title, items, render }: { title: string; items: string[]; render
 }
 
 // Database codes the AI writes in prose: NCT IDs, ChEMBL IDs, and our own source IDs (chembl-act:123)
-const CODE = /\b(NCT\d{8}|CHEMBL\d+|(?:chembl-(?:act|mol|target|warn)|nct):[A-Za-z0-9]+)\b/g;
+const CODE = /\b(NCT\d{8}|CHEMBL\d+|hyp:\d+|(?:chembl-(?:act|mol|target|warn|ind|mech)|nct):[A-Za-z0-9]+)\b/g;
 
 /** Code → URL, from the retrieved sources (ChEMBL IDs resolve to their compound/target/assay page). */
 function linkTargets(sources: Map<string, SourceRef>): Map<string, string> {
@@ -148,9 +119,13 @@ function linkTargets(sources: Map<string, SourceRef>): Map<string, string> {
 function linkify(text: string, links: Map<string, string>): ReactNode[] {
   return text.split(CODE).map((part, i) => {
     // split() with a capture group puts the matched codes at odd indices
-    const url = i % 2 ? (links.get(part) ?? (/^NCT\d{8}$/.test(part) ? `https://clinicaltrials.gov/study/${part}` : undefined)) : undefined;
+    const url =
+      i % 2
+        ? (links.get(part) ??
+          (/^NCT\d{8}$/.test(part) ? `https://clinicaltrials.gov/study/${part}` : /^hyp:\d+$/.test(part) ? `#${part.replace(":", "-")}` : undefined))
+        : undefined;
     return url ? (
-      <a key={i} href={url} target="_blank" rel="noreferrer" className="font-mono text-[0.92em] text-blue-700 underline">
+      <a key={i} href={url} {...(url.startsWith("#") ? {} : { target: "_blank", rel: "noreferrer" })} className="font-mono text-[0.92em] text-blue-700 underline">
         {part}
       </a>
     ) : (

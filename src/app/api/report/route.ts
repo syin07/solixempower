@@ -2,16 +2,16 @@ import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 import fixture from "@/fixtures/report.json";
 import { generateReport } from "@/lib/agent/report";
-import type { ApiError, BenchmarkResult, EvidenceReport, TrialsResult } from "@/lib/contracts";
+import type { ApiError, BenchmarkResult, EvidenceReport, GraphResult, TrialsResult } from "@/lib/contracts";
 import { readDemo, reportDemoKey } from "@/lib/demo";
 
-// POST /api/report  body: { benchmark: BenchmarkResult, trials?: TrialsResult }   (?mock=1 for the fixture,
+// POST /api/report  body: { benchmark: BenchmarkResult, trials?: TrialsResult, graph?: GraphResult }   (?mock=1 for the fixture,
 // ?demo=1 for the recording keyed by benchmark.query + resolved target)
 export async function POST(req: NextRequest) {
   const mockReport = NextResponse.json(fixture as unknown as EvidenceReport);
   if (req.nextUrl.searchParams.get("mock") === "1") return mockReport;
 
-  let body: { benchmark: BenchmarkResult; trials?: TrialsResult };
+  let body: { benchmark: BenchmarkResult; trials?: TrialsResult; graph?: GraphResult };
   try {
     body = await req.json();
   } catch {
@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    return NextResponse.json<EvidenceReport>(await generateReport(body.benchmark, body.trials ?? undefined));
+    return NextResponse.json<EvidenceReport>(await generateReport(body.benchmark, body.trials ?? undefined, body.graph ?? undefined));
   } catch (e) {
     console.error(e);
     const message =
@@ -58,5 +58,7 @@ function validateBody(body: unknown): string | null {
   if (!isObj(b.query)) return "benchmark.query is required";
   if (body.trials != null && (!isObj(body.trials) || !Array.isArray(body.trials.trials)))
     return "trials, if sent, must be { trials: Trial[] }";
+  if (body.graph != null && (!isObj(body.graph) || !Array.isArray(body.graph.hypotheses) || !Array.isArray(body.graph.sources)))
+    return "graph, if sent, must be a GraphResult";
   return null;
 }

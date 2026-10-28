@@ -202,7 +202,7 @@ export function GraphApp() {
           <div className="border-t border-zinc-100 p-5">
             {report.state === "loading" && <Loading label="Claude is summarizing the retrieved evidence…" />}
             {report.state === "error" && <ErrorNote message={report.error} />}
-            {report.state === "done" && <EvidenceReport report={report.data} sources={sources} />}
+            {report.state === "done" && <EvidenceReport report={report.data} sources={sources} hypotheses={g?.hypotheses} />}
           </div>
         </details>
       )}
