@@ -15,6 +15,11 @@ export interface RawMolecule {
     num_ro5_violations: number | null;
     qed_weighted: string | null;
   } | null;
+  /** Approved routes of administration (regulatory flags); present on molecule lookups */
+  oral?: boolean;
+  parenteral?: boolean;
+  topical?: boolean;
+  first_approval?: number | null;
 }
 
 export interface RawTarget {
@@ -294,4 +299,50 @@ export async function getAssayActivities(parentId: string): Promise<RawAssayActi
     },
     2000,
   );
+}
+
+export interface RawIndication {
+  drugind_id: number;
+  molecule_chembl_id: string;
+  parent_molecule_chembl_id: string;
+  /** "EFO:0000768" / "MONDO:0005233" — normalize with normalizeEfo() before use as a node id */
+  efo_id: string | null;
+  efo_term: string | null;
+  mesh_heading: string | null;
+  max_phase_for_ind: string | null;
+}
+
+/** Every ChEMBL drug-indication row for these parent molecules (all diseases, all phases). */
+export async function getIndications(parentIds: string[]): Promise<RawIndication[]> {
+  const out: RawIndication[] = [];
+  for (let i = 0; i < parentIds.length; i += 25) {
+    out.push(
+      ...(await chemblGetAll<RawIndication>(
+        "drug_indication",
+        "drug_indications",
+        {
+          parent_molecule_chembl_id__in: parentIds.slice(i, i + 25).join(","),
+          only: "drugind_id,molecule_chembl_id,parent_molecule_chembl_id,efo_id,efo_term,mesh_heading,max_phase_for_ind",
+        },
+        3000,
+      )),
+    );
+  }
+  return out;
+}
+
+export interface RawMechanism {
+  mec_id: number;
+  molecule_chembl_id: string;
+  parent_molecule_chembl_id: string | null;
+  action_type: string | null;
+  direct_interaction: number | null;
+  mechanism_of_action: string | null;
+  max_phase: number | null;
+  target_chembl_id: string | null;
+}
+
+/** Curated mechanism-of-action rows for drugs acting on this target. */
+export async function getMechanisms(targetId: string): Promise<RawMechanism[]> {
+  return chemblGetAll<RawMechanism>("mechanism", "mechanisms", { target_chembl_id: targetId }, 2000);
 }

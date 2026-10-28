@@ -2,7 +2,7 @@
 // Gavin's UI and Medhansh's routes both code against these shapes; stubs in
 // src/app/api/* return src/fixtures/*.json in exactly these shapes.
 
-export type Database = "ChEMBL" | "ClinicalTrials.gov" | "PubChem";
+export type Database = "ChEMBL" | "ClinicalTrials.gov" | "PubChem" | "Open Targets";
 
 /** Every route returns this with a 4xx/5xx status on failure. Show `error` to the user. */
 export interface ApiError {
