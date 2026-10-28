@@ -122,7 +122,7 @@ export function BenchmarkApp() {
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-6">
       <header className="flex flex-wrap items-end justify-between gap-2">
         <div>
-          <h1 className="text-2xl font-bold text-zinc-900">Candidate Benchmark</h1>
+          <h1 className="text-2xl font-bold text-zinc-900">Evidence Graph</h1>
           <p className="text-sm text-zinc-600">
             Measured potency vs. drugs on the same target, the clinical landscape, and an AI report where every claim cites its source.
           </p>

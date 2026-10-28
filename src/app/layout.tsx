@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Candidate Benchmark",
+  title: "Evidence Graph",
   description: "Benchmark a drug candidate's measured potency, clinical landscape, and cited AI evidence report.",
 };
 
