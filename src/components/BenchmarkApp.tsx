@@ -194,7 +194,7 @@ export function BenchmarkApp() {
               <ErrorNote message={`Graph unavailable: ${graph.error}`} />
             </Section>
           )}
-          {g && <EvidenceGraphSection graph={g} sources={sources} />}
+          {g && <EvidenceGraphSection graph={g} sources={sources} demo={demo} />}
 
           {report.state === "loading" && (
             <Section title="AI evidence report">

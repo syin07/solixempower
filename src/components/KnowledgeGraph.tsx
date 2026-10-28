@@ -16,6 +16,13 @@ export interface KnowledgeGraphProps {
   onSelectEdge?: (edge: GraphEdge | null) => void;
   onSelectNode?: (node: GraphNode) => void;
   height?: number;
+  /** Which nodes offer an "Expand" button in the click chip (expand-on-click, docs/KG_PRD.md R1) */
+  expandable?: (node: GraphNode) => boolean;
+  onExpand?: (node: GraphNode) => void;
+  /** Node currently being expanded: its chip shows a spinner instead of the button */
+  expandingNodeId?: string | null;
+  /** Node id that newly added elements grow out of (they animate from its position to their lane slot) */
+  growFrom?: string | null;
 }
 
 /** Edge colors: the EvidenceBadge palette (src/components/EvidenceBadge.tsx), plus amber for regulatory records. */
@@ -226,13 +233,28 @@ function pulse(node: NodeSingular) {
     .animate({ style: { "border-width": 3 } }, { duration: 450, easing: "ease-in" });
 }
 
-export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelectNode, height }: KnowledgeGraphProps) {
+export function KnowledgeGraph({
+  graph,
+  highlightEdgeIds,
+  onSelectEdge,
+  onSelectNode,
+  height,
+  expandable,
+  onExpand,
+  expandingNodeId,
+  growFrom,
+}: KnowledgeGraphProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<Core | null>(null);
   const timersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const builtRef = useRef(false);
   const highlightRef = useRef<string[]>([]);
   const callbacks = useRef({ onSelectEdge, onSelectNode });
+  const growFromRef = useRef<string | null | undefined>(growFrom);
+  // Declared before the element-sync effect so it runs first when both change in the same render.
+  useEffect(() => {
+    growFromRef.current = growFrom;
+  }, [growFrom]);
   const [laneWidth, setLaneWidth] = useState<number>(LANE_WIDTH);
   const [containerWidth, setContainerWidth] = useState<number>(0);
   /** Canvas height trimmed to the rendered content after a build, keyed to the graph it was measured for. */
@@ -388,13 +410,21 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
     cy.elements().filter((el) => !keep.has(el.id())).remove();
     const fresh = nodes.filter((n) => !present.has(n.id));
     fresh.forEach((n) => present.add(n.id));
-    cy.add(fresh.map((n) => nodeElement(n, pos.get(n.id) ?? { x: 0, y: 0 }, labelLeft(n, pos, laneWidth))));
+    // New elements grow out of the expanded node: start at its position, then animate to their lane slot.
+    const origin = growFromRef.current ? cy.getElementById(growFromRef.current) : null;
+    const start = origin && origin.nonempty() ? origin.position() : null;
+    cy.add(fresh.map((n) => nodeElement(n, start ?? pos.get(n.id) ?? { x: 0, y: 0 }, labelLeft(n, pos, laneWidth))));
     cy.add(edgesFor(new Set(nodes.map((n) => n.id))));
     cy.nodes().forEach((n) => {
       const p = pos.get(n.id());
-      if (p) n.animate({ position: p }, { duration: 300 });
+      if (p) n.stop(true).animate({ position: p }, { duration: 300 });
     });
     const t = setTimeout(() => {
+      // Pin the final positions (animations can be interrupted by a re-run of this effect), then fit.
+      cy.nodes().forEach((n) => {
+        const p = pos.get(n.id());
+        if (p) n.stop(true).position(p);
+      });
       cy.fit(undefined, FIT_PADDING);
       trimHeight();
     }, 320);
@@ -410,6 +440,8 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
   }, [highlightEdgeIds, graph]);
 
   const chipUrl = chip?.node.source?.url;
+  const chipExpandable = chip ? Boolean(expandable?.(chip.node) && onExpand) : false;
+  const chipExpanding = chip ? expandingNodeId === chip.node.id : false;
   return (
     <>
       <div className="relative hidden w-full overflow-hidden rounded-md border border-zinc-200 bg-white min-[900px]:block" style={{ height: h }}>
@@ -443,6 +475,26 @@ export function KnowledgeGraph({ graph, highlightEdgeIds, onSelectEdge, onSelect
                 </a>
               ) : (
                 <span className="text-zinc-400">no record link</span>
+              )}
+              {chipExpanding ? (
+                <span className="inline-flex items-center gap-1 text-zinc-600">
+                  <span
+                    aria-hidden
+                    className="inline-block h-3 w-3 animate-spin rounded-full border-2 border-zinc-300 border-t-zinc-700"
+                  />
+                  Expanding…
+                </span>
+              ) : (
+                chipExpandable && (
+                  <button
+                    type="button"
+                    onClick={() => chip && onExpand?.(chip.node)}
+                    className="rounded border border-violet-500 px-1.5 py-0.5 font-medium text-violet-700 hover:bg-violet-50"
+                    title="Fetch this node's next hop live and add it to the graph"
+                  >
+                    Expand +
+                  </button>
+                )
               )}
               <button type="button" onClick={() => setChip(null)} className="ml-auto text-zinc-500 hover:text-zinc-800">
                 ✕
