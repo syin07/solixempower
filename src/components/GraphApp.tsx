@@ -1,13 +1,12 @@
 "use client";
 
-// Graph-first page: search bar → evidence graph (with hypotheses) → AI report tucked below.
-// The benchmark / trials / report requests still run in sequence (the graph is built from them);
-// only the dashboard panels (potency chart, tables) are left off this page.
+// Graph-first page: search bar → evidence graph with repurposing hypotheses.
+// The benchmark and trials requests still run first (the graph is built from them); the dashboard
+// panels and the AI report are not on this page (BenchmarkApp.tsx still has them, unrouted).
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import type { BenchmarkResult, EvidenceReport as Report, GraphResult, TrialsResult } from "@/lib/contracts";
+import type { BenchmarkResult, GraphResult, TrialsResult } from "@/lib/contracts";
 import { EvidenceGraphSection } from "./EvidenceGraphSection";
-import { EvidenceReport } from "./EvidenceReport";
 import { MockBanner } from "./MockBanner";
 import { SearchBar } from "./SearchBar";
 import { ErrorNote, Loading, Section } from "./Section";
@@ -32,7 +31,6 @@ export function GraphApp() {
   const [benchmark, setBenchmark] = useState<Load<BenchmarkResult>>({ state: "idle" });
   const [trials, setTrials] = useState<Load<TrialsResult>>({ state: "idle" });
   const [graph, setGraph] = useState<Load<GraphResult>>({ state: "idle" });
-  const [report, setReport] = useState<Load<Report>>({ state: "idle" });
   const runId = useRef(0);
 
   const run = useCallback(
@@ -48,7 +46,6 @@ export function GraphApp() {
       setBenchmark({ state: "loading" });
       setTrials({ state: "idle" });
       setGraph({ state: "idle" });
-      setReport({ state: "idle" });
 
       let b: BenchmarkResult;
       try {
@@ -74,25 +71,14 @@ export function GraphApp() {
       const realTrials = t && !t.isMock ? t : undefined; // never build on placeholder trials
 
       setGraph({ state: "loading" });
-      let g: GraphResult | undefined;
       try {
-        g = await fetchJson<GraphResult>(`/api/graph${demo ? "?demo=1" : ""}`, post({ benchmark: b, trials: realTrials }));
+        const g = await fetchJson<GraphResult>(`/api/graph${demo ? "?demo=1" : ""}`, post({ benchmark: b, trials: realTrials }));
         if (live()) setGraph({ state: "done", data: g });
       } catch (e) {
         if (live()) setGraph({ state: "error", error: message(e) });
       }
       if (!live()) return;
 
-      setReport({ state: "loading" });
-      try {
-        const r = await fetchJson<Report>(
-          `/api/report${demo ? "?demo=1" : ""}`,
-          post({ benchmark: b, trials: realTrials, graph: g && !g.isMock ? g : undefined }),
-        );
-        if (live()) setReport({ state: "done", data: r });
-      } catch (e) {
-        if (live()) setReport({ state: "error", error: message(e) });
-      }
     },
     [demo],
   );
@@ -194,18 +180,6 @@ export function GraphApp() {
       {trials.state === "error" && <ErrorNote message={`Trials unavailable: ${trials.error} — the graph is built without them.`} />}
       {g && <EvidenceGraphSection graph={g} sources={sources} demo={demo} />}
 
-      {b && (report.state === "loading" || report.state === "error" || report.state === "done") && (
-        <details className="rounded-lg border border-zinc-200 bg-white shadow-sm">
-          <summary className="cursor-pointer px-5 py-3 text-sm font-semibold text-zinc-800">
-            AI evidence report {report.state === "loading" ? "— generating…" : ""}
-          </summary>
-          <div className="border-t border-zinc-100 p-5">
-            {report.state === "loading" && <Loading label="Claude is summarizing the retrieved evidence…" />}
-            {report.state === "error" && <ErrorNote message={report.error} />}
-            {report.state === "done" && <EvidenceReport report={report.data} sources={sources} hypotheses={g?.hypotheses} />}
-          </div>
-        </details>
-      )}
     </div>
   );
 }

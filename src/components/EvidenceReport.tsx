@@ -22,7 +22,7 @@ const LAYER: Record<EvidenceLayer, string> = {
   safety: "Safety & properties",
 };
 
-const isHypClaim = (c: { sourceIds: string[] }) => c.sourceIds.some((id) => /^hyp:\d+$/.test(id));
+const isHypClaim = (c: { sourceIds: string[] }) => c.sourceIds.some((id) => /^hyp:\w+$/.test(id));
 
 export function EvidenceReport({
   report,
@@ -102,7 +102,7 @@ function List({ title, items, render }: { title: string; items: string[]; render
 }
 
 // Database codes the AI writes in prose: NCT IDs, ChEMBL IDs, and our own source IDs (chembl-act:123)
-const CODE = /\b(NCT\d{8}|CHEMBL\d+|hyp:\d+|(?:chembl-(?:act|mol|target|warn|ind|mech)|nct):[A-Za-z0-9]+)\b/g;
+const CODE = /\b(NCT\d{8}|CHEMBL\d+|hyp:\w+|(?:chembl-(?:act|mol|target|warn|ind|mech)|nct):[A-Za-z0-9]+)\b/g;
 
 /** Code → URL, from the retrieved sources (ChEMBL IDs resolve to their compound/target/assay page). */
 function linkTargets(sources: Map<string, SourceRef>): Map<string, string> {
@@ -122,7 +122,7 @@ function linkify(text: string, links: Map<string, string>): ReactNode[] {
     const url =
       i % 2
         ? (links.get(part) ??
-          (/^NCT\d{8}$/.test(part) ? `https://clinicaltrials.gov/study/${part}` : /^hyp:\d+$/.test(part) ? `#${part.replace(":", "-")}` : undefined))
+          (/^NCT\d{8}$/.test(part) ? `https://clinicaltrials.gov/study/${part}` : /^hyp:\w+$/.test(part) ? `#${part.replace(":", "-")}` : undefined))
         : undefined;
     return url ? (
       <a key={i} href={url} {...(url.startsWith("#") ? {} : { target: "_blank", rel: "noreferrer" })} className="font-mono text-[0.92em] text-blue-700 underline">

@@ -45,8 +45,8 @@ const DATATYPES: [string, string][] = [
   ["rna_expression", "RNA expression"],
   ["literature", "literature"],
 ];
-const TEMPLATE_RANK: Record<HypothesisTemplate, number> = { target_hop: 0, off_target_hop: 1, comparator_hop: 2, route_hop: 3 };
-const STATUS_RANK: Record<HypothesisStatus, number> = { proposed: 0, already_tested: 1, already_indicated: 2 };
+const TEMPLATE_RANK: Record<HypothesisTemplate, number> = { target_hop: 0, off_target_hop: 1, comparator_hop: 2, route_hop: 3, query_disease: 4 };
+const STATUS_RANK: Record<HypothesisStatus, number> = { proposed: 0, already_tested: 1, already_indicated: 2, no_path: 3 };
 
 export interface HypothesisDeps {
   hasTrialFor: (drugName: string, diseaseName: string) => Promise<TrialCheck>;

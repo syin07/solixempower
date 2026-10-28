@@ -227,8 +227,9 @@ export interface GraphEdge {
   source: SourceRef;
 }
 
-export type HypothesisTemplate = "target_hop" | "comparator_hop" | "off_target_hop" | "route_hop";
-export type HypothesisStatus = "proposed" | "already_indicated" | "already_tested";
+export type HypothesisTemplate = "target_hop" | "comparator_hop" | "off_target_hop" | "route_hop" | "query_disease";
+/** no_path: the query-disease card when no target-level path reaches the disease */
+export type HypothesisStatus = "proposed" | "already_indicated" | "already_tested" | "no_path";
 
 /** One row of the evidence ladder: shown separately per kind, never summed. */
 export interface LadderRow {

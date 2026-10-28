@@ -5,6 +5,7 @@ import { graphDemoKey, readDemo } from "@/lib/demo";
 import { buildGraph } from "@/lib/kg/build";
 import { enrichGraph } from "@/lib/kg/enrich";
 import { generateHypotheses } from "@/lib/kg/hypotheses";
+import { addQueryDiseaseAnswer } from "@/lib/kg/queryDisease";
 
 // POST /api/graph  body: { benchmark: BenchmarkResult, trials?: TrialsResult }   (?mock=1 for the fixture,
 // ?demo=1 for the recording keyed by benchmark.query + resolved target). Builds the evidence graph
@@ -41,6 +42,11 @@ export async function POST(req: NextRequest) {
     } catch (e) {
       console.warn("[graph] hypothesis generation failed — serving the graph without hypotheses:", e);
       graph = { ...graph, hypotheses: [] };
+    }
+    try {
+      graph = await addQueryDiseaseAnswer(graph, body.benchmark);
+    } catch (e) {
+      console.warn("[graph] query-disease answer failed — serving the graph without it:", e);
     }
     return NextResponse.json<GraphResult>(graph);
   } catch (e) {

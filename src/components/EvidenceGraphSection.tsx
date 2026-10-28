@@ -150,7 +150,6 @@ export function EvidenceGraphSection({
           />
         </div>
         <div className="flex flex-col gap-3">
-          <EdgeDrawer edge={selected} graph={current} onClose={() => setSelected(null)} />
           <HypothesisPanel
             hypotheses={current.hypotheses}
             graph={current}
@@ -158,9 +157,16 @@ export function EvidenceGraphSection({
             pinnedId={pinned}
             onHover={hoverHypothesis}
             onPin={setPinned}
-            onSelectEdge={setSelected}
+            onSelectEdge={(e) => {
+              setSelected(e);
+              // The drawer sits below the cards: bring it into view
+              requestAnimationFrame(() => document.getElementById("edge-drawer")?.scrollIntoView({ behavior: "smooth", block: "nearest" }));
+            }}
             expanded={expansions > 0}
           />
+          <div id="edge-drawer" className="scroll-mt-4">
+            <EdgeDrawer edge={selected} graph={current} onClose={() => setSelected(null)} />
+          </div>
         </div>
       </div>
     </Section>
