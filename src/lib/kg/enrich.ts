@@ -100,31 +100,7 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
           warn(`Open Targets associations for ${mapped.symbol}`, e);
           return;
         }
-        for (const r of rows) {
-          const disease = addNode(graph, {
-            id: nodeId("disease", r.efoId),
-            type: "disease",
-            label: r.name,
-            meta: { efoId: r.efoId, nAncestors: r.nAncestors, therapeuticAreas: r.therapeuticAreas },
-          });
-          const sub = Object.fromEntries(Object.entries(r.datatypeScores).map(([k, v]) => [`ot_${k}`, Number(v.toFixed(3))]));
-          addEdge(graph, {
-            id: edgeId("associated_with", targetNode.id, disease.id),
-            type: "associated_with",
-            from: targetNode.id,
-            to: disease.id,
-            kind: "computed",
-            strength: r.score,
-            label: `Open Targets association ${fmt(r.score)}`,
-            meta: { score: Number(r.score.toFixed(3)), ...sub, ensemblId: mapped.ensemblId },
-            source: {
-              id: `ot-assoc:${mapped.ensemblId}:${r.efoId}`,
-              database: "Open Targets",
-              label: `${mapped.symbol} – ${r.name} (Open Targets)`,
-              url: openTargetsEvidenceUrl(mapped.ensemblId, r.efoId),
-            },
-          });
-        }
+        for (const r of rows) addDiseaseAssociation(graph, targetNode, mapped, r);
       }),
     );
   } catch (e) {
@@ -241,6 +217,58 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
   return graph;
 }
 
+/**
+ * Adds (or reuses) the disease node for an Open Targets association row and the target→disease
+ * `associated_with` edge (kind computed, strength = overall score, sub-scores in meta as ot_<datatype>).
+ * Shared by enrichGraph and expand-on-click. Returns the disease node.
+ */
+export function addDiseaseAssociation(
+  graph: GraphResult,
+  targetNode: GraphNode,
+  mapped: { ensemblId: string; symbol: string },
+  r: DiseaseAssociation,
+): GraphNode {
+  const disease =
+    findDiseaseNode(graph, r.efoId, r.name) ??
+    addNode(graph, {
+      id: nodeId("disease", r.efoId),
+      type: "disease",
+      label: r.name,
+      meta: { efoId: r.efoId, nAncestors: r.nAncestors, therapeuticAreas: r.therapeuticAreas },
+    });
+  const sub = Object.fromEntries(Object.entries(r.datatypeScores).map(([k, v]) => [`ot_${k}`, Number(v.toFixed(3))]));
+  addEdge(graph, {
+    id: edgeId("associated_with", targetNode.id, disease.id),
+    type: "associated_with",
+    from: targetNode.id,
+    to: disease.id,
+    kind: "computed",
+    strength: r.score,
+    label: `Open Targets association ${fmt(r.score)}`,
+    meta: { score: Number(r.score.toFixed(3)), ...sub, ensemblId: mapped.ensemblId },
+    source: {
+      id: `ot-assoc:${mapped.ensemblId}:${r.efoId}`,
+      database: "Open Targets",
+      label: `${mapped.symbol} – ${r.name} (Open Targets)`,
+      url: openTargetsEvidenceUrl(mapped.ensemblId, r.efoId),
+    },
+  });
+  return disease;
+}
+
+/** An existing disease node matching this ontology id (directly or via meta.altIds) or this name. */
+export function findDiseaseNode(graph: GraphResult, efoId: string, name?: string): GraphNode | undefined {
+  const id = normalizeEfo(efoId);
+  const n = name ? normName(name) : null;
+  return graph.nodes.find(
+    (d) =>
+      d.type === "disease" &&
+      (d.id === nodeId("disease", id) ||
+        (Array.isArray(d.meta?.altIds) && (d.meta!.altIds as string[]).includes(id)) ||
+        (n != null && (normName(d.label) === n || (typeof d.meta?.otName === "string" && normName(d.meta.otName) === n)))),
+  );
+}
+
 /** Gives a node a new id and rewrites every edge that points at it. Merges into an existing node of that id. */
 function renameNode(graph: GraphResult, from: string, to: string): void {
   if (from === to) return;
@@ -264,7 +292,7 @@ function renameNode(graph: GraphResult, from: string, to: string): void {
   graph.edges = graph.edges.filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)));
 }
 
-const normName = (s: string) =>
+export const normName = (s: string) =>
   s.toLowerCase().replace(/\bcancer\b/g, "carcinoma").replace(/[^a-z0-9]+/g, " ").trim();
 
 /** Same disease name under different ontology ids → one node; the query node wins, else the first. */
