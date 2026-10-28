@@ -1,0 +1,95 @@
+{
+  "verdict": "mixed",
+  "headline": "Poziotinib is a potent EGFR binder in biochemical assays, ranking 2 of 13 by median pChEMBL, but no clinical trial data were retrieved and the evidence is limited to wild-type enzyme potency.",
+  "sections": [
+    {
+      "layer": "molecular",
+      "summary": "In the retrieved binding data, poziotinib has high potency against EGFR, with a median pChEMBL near the top of the comparator set. Matched-assay comparisons show it is above afatinib in one assay and equal to gefitinib in another. Ranks across assays are indicative only.",
+      "claims": [
+        {
+          "text": "Across 5 comparable IC50 binding measurements on EGFR, poziotinib had a median pChEMBL of 9.48 (range 9.4–9.86), ranking 2 of 13 by median. This is a cross-assay ranking and is indicative only.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-mol:CHEMBL3545154"
+          ]
+        },
+        {
+          "text": "Mobocertinib ranked 1 of 13 with a median pChEMBL of 10.65 based on only 2 measurements, higher than poziotinib.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-mol:CHEMBL4650319"
+          ]
+        },
+        {
+          "text": "Poziotinib's median exceeded that of afatinib (8.86, rank 3), osimertinib (7.57, rank 11) and gefitinib (7.69, rank 9) in the unmatched ranking. These come from different assays and labs, so the ranking is weak evidence.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-mol:CHEMBL3545154",
+            "chembl-mol:CHEMBL1173655",
+            "chembl-mol:CHEMBL3353410",
+            "chembl-mol:CHEMBL939"
+          ]
+        },
+        {
+          "text": "Matched-assay comparison CHEMBL5255141 (wild-type EGFR, unknown origin): poziotinib pChEMBL 9.86 versus afatinib 9.19. This is the strongest evidence here that poziotinib is at least as potent as afatinib against wild-type EGFR in that assay.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:25078762",
+            "chembl-act:25078763"
+          ]
+        },
+        {
+          "text": "Matched-assay comparison CHEMBL5638814 (ADP-Glo kinase assay, wild-type GST-tagged EGFR, 10 uM ATP): poziotinib and gefitinib both had pChEMBL 9.6, so no potency difference is shown in that assay.",
+          "kind": "measured",
+          "sourceIds": [
+            "chembl-act:26199036",
+            "chembl-act:26199037"
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "preclinical",
+      "summary": "No dedicated preclinical evidence (cell models, xenografts, pharmacokinetics) was retrieved. Mutant-variant measurements (6 for the candidate) and cell-based measurements were excluded from the ranking and are not characterised here, so activity against NSCLC-relevant EGFR mutations, including exon 20 variants, cannot be judged from this evidence.",
+      "claims": [
+        {
+          "text": "Computed properties: MW 491.35, AlogP 5.38, 1 Lipinski Ro5 violation, QED 0.37. These are calculated descriptors and do not demonstrate cellular or in vivo activity.",
+          "kind": "computed",
+          "sourceIds": [
+            "chembl-mol:CHEMBL3545154"
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "clinical",
+      "summary": "Clinical trial data have not yet been retrieved. No statement about efficacy in non-small cell lung cancer in humans can be made from this evidence. Biochemical potency does not establish clinical efficacy.",
+      "claims": []
+    },
+    {
+      "layer": "safety",
+      "summary": "No safety evidence was retrieved. Potency against wild-type EGFR may relate to on-target toxicities, but this is not assessed by the evidence provided. The only related information is a computed property.",
+      "claims": [
+        {
+          "text": "The computed AlogP of 5.38 and 1 Lipinski violation are descriptors only; they are not a safety assessment.",
+          "kind": "computed",
+          "sourceIds": [
+            "chembl-mol:CHEMBL3545154"
+          ]
+        }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "How potent is poziotinib against NSCLC-relevant EGFR mutants (e.g., exon 20 insertions, L858R, T790M)? Mutant data were excluded from the ranking and not summarised.",
+    "Is the potency seen in wild-type biochemical assays reflected in cell-based or in vivo models?",
+    "What are the efficacy and safety outcomes in human NSCLC trials?",
+    "How selective is poziotinib against wild-type EGFR versus mutant EGFR and other kinases?"
+  ],
+  "nextSteps": [
+    "Retrieve and review clinical trial data (response rates, progression-free survival, adverse events) for poziotinib in NSCLC.",
+    "Extract and compare mutant-variant and cell-based EGFR potency data in matched assays against approved comparators.",
+    "Retrieve kinase selectivity and preclinical pharmacokinetic and toxicology data.",
+    "Seek additional matched-assay comparisons including mobocertinib and osimertinib."
+  ]
+}
