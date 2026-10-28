@@ -1,57 +1,59 @@
 {
   "verdict": "mixed",
-  "headline": "Gefitinib shows mid-ranked wild-type EGFR binding potency (rank 9 of 13) with variable same-assay results; no clinical trial data were retrieved, so human efficacy and safety cannot be judged from this evidence.",
+  "headline": "Gefitinib ranks 9 of 13 by pooled median binding pChEMBL on wild-type EGFR, and matched-assay results are mixed; no preclinical or clinical evidence has been retrieved.",
   "sections": [
     {
       "layer": "molecular",
-      "summary": "Across 30 comparable IC50 binding measurements, gefitinib has a median pChEMBL of 7.69, ranking 9 of 13 by median against EGFR. Several comparators rank higher, but the ranks pool different assays and labs and are indicative only. Computed properties are consistent with drug-like chemistry.",
+      "summary": "Gefitinib has 30 comparable wild-type EGFR IC50 binding measurements, with a median pChEMBL of 7.69, placing it 9th of 13. Same-assay comparisons show it ahead of erlotinib or lapatinib in some assays and behind neratinib and others in other assays. Ranks pool different assays and labs and are indicative only. Mutant-variant measurements were excluded, so this ranking does not reflect activity in EGFR-mutant disease. Potency in binding assays does not establish clinical efficacy.",
       "claims": [
         {
           "text": "Gefitinib: 30 comparable IC50 binding measurements on EGFR, median pChEMBL 7.69 (range 4.81–10), rank 9 of 13 by median.",
           "kind": "measured",
           "sourceIds": [
-            "chembl-mol:CHEMBL939"
+            "chembl-act:108863",
+            "chembl-act:186630",
+            "chembl-act:1943182",
+            "chembl-act:1943201",
+            "chembl-act:2048875",
+            "chembl-act:2390321",
+            "chembl-act:2503070",
+            "chembl-act:3130635",
+            "chembl-act:6315901",
+            "chembl-act:8017332"
           ]
         },
         {
-          "text": "Higher-ranked comparators by median include mobocertinib (10.65, only 2 measurements), afatinib (8.86), neratinib (8.83), canertinib (8.77), icotinib (8.7), dacomitinib anhydrous (8.16), pyrotinib (7.89) and lapatinib (7.87). Several of these have few measurements, so medians are fragile.",
+          "text": "Higher-ranked comparators by pooled median: mobocertinib (10.65, only 2 measurements, so uncertain), afatinib (8.86), neratinib (8.83), canertinib (8.77), icotinib (8.7), dacomitinib (8.16), pyrotinib (7.89) and lapatinib (7.87).",
           "kind": "measured",
           "sourceIds": [
-            "chembl-mol:CHEMBL4650319",
-            "chembl-mol:CHEMBL1173655",
-            "chembl-mol:CHEMBL180022",
-            "chembl-mol:CHEMBL31965",
-            "chembl-mol:CHEMBL2087361",
-            "chembl-mol:CHEMBL2110732",
-            "chembl-mol:CHEMBL3647420",
-            "chembl-mol:CHEMBL554"
+            "chembl-act:25098080",
+            "chembl-act:29113771",
+            "chembl-act:2246122",
+            "chembl-act:16479890",
+            "chembl-act:1943195",
+            "chembl-act:1943214",
+            "chembl-act:110479",
+            "chembl-act:121735",
+            "chembl-act:11022075",
+            "chembl-act:15743462",
+            "chembl-act:17657272",
+            "chembl-act:190221",
+            "chembl-act:2390320"
           ]
         },
         {
-          "text": "Lower-ranked comparators by median include erlotinib (7.58), osimertinib (7.57), brigatinib (7.07) and rociletinib (6.99).",
+          "text": "Lower-ranked comparators by pooled median: erlotinib (7.58), osimertinib (7.57), brigatinib (7.07) and rocilettinib (6.99).",
           "kind": "measured",
           "sourceIds": [
-            "chembl-mol:CHEMBL553",
-            "chembl-mol:CHEMBL3353410",
-            "chembl-mol:CHEMBL3545311",
-            "chembl-mol:CHEMBL3545308"
+            "chembl-act:129395",
+            "chembl-act:2048876",
+            "chembl-act:18581491",
+            "chembl-act:24349079",
+            "chembl-act:16335936"
           ]
         },
         {
-          "text": "Computed properties for gefitinib: MW 446.91, AlogP 4.28, 0 Lipinski Ro5 violations, QED 0.52.",
-          "kind": "computed",
-          "sourceIds": [
-            "chembl-mol:CHEMBL939"
-          ]
-        }
-      ]
-    },
-    {
-      "layer": "preclinical",
-      "summary": "Matched same-assay comparisons are the strongest evidence here. Gefitinib is higher than some comparators in some assays and lower in others, and its potency varies strongly with assay conditions, notably ATP concentration. These are biochemical results and do not establish activity in NSCLC patients. Mutant-variant data were excluded from the ranking, so this evidence does not address the EGFR-mutant setting typical in NSCLC.",
-      "claims": [
-        {
-          "text": "In the EGFR autophosphorylation assay CHEMBL683041, gefitinib (6.29) was below canertinib (7.13) but above erlotinib (5.84).",
+          "text": "Matched assay CHEMBL683041 (EGFR autophosphorylation): gefitinib pChEMBL 6.29 versus canertinib 7.13 (gefitinib weaker) and erlotinib 5.84 (gefitinib stronger).",
           "kind": "measured",
           "sourceIds": [
             "chembl-act:108863",
@@ -60,7 +62,7 @@
           ]
         },
         {
-          "text": "In assay CHEMBL674106, gefitinib (9) was above lapatinib (8).",
+          "text": "Matched assay CHEMBL674106: gefitinib pChEMBL 9 versus lapatinib 8.",
           "kind": "measured",
           "sourceIds": [
             "chembl-act:186630",
@@ -68,33 +70,21 @@
           ]
         },
         {
-          "text": "In the CHEMBL892951 assay (1 uM ATP), neratinib (10.1) was above gefitinib (8.27).",
+          "text": "Matched assay CHEMBL892951 (1 uM ATP): gefitinib 8.27 versus neratinib 10.1. Matched assay CHEMBL892954 (1 mM ATP): gefitinib 5.56 versus neratinib 9.74, so the gap with neratinib widens at high ATP.",
           "kind": "measured",
           "sourceIds": [
+            "chembl-act:1943182",
             "chembl-act:1943195",
-            "chembl-act:1943182"
+            "chembl-act:1943201",
+            "chembl-act:1943214"
           ]
         },
         {
-          "text": "At 1 mM ATP (CHEMBL892954), gefitinib fell to 5.56 while neratinib was 9.74, indicating gefitinib potency is much more sensitive to ATP concentration than neratinib in these data.",
-          "kind": "measured",
-          "sourceIds": [
-            "chembl-act:1943214",
-            "chembl-act:1943201"
-          ]
-        },
-        {
-          "text": "In assay CHEMBL924351, gefitinib (7.41) was marginally below erlotinib (7.64).",
+          "text": "Matched assay CHEMBL924351: gefitinib 7.41 versus erlotinib 7.64. Matched assay CHEMBL944276: gefitinib 7.66 versus lapatinib 7.77. These differences are small.",
           "kind": "measured",
           "sourceIds": [
             "chembl-act:2048875",
-            "chembl-act:2048876"
-          ]
-        },
-        {
-          "text": "In assay CHEMBL944276, gefitinib (7.66) was close to lapatinib (7.77).",
-          "kind": "measured",
-          "sourceIds": [
+            "chembl-act:2048876",
             "chembl-act:2390321",
             "chembl-act:2390320"
           ]
@@ -102,26 +92,39 @@
       ]
     },
     {
+      "layer": "preclinical",
+      "summary": "No functional, cell-based or in vivo evidence was retrieved yet.",
+      "claims": []
+    },
+    {
       "layer": "clinical",
-      "summary": "Clinical trial data have not yet been retrieved, so no statement about efficacy in non-small cell lung cancer can be made from this evidence set.",
+      "summary": "Clinical trial data was not yet retrieved for this report.",
       "claims": []
     },
     {
       "layer": "safety",
-      "summary": "No safety evidence was retrieved. Computed properties alone say nothing about adverse effects or tolerability.",
-      "claims": []
+      "summary": "Computed properties only; these are calculated by ChEMBL and are not a safety assessment. No drug warnings were listed in the evidence.",
+      "claims": [
+        {
+          "text": "Computed properties for gefitinib: MW 446.91, AlogP 4.28, 0 Lipinski Ro5 violations, QED 0.52. These are not a safety assessment.",
+          "kind": "computed",
+          "sourceIds": [
+            "chembl-mol:CHEMBL939"
+          ]
+        }
+      ]
     }
   ],
   "openQuestions": [
-    "How does gefitinib compare with comparators against clinically relevant EGFR mutants (e.g., activating and resistance mutants), which were excluded from this ranking?",
-    "Do the differences in matched assays, especially the ATP-dependence, translate into cellular or in vivo differences?",
-    "What are gefitinib's efficacy and safety outcomes versus the comparators in NSCLC trials?",
-    "Is the low end of the gefitinib range (4.81) an assay artifact or real variability?"
+    "How does gefitinib compare with comparators against clinically relevant mutant EGFR (e.g. L858R, T790M), which were excluded from this ranking?",
+    "Do cell-based and in vivo data support the binding-assay picture?",
+    "Why does gefitinib's matched-assay potency drop at 1 mM ATP relative to 1 uM ATP?",
+    "What do human trials show for efficacy and safety in non-small cell lung cancer?"
   ],
   "nextSteps": [
-    "Retrieve clinical trial data for gefitinib and comparators in NSCLC, including mutation-stratified outcomes.",
-    "Retrieve safety and adverse-event data.",
-    "Extend matched-assay comparisons to mutant EGFR and cell-based assays with consistent ATP conditions.",
-    "Review the excluded duplicate/validity-flagged measurements for their effect on the ranking."
+    "Retrieve and review clinical trial data for gefitinib in non-small cell lung cancer.",
+    "Add mutant-variant and cell-based potency data in a separate, labelled analysis.",
+    "Retrieve preclinical functional and in vivo evidence.",
+    "Check ChEMBL drug warnings and label safety data."
   ]
 }

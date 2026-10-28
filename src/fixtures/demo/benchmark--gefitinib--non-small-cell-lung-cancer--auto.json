@@ -1142,7 +1142,7 @@
     {
       "compound": {
         "chemblId": "CHEMBL2110732",
-        "name": "DACOMITINIB ANHYDROUS",
+        "name": "DACOMITINIB",
         "maxPhase": 4,
         "isCandidate": false,
         "properties": {
@@ -1154,7 +1154,7 @@
         "source": {
           "id": "chembl-mol:CHEMBL2110732",
           "database": "ChEMBL",
-          "label": "DACOMITINIB ANHYDROUS",
+          "label": "DACOMITINIB",
           "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2110732"
         }
       },
@@ -2786,10 +2786,34 @@
     }
   ],
   "warnings": [
-    "200 IC50 measurement(s) against mutant target variants (not comparable to wild-type) excluded from the ranking — 15 for the candidate, 185 across the 12 comparators shown.",
+    "MOBOCERTINIB (n=2): fewer than 3 comparable measurements; ranking uncertain.",
+    "Comparators are drugs with a ChEMBL mechanism on Epidermal growth factor receptor, chosen by target, not by indication for \"non-small cell lung cancer\". Of these, ERLOTINIB, LAPATINIB, NERATINIB, OSIMERTINIB, AFATINIB, BRIGATINIB, DACOMITINIB, MOBOCERTINIB, CANERTINIB, ROCILETINIB, ICOTINIB, PYROTINIB have a ChEMBL indication record matching \"non-small cell lung cancer\".",
+    "200 IC50 measurement(s) against mutant target variants excluded from the ranking — 15 for the candidate, 185 across the 12 comparators shown. Most common: L858R,T790M; L858R,T790M,C797S; UNDEFINED MUTATION. Only wild-type measurements are ranked, so mutant-selective drugs may look weaker here than in their (mutant-driven) clinical setting.",
     "76 IC50 measurement(s) from functional (non-binding) assays excluded from the ranking — 11 for the candidate, 65 across the 12 comparators shown.",
     "488 IC50 measurement(s) from cell-based or non-purified-protein assays excluded from the ranking — 114 for the candidate, 374 across the 12 comparators shown.",
     "244 IC50 measurement(s) flagged by ChEMBL as potential duplicates or data-validity issues excluded from the ranking — 65 for the candidate, 179 across the 12 comparators shown.",
     "Measurements come from different assays and labs; ranks are indicative. Matched-assay comparisons are the strongest evidence."
+  ],
+  "candidateTargets": [
+    {
+      "chemblId": "CHEMBL203",
+      "name": "Epidermal growth factor receptor",
+      "n": 285
+    },
+    {
+      "chemblId": "CHEMBL1824",
+      "name": "Receptor tyrosine-protein kinase erbB-2",
+      "n": 32
+    },
+    {
+      "chemblId": "CHEMBL1862",
+      "name": "Tyrosine-protein kinase ABL1",
+      "n": 13
+    },
+    {
+      "chemblId": "CHEMBL4355",
+      "name": "Cyclin-G-associated kinase",
+      "n": 10
+    }
   ]
 }
