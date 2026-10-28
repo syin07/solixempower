@@ -1,0 +1,68 @@
+{
+  "query": {
+    "disease": "alzheimer's disease",
+    "drugs": [
+      "SILDENAFIL",
+      "PF-00489791",
+      "VARDENAFIL",
+      "GISADENAFIL",
+      "TADALAFIL",
+      "UDENAFIL",
+      "AVANAFIL",
+      "IBUDILAST"
+    ]
+  },
+  "trials": [
+    {
+      "nctId": "NCT01940952",
+      "title": "Zydena on Cognitive Function of Alzheimer's Disease Patients",
+      "phase": "Phase 3",
+      "status": "Unknown status",
+      "conditions": [
+        "Alzheimer's Disease"
+      ],
+      "interventions": [
+        "Zydena (Udenafil) 50mg + Donepezil 5mg or 10mg",
+        "Placebo + Donepezil 5mg or 10mg",
+        "Zydena (Udenafil) 100mg + Donepezil 5mg or 10mg"
+      ],
+      "enrollment": 210,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Change in cognitive function"
+      ],
+      "startDate": "2013-09",
+      "source": {
+        "id": "nct:NCT01940952",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01940952",
+        "url": "https://clinicaltrials.gov/study/NCT01940952"
+      }
+    },
+    {
+      "nctId": "NCT07172815",
+      "title": "PDE5 Inhibitor for Alzheimer's Disease",
+      "phase": "Phase 2",
+      "status": "Not yet recruiting",
+      "conditions": [
+        "Alzheimer Disease"
+      ],
+      "interventions": [
+        "tadalafil",
+        "Placebo"
+      ],
+      "enrollment": 244,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "To assess the safety and tolerability of long-term (1 year) tadalafil treatment in MCI and early AD patients."
+      ],
+      "startDate": "2025-09",
+      "source": {
+        "id": "nct:NCT07172815",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07172815",
+        "url": "https://clinicaltrials.gov/study/NCT07172815"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "query": {
+    "disease": "idiopathic pulmonary fibrosis",
+    "drugs": [
+      "IMATINIB",
+      "BOSUTINIB",
+      "DASATINIB",
+      "NILOTINIB",
+      "ASCIMINIB",
+      "SARACATINIB"
+    ]
+  },
+  "trials": [
+    {
+      "nctId": "NCT00131274",
+      "title": "Gleevec Idiopathic Pulmonary Fibrosis (IPF) Study",
+      "phase": "Phase 2/3",
+      "status": "Completed",
+      "conditions": [
+        "Idiopathic Pulmonary Fibrosis",
+        "Lung Disease",
+        "Pulmonary Fibrosis"
+      ],
+      "interventions": [
+        "Imatinib Mesylate (Gleevec)"
+      ],
+      "enrollment": 120,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Progression defined as a greater than 10% decline in the forced vital capacity (FVC) or death"
+      ],
+      "startDate": "2003-04",
+      "source": {
+        "id": "nct:NCT00131274",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00131274",
+        "url": "https://clinicaltrials.gov/study/NCT00131274"
+      }
+    },
+    {
+      "nctId": "NCT04598919",
+      "title": "Saracatinib in the Treatment of Idiopathic Pulmonary Fibrosis",
+      "phase": "Phase 1/2",
+      "status": "Active, not recruiting",
+      "conditions": [
+        "Idiopathic Pulmonary Fibrosis (IPF)"
+      ],
+      "interventions": [
+        "Saracatinab",
+        "Placebo"
+      ],
+      "enrollment": 49,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Safety of saracatinib in IPF as measured by frequency of adverse events",
+        "Tolerability of saracatinib in IPF as measured by Severity of adverse events",
+        "Pharmacokinetics of saracatinib in IPF as measured by serum levels"
+      ],
+      "startDate": "2020-11-12",
+      "source": {
+        "id": "nct:NCT04598919",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04598919",
+        "url": "https://clinicaltrials.gov/study/NCT04598919"
+      }
+    },
+    {
+      "nctId": "NCT02874989",
+      "title": "Targeting Pro-Inflammatory Cells in Idiopathic Pulmonary Fibrosis: a Human Trial",
+      "phase": "Phase 1",
+      "status": "Completed",
+      "conditions": [
+        "Idiopathic Pulmonary Fibrosis (IPF)"
+      ],
+      "interventions": [
+        "Dasatinib + Quercetin",
+        "Placebo"
+      ],
+      "enrollment": 26,
+      "hasResults": false,
+      "primaryOutcomes": [
+        "Percentage of pro-inflammatory expressing cells",
+        "Percentage of pro-inflammatory expressing cells",
+        "Blood Pressure"
+      ],
+      "startDate": "2016-12-16",
+      "source": {
+        "id": "nct:NCT02874989",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02874989",
+        "url": "https://clinicaltrials.gov/study/NCT02874989"
+      }
+    }
+  ]
+}

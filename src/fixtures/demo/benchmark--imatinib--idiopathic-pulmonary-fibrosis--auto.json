@@ -1,0 +1,1349 @@
+{
+  "query": {
+    "candidate": "imatinib",
+    "disease": "idiopathic pulmonary fibrosis",
+    "targetChemblId": "CHEMBL1862"
+  },
+  "target": {
+    "chemblId": "CHEMBL1862",
+    "name": "Tyrosine-protein kinase ABL1",
+    "organism": "Homo sapiens",
+    "source": {
+      "id": "chembl-target:CHEMBL1862",
+      "database": "ChEMBL",
+      "label": "CHEMBL1862",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL1862"
+    }
+  },
+  "activityType": "IC50",
+  "candidate": {
+    "compound": {
+      "chemblId": "CHEMBL941",
+      "name": "IMATINIB",
+      "maxPhase": 4,
+      "isCandidate": true,
+      "properties": {
+        "molecularWeight": 493.62,
+        "alogp": 4.59,
+        "ro5Violations": 0,
+        "qed": 0.39
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL941",
+        "database": "ChEMBL",
+        "label": "IMATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL941"
+      }
+    },
+    "n": 17,
+    "medianPchembl": 6.63,
+    "minPchembl": 5.96,
+    "maxPchembl": 7.6,
+    "rank": 6,
+    "measurements": [
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL846547",
+        "assayDescription": "Inhibition of v-Abl tyrosine kinase.",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 38,
+        "pchembl": 7.42,
+        "source": {
+          "id": "chembl-act:909963",
+          "database": "ChEMBL",
+          "label": "Activity 909963 (CHEMBL846547)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL846547"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL871418",
+        "assayDescription": "Inhibition of c-ABL",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 430,
+        "pchembl": 6.37,
+        "source": {
+          "id": "chembl-act:1735313",
+          "database": "ChEMBL",
+          "label": "Activity 1735313 (CHEMBL871418)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL871418"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL888888",
+        "assayDescription": "Inhibition of c-Abl",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 40,
+        "pchembl": 7.4,
+        "source": {
+          "id": "chembl-act:1907590",
+          "database": "ChEMBL",
+          "label": "Activity 1907590 (CHEMBL888888)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL888888"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL1022422",
+        "assayDescription": "Inhibition of wild-type c-Abl by liquid scintillation counting",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 1100,
+        "pchembl": 5.96,
+        "source": {
+          "id": "chembl-act:2280412",
+          "database": "ChEMBL",
+          "label": "Activity 2280412 (CHEMBL1022422)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1022422"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL955828",
+        "assayDescription": "Inhibition of Abl by TR-FRET assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 98,
+        "pchembl": 7.01,
+        "source": {
+          "id": "chembl-act:2356930",
+          "database": "ChEMBL",
+          "label": "Activity 2356930 (CHEMBL955828)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL955828"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL946393",
+        "assayDescription": "Inhibition of Abl",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 110,
+        "pchembl": 6.96,
+        "source": {
+          "id": "chembl-act:2449764",
+          "database": "ChEMBL",
+          "label": "Activity 2449764 (CHEMBL946393)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL946393"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL1110556",
+        "assayDescription": "Inhibition of wild type Abl",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 658,
+        "pchembl": 6.18,
+        "source": {
+          "id": "chembl-act:3186283",
+          "database": "ChEMBL",
+          "label": "Activity 3186283 (CHEMBL1110556)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1110556"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL1249646",
+        "assayDescription": "Inhibition of Abl kinase",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 188,
+        "pchembl": 6.73,
+        "source": {
+          "id": "chembl-act:3447172",
+          "database": "ChEMBL",
+          "label": "Activity 3447172 (CHEMBL1249646)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1249646"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL1925856",
+        "assayDescription": "Inhibition of Abl using DAIpYAAPFAKKK phosphopeptide as substrate by MALDI-MS analysis",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 234,
+        "pchembl": 6.63,
+        "source": {
+          "id": "chembl-act:7954956",
+          "database": "ChEMBL",
+          "label": "Activity 7954956 (CHEMBL1925856)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1925856"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL2330095",
+        "assayDescription": "Inhibition of Abl1 kinase (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 250,
+        "pchembl": 6.6,
+        "source": {
+          "id": "chembl-act:12657917",
+          "database": "ChEMBL",
+          "label": "Activity 12657917 (CHEMBL2330095)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2330095"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL2330097",
+        "assayDescription": "Inhibition of Abl1 kinase (unknown origin) using Tyr 6 peptide as substrate assessed as residual enzyme activity after every 10 secs measured for 10 mins by platform assay",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 319,
+        "pchembl": 6.5,
+        "source": {
+          "id": "chembl-act:12657919",
+          "database": "ChEMBL",
+          "label": "Activity 12657919 (CHEMBL2330097)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2330097"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL3225221",
+        "assayDescription": "Inhibition of ABL (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 25,
+        "pchembl": 7.6,
+        "source": {
+          "id": "chembl-act:14545491",
+          "database": "ChEMBL",
+          "label": "Activity 14545491 (CHEMBL3225221)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3225221"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL3631065",
+        "assayDescription": "Inhibition of Abl (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 200,
+        "pchembl": 6.7,
+        "source": {
+          "id": "chembl-act:15760056",
+          "database": "ChEMBL",
+          "label": "Activity 15760056 (CHEMBL3631065)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3631065"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL5131758",
+        "assayDescription": "Inhibition of c-Abl (unknown origin)",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 190,
+        "pchembl": 6.72,
+        "source": {
+          "id": "chembl-act:24788695",
+          "database": "ChEMBL",
+          "label": "Activity 24788695 (CHEMBL5131758)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5131758"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL5716084",
+        "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation using biotin-EAIYAAPFAKKK-amide as substrate preincubated for 5 mins followed by [gamma-32P]ATP addition",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 280,
+        "pchembl": 6.55,
+        "source": {
+          "id": "chembl-act:26325592",
+          "database": "ChEMBL",
+          "label": "Activity 26325592 (CHEMBL5716084)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716084"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL5716119",
+        "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation preincubated for 5 mins followed by [gamma-32P]ATP addition",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 300,
+        "pchembl": 6.52,
+        "source": {
+          "id": "chembl-act:26325697",
+          "database": "ChEMBL",
+          "label": "Activity 26325697 (CHEMBL5716119)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716119"
+        }
+      },
+      {
+        "compoundChemblId": "CHEMBL941",
+        "assayChemblId": "CHEMBL5739300",
+        "assayDescription": "TBD: TBD",
+        "assayType": "B",
+        "activityType": "IC50",
+        "valueNm": 631,
+        "pchembl": 6.2,
+        "source": {
+          "id": "chembl-act:29002793",
+          "database": "ChEMBL",
+          "label": "Activity 29002793 (CHEMBL5739300)",
+          "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+        }
+      }
+    ]
+  },
+  "comparators": [
+    {
+      "compound": {
+        "chemblId": "CHEMBL288441",
+        "name": "BOSUTINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 530.46,
+          "alogp": 5.19,
+          "ro5Violations": 2,
+          "qed": 0.38
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL288441",
+          "database": "ChEMBL",
+          "label": "BOSUTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL288441"
+        }
+      },
+      "n": 3,
+      "medianPchembl": 9,
+      "minPchembl": 8.96,
+      "maxPchembl": 9.3,
+      "rank": 1,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL288441",
+          "assayChemblId": "CHEMBL882911",
+          "assayDescription": "Inhibitory concentration against v-Abl tyrosine kinase",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1.1,
+          "pchembl": 8.96,
+          "source": {
+            "id": "chembl-act:1615494",
+            "database": "ChEMBL",
+            "label": "Activity 1615494 (CHEMBL882911)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL882911"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL288441",
+          "assayChemblId": "CHEMBL1244322",
+          "assayDescription": "Inhibition of ABL1",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.5,
+          "pchembl": 9.3,
+          "source": {
+            "id": "chembl-act:3446181",
+            "database": "ChEMBL",
+            "label": "Activity 3446181 (CHEMBL1244322)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1244322"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL288441",
+          "assayChemblId": "CHEMBL3811351",
+          "assayDescription": "Inhibition of human ABL using EAIYAAPFAKKK as substrate after 40 mins by scintillation counting analysis in presence of [gamma-33P-ATP]",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1,
+          "pchembl": 9,
+          "source": {
+            "id": "chembl-act:16595582",
+            "database": "ChEMBL",
+            "label": "Activity 16595582 (CHEMBL3811351)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3811351"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL1421",
+        "name": "DASATINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 488.02,
+          "alogp": 3.31,
+          "ro5Violations": 0,
+          "qed": 0.47
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL1421",
+          "database": "ChEMBL",
+          "label": "DASATINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1421"
+        }
+      },
+      "n": 8,
+      "medianPchembl": 8.39,
+      "minPchembl": 6.57,
+      "maxPchembl": 9.22,
+      "rank": 2,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL901542",
+          "assayDescription": "Inhibition of Abl kinase",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 4.2,
+          "pchembl": 8.38,
+          "source": {
+            "id": "chembl-act:2000756",
+            "database": "ChEMBL",
+            "label": "Activity 2000756 (CHEMBL901542)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL901542"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL924604",
+          "assayDescription": "Inhibition of recombinant Abl kinase",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 14,
+          "pchembl": 7.85,
+          "source": {
+            "id": "chembl-act:2150088",
+            "database": "ChEMBL",
+            "label": "Activity 2150088 (CHEMBL924604)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924604"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL3871312",
+          "assayDescription": "Inhibition of wild type recombinant human Abl using abtide as substrate by [gamma-32P]ATP based assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 4,
+          "pchembl": 8.4,
+          "source": {
+            "id": "chembl-act:16814199",
+            "database": "ChEMBL",
+            "label": "Activity 16814199 (CHEMBL3871312)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3871312"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL4729719",
+          "assayDescription": "Inhibition of ABL (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 1,
+          "pchembl": 9,
+          "source": {
+            "id": "chembl-act:22892179",
+            "database": "ChEMBL",
+            "label": "Activity 22892179 (CHEMBL4729719)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4729719"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL5131758",
+          "assayDescription": "Inhibition of c-Abl (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 270,
+          "pchembl": 6.57,
+          "source": {
+            "id": "chembl-act:24788696",
+            "database": "ChEMBL",
+            "label": "Activity 24788696 (CHEMBL5131758)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5131758"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL5131956",
+          "assayDescription": "Inhibition of Abl (unknown origin)",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 138,
+          "pchembl": 6.86,
+          "source": {
+            "id": "chembl-act:24789038",
+            "database": "ChEMBL",
+            "label": "Activity 24789038 (CHEMBL5131956)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5131956"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL5716084",
+          "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation using biotin-EAIYAAPFAKKK-amide as substrate preincubated for 5 mins followed by [gamma-32P]ATP addition",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.6,
+          "pchembl": 9.22,
+          "source": {
+            "id": "chembl-act:26325594",
+            "database": "ChEMBL",
+            "label": "Activity 26325594 (CHEMBL5716084)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716084"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "assayChemblId": "CHEMBL5716119",
+          "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation preincubated for 5 mins followed by [gamma-32P]ATP addition",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 0.8,
+          "pchembl": 9.1,
+          "source": {
+            "id": "chembl-act:26325699",
+            "database": "ChEMBL",
+            "label": "Activity 26325699 (CHEMBL5716119)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716119"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL255863",
+        "name": "NILOTINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 529.53,
+          "alogp": 6.36,
+          "ro5Violations": 2,
+          "qed": 0.27
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL255863",
+          "database": "ChEMBL",
+          "label": "NILOTINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+        }
+      },
+      "n": 5,
+      "medianPchembl": 7.82,
+      "minPchembl": 7.42,
+      "maxPchembl": 8.26,
+      "rank": 3,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "assayChemblId": "CHEMBL1110556",
+          "assayDescription": "Inhibition of wild type Abl",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 38,
+          "pchembl": 7.42,
+          "source": {
+            "id": "chembl-act:3186251",
+            "database": "ChEMBL",
+            "label": "Activity 3186251 (CHEMBL1110556)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1110556"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "assayChemblId": "CHEMBL4605643",
+          "assayDescription": "Inhibition of human ABL1 assessed as residual activity using EAIYAAPFAKKK as substrate by [gamma-33P]-ATP assay",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 5.56,
+          "pchembl": 8.26,
+          "source": {
+            "id": "chembl-act:20609025",
+            "database": "ChEMBL",
+            "label": "Activity 20609025 (CHEMBL4605643)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4605643"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "assayChemblId": "CHEMBL5716084",
+          "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation using biotin-EAIYAAPFAKKK-amide as substrate preincubated for 5 mins followed by [gamma-32P]ATP addition",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 15,
+          "pchembl": 7.82,
+          "source": {
+            "id": "chembl-act:26325593",
+            "database": "ChEMBL",
+            "label": "Activity 26325593 (CHEMBL5716084)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716084"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "assayChemblId": "CHEMBL5716119",
+          "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation preincubated for 5 mins followed by [gamma-32P]ATP addition",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 7,
+          "pchembl": 8.15,
+          "source": {
+            "id": "chembl-act:26325698",
+            "database": "ChEMBL",
+            "label": "Activity 26325698 (CHEMBL5716119)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716119"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "assayChemblId": "CHEMBL5739300",
+          "assayDescription": "TBD: TBD",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 33,
+          "pchembl": 7.48,
+          "source": {
+            "id": "chembl-act:29002790",
+            "database": "ChEMBL",
+            "label": "Activity 29002790 (CHEMBL5739300)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL4208229",
+        "name": "ASCIMINIB",
+        "maxPhase": 4,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 449.85,
+          "alogp": 3.46,
+          "ro5Violations": 0,
+          "qed": 0.5
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL4208229",
+          "database": "ChEMBL",
+          "label": "ASCIMINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4208229"
+        }
+      },
+      "n": 1,
+      "medianPchembl": 7.8,
+      "minPchembl": 7.8,
+      "maxPchembl": 7.8,
+      "rank": 4,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL4208229",
+          "assayChemblId": "CHEMBL5739300",
+          "assayDescription": "TBD: TBD",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 16,
+          "pchembl": 7.8,
+          "source": {
+            "id": "chembl-act:29002802",
+            "database": "ChEMBL",
+            "label": "Activity 29002802 (CHEMBL5739300)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+          }
+        }
+      ]
+    },
+    {
+      "compound": {
+        "chemblId": "CHEMBL217092",
+        "name": "SARACATINIB",
+        "maxPhase": 3,
+        "isCandidate": false,
+        "properties": {
+          "molecularWeight": 542.04,
+          "alogp": 3.94,
+          "ro5Violations": 1,
+          "qed": 0.45
+        },
+        "source": {
+          "id": "chembl-mol:CHEMBL217092",
+          "database": "ChEMBL",
+          "label": "SARACATINIB",
+          "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL217092"
+        }
+      },
+      "n": 1,
+      "medianPchembl": 7.52,
+      "minPchembl": 7.52,
+      "maxPchembl": 7.52,
+      "rank": 5,
+      "measurements": [
+        {
+          "compoundChemblId": "CHEMBL217092",
+          "assayChemblId": "CHEMBL854973",
+          "assayDescription": "Inhibition of recombinant v-Abl by ELISA",
+          "assayType": "B",
+          "activityType": "IC50",
+          "valueNm": 30,
+          "pchembl": 7.52,
+          "source": {
+            "id": "chembl-act:1779385",
+            "database": "ChEMBL",
+            "label": "Activity 1779385 (CHEMBL854973)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL854973"
+          }
+        }
+      ]
+    }
+  ],
+  "matchedAssays": [
+    {
+      "assayChemblId": "CHEMBL1110556",
+      "assayDescription": "Inhibition of wild type Abl",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "compoundName": "NILOTINIB",
+          "pchembl": 7.42,
+          "source": {
+            "id": "chembl-act:3186251",
+            "database": "ChEMBL",
+            "label": "Activity 3186251 (CHEMBL1110556)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1110556"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL941",
+          "compoundName": "IMATINIB",
+          "pchembl": 6.18,
+          "source": {
+            "id": "chembl-act:3186283",
+            "database": "ChEMBL",
+            "label": "Activity 3186283 (CHEMBL1110556)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1110556"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL5131758",
+      "assayDescription": "Inhibition of c-Abl (unknown origin)",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL941",
+          "compoundName": "IMATINIB",
+          "pchembl": 6.72,
+          "source": {
+            "id": "chembl-act:24788695",
+            "database": "ChEMBL",
+            "label": "Activity 24788695 (CHEMBL5131758)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5131758"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "compoundName": "DASATINIB",
+          "pchembl": 6.57,
+          "source": {
+            "id": "chembl-act:24788696",
+            "database": "ChEMBL",
+            "label": "Activity 24788696 (CHEMBL5131758)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5131758"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL5716084",
+      "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation using biotin-EAIYAAPFAKKK-amide as substrate preincubated for 5 mins followed by [gamma-32P]ATP addition",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "compoundName": "DASATINIB",
+          "pchembl": 9.22,
+          "source": {
+            "id": "chembl-act:26325594",
+            "database": "ChEMBL",
+            "label": "Activity 26325594 (CHEMBL5716084)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716084"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "compoundName": "NILOTINIB",
+          "pchembl": 7.82,
+          "source": {
+            "id": "chembl-act:26325593",
+            "database": "ChEMBL",
+            "label": "Activity 26325593 (CHEMBL5716084)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716084"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL941",
+          "compoundName": "IMATINIB",
+          "pchembl": 6.55,
+          "source": {
+            "id": "chembl-act:26325592",
+            "database": "ChEMBL",
+            "label": "Activity 26325592 (CHEMBL5716084)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716084"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL5716119",
+      "assayDescription": "Inhibition of GST tagged WT Abl (unknown origin) assessed as inhibition of phosphorylation preincubated for 5 mins followed by [gamma-32P]ATP addition",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL1421",
+          "compoundName": "DASATINIB",
+          "pchembl": 9.1,
+          "source": {
+            "id": "chembl-act:26325699",
+            "database": "ChEMBL",
+            "label": "Activity 26325699 (CHEMBL5716119)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716119"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "compoundName": "NILOTINIB",
+          "pchembl": 8.15,
+          "source": {
+            "id": "chembl-act:26325698",
+            "database": "ChEMBL",
+            "label": "Activity 26325698 (CHEMBL5716119)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716119"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL941",
+          "compoundName": "IMATINIB",
+          "pchembl": 6.52,
+          "source": {
+            "id": "chembl-act:26325697",
+            "database": "ChEMBL",
+            "label": "Activity 26325697 (CHEMBL5716119)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5716119"
+          }
+        }
+      ]
+    },
+    {
+      "assayChemblId": "CHEMBL5739300",
+      "assayDescription": "TBD: TBD",
+      "rows": [
+        {
+          "compoundChemblId": "CHEMBL4208229",
+          "compoundName": "ASCIMINIB",
+          "pchembl": 7.8,
+          "source": {
+            "id": "chembl-act:29002802",
+            "database": "ChEMBL",
+            "label": "Activity 29002802 (CHEMBL5739300)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL255863",
+          "compoundName": "NILOTINIB",
+          "pchembl": 7.48,
+          "source": {
+            "id": "chembl-act:29002790",
+            "database": "ChEMBL",
+            "label": "Activity 29002790 (CHEMBL5739300)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+          }
+        },
+        {
+          "compoundChemblId": "CHEMBL941",
+          "compoundName": "IMATINIB",
+          "pchembl": 6.2,
+          "source": {
+            "id": "chembl-act:29002793",
+            "database": "ChEMBL",
+            "label": "Activity 29002793 (CHEMBL5739300)",
+            "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5739300"
+          }
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "ASCIMINIB (n=1), SARACATINIB (n=1): fewer than 3 comparable measurements; ranking uncertain.",
+    "Comparators are drugs with a ChEMBL mechanism on Tyrosine-protein kinase ABL1, chosen by target, not by indication for \"idiopathic pulmonary fibrosis\". Of these, DASATINIB has a ChEMBL indication record matching \"idiopathic pulmonary fibrosis\".",
+    "94 IC50 measurement(s) against mutant target variants excluded from the ranking — 26 for the candidate, 68 across the 5 comparators shown. Most common: H396P; G250E; M351T. Only wild-type measurements are ranked, so mutant-selective drugs may look weaker here than in their (mutant-driven) clinical setting.",
+    "2 IC50 measurement(s) from functional (non-binding) assays excluded from the ranking — 0 for the candidate, 2 across the 5 comparators shown.",
+    "55 IC50 measurement(s) from cell-based or non-purified-protein assays excluded from the ranking — 19 for the candidate, 36 across the 5 comparators shown.",
+    "22 IC50 measurement(s) flagged by ChEMBL as potential duplicates or data-validity issues excluded from the ranking — 12 for the candidate, 10 across the 5 comparators shown.",
+    "Measurements come from different assays and labs; ranks are indicative. Matched-assay comparisons are the strongest evidence."
+  ],
+  "candidateTargets": [
+    {
+      "chemblId": "CHEMBL1862",
+      "name": "Tyrosine-protein kinase ABL1",
+      "n": 108
+    },
+    {
+      "chemblId": "CHEMBL1936",
+      "name": "Mast/stem cell growth factor receptor Kit",
+      "n": 64
+    },
+    {
+      "chemblId": "CHEMBL2007",
+      "name": "Platelet-derived growth factor receptor alpha",
+      "n": 18
+    },
+    {
+      "chemblId": "CHEMBL4014",
+      "name": "Tyrosine-protein kinase ABL2",
+      "n": 11
+    },
+    {
+      "chemblId": "CHEMBL1913",
+      "name": "Platelet-derived growth factor receptor beta",
+      "n": 10
+    }
+  ],
+  "preclinical": [
+    {
+      "assayChemblId": "CHEMBL6155899",
+      "assayDescription": "Inhibition of wild type PDGFRA (unknown origin) extracted from Sf9 cells by HTRF assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.8,
+      "units": "nM",
+      "pchembl": 8.55,
+      "targetName": "Platelet-derived growth factor receptor alpha",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29279125",
+        "database": "ChEMBL",
+        "label": "Activity 29279125 (CHEMBL6155899)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6155899"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6155900",
+      "assayDescription": "Inhibition of PDGFRA D842V mutant (unknown origin) extracted from Sf9 cells by HTRF assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 774,
+      "units": "nM",
+      "pchembl": 6.11,
+      "targetName": "Platelet-derived growth factor receptor alpha",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29279159",
+        "database": "ChEMBL",
+        "label": "Activity 29279159 (CHEMBL6155900)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6155900"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6155902",
+      "assayDescription": "Inhibition of PDGFRA G680R mutant (unknown origin) extracted from Sf9 cells by HTRF assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 48.4,
+      "units": "nM",
+      "pchembl": 7.32,
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29279227",
+        "database": "ChEMBL",
+        "label": "Activity 29279227 (CHEMBL6155902)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6155902"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5540327",
+      "assayDescription": "Antimalarial activity against Plasmodium falciparum at ring stage infected erythrocytes assessed as reduction in parasitemia measured after 60 hrs by flow cytometry",
+      "assayType": "F",
+      "assayFormat": "organism-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 3000,
+      "units": "nM",
+      "pchembl": 5.52,
+      "targetName": "Plasmodium falciparum",
+      "targetOrganism": "Plasmodium falciparum",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25963614",
+        "database": "ChEMBL",
+        "label": "Activity 25963614 (CHEMBL5540327)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5540327"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6084220",
+      "assayDescription": "Antiproliferative activity against human K562 cells after 48 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.03,
+      "units": "nM",
+      "pchembl": 8.69,
+      "targetName": "K562",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:29094684",
+        "database": "ChEMBL",
+        "label": "Activity 29094684 (CHEMBL6084220)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6084220"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6121962",
+      "assayDescription": "Antiproliferative activity against Ph+ patient-derived human K562 cells measured after 72 hrs by Cell Titer-Glo Luminescent Viability assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 218,
+      "units": "nM",
+      "pchembl": 6.66,
+      "targetName": "K562",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:29209350",
+        "database": "ChEMBL",
+        "label": "Activity 29209350 (CHEMBL6121962)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6121962"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6121963",
+      "assayDescription": "Antiproliferative activity against DOX-treated Ph+ patient-derived human K562 cells measured after 72 hrs by Cell Titer-Glo Luminescent Viability assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2080,
+      "units": "nM",
+      "pchembl": 5.68,
+      "targetName": "K562",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:29209353",
+        "database": "ChEMBL",
+        "label": "Activity 29209353 (CHEMBL6121963)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6121963"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5627780",
+      "assayDescription": "Antiproliferative activity against human K562 cells assessed as inhibition of cell growth incubated for 72 hrs by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 179.3,
+      "units": "nM",
+      "pchembl": 6.75,
+      "targetName": "K562",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26157200",
+        "database": "ChEMBL",
+        "label": "Activity 26157200 (CHEMBL5627780)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5627780"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5635660",
+      "assayDescription": "Synergistic photodynamic antitumor activity against human HepG2 cells assessed as inhibition of cell proliferation incubated for 48 hrs under dark condition in presence of chlorin e6 by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 74520,
+      "units": "nM",
+      "pchembl": 4.13,
+      "targetName": "HepG2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26187431",
+        "database": "ChEMBL",
+        "label": "Activity 26187431 (CHEMBL5635660)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5635660"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5635661",
+      "assayDescription": "Synergistic photodynamic antitumor activity against mouse B16-F10 cells assessed as inhibition of cell proliferation incubated for 48 hrs under dark condition in presence of chlorin e6 by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 15670,
+      "units": "nM",
+      "pchembl": 4.8,
+      "targetName": "B16-F10",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26187434",
+        "database": "ChEMBL",
+        "label": "Activity 26187434 (CHEMBL5635661)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5635661"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5635662",
+      "assayDescription": "Synergistic photodynamic antitumor activity against human HepG2 cells assessed as inhibition of cell proliferation incubated for 48 hrs under 10 J/cm2 light irradiation at 660 nm in presence of chlorin e6 by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 910,
+      "units": "nM",
+      "pchembl": 6.04,
+      "targetName": "HepG2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26187437",
+        "database": "ChEMBL",
+        "label": "Activity 26187437 (CHEMBL5635662)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5635662"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5635663",
+      "assayDescription": "Synergistic photodynamic antitumor activity against mouse B16-F10 cells assessed as inhibition of cell proliferation incubated for 48 hrs under 10 J/cm2 light irradiation at 660 nm in presence of chlorin e6 by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 870,
+      "units": "nM",
+      "pchembl": 6.06,
+      "targetName": "B16-F10",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26187440",
+        "database": "ChEMBL",
+        "label": "Activity 26187440 (CHEMBL5635663)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5635663"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5635672",
+      "assayDescription": "Cytotoxicity against mouse B16-F10 cells incubated for 48 hrs under dark condition by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 31430,
+      "units": "nM",
+      "pchembl": 4.5,
+      "targetName": "B16-F10",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26187455",
+        "database": "ChEMBL",
+        "label": "Activity 26187455 (CHEMBL5635672)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5635672"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5635674",
+      "assayDescription": "Cytotoxicity against human HepG2 cells incubated for 48 hrs under dark condition by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 27740,
+      "units": "nM",
+      "pchembl": 4.56,
+      "targetName": "HepG2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:26187477",
+        "database": "ChEMBL",
+        "label": "Activity 26187477 (CHEMBL5635674)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5635674"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5241014",
+      "assayDescription": "Antitumor activity against human K562 cells assessed as inhibition of cell growth",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 13970,
+      "units": "nM",
+      "pchembl": 4.86,
+      "targetName": "K562",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25028767",
+        "database": "ChEMBL",
+        "label": "Activity 25028767 (CHEMBL5241014)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5241014"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5241015",
+      "assayDescription": "Antitumor activity against human HL-60 cells assessed as inhibition of cell growth",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 17200,
+      "units": "nM",
+      "pchembl": 4.76,
+      "targetName": "HL-60",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25028788",
+        "database": "ChEMBL",
+        "label": "Activity 25028788 (CHEMBL5241015)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5241015"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5241016",
+      "assayDescription": "Antitumor activity against human MCF7 cells assessed as inhibition of cell growth",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 25550,
+      "units": "nM",
+      "pchembl": 4.59,
+      "targetName": "MCF7",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25028809",
+        "database": "ChEMBL",
+        "label": "Activity 25028809 (CHEMBL5241016)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5241016"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5381729",
+      "assayDescription": "Inhibition of KIT (delta560 to 576 residues) deletion mutant autophosphorylation at Y703 in human GIST430 harboring KIT (delta560 to 576 residues) deletion mutation at exon 11",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 59,
+      "units": "nM",
+      "pchembl": 7.23,
+      "targetName": "Mast/stem cell growth factor receptor Kit",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25688582",
+        "database": "ChEMBL",
+        "label": "Activity 25688582 (CHEMBL5381729)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5381729"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5381730",
+      "assayDescription": "Inhibition of KIT (delta 560 to 576 residues) deletion/V654A double mutant autophosphorylation at Y703 in human GIST-430/654 harboring KIT (delta 560 to 576 residues) deletion mutation at exon 11 and imatinib resistance mutation V654A in exon 13",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 4750,
+      "units": "nM",
+      "pchembl": 5.32,
+      "targetName": "Mast/stem cell growth factor receptor Kit",
+      "targetOrganism": "Homo sapiens",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25688586",
+        "database": "ChEMBL",
+        "label": "Activity 25688586 (CHEMBL5381730)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5381730"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5249271",
+      "assayDescription": "Antiproliferative activity against human U-937 cells assessed as inhibition of cell growth measured after 72 hrs by CCK8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 16590,
+      "units": "nM",
+      "pchembl": 4.78,
+      "targetName": "U-937",
+      "targetOrganism": "Homo sapiens",
+      "year": 2022,
+      "source": {
+        "id": "chembl-act:25057306",
+        "database": "ChEMBL",
+        "label": "Activity 25057306 (CHEMBL5249271)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5249271"
+      }
+    }
+  ],
+  "drugWarnings": [
+    {
+      "compoundChemblId": "CHEMBL255863",
+      "compoundName": "NILOTINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "cardiotoxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:1330",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6093952a-5248-45cb-ad17-33716a411146"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL255863",
+      "compoundName": "NILOTINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "musculoskeletal toxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:5218",
+        "database": "ChEMBL",
+        "label": "NILOTINIB: Black Box Warning (musculoskeletal toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL255863"
+      }
+    }
+  ]
+}
