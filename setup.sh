@@ -37,8 +37,8 @@ case "$NAME" in
     AGENT="claude"
     BRANCH="medhansh/agent"
     OWNS="src/lib/trials/** src/lib/agent/** src/app/api/trials/** src/app/api/report/**"
-    ASK="src/lib/contracts.ts src/lib/chembl/** src/lib/benchmark/** src/components/** src/app/page.tsx"
-    STYLE="Medhansh is the most experienced and joins mid-hackathon (~T+3:30), when a working MVP is already on main (tag mvp). Be concise; skip basics. Prioritize a real /api/trials and hardening /api/report (citation validation, trials in the evidence) without changing response shapes, then review the whole app against the guardrails in PRD.md §7."
+    ASK=""
+    STYLE="Medhansh is the most experienced and joins mid-hackathon (~T+3:30). Most of R8/R9 is already built: read docs/HANDOFF.md and docs/SUGGESTIONS.md first. Be concise; skip basics. Medhansh is the reviewer for the whole app: he may read, test and edit any file (UI, benchmark, contracts included) without asking. Call out changes outside his owned files in the summary so Sandy can merge cleanly, and announce any src/lib/contracts.ts change in team chat. Priorities: review everything against PRD.md §7, harden /api/report and /api/trials, test edge cases, keep response shapes stable."
     ;;
   *) die "Usage: ./setup.sh sandy | gavin | medhansh" ;;
 esac
@@ -169,8 +169,11 @@ add("allow", [
   "WebFetch(domain:www.ebi.ac.uk)",
   "WebFetch(domain:clinicaltrials.gov)",
 ]);
+// Re-running resets the Edit prompts to this role's ASK list (an empty list removes them all)
+s.permissions.ask = (s.permissions.ask ?? []).filter((r) => !r.startsWith("Edit("));
 const ask = (process.env.ASK || "").split(/\s+/).filter(Boolean).map((p) => `Edit(${p})`);
 if (ask.length) add("ask", ask);
+if (!s.permissions.ask.length) delete s.permissions.ask;
 add("deny", ["Read(.env.local)", "Edit(.env.local)"]);
 fs.writeFileSync(file, JSON.stringify(s, null, 2) + "\n");
 EOF

@@ -13,16 +13,16 @@ Phase 2 (T+3:30 → T+7, all three): trials layer, AI report hardening, UI polis
 - `npm run dev` — app at http://localhost:3000
 - `npm run lint`, `npx tsc --noEmit` — run before committing
 
-## Ownership (avoid merge conflicts — stay in your lane)
+## Ownership (who leads each area; Medhansh reviews and may edit anything, so call out cross-area changes)
 | Area | Owner | Branch |
 |---|---|---|
 | `src/lib/chembl`, `src/lib/benchmark`, `src/app/api/benchmark`, `src/lib/contracts.ts`, `src/fixtures` | Sandy | `sandy/data` |
-| `src/app/page.tsx`, `src/app/layout.tsx`, `src/components` | Gavin | `gavin/ui` |
+| `src/app/page.tsx`, `src/app/layout.tsx`, `src/components` | Sandy (taken over from Gavin) | `sandy/data` |
 | `src/lib/agent`, `src/app/api/report` | Sandy until T+3:30, then Medhansh | — |
 | `src/lib/trials`, `src/app/api/trials` | Medhansh | `medhansh/agent` |
 
 ## Rules
-- `src/lib/contracts.ts` is the shared API contract. Only Sandy changes it. API routes must return
+- `src/lib/contracts.ts` is the shared API contract. Only Sandy or Medhansh change it, and announce it in team chat. API routes must return
   exactly these shapes — the stubs serve `src/fixtures/*.json` in the same shape.
 - Responses with `isMock: true` are fake; the UI must show a MOCK DATA banner for them.
 - Scientific guardrails (PRD §7): compare only like-with-like assays, rank by pChEMBL median/range,
