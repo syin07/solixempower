@@ -57,6 +57,7 @@ Rules:
   - safety: the candidate's computed properties (MW, AlogP, Lipinski Ro5 violations, QED), labelled computed and explicitly NOT a safety assessment, plus the ChEMBL regulatory drug warnings listed (black box / withdrawn records for the candidate or comparators, kind clinical). A comparator's warning describes that approved drug, not the candidate. No recorded warning for an investigational candidate is NOT evidence of safety — it has simply not been through regulatory labelling.
 - Each evidence line is tagged (kind; layer). Put claims in the section of the layer they rest on.
 - Verdict: "insufficient_evidence" when the evidence is too thin to judge. "unfavorable" only when there is enough measured evidence (at least 3 comparable measurements for the candidate, or a matched assay) showing the candidate is clearly weaker than the comparators. "promising" only when the measured evidence is favourable AND you have stated what is missing. Otherwise "mixed".
+- The headline, section summaries and verdict must agree with the claims. Describe same-assay results exactly as the "Same-assay outcome" lines state them (ahead / behind / tied).
 - Plain, precise language a research scientist would trust. No hype.`;
 
 export function buildFacts(benchmark: BenchmarkResult, trials?: TrialsResult): Fact[] {
@@ -100,6 +101,21 @@ export function buildFacts(benchmark: BenchmarkResult, trials?: TrialsResult): F
         fact: `Same-assay comparison ${assay.assayChemblId} ("${assay.assayDescription}"): ${row.compoundName} pChEMBL ${row.pchembl}.`,
       });
     }
+    // Spell out the head-to-head outcome so the model never has to (and can't mis-) derive it
+    const cand = assay.rows.find((r) => r.compoundChemblId === benchmark.candidate.compound.chemblId);
+    if (!cand) continue;
+    const outcomes = assay.rows
+      .filter((r) => r !== cand)
+      .map((r) => {
+        const d = Math.round((cand.pchembl - r.pchembl) * 100) / 100;
+        return d > 0 ? `ahead of ${r.compoundName} by ${d}` : d < 0 ? `behind ${r.compoundName} by ${-d}` : `tied with ${r.compoundName}`;
+      });
+    facts.push({
+      ids: assay.rows.map((r) => r.source.id),
+      kind: "measured",
+      layer: "molecular",
+      fact: `Same-assay outcome ${assay.assayChemblId}: the CANDIDATE ${cand.compoundName} is ${outcomes.join(", ")} (pChEMBL difference).`,
+    });
   }
 
   const candName = benchmark.candidate.compound.name;

@@ -2693,7 +2693,7 @@
     }
   ],
   "warnings": [
-    "Target auto-selected as the candidate's most-measured target; it is not a recorded mechanism target for POZIOTINIB (ChEMBL records its mechanism on Epidermal growth factor receptor [CHEMBL2363049, protein family, Homo sapiens], not a human single protein).",
+    "ChEMBL records POZIOTINIB's mechanism on the Epidermal growth factor receptor protein family (CHEMBL2363049); benchmarking on its member Epidermal growth factor receptor (CHEMBL203).",
     "MOBOCERTINIB (n=2): fewer than 3 comparable measurements; ranking uncertain.",
     "Comparators are drugs with a ChEMBL mechanism on Epidermal growth factor receptor, chosen by target, not by indication for \"non-small cell lung cancer\". Of these, GEFITINIB, AFATINIB, ERLOTINIB, LAPATINIB, OSIMERTINIB, BRIGATINIB, NERATINIB, DACOMITINIB, MOBOCERTINIB, ROCILETINIB, CANERTINIB, ICOTINIB have a ChEMBL indication record matching \"non-small cell lung cancer\".",
     "206 IC50 measurement(s) against mutant target variants excluded from the ranking — 6 for the candidate, 200 across the 12 comparators shown. Most common: L858R,T790M; L858R,T790M,C797S; UNDEFINED MUTATION. Only wild-type measurements are ranked, so mutant-selective drugs may look weaker here than in their (mutant-driven) clinical setting.",
@@ -2727,6 +2727,445 @@
       "chemblId": "CHEMBL3290",
       "name": "Ephrin type-B receptor 2",
       "n": 1
+    }
+  ],
+  "preclinical": [
+    {
+      "assayChemblId": "CHEMBL5638808",
+      "assayDescription": "Inhibition of EGFR phosphorylation in human NCI-H2073 cells incubated for 2 hrs by HTRF analysis",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.512,
+      "units": "nM",
+      "pchembl": 8.6,
+      "targetName": "Epidermal growth factor receptor",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:26198971",
+        "database": "ChEMBL",
+        "label": "Activity 26198971 (CHEMBL5638808)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638808"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367522",
+      "assayDescription": "Antiproliferative activity against mouse Ba/F3 EGFR-V769_D770insASV cells incubated for 72 hrs by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 4.8,
+      "units": "nM",
+      "pchembl": 8.32,
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638110",
+        "database": "ChEMBL",
+        "label": "Activity 25638110 (CHEMBL5367522)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367522"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367521",
+      "assayDescription": "Antiproliferative activity against mouse Ba/F3 EGFR-A763_Y764insFQEA cells incubated for 72 hrs by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.7,
+      "units": "nM",
+      "pchembl": 9.15,
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638107",
+        "database": "ChEMBL",
+        "label": "Activity 25638107 (CHEMBL5367521)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367521"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5255152",
+      "assayDescription": "Antiproliferative activity against mouse BAF3 cells harboring HER2-P780-Y781 ins GSP mutant after 72 hrs by celltiter-Glo luminescence assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.21,
+      "units": "nM",
+      "pchembl": 9.68,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25078806",
+        "database": "ChEMBL",
+        "label": "Activity 25078806 (CHEMBL5255152)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255152"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5255151",
+      "assayDescription": "Antiproliferative activity against mouse BAF3 cells harboring HER2-A775-G776 ins YVMA mutant after 72 hrs by celltiter-Glo luminescence assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.43,
+      "units": "nM",
+      "pchembl": 9.37,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25078802",
+        "database": "ChEMBL",
+        "label": "Activity 25078802 (CHEMBL5255151)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255151"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5255150",
+      "assayDescription": "Antiproliferative activity against mouse BAF3 cells harboring FL-EGFR A763-Y764 ins FQEA mutant after 72 hrs by celltiter-Glo luminescence assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.58,
+      "units": "nM",
+      "pchembl": 9.24,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25078798",
+        "database": "ChEMBL",
+        "label": "Activity 25078798 (CHEMBL5255150)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255150"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5255149",
+      "assayDescription": "Antiproliferative activity against mouse BAF3 cells harboring FL-EGFR D770-N771 ins NPG mutant after 72 hrs by celltiter-Glo luminescence assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.62,
+      "units": "nM",
+      "pchembl": 9.21,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25078794",
+        "database": "ChEMBL",
+        "label": "Activity 25078794 (CHEMBL5255149)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255149"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367557",
+      "assayDescription": "Antiproliferative activity against human YUL-0019 cells harboring EGFR N771delinsFH mutant incubated for 72 hrs by Cell Titer-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.3,
+      "units": "nM",
+      "pchembl": 9.52,
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638197",
+        "database": "ChEMBL",
+        "label": "Activity 25638197 (CHEMBL5367557)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367557"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367556",
+      "assayDescription": "Antiproliferative activity against human CUTO14 cells harboring EGFR V769_D770insASV mutant incubated for 72 hrs by Cell Titer-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 1.8,
+      "units": "nM",
+      "pchembl": 8.74,
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638196",
+        "database": "ChEMBL",
+        "label": "Activity 25638196 (CHEMBL5367556)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367556"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367554",
+      "assayDescription": "Antiproliferative activity against mouse BaF3 cells harboring EGFR exon 20 insertion mutant incubated for 72 hrs by Cell Titer-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 1,
+      "units": "nM",
+      "pchembl": 9,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638194",
+        "database": "ChEMBL",
+        "label": "Activity 25638194 (CHEMBL5367554)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367554"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367524",
+      "assayDescription": "Antiproliferative activity against mouse Ba/F3 EGFR-H773-V774ins_NPH cells incubated for 72 hrs by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.2,
+      "units": "nM",
+      "pchembl": 8.66,
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638116",
+        "database": "ChEMBL",
+        "label": "Activity 25638116 (CHEMBL5367524)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367524"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5367523",
+      "assayDescription": "Antiproliferative activity against mouse Ba/F3 EGFR-D770-N771ins_SVD cells incubated for 72 hrs by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2.7,
+      "units": "nM",
+      "pchembl": 8.57,
+      "year": 2023,
+      "source": {
+        "id": "chembl-act:25638113",
+        "database": "ChEMBL",
+        "label": "Activity 25638113 (CHEMBL5367523)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5367523"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5147184",
+      "assayDescription": "Inhibition of recombinant human N-terminal GST-tagged EGFR (669 to 1210 residues) expressed in Sf21 insect cells using kinase substrate 22 incubated for 30 mins in presence of ATP",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.27,
+      "units": "nM",
+      "pchembl": 9.57,
+      "targetName": "Epidermal growth factor receptor",
+      "targetOrganism": "Homo sapiens",
+      "year": 2022,
+      "source": {
+        "id": "chembl-act:24848037",
+        "database": "ChEMBL",
+        "label": "Activity 24848037 (CHEMBL5147184)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5147184"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5147185",
+      "assayDescription": "Inhibition of recombinant human N-terminal His-tagged EGFR (676 to 1255 residues) expressed in Sf21 insect cells using kinase substrate 22 incubated for 30 mins in presence of ATP",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 3.88,
+      "units": "nM",
+      "pchembl": 8.41,
+      "year": 2022,
+      "source": {
+        "id": "chembl-act:24848044",
+        "database": "ChEMBL",
+        "label": "Activity 24848044 (CHEMBL5147185)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5147185"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5166447",
+      "assayDescription": "Antiproliferative activity against mouse Ba/F3 EGFR-H773-V774ins_NPH cells measured after 72 hrs by CellTiter-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 7,
+      "units": "nM",
+      "pchembl": 8.15,
+      "year": 2022,
+      "source": {
+        "id": "chembl-act:24921565",
+        "database": "ChEMBL",
+        "label": "Activity 24921565 (CHEMBL5166447)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5166447"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5166448",
+      "assayDescription": "Antiproliferative activity against mouse Ba/F3 cells harbouring Her2-A775_G776insYVMA mutant measured after 72 hrs by CellTiter-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 12,
+      "units": "nM",
+      "pchembl": 7.92,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2022,
+      "source": {
+        "id": "chembl-act:24921587",
+        "database": "ChEMBL",
+        "label": "Activity 24921587 (CHEMBL5166448)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5166448"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5166449",
+      "assayDescription": "Antiproliferative activity against human A-431 cells harboring wild type EGFR measured after 72 hrs by CellTiter-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "EC50",
+      "relation": "=",
+      "value": 1445,
+      "units": "nM",
+      "pchembl": 5.84,
+      "targetName": "A-431",
+      "targetOrganism": "Homo sapiens",
+      "year": 2022,
+      "source": {
+        "id": "chembl-act:24921609",
+        "database": "ChEMBL",
+        "label": "Activity 24921609 (CHEMBL5166449)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5166449"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4670947",
+      "assayDescription": "Inhibition of C-terminal His6-tagged HER2 (703 to 1029 residues) (unknown origin) expressed in Sf9 insect cells using TK as substrate preincubated for 30 mins followed by substrate addition and measured after 60 mins in presence of XL665-labeled streptavidin by HTRF assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 12,
+      "units": "nM",
+      "pchembl": 7.92,
+      "targetName": "Receptor tyrosine-protein kinase erbB-2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2020,
+      "source": {
+        "id": "chembl-act:22408422",
+        "database": "ChEMBL",
+        "label": "Activity 22408422 (CHEMBL4670947)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4670947"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4670945",
+      "assayDescription": "Inhibition of HER2-G776delinsVC mutant (unknown origin) expressed in human H1781 cells assessed as reduction in HER2 induced cell viability after 96 hrs by CellTiter-Glo assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 105,
+      "units": "nM",
+      "pchembl": 6.98,
+      "year": 2020,
+      "source": {
+        "id": "chembl-act:22408340",
+        "database": "ChEMBL",
+        "label": "Activity 22408340 (CHEMBL4670945)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4670945"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL4670946",
+      "assayDescription": "Inhibition of C-terminal His6-tagged HER2-A775_G776insYVMA mutant (703 to 1029 residues) (unknown origin) expressed in Sf9 insect cells using TK as substrate preincubated for 30 mins followed by substrate addition and measured after 40 mins in presence of XL665-labeled streptavidin by HTRF assay",
+      "assayType": "B",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.3,
+      "units": "nM",
+      "pchembl": 9.52,
+      "year": 2020,
+      "source": {
+        "id": "chembl-act:22408381",
+        "database": "ChEMBL",
+        "label": "Activity 22408381 (CHEMBL4670946)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4670946"
+      }
+    }
+  ],
+  "drugWarnings": [
+    {
+      "compoundChemblId": "CHEMBL554",
+      "compoundName": "LAPATINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "hepatotoxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:1043",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hepatotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee37f88-ec6a-4c30-b8aa-e2c71f93088c"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL4650319",
+      "compoundName": "MOBOCERTINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:2847",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL4650319",
+      "compoundName": "MOBOCERTINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "cardiotoxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:3784",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1a91500-a944-4cb8-b4a8-ae278bcf728d"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL554",
+      "compoundName": "LAPATINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "hematological toxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:5118",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hematological toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+      }
     }
   ]
 }

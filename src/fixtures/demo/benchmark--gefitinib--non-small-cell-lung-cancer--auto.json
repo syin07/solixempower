@@ -2815,5 +2815,460 @@
       "name": "Cyclin-G-associated kinase",
       "n": 10
     }
+  ],
+  "preclinical": [
+    {
+      "assayChemblId": "CHEMBL6184538",
+      "assayDescription": "Antiproliferative activity against human A549 cells by CCK8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2480,
+      "units": "nM",
+      "pchembl": 5.61,
+      "targetName": "A549",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29313785",
+        "database": "ChEMBL",
+        "label": "Activity 29313785 (CHEMBL6184538)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6184538"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6184537",
+      "assayDescription": "Antiproliferative activity against human HeLa cells by CCK8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 7010,
+      "units": "nM",
+      "pchembl": 5.15,
+      "targetName": "HeLa",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29313780",
+        "database": "ChEMBL",
+        "label": "Activity 29313780 (CHEMBL6184537)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6184537"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6184540",
+      "assayDescription": "Antiproliferative activity against human A-431 cells by CCK8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 2360,
+      "units": "nM",
+      "pchembl": 5.63,
+      "targetName": "A-431",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29313795",
+        "database": "ChEMBL",
+        "label": "Activity 29313795 (CHEMBL6184540)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6184540"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6184539",
+      "assayDescription": "Antiproliferative activity against HT-29 cells by CCK8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 9650,
+      "units": "nM",
+      "pchembl": 5.01,
+      "targetName": "HT-29",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29313790",
+        "database": "ChEMBL",
+        "label": "Activity 29313790 (CHEMBL6184539)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6184539"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6124334",
+      "assayDescription": "Antiproliferative activity against human PC-9 cells measured after 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 80,
+      "units": "nM",
+      "pchembl": 7.1,
+      "targetName": "PC-9",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29217311",
+        "database": "ChEMBL",
+        "label": "Activity 29217311 (CHEMBL6124334)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6124334"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6124335",
+      "assayDescription": "Antiproliferative activity against human HCC827 cells measured after 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 14,
+      "units": "nM",
+      "pchembl": 7.85,
+      "targetName": "HCC827",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29217312",
+        "database": "ChEMBL",
+        "label": "Activity 29217312 (CHEMBL6124335)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6124335"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6124343",
+      "assayDescription": "Antiproliferative activity against gefitinib-resistant human HCC827 cells measured after 48 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 34800,
+      "units": "nM",
+      "pchembl": 4.46,
+      "targetName": "HCC827",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29217325",
+        "database": "ChEMBL",
+        "label": "Activity 29217325 (CHEMBL6124343)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6124343"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL6124344",
+      "assayDescription": "Antiproliferative activity against human A549 cells measured after 48 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 410,
+      "units": "nM",
+      "pchembl": 6.39,
+      "targetName": "A549",
+      "targetOrganism": "Homo sapiens",
+      "year": 2025,
+      "source": {
+        "id": "chembl-act:29217328",
+        "database": "ChEMBL",
+        "label": "Activity 29217328 (CHEMBL6124344)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6124344"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5511079",
+      "assayDescription": "Antiproliferative activity against human U-87 MG cells incubated for 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 10350,
+      "units": "nM",
+      "pchembl": 4.99,
+      "targetName": "U-87 MG",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25864599",
+        "database": "ChEMBL",
+        "label": "Activity 25864599 (CHEMBL5511079)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5511079"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5511080",
+      "assayDescription": "Antiproliferative activity against human U-251 cells incubated for 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 10880,
+      "units": "nM",
+      "pchembl": 4.96,
+      "targetName": "U-251",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25864628",
+        "database": "ChEMBL",
+        "label": "Activity 25864628 (CHEMBL5511080)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5511080"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5511081",
+      "assayDescription": "Antiproliferative activity against human GL261 cells incubated for 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 21540,
+      "units": "nM",
+      "pchembl": 4.67,
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25864657",
+        "database": "ChEMBL",
+        "label": "Activity 25864657 (CHEMBL5511081)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5511081"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5511082",
+      "assayDescription": "Antiproliferative activity against human U87vIII cells expressing EGFRvIII incubated for 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 5900,
+      "units": "nM",
+      "pchembl": 5.23,
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25864686",
+        "database": "ChEMBL",
+        "label": "Activity 25864686 (CHEMBL5511082)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5511082"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5535422",
+      "assayDescription": "Antiproliferative activity against human A549 cells",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 5440,
+      "units": "nM",
+      "pchembl": 5.26,
+      "targetName": "A549",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25944488",
+        "database": "ChEMBL",
+        "label": "Activity 25944488 (CHEMBL5535422)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5535422"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5535951",
+      "assayDescription": "Cytotoxicity against human HepG2 cells assessed as reduction in cell viability incubated for 48 hrs by CCK-8 assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 16100,
+      "units": "nM",
+      "pchembl": 4.79,
+      "targetName": "HepG2",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25947778",
+        "database": "ChEMBL",
+        "label": "Activity 25947778 (CHEMBL5535951)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5535951"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5546058",
+      "assayDescription": "Antiproliferative activity against mouse BaF3 cells harboring EGFR D770_N771insSVD by CellTiter-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 19.96,
+      "units": "nM",
+      "pchembl": 7.7,
+      "targetName": "BaF3",
+      "targetOrganism": "Mus musculus",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25979197",
+        "database": "ChEMBL",
+        "label": "Activity 25979197 (CHEMBL5546058)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5546058"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5546059",
+      "assayDescription": "Antiproliferative activity against human HCC827 cells by CellTiter-Glo assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 0.23,
+      "units": "nM",
+      "pchembl": 9.64,
+      "targetName": "HCC827",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25979205",
+        "database": "ChEMBL",
+        "label": "Activity 25979205 (CHEMBL5546059)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5546059"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5548437",
+      "assayDescription": "Antiproliferative activity against human PC-3 cells assessed as inhibition of cell growth incubated for 72 hrs by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 9640,
+      "units": "nM",
+      "pchembl": 5.02,
+      "targetName": "PC-3",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25985998",
+        "database": "ChEMBL",
+        "label": "Activity 25985998 (CHEMBL5548437)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5548437"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5548444",
+      "assayDescription": "Synergistic antiproliferative activity against human PC-3 cells assessed as inhibition of cell growth incubated for 72 hrs in presence of BI-3406 by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 1370,
+      "units": "nM",
+      "pchembl": 5.86,
+      "targetName": "PC-3",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:25986006",
+        "database": "ChEMBL",
+        "label": "Activity 25986006 (CHEMBL5548444)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5548444"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5579976",
+      "assayDescription": "Antiproliferative activity against human A549 cells assessed as inhibition of cell growth by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 5440,
+      "units": "nM",
+      "pchembl": 5.26,
+      "targetName": "A549",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:26020429",
+        "database": "ChEMBL",
+        "label": "Activity 26020429 (CHEMBL5579976)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5579976"
+      }
+    },
+    {
+      "assayChemblId": "CHEMBL5579977",
+      "assayDescription": "Antiproliferative activity against human MDA-MB-231 cells assessed as inhibition of cell growth by MTT assay",
+      "assayType": "F",
+      "assayFormat": "cell-based format",
+      "activityType": "IC50",
+      "relation": "=",
+      "value": 45310,
+      "units": "nM",
+      "pchembl": 4.34,
+      "targetName": "MDA-MB-231",
+      "targetOrganism": "Homo sapiens",
+      "year": 2024,
+      "source": {
+        "id": "chembl-act:26020439",
+        "database": "ChEMBL",
+        "label": "Activity 26020439 (CHEMBL5579977)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5579977"
+      }
+    }
+  ],
+  "drugWarnings": [
+    {
+      "compoundChemblId": "CHEMBL554",
+      "compoundName": "LAPATINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "hepatotoxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:1043",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hepatotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee37f88-ec6a-4c30-b8aa-e2c71f93088c"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL4650319",
+      "compoundName": "MOBOCERTINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:2847",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL4650319",
+      "compoundName": "MOBOCERTINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "cardiotoxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:3784",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1a91500-a944-4cb8-b4a8-ae278bcf728d"
+      }
+    },
+    {
+      "compoundChemblId": "CHEMBL554",
+      "compoundName": "LAPATINIB",
+      "isCandidate": false,
+      "warningType": "Black Box Warning",
+      "warningClass": "hematological toxicity",
+      "country": "United States",
+      "source": {
+        "id": "chembl-warn:5118",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hematological toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+      }
+    }
   ]
 }
