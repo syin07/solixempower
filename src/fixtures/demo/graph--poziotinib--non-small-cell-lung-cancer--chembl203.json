@@ -2440,6 +2440,61 @@
       }
     },
     {
+      "id": "safety:CHEMBL3545154",
+      "type": "safety",
+      "label": "FAERS: 14 reports, 100% serious",
+      "meta": {
+        "total": 14,
+        "serious": 14,
+        "seriousPct": 100,
+        "field": "medicinalproduct",
+        "topReactions": [
+          "Disease Progression|5",
+          "Drug Ineffective|4",
+          "Off Label Use|3",
+          "Paronychia|3",
+          "Pruritus|3",
+          "Adenocarcinoma|2",
+          "Anaemia|2",
+          "Decreased Appetite|2",
+          "Diarrhoea|2",
+          "Drug Ineffective For Unapproved Indication|2"
+        ],
+        "seriousTop": [],
+        "query": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct%3A%22poziotinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      }
+    },
+    {
+      "id": "patent:CHEMBL3545154",
+      "type": "patent",
+      "label": "IP: unapproved, 2,790 patent docs",
+      "meta": {
+        "source": "pubchem",
+        "summary": "Not in the FDA Orange Book (no approved US product); PubChem lists 2,790 patent documents mentioning the compound — ownership depends on the originator's composition-of-matter patents.",
+        "genericAvailable": null,
+        "unexpiredPatents": 0,
+        "latestExpiry": null,
+        "useCodeOnly": false,
+        "substancePatents": 0,
+        "firstApproval": null,
+        "ndaCount": 0,
+        "andaCount": 0,
+        "exclusivityUntil": null,
+        "pubchemCid": 25127713,
+        "pubchemPatentCount": 2790,
+        "matched": [
+          "POZIOTINIB"
+        ],
+        "patents": []
+      },
+      "source": {
+        "id": "pubchem-pat:25127713",
+        "database": "PubChem",
+        "label": "POZIOTINIB: PubChem patent cross-references",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/25127713#section=Patents"
+      }
+    },
+    {
       "id": "trial:NCT02659514",
       "type": "trial",
       "label": "Study of Poziotinib in Participants With HER2-Positive Metastatic Breast Cancer",
@@ -7660,6 +7715,45 @@
       }
     },
     {
+      "id": "e:has_adverse_events:drug:CHEMBL3545154:safety:CHEMBL3545154",
+      "type": "has_adverse_events",
+      "from": "drug:CHEMBL3545154",
+      "to": "safety:CHEMBL3545154",
+      "kind": "clinical",
+      "strength": 14,
+      "label": "adverse event reports (FAERS)",
+      "meta": {
+        "total": 14,
+        "serious": 14,
+        "query": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct%3A%22poziotinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      },
+      "source": {
+        "id": "faers:poziotinib",
+        "database": "FDA FAERS",
+        "label": "openFDA adverse-event reports for poziotinib (14)",
+        "url": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct%3A%22poziotinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+      }
+    },
+    {
+      "id": "e:has_patent_status:drug:CHEMBL3545154:patent:CHEMBL3545154",
+      "type": "has_patent_status",
+      "from": "drug:CHEMBL3545154",
+      "to": "patent:CHEMBL3545154",
+      "kind": "clinical",
+      "label": "PubChem patent references",
+      "meta": {
+        "summary": "Not in the FDA Orange Book (no approved US product); PubChem lists 2,790 patent documents mentioning the compound — ownership depends on the originator's composition-of-matter patents.",
+        "unexpiredPatents": 0,
+        "genericAvailable": null
+      },
+      "source": {
+        "id": "pubchem-pat:25127713",
+        "database": "PubChem",
+        "label": "POZIOTINIB: PubChem patent cross-references",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/25127713#section=Patents"
+      }
+    },
+    {
       "id": "e:absent:drug:CHEMBL3545154:disease:MONDO_0004948",
       "type": "absent",
       "from": "drug:CHEMBL3545154",
@@ -7671,7 +7765,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.456Z",
+        "checkedAt": "2026-10-28T23:55:14.405Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Poziotinib\" × condition \"B-cell chronic lymphocytic leukemia\""
       },
       "source": {
@@ -7693,7 +7787,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.456Z",
+        "checkedAt": "2026-10-28T23:55:14.405Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Poziotinib\" × condition \"mantle cell lymphoma\""
       },
       "source": {
@@ -7934,7 +8028,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.456Z",
+        "checkedAt": "2026-10-28T23:55:14.406Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Poziotinib\" × condition \"gastric adenocarcinoma\""
       },
       "source": {
@@ -8030,7 +8124,7 @@
           "indication",
           "trial"
         ],
-        "checkedAt": "2026-10-28T23:01:27.456Z",
+        "checkedAt": "2026-10-28T23:55:14.406Z",
         "query": "ClinicalTrials.gov interventional studies: intervention \"Poziotinib\" × condition \"colorectal adenocarcinoma\""
       },
       "source": {
@@ -8249,6 +8343,22 @@
           "value": "approved — Mobocertinib",
           "sourceIds": [
             "chembl-ind:136806"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "Safety signals (FAERS)",
+          "value": "14 reports, 100% serious; top: disease progression, off label use, paronychia (spontaneous reports, not rates)",
+          "sourceIds": [
+            "faers:poziotinib"
+          ]
+        },
+        {
+          "kind": "clinical",
+          "label": "IP status (PubChem patents)",
+          "value": "Not in the FDA Orange Book (no approved US product); PubChem lists 2,790 patent documents mentioning the compound — ownership depends on the originator's composition-of-matter patents.",
+          "sourceIds": [
+            "pubchem-pat:25127713"
           ]
         },
         {
@@ -8718,7 +8828,7 @@
       ]
     }
   ],
-  "builtAt": "2026-10-28T23:01:27.457Z",
+  "builtAt": "2026-10-28T23:55:14.407Z",
   "sources": [
     {
       "id": "chembl-target:CHEMBL203",
@@ -9919,6 +10029,18 @@
       "database": "ChEMBL",
       "label": "MOBOCERTINIB: Epidermal growth factor receptor erbB1 inhibitor",
       "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+    },
+    {
+      "id": "faers:poziotinib",
+      "database": "FDA FAERS",
+      "label": "openFDA adverse-event reports for poziotinib (14)",
+      "url": "https://api.fda.gov/drug/event.json?search=patient.drug.medicinalproduct%3A%22poziotinib%22&count=patient.reaction.reactionmeddrapt.exact&limit=10"
+    },
+    {
+      "id": "pubchem-pat:25127713",
+      "database": "PubChem",
+      "label": "POZIOTINIB: PubChem patent cross-references",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/25127713#section=Patents"
     },
     {
       "id": "check:CHEMBL3545154:MONDO_0004948",
