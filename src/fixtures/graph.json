@@ -1,0 +1,6200 @@
+{
+  "query": {
+    "candidate": "poziotinib",
+    "disease": "non-small cell lung cancer",
+    "targetChemblId": "CHEMBL203"
+  },
+  "nodes": [
+    {
+      "id": "target:CHEMBL203",
+      "type": "target",
+      "label": "Epidermal growth factor receptor",
+      "meta": {
+        "chemblId": "CHEMBL203",
+        "organism": "Homo sapiens"
+      },
+      "source": {
+        "id": "chembl-target:CHEMBL203",
+        "database": "ChEMBL",
+        "label": "CHEMBL203",
+        "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL203"
+      }
+    },
+    {
+      "id": "drug:CHEMBL3545154",
+      "type": "drug",
+      "label": "POZIOTINIB",
+      "isCandidate": true,
+      "meta": {
+        "chemblId": "CHEMBL3545154",
+        "maxPhase": 3,
+        "n": 5
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL3545154",
+        "database": "ChEMBL",
+        "label": "POZIOTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545154"
+      }
+    },
+    {
+      "id": "drug:CHEMBL4650319",
+      "type": "drug",
+      "label": "MOBOCERTINIB",
+      "meta": {
+        "chemblId": "CHEMBL4650319",
+        "maxPhase": 4,
+        "n": 2
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL4650319",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+      }
+    },
+    {
+      "id": "drug:CHEMBL1173655",
+      "type": "drug",
+      "label": "AFATINIB",
+      "meta": {
+        "chemblId": "CHEMBL1173655",
+        "maxPhase": 4,
+        "n": 10
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL1173655",
+        "database": "ChEMBL",
+        "label": "AFATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1173655"
+      }
+    },
+    {
+      "id": "drug:CHEMBL180022",
+      "type": "drug",
+      "label": "NERATINIB",
+      "meta": {
+        "chemblId": "CHEMBL180022",
+        "maxPhase": 4,
+        "n": 8
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL180022",
+        "database": "ChEMBL",
+        "label": "NERATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL180022"
+      }
+    },
+    {
+      "id": "drug:CHEMBL31965",
+      "type": "drug",
+      "label": "CANERTINIB",
+      "meta": {
+        "chemblId": "CHEMBL31965",
+        "maxPhase": 3,
+        "n": 11
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL31965",
+        "database": "ChEMBL",
+        "label": "CANERTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL31965"
+      }
+    },
+    {
+      "id": "drug:CHEMBL2087361",
+      "type": "drug",
+      "label": "ICOTINIB",
+      "meta": {
+        "chemblId": "CHEMBL2087361",
+        "maxPhase": 3,
+        "n": 3
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL2087361",
+        "database": "ChEMBL",
+        "label": "ICOTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2087361"
+      }
+    },
+    {
+      "id": "drug:CHEMBL2110732",
+      "type": "drug",
+      "label": "DACOMITINIB",
+      "meta": {
+        "chemblId": "CHEMBL2110732",
+        "maxPhase": 4,
+        "n": 4
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL2110732",
+        "database": "ChEMBL",
+        "label": "DACOMITINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2110732"
+      }
+    },
+    {
+      "id": "drug:CHEMBL554",
+      "type": "drug",
+      "label": "LAPATINIB",
+      "meta": {
+        "chemblId": "CHEMBL554",
+        "maxPhase": 4,
+        "n": 19
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL554",
+        "database": "ChEMBL",
+        "label": "LAPATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+      }
+    },
+    {
+      "id": "drug:CHEMBL939",
+      "type": "drug",
+      "label": "GEFITINIB",
+      "meta": {
+        "chemblId": "CHEMBL939",
+        "maxPhase": 4,
+        "n": 30
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL939",
+        "database": "ChEMBL",
+        "label": "GEFITINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL939"
+      }
+    },
+    {
+      "id": "drug:CHEMBL553",
+      "type": "drug",
+      "label": "ERLOTINIB",
+      "meta": {
+        "chemblId": "CHEMBL553",
+        "maxPhase": 4,
+        "n": 25
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL553",
+        "database": "ChEMBL",
+        "label": "ERLOTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL553"
+      }
+    },
+    {
+      "id": "drug:CHEMBL3353410",
+      "type": "drug",
+      "label": "OSIMERTINIB",
+      "meta": {
+        "chemblId": "CHEMBL3353410",
+        "maxPhase": 4,
+        "n": 12
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL3353410",
+        "database": "ChEMBL",
+        "label": "OSIMERTINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3353410"
+      }
+    },
+    {
+      "id": "drug:CHEMBL3545311",
+      "type": "drug",
+      "label": "BRIGATINIB",
+      "meta": {
+        "chemblId": "CHEMBL3545311",
+        "maxPhase": 4,
+        "n": 10
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL3545311",
+        "database": "ChEMBL",
+        "label": "BRIGATINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545311"
+      }
+    },
+    {
+      "id": "drug:CHEMBL3545308",
+      "type": "drug",
+      "label": "ROCILETINIB",
+      "meta": {
+        "chemblId": "CHEMBL3545308",
+        "maxPhase": 3,
+        "n": 12
+      },
+      "source": {
+        "id": "chembl-mol:CHEMBL3545308",
+        "database": "ChEMBL",
+        "label": "ROCILETINIB",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545308"
+      }
+    },
+    {
+      "id": "warning:1043",
+      "type": "warning",
+      "label": "Black Box Warning (hepatotoxicity)",
+      "meta": {
+        "warningClass": "hepatotoxicity",
+        "year": null,
+        "country": "United States",
+        "description": null
+      },
+      "source": {
+        "id": "chembl-warn:1043",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hepatotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee37f88-ec6a-4c30-b8aa-e2c71f93088c"
+      }
+    },
+    {
+      "id": "warning:2847",
+      "type": "warning",
+      "label": "Black Box Warning",
+      "meta": {
+        "warningClass": null,
+        "year": null,
+        "country": "United States",
+        "description": null
+      },
+      "source": {
+        "id": "chembl-warn:2847",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+      }
+    },
+    {
+      "id": "warning:3784",
+      "type": "warning",
+      "label": "Black Box Warning (cardiotoxicity)",
+      "meta": {
+        "warningClass": "cardiotoxicity",
+        "year": null,
+        "country": "United States",
+        "description": null
+      },
+      "source": {
+        "id": "chembl-warn:3784",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1a91500-a944-4cb8-b4a8-ae278bcf728d"
+      }
+    },
+    {
+      "id": "warning:5118",
+      "type": "warning",
+      "label": "Black Box Warning (hematological toxicity)",
+      "meta": {
+        "warningClass": "hematological toxicity",
+        "year": null,
+        "country": "United States",
+        "description": null
+      },
+      "source": {
+        "id": "chembl-warn:5118",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hematological toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+      }
+    },
+    {
+      "id": "disease:query",
+      "type": "disease",
+      "label": "non-small cell lung cancer",
+      "isQueryDisease": true,
+      "meta": {
+        "resolved": false
+      }
+    },
+    {
+      "id": "trial:NCT00949910",
+      "type": "trial",
+      "label": "An Expanded Access Program of Tarceva (Erlotinib) in Participants With Advanced Non-Small Cell Lung Cancer (NSCLC)",
+      "meta": {
+        "nctId": "NCT00949910",
+        "phase": "Phase 4",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 6586,
+        "startDate": "2004-11",
+        "interventions": [
+          "Erlotinib"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00949910",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00949910",
+        "url": "https://clinicaltrials.gov/study/NCT00949910"
+      }
+    },
+    {
+      "id": "trial:NCT01203917",
+      "type": "trial",
+      "label": "Efficacy, Safety, Tolerability of Gefitinib as 1st Line in Caucasian Patients With EGFR Mutation Positive Advanced NSCLC",
+      "meta": {
+        "nctId": "NCT01203917",
+        "phase": "Phase 4",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 1060,
+        "startDate": "2010-09",
+        "interventions": [
+          "Gefitinib"
+        ],
+        "conditions": [
+          "Caucasian Patients With EGFR Mutation Positive Advanced NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01203917",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01203917",
+        "url": "https://clinicaltrials.gov/study/NCT01203917"
+      }
+    },
+    {
+      "id": "trial:NCT04511533",
+      "type": "trial",
+      "label": "Dacomitinib for Treatment of Patients in India With Metastatic Non Small Cell Lung Cancer With EGFR Activating Mutations",
+      "meta": {
+        "nctId": "NCT04511533",
+        "phase": "Phase 4",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 101,
+        "startDate": "2020-08-27",
+        "interventions": [
+          "Dacomitinib"
+        ],
+        "conditions": [
+          "Metastatic Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04511533",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04511533",
+        "url": "https://clinicaltrials.gov/study/NCT04511533"
+      }
+    },
+    {
+      "id": "trial:NCT04401059",
+      "type": "trial",
+      "label": "Synergistic Effect of Elemene Plus TKIs Compared With TKIs in EGFR-mutated Advanced NSCLC：Prospective Study",
+      "meta": {
+        "nctId": "NCT04401059",
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false,
+        "enrollment": 744,
+        "startDate": "2020-11-09",
+        "interventions": [
+          "Elemene plus first or third generation EGFR-TKIs",
+          "First or third generation EGFR-TKIs"
+        ],
+        "conditions": [
+          "Carcinoma",
+          "Non-Small-Cell Lung Cancer",
+          "Adenocarcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04401059",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04401059",
+        "url": "https://clinicaltrials.gov/study/NCT04401059"
+      }
+    },
+    {
+      "id": "trial:NCT02031601",
+      "type": "trial",
+      "label": "Intercalated Combination of Chemotherapy and Tyrosine Kinase Inhibitors as First-line Treatment for Patients With Non-Small-Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT02031601",
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false,
+        "enrollment": 250,
+        "startDate": "2014-01",
+        "interventions": [
+          "Erlotinib",
+          "Gefitinib",
+          "Icotinib",
+          "Docetaxel",
+          "Pemetrexed",
+          "Platinum (cisplatin or carboplatin)"
+        ],
+        "conditions": [
+          "Non-Small-Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02031601",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02031601",
+        "url": "https://clinicaltrials.gov/study/NCT02031601"
+      }
+    },
+    {
+      "id": "trial:NCT02404675",
+      "type": "trial",
+      "label": "High Dose Icotinib in Advanced Non-small Cell Lung Cancer With EGFR 21 Exon Mutation",
+      "meta": {
+        "nctId": "NCT02404675",
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false,
+        "enrollment": 240,
+        "startDate": "2015-04",
+        "interventions": [
+          "icotinib"
+        ],
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02404675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02404675",
+        "url": "https://clinicaltrials.gov/study/NCT02404675"
+      }
+    },
+    {
+      "id": "trial:NCT02103257",
+      "type": "trial",
+      "label": "Sequential Icotinib Plus Chemotherapy Versus Icotinib Alone as First-line Treatment in Stage IIIB/IV Lung Adenocarcinoma",
+      "meta": {
+        "nctId": "NCT02103257",
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false,
+        "enrollment": 192,
+        "startDate": "2014-03",
+        "interventions": [
+          "Sequential Icotinib Plus Chemotherapy",
+          "Icotinib"
+        ],
+        "conditions": [
+          "EGFR Positive Non-small Cell Lung Cancer",
+          "Adenocarcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02103257",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02103257",
+        "url": "https://clinicaltrials.gov/study/NCT02103257"
+      }
+    },
+    {
+      "id": "trial:NCT07900243",
+      "type": "trial",
+      "label": "A Clinical Study Comparing the Efficacy and Safety of Befotertinib Versus Icotinib in Patients With Previously Untreated EGFR-sensitive Mutation-positive Non-small Cell Lung Cancer With ECOG Score ≥2",
+      "meta": {
+        "nctId": "NCT07900243",
+        "phase": "Phase 4",
+        "status": "Not yet recruiting",
+        "hasResults": false,
+        "enrollment": 100,
+        "startDate": "2026-11-30",
+        "interventions": [
+          "Befotertinib",
+          "Icotinib"
+        ],
+        "conditions": [
+          "Locally Advanced or Metastatic Non-small Cell Lung Cancer With Previously Untreated EGFR-sensitive Mutations and ECOG Performance Status Score ≥2"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT07900243",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07900243",
+        "url": "https://clinicaltrials.gov/study/NCT07900243"
+      }
+    },
+    {
+      "id": "trial:NCT02474355",
+      "type": "trial",
+      "label": "Real World Treatment Study of AZD9291 for Advanced/Metastatic EGFR T790M Mutation NSCLC",
+      "meta": {
+        "nctId": "NCT02474355",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 3017,
+        "startDate": "2015-09-18",
+        "interventions": [
+          "AZD9291 Dosing"
+        ],
+        "conditions": [
+          "Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02474355",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02474355",
+        "url": "https://clinicaltrials.gov/study/NCT02474355"
+      }
+    },
+    {
+      "id": "trial:NCT00364351",
+      "type": "trial",
+      "label": "Efficacy Trial Comparing ZD6474 With Erlotinib in NSCLC After Failure of at Least One Prior Chemotherapy",
+      "meta": {
+        "nctId": "NCT00364351",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 1574,
+        "startDate": "2006-08",
+        "interventions": [
+          "Vandetanib",
+          "Erlotinib"
+        ],
+        "conditions": [
+          "Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00364351",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00364351",
+        "url": "https://clinicaltrials.gov/study/NCT00364351"
+      }
+    },
+    {
+      "id": "trial:NCT00322452",
+      "type": "trial",
+      "label": "First Line IRESSA™ Versus Carboplatin/Paclitaxel in Asia",
+      "meta": {
+        "nctId": "NCT00322452",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 1329,
+        "startDate": "2006-03",
+        "interventions": [
+          "Gefitinib",
+          "Carboplatin",
+          "Paclitaxel"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00322452",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00322452",
+        "url": "https://clinicaltrials.gov/study/NCT00322452"
+      }
+    },
+    {
+      "id": "trial:NCT00373425",
+      "type": "trial",
+      "label": "A Study of Erlotinib (Tarceva) After Surgery With or Without Adjuvant Chemotherapy in Non-Small Cell Lung Carcinoma (NSCLC) Patients Who Have Epidermal Growth Factor Receptor (EGFR) Positive Tumors",
+      "meta": {
+        "nctId": "NCT00373425",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 1252,
+        "startDate": "2006-09",
+        "interventions": [
+          "Erlotinib",
+          "Placebo"
+        ],
+        "conditions": [
+          "Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00373425",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00373425",
+        "url": "https://clinicaltrials.gov/study/NCT00373425"
+      }
+    },
+    {
+      "id": "trial:NCT01085136",
+      "type": "trial",
+      "label": "LUX-Lung 5: Afatinib Plus Weekly Paclitaxel Versus Investigator's Choice of Single Agent Chemotherapy Following Afatinib Monotherapy in Non-small Cell Lung Cancer Patients Failing Erlotinib or Gefitinib",
+      "meta": {
+        "nctId": "NCT01085136",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 1154,
+        "startDate": "2010-02",
+        "interventions": [
+          "Investigator´s choice of chemotherapy",
+          "BIBW 2992"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01085136",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01085136",
+        "url": "https://clinicaltrials.gov/study/NCT01085136"
+      }
+    },
+    {
+      "id": "trial:NCT00257608",
+      "type": "trial",
+      "label": "A Study Comparing Bevacizumab Therapy With or Without Erlotinib for First-Line Treatment of Non-Small Cell Lung Cancer (ATLAS)",
+      "meta": {
+        "nctId": "NCT00257608",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 1145,
+        "startDate": "2006-01",
+        "interventions": [
+          "bevacizumab",
+          "placebo",
+          "erlotinib HCl"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00257608",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00257608",
+        "url": "https://clinicaltrials.gov/study/NCT00257608"
+      }
+    },
+    {
+      "id": "trial:NCT04487080",
+      "type": "trial",
+      "label": "A Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib in Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT04487080",
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true,
+        "enrollment": 1074,
+        "startDate": "2020-09-30",
+        "interventions": [
+          "Amivantamab",
+          "Osimertinib",
+          "Lazertinib",
+          "Placebo"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04487080",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04487080",
+        "url": "https://clinicaltrials.gov/study/NCT04487080"
+      }
+    },
+    {
+      "id": "trial:NCT01244191",
+      "type": "trial",
+      "label": "Tivantinib Plus Erlotinib Versus Placebo Plus Erlotinib for the Treatment of Non-squamous, Non-small-cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT01244191",
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 1048,
+        "startDate": "2011-01-11",
+        "interventions": [
+          "Tivantinib",
+          "Placebo",
+          "Erlotinib"
+        ],
+        "conditions": [
+          "Non Squamous, Non-small-cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01244191",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01244191",
+        "url": "https://clinicaltrials.gov/study/NCT01244191"
+      }
+    },
+    {
+      "id": "trial:NCT00457392",
+      "type": "trial",
+      "label": "A Study In Patients With Non-Small Cell Lung Cancer To Test If Erlotinib Plus SU011248 Is Better Than Erlotinib Alone",
+      "meta": {
+        "nctId": "NCT00457392",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 960,
+        "startDate": "2007-07",
+        "interventions": [
+          "erlotinib",
+          "sunitinib",
+          "placebo"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00457392",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00457392",
+        "url": "https://clinicaltrials.gov/study/NCT00457392"
+      }
+    },
+    {
+      "id": "trial:NCT00556712",
+      "type": "trial",
+      "label": "A Study of Tarceva (Erlotinib) Following Platinum-Based Chemotherapy in Patients With Advanced, Recurrent, or Metastatic Non-Small Cell Lung Cancer (NSCLC)",
+      "meta": {
+        "nctId": "NCT00556712",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 889,
+        "startDate": "2006-01",
+        "interventions": [
+          "erlotinib [Tarceva]",
+          "Placebo"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00556712",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00556712",
+        "url": "https://clinicaltrials.gov/study/NCT00556712"
+      }
+    },
+    {
+      "id": "trial:NCT01360554",
+      "type": "trial",
+      "label": "ARCHER 1009 : A Study Of Dacomitinib (PF-00299804) Vs. Erlotinib In The Treatment Of Advanced Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT01360554",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 878,
+        "startDate": "2011-06-16",
+        "interventions": [
+          "Dacomitinib (PF-00299804)",
+          "Active Comparator (erlotinib)",
+          "Placebo erlotinib",
+          "Placebo PF00299804"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01360554",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01360554",
+        "url": "https://clinicaltrials.gov/study/NCT01360554"
+      }
+    },
+    {
+      "id": "trial:NCT01523587",
+      "type": "trial",
+      "label": "LUX-Lung 8: A Phase III Trial of Afatinib (BIBW 2992) Versus Erlotinib for the Treatment of Squamous Cell Lung Cancer After at Least One Prior Platinum Based Chemotherapy",
+      "meta": {
+        "nctId": "NCT01523587",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 795,
+        "startDate": "2012-03-05",
+        "interventions": [
+          "afatinib",
+          "erlotinib"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01523587",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01523587",
+        "url": "https://clinicaltrials.gov/study/NCT01523587"
+      }
+    },
+    {
+      "id": "trial:NCT04988295",
+      "type": "trial",
+      "label": "A Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With Epidermal Growth Factor Receptor (EGFR)-Mutated Locally Advanced or Metastatic Non- Small Cell Lung Cancer After Osimertinib Failure",
+      "meta": {
+        "nctId": "NCT04988295",
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true,
+        "enrollment": 776,
+        "startDate": "2021-11-17",
+        "interventions": [
+          "Lazertinib",
+          "Amivantamab",
+          "Pemetrexed",
+          "Carboplatin"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04988295",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04988295",
+        "url": "https://clinicaltrials.gov/study/NCT04988295"
+      }
+    },
+    {
+      "id": "trial:NCT01000025",
+      "type": "trial",
+      "label": "PF-00299804 in Stage IIIB or Stage IV Non-Small Cell Lung Cancer Not Responding to Standard Therapy for Advanced or Metastatic Cancer",
+      "meta": {
+        "nctId": "NCT01000025",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 720,
+        "startDate": "2009-12-23",
+        "interventions": [
+          "PF-00299804",
+          "Placebo"
+        ],
+        "conditions": [
+          "Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01000025",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01000025",
+        "url": "https://clinicaltrials.gov/study/NCT01000025"
+      }
+    },
+    {
+      "id": "trial:NCT02511106",
+      "type": "trial",
+      "label": "AZD9291 Versus Placebo in Patients With Stage IB-IIIA Non-small Cell Lung Carcinoma, Following Complete Tumour Resection With or Without Adjuvant Chemotherapy.",
+      "meta": {
+        "nctId": "NCT02511106",
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true,
+        "enrollment": 682,
+        "startDate": "2015-10-21",
+        "interventions": [
+          "AZD9291 80 mg/40 mg",
+          "Placebo AZD9291 80 mg/40 mg",
+          "Open-label AZD9291 80 mg/40 mg"
+        ],
+        "conditions": [
+          "Stage IB-IIIA Non-small Cell Lung Carcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02511106",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02511106",
+        "url": "https://clinicaltrials.gov/study/NCT02511106"
+      }
+    },
+    {
+      "id": "trial:NCT02296125",
+      "type": "trial",
+      "label": "AZD9291 Versus Gefitinib or Erlotinib in Patients With Locally Advanced or Metastatic Non-small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT02296125",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 674,
+        "startDate": "2014-12-03",
+        "interventions": [
+          "AZD9291 80 mg/40 mg + placebo",
+          "Placebo Erlotinib 150/100mg",
+          "Placebo Gefitinib 250 mg",
+          "Erlotinib 150/100 mg",
+          "Gefitinib 250 mg",
+          "Placebo AZD9291 80 mg/ 40 mg"
+        ],
+        "conditions": [
+          "Locally Advanced or Metastatic EGFR Sensitising Mutation Positive Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02296125",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02296125",
+        "url": "https://clinicaltrials.gov/study/NCT02296125"
+      }
+    },
+    {
+      "id": "trial:NCT01328951",
+      "type": "trial",
+      "label": "A Study of First-line Maintenance Erlotinib Versus Erlotinib at Disease Progression in Participants With Advanced Non-Small Cell Lung Cancer (NSCLC) Who Have Not Progressed Following Platinum-Based Chemotherapy",
+      "meta": {
+        "nctId": "NCT01328951",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 643,
+        "startDate": "2011-09",
+        "interventions": [
+          "Placebo",
+          "Erlotinib",
+          "Second-Line Chemotherapy"
+        ],
+        "conditions": [
+          "Non-Squamous Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01328951",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01328951",
+        "url": "https://clinicaltrials.gov/study/NCT01328951"
+      }
+    },
+    {
+      "id": "trial:NCT00130728",
+      "type": "trial",
+      "label": "A Study to Evaluate the Efficacy of Bevacizumab in Combination With Tarceva for Advanced Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT00130728",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 636,
+        "startDate": "2005-06-08",
+        "interventions": [
+          "bevacizumab",
+          "erlotinib HCl",
+          "placebo"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00130728",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00130728",
+        "url": "https://clinicaltrials.gov/study/NCT00130728"
+      }
+    },
+    {
+      "id": "trial:NCT02352948",
+      "type": "trial",
+      "label": "A Global Study to Assess the Effects of MEDI4736 (Durvalumab), Given as Monotherapy or in Combination With Tremelimumab Determined by PD-L1 Expression Versus Standard of Care in Patients With Locally Advanced or Metastatic Non Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT02352948",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 597,
+        "startDate": "2015-01-13",
+        "interventions": [
+          "MEDI4736 (durvalumab)",
+          "Vinorelbine",
+          "Gemcitabine",
+          "Erlotinib",
+          "MEDI4736 (durvalumab) in combination with tremelimumab (anti-CTLA4)",
+          "tremelimumab (anti-CTLA4)"
+        ],
+        "conditions": [
+          "Non - Small Cell Lung Cancer NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02352948",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02352948",
+        "url": "https://clinicaltrials.gov/study/NCT02352948"
+      }
+    },
+    {
+      "id": "trial:NCT04035486",
+      "type": "trial",
+      "label": "A Study of Osimertinib With or Without Chemotherapy as 1st Line Treatment in Patients With Mutated Epidermal Growth Factor Receptor Non-Small Cell Lung Cancer (FLAURA2)",
+      "meta": {
+        "nctId": "NCT04035486",
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true,
+        "enrollment": 587,
+        "startDate": "2019-07-02",
+        "interventions": [
+          "Osimertinib",
+          "Pemetrexed/Carboplatin",
+          "Pemetrexed/Cisplatin"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04035486",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04035486",
+        "url": "https://clinicaltrials.gov/study/NCT04035486"
+      }
+    },
+    {
+      "id": "trial:NCT00656136",
+      "type": "trial",
+      "label": "BIBW 2992 and BSC Versus Placebo and BSC in Non-small Cell Lung Cancer Patients Failing Erlotinib or Gefitinib (LUX-LUNG 1)",
+      "meta": {
+        "nctId": "NCT00656136",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 585,
+        "startDate": "2008-04",
+        "interventions": [
+          "placebo",
+          "BIBW 2992"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00656136",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00656136",
+        "url": "https://clinicaltrials.gov/study/NCT00656136"
+      }
+    },
+    {
+      "id": "trial:NCT00673049",
+      "type": "trial",
+      "label": "Trial Of CP-751, 871 And Erlotinib In Refractory Lung Cancer",
+      "meta": {
+        "nctId": "NCT00673049",
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 583,
+        "startDate": "2008-05",
+        "interventions": [
+          "CP 751,871 (Figitumumab)",
+          "Erlotinib"
+        ],
+        "conditions": [
+          "Carcinoma, Large Cell",
+          "Carcinoma, Non-Small-Cell Lung",
+          "Carcinoma, Squamous Cell",
+          "Carcinoma, Adenosquamous Cell"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00673049",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00673049",
+        "url": "https://clinicaltrials.gov/study/NCT00673049"
+      }
+    },
+    {
+      "id": "trial:NCT02411448",
+      "type": "trial",
+      "label": "A Study of Ramucirumab (LY3009806) in Combination With Erlotinib in Previously Untreated Participants With EGFR Mutation-Positive Metastatic NSCLC (RELAY)",
+      "meta": {
+        "nctId": "NCT02411448",
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true,
+        "enrollment": 545,
+        "startDate": "2015-05-06",
+        "interventions": [
+          "Ramucirumab",
+          "Placebo",
+          "Erlotinib",
+          "Gefitinib",
+          "Osimertinib"
+        ],
+        "conditions": [
+          "Metastatic Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02411448",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02411448",
+        "url": "https://clinicaltrials.gov/study/NCT02411448"
+      }
+    },
+    {
+      "id": "trial:NCT01953913",
+      "type": "trial",
+      "label": "Afatinib (BIBW 2992) in Advanced Non-Small Cell Lung Cancer Patients With EGFR Mutation",
+      "meta": {
+        "nctId": "NCT01953913",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 542,
+        "startDate": "2013-09-30",
+        "interventions": [
+          "Afatinib"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01953913",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953913",
+        "url": "https://clinicaltrials.gov/study/NCT01953913"
+      }
+    },
+    {
+      "id": "trial:NCT02588261",
+      "type": "trial",
+      "label": "A Study of ASP8273 vs. Erlotinib or Gefitinib in First-line Treatment of Patients With Stage IIIB/IV Non-small Cell Lung Cancer Tumors With EGFR Activating Mutations",
+      "meta": {
+        "nctId": "NCT02588261",
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 530,
+        "startDate": "2016-02-11",
+        "interventions": [
+          "naquotinib mesilate",
+          "Erlotinib",
+          "Gefitinib"
+        ],
+        "conditions": [
+          "Non-small Cell Lung Cancer (NSCLC)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02588261",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02588261",
+        "url": "https://clinicaltrials.gov/study/NCT02588261"
+      }
+    },
+    {
+      "id": "trial:NCT00049543",
+      "type": "trial",
+      "label": "Gefitinib in Treating Patients With Stage IB, II, or IIIA Non-small Cell Lung Cancer That Was Completely Removed by Surgery",
+      "meta": {
+        "nctId": "NCT00049543",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 503,
+        "startDate": "2002-09",
+        "interventions": [
+          "gefitinib"
+        ],
+        "conditions": [
+          "Adenocarcinoma of the Lung",
+          "Adenosquamous Cell Lung Cancer",
+          "Bronchoalveolar Cell Lung Cancer",
+          "Large Cell Lung Cancer",
+          "Squamous Cell Lung Cancer",
+          "Stage IB Non-small Cell Lung Cancer",
+          "Stage IIA Non-small Cell Lung Cancer",
+          "Stage IIB Non-small Cell Lung Cancer",
+          "Stage IIIA Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00049543",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00049543",
+        "url": "https://clinicaltrials.gov/study/NCT00049543"
+      }
+    },
+    {
+      "id": "trial:NCT01853826",
+      "type": "trial",
+      "label": "An Open Label Trial of Afatinib (Giotrif) in Treatment-naive (1st Line) or Chemotherapy Pre-treated Patients With Locally Advanced or Metastatic Non-small Cell Lung Cancer (NSCLC) Harboring EGFR Mutation(s)",
+      "meta": {
+        "nctId": "NCT01853826",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 481,
+        "startDate": "2013-07-17",
+        "interventions": [
+          "Afatinib"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01853826",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01853826",
+        "url": "https://clinicaltrials.gov/study/NCT01853826"
+      }
+    },
+    {
+      "id": "trial:NCT01774721",
+      "type": "trial",
+      "label": "ARCHER1050: A Study of Dacomitinib vs. Gefitinib in 1st-Line Treatment Of Advanced NSCLC.",
+      "meta": {
+        "nctId": "NCT01774721",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 452,
+        "startDate": "2013-05-09",
+        "interventions": [
+          "Dacomitinib (PF-00299804)",
+          "Gefitinib"
+        ],
+        "conditions": [
+          "Non-small Cell Lung Cancer With EGFR-Activating Mutations"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01774721",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01774721",
+        "url": "https://clinicaltrials.gov/study/NCT01774721"
+      }
+    },
+    {
+      "id": "trial:NCT03849768",
+      "type": "trial",
+      "label": "A Study to Evaluate Safety and Efficacy of HS-10296 as First-Line Treatment in Patients",
+      "meta": {
+        "nctId": "NCT03849768",
+        "phase": "Phase 3",
+        "status": "Unknown status",
+        "hasResults": true,
+        "enrollment": 429,
+        "startDate": "2019-02-01",
+        "interventions": [
+          "HS-10296",
+          "Gefitinib"
+        ],
+        "conditions": [
+          "Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03849768",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03849768",
+        "url": "https://clinicaltrials.gov/study/NCT03849768"
+      }
+    },
+    {
+      "id": "trial:NCT02737501",
+      "type": "trial",
+      "label": "ALTA-1L Study: A Study of Brigatinib Versus Crizotinib in Anaplastic Lymphoma Kinase Positive (ALK+) Advanced Non-small Cell Lung Cancer (NSCLC) Participants",
+      "meta": {
+        "nctId": "NCT02737501",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 275,
+        "startDate": "2016-05-26",
+        "interventions": [
+          "Brigatinib",
+          "Crizotinib"
+        ],
+        "conditions": [
+          "Non-small Cell Lung Cancer",
+          "Lung Cancer",
+          "Advanced Malignancies",
+          "Carcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02737501",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02737501",
+        "url": "https://clinicaltrials.gov/study/NCT02737501"
+      }
+    },
+    {
+      "id": "trial:NCT03596866",
+      "type": "trial",
+      "label": "A Study of Brigatinib Compared to Alectinib in Adults With Non-Small-Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT03596866",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 248,
+        "startDate": "2019-04-19",
+        "interventions": [
+          "Brigatinib",
+          "Alectinib"
+        ],
+        "conditions": [
+          "ALK+ Advanced NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03596866",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03596866",
+        "url": "https://clinicaltrials.gov/study/NCT03596866"
+      }
+    },
+    {
+      "id": "trial:NCT02322281",
+      "type": "trial",
+      "label": "TIGER-3: Open Label, Multicenter Study of Rociletinib (CO-1686) Mono Therapy Versus Single-agent Cytotoxic Chemotherapy in Patients With Mutant EGFR NSCLC Who Have Failed at Least One Previous EGFR-Directed TKI and Platinum-doublet Chemotherapy",
+      "meta": {
+        "nctId": "NCT02322281",
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 149,
+        "startDate": "2015-02",
+        "interventions": [
+          "Rociletinib",
+          "Pemetrexed or gemcitabine or paclitaxel or docetaxel"
+        ],
+        "conditions": [
+          "Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02322281",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02322281",
+        "url": "https://clinicaltrials.gov/study/NCT02322281"
+      }
+    },
+    {
+      "id": "trial:NCT04129502",
+      "type": "trial",
+      "label": "TAK-788 as First-Line Treatment Versus Platinum-Based Chemotherapy for Non-Small Cell Lung Cancer (NSCLC) With EGFR Exon 20 Insertion Mutations",
+      "meta": {
+        "nctId": "NCT04129502",
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": false,
+        "enrollment": 354,
+        "startDate": "2020-01-10",
+        "interventions": [
+          "TAK-788",
+          "Pemetrexed",
+          "Cisplatin",
+          "Carboplatin"
+        ],
+        "conditions": [
+          "Advanced/Metastatic Non-Small Cell Lung Cancer (NSCLC)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04129502",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04129502",
+        "url": "https://clinicaltrials.gov/study/NCT04129502"
+      }
+    },
+    {
+      "id": "trial:NCT05378763",
+      "type": "trial",
+      "label": "A Study of Poziotinib in Previously Treated Participants With Locally Advanced or Metastatic NSCLC Harboring HER2 Exon 20 Mutations",
+      "meta": {
+        "nctId": "NCT05378763",
+        "phase": "Phase 3",
+        "status": "Suspended",
+        "hasResults": false,
+        "enrollment": 268,
+        "startDate": "2022-05-12",
+        "interventions": [
+          "Poziotinib",
+          "Docetaxel"
+        ],
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT05378763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05378763",
+        "url": "https://clinicaltrials.gov/study/NCT05378763"
+      }
+    },
+    {
+      "id": "trial:NCT02186301",
+      "type": "trial",
+      "label": "TIGER-1: Safety and Efficacy Study of Rociletinib (CO-1686) or Erlotinib in Patients With EGFR-mutant/Metastatic NSCLC Who Have Not Had Any Previous EGFR Directed Therapy",
+      "meta": {
+        "nctId": "NCT02186301",
+        "phase": "Phase 2/3",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 100,
+        "startDate": "2014-11",
+        "interventions": [
+          "Rociletinib Mono-Therapy",
+          "Erlotinib Mono-Therapy"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02186301",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02186301",
+        "url": "https://clinicaltrials.gov/study/NCT02186301"
+      }
+    },
+    {
+      "id": "trial:NCT03318939",
+      "type": "trial",
+      "label": "Phase 2 Study of Poziotinib in Participants With NSCLC Having EGFR or HER2 Exon 20 Insertion Mutation",
+      "meta": {
+        "nctId": "NCT03318939",
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 648,
+        "startDate": "2017-10-11",
+        "interventions": [
+          "Poziotinib"
+        ],
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03318939",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03318939",
+        "url": "https://clinicaltrials.gov/study/NCT03318939"
+      }
+    },
+    {
+      "id": "trial:NCT01306045",
+      "type": "trial",
+      "label": "Molecular Profiling and Targeted Therapy for Advanced Non-Small Cell Lung Cancer, Small Cell Lung Cancer, and Thymic Malignancies",
+      "meta": {
+        "nctId": "NCT01306045",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 647,
+        "startDate": "2011-02-08",
+        "interventions": [
+          "AZD6244",
+          "MK-2206",
+          "Lapatinib",
+          "Erlotinib",
+          "Sunitinib"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung",
+          "Carcinoma, Small Cell Lung",
+          "Carcinoma, Thymic"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01306045",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01306045",
+        "url": "https://clinicaltrials.gov/study/NCT01306045"
+      }
+    },
+    {
+      "id": "trial:NCT01953926",
+      "type": "trial",
+      "label": "Basket Study of Neratinib in Participants With Solid Tumors Harboring Somatic HER2 or EGFR Exon 18 Mutations",
+      "meta": {
+        "nctId": "NCT01953926",
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 582,
+        "startDate": "2013-09-30",
+        "interventions": [
+          "Neratinib",
+          "Fulvestrant",
+          "Trastuzumab",
+          "Paclitaxel"
+        ],
+        "conditions": [
+          "Solid Tumors Harboring Somatic HER2 or EGFR Exon 18 Mutations"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01953926",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953926",
+        "url": "https://clinicaltrials.gov/study/NCT01953926"
+      }
+    },
+    {
+      "id": "trial:NCT02147990",
+      "type": "trial",
+      "label": "Multicenter Study of Rociletinib Administered to Patients With Previously Treated Mutant EGFR Non-small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT02147990",
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 318,
+        "startDate": "2014-06-16",
+        "interventions": [
+          "Rociletinib"
+        ],
+        "conditions": [
+          "Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02147990",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02147990",
+        "url": "https://clinicaltrials.gov/study/NCT02147990"
+      }
+    },
+    {
+      "id": "trial:NCT02094573",
+      "type": "trial",
+      "label": "A Study to Evaluate the Efficacy of Brigatinib (AP26113) in Participants With Anaplastic Lymphoma Kinase (ALK)-Positive, Non-small Cell Lung Cancer (NSCLC) Previously Treated With Crizotinib",
+      "meta": {
+        "nctId": "NCT02094573",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 222,
+        "startDate": "2014-06-04",
+        "interventions": [
+          "Brigatinib"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02094573",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02094573",
+        "url": "https://clinicaltrials.gov/study/NCT02094573"
+      }
+    },
+    {
+      "id": "trial:NCT00266877",
+      "type": "trial",
+      "label": "Study Evaluating the Safety Of HKI-272 (Neratinib) In Subjects With Advanced Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT00266877",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 172,
+        "startDate": "2005-12",
+        "interventions": [
+          "HKI-272"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung",
+          "Lung Neoplasms"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00266877",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00266877",
+        "url": "https://clinicaltrials.gov/study/NCT00266877"
+      }
+    },
+    {
+      "id": "trial:NCT00073008",
+      "type": "trial",
+      "label": "A Study Of Oral GW572016 In Advanced Or Metastatic Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT00073008",
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 131,
+        "startDate": "2003-11",
+        "interventions": [
+          "GW572016 (lapatinib)"
+        ],
+        "conditions": [
+          "Lung Cancer, Non-Small Cell"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00073008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00073008",
+        "url": "https://clinicaltrials.gov/study/NCT00073008"
+      }
+    },
+    {
+      "id": "trial:NCT01827267",
+      "type": "trial",
+      "label": "Neratinib With and Without Temsirolimus for Patients With HER2 Activating Mutations in Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT01827267",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true,
+        "enrollment": 62,
+        "startDate": "2013-07-01",
+        "interventions": [
+          "neratinib",
+          "temsirolimus"
+        ],
+        "conditions": [
+          "HER2-mutant Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01827267",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01827267",
+        "url": "https://clinicaltrials.gov/study/NCT01827267"
+      }
+    },
+    {
+      "id": "trial:NCT04591431",
+      "type": "trial",
+      "label": "The Rome Trial From Histology to Target: the Road to Personalize Target Therapy and Immunotherapy",
+      "meta": {
+        "nctId": "NCT04591431",
+        "phase": "Phase 2",
+        "status": "Unknown status",
+        "hasResults": false,
+        "enrollment": 400,
+        "startDate": "2020-10-07",
+        "interventions": [
+          "Erlotinib",
+          "Trastuzumab",
+          "Trastuzumab emtansine",
+          "Pertuzumab",
+          "Lapatinib",
+          "Everolimus",
+          "Vemurafenib",
+          "Cobimetinib",
+          "Alectinib",
+          "Brigatinib",
+          "Palbociclib",
+          "Ponatinib",
+          "Vismogedib",
+          "Itacitinib",
+          "Ipatasertib",
+          "Entrectinib",
+          "Atezolizumab",
+          "Nivolumab",
+          "Ipilimumab",
+          "Pemigatinib",
+          "Oncology Drugs",
+          "Pralsetinib",
+          "Selpercatinib",
+          "Talazoparib",
+          "Tepotinib",
+          "Alpelisib"
+        ],
+        "conditions": [
+          "Breast Cancer",
+          "Gastrointestinal Cancer",
+          "Non Small Cell Lung Cancer",
+          "Other Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04591431",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04591431",
+        "url": "https://clinicaltrials.gov/study/NCT04591431"
+      }
+    },
+    {
+      "id": "trial:NCT00050830",
+      "type": "trial",
+      "label": "A Phase 2, Randomized, Open-Label Study Of Single Agent CI-1033 In Patients With Advanced Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT00050830",
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": false,
+        "enrollment": 163,
+        "startDate": "2003-01",
+        "interventions": [
+          "CI 1033"
+        ],
+        "conditions": [
+          "Lung Neoplasms"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00050830",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00050830",
+        "url": "https://clinicaltrials.gov/study/NCT00050830"
+      }
+    },
+    {
+      "id": "trial:NCT03066206",
+      "type": "trial",
+      "label": "Poziotinib in EGFR Exon 20 Mutant Advanced NSCLC",
+      "meta": {
+        "nctId": "NCT03066206",
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": false,
+        "enrollment": 93,
+        "startDate": "2017-03-17",
+        "interventions": [
+          "Poziotinib"
+        ],
+        "conditions": [
+          "EGFR Exon 20 Mutation",
+          "ERBB2 Gene Mutation",
+          "Recurrent Lung Non-Small Cell Carcinoma",
+          "Stage IV Non-Small Cell Lung Cancer AJCC v7"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03066206",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03066206",
+        "url": "https://clinicaltrials.gov/study/NCT03066206"
+      }
+    },
+    {
+      "id": "trial:NCT04044170",
+      "type": "trial",
+      "label": "Poziotinib in Patients With NSCLC Having EGFR or HER2 Exon 20 Insertion Mutation",
+      "meta": {
+        "nctId": "NCT04044170",
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": false,
+        "enrollment": 5,
+        "startDate": "2019-07-30",
+        "interventions": [
+          "Poziotinib"
+        ],
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04044170",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04044170",
+        "url": "https://clinicaltrials.gov/study/NCT04044170"
+      }
+    },
+    {
+      "id": "trial:NCT04576208",
+      "type": "trial",
+      "label": "A Study to Evaluate the Impact of Management Strategies on Gastrointestinal-Related Adverse Events in Participants With Non-Small Cell Lung Cancer Harboring Epidermal Growth Factor Receptor (EGFR) Exon 20 Insertion Mutations Receiving TAK-788",
+      "meta": {
+        "nctId": "NCT04576208",
+        "phase": "Phase 2",
+        "status": "Withdrawn",
+        "hasResults": false,
+        "enrollment": 0,
+        "startDate": "2020-11-30",
+        "interventions": [
+          "TAK-788",
+          "Antidiarrheal prophylaxis"
+        ],
+        "conditions": [
+          "Non-Small Cell Lung Cancer (NSCLC)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04576208",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04576208",
+        "url": "https://clinicaltrials.gov/study/NCT04576208"
+      }
+    },
+    {
+      "id": "trial:NCT05045404",
+      "type": "trial",
+      "label": "Poziotinib and Ramucirumab for the Treatment of EGFR Exon 20 Mutant Stage IV Non-small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT05045404",
+        "phase": "Phase 2",
+        "status": "Withdrawn",
+        "hasResults": false,
+        "enrollment": 0,
+        "startDate": "2021-06-16",
+        "interventions": [
+          "Poziotinib Hydrochloride",
+          "1429757-68-5, HM781-36B, NOV-1201 Hydrochloride, NOV120101 Hydrochloride, Poziotinib HCl, POZIOTINIB HYDROCHLORIDE"
+        ],
+        "conditions": [
+          "Metastatic Lung Non-Small Cell Carcinoma",
+          "Stage IV Lung Cancer AJCC v8",
+          "Stage IVA Lung Cancer AJCC v8",
+          "Stage IVB Lung Cancer AJCC v8"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT05045404",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05045404",
+        "url": "https://clinicaltrials.gov/study/NCT05045404"
+      }
+    },
+    {
+      "id": "trial:NCT04402008",
+      "type": "trial",
+      "label": "Study of Poziotinib in Japanese Patients With NSCLC",
+      "meta": {
+        "nctId": "NCT04402008",
+        "phase": "Phase 1/2",
+        "status": "Terminated",
+        "hasResults": true,
+        "enrollment": 42,
+        "startDate": "2020-06-23",
+        "interventions": [
+          "Poziotinib Once Daily Dosing",
+          "Poziotinib Twice Daily Dosing",
+          "Poziotinib Once Daily Dosing or Twice Daily Dosing as determined in Phase 1"
+        ],
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04402008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04402008",
+        "url": "https://clinicaltrials.gov/study/NCT04402008"
+      }
+    },
+    {
+      "id": "trial:NCT02716116",
+      "type": "trial",
+      "label": "A Study of TAK-788 in Adults With Non-Small Cell Lung Cancer",
+      "meta": {
+        "nctId": "NCT02716116",
+        "phase": "Phase 1/2",
+        "status": "Completed",
+        "hasResults": false,
+        "enrollment": 324,
+        "startDate": "2016-06-16",
+        "interventions": [
+          "TAK-788"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02716116",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02716116",
+        "url": "https://clinicaltrials.gov/study/NCT02716116"
+      }
+    },
+    {
+      "id": "trial:NCT00174356",
+      "type": "trial",
+      "label": "PH 1 Evaluation Of Oral CI-1033 In Combination With Paclitaxel/ Carboplatin As 1st Line Chemotherapy In NSCLC Patients",
+      "meta": {
+        "nctId": "NCT00174356",
+        "phase": "Phase 1",
+        "status": "Completed",
+        "hasResults": false,
+        "enrollment": 39,
+        "startDate": "2002-12",
+        "interventions": [
+          "CI 1033",
+          "PACLITAXEL",
+          "CARBOPLATIN"
+        ],
+        "conditions": [
+          "Carcinoma, Non-Small Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00174356",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00174356",
+        "url": "https://clinicaltrials.gov/study/NCT00174356"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:measured_against:drug:CHEMBL3545154:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL3545154",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 9.48,
+      "label": "median pChEMBL 9.48 (n=5)",
+      "meta": {
+        "n": 5,
+        "min": 9.4,
+        "max": 9.86,
+        "activityType": "IC50",
+        "rank": 2,
+        "alsoValid": [
+          "chembl-act:26198959",
+          "chembl-act:26199036",
+          "chembl-act:26199040",
+          "chembl-act:29092502"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:25078762",
+        "database": "ChEMBL",
+        "label": "Activity 25078762 (CHEMBL5255141)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255141"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL4650319:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL4650319",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 10.65,
+      "label": "median pChEMBL 10.65 (n=2)",
+      "meta": {
+        "n": 2,
+        "min": 10.6,
+        "max": 10.7,
+        "activityType": "IC50",
+        "rank": 1,
+        "alsoValid": [
+          "chembl-act:29113771"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:25098080",
+        "database": "ChEMBL",
+        "label": "Activity 25098080 (CHEMBL5260455)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL1173655:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL1173655",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 8.86,
+      "label": "median pChEMBL 8.86 (n=10)",
+      "meta": {
+        "n": 10,
+        "min": 7.52,
+        "max": 10.1,
+        "activityType": "IC50",
+        "rank": 3,
+        "alsoValid": [
+          "chembl-act:16479890",
+          "chembl-act:19310304",
+          "chembl-act:22894024",
+          "chembl-act:24902244",
+          "chembl-act:24957791",
+          "chembl-act:25078763",
+          "chembl-act:25094728",
+          "chembl-act:26039767",
+          "chembl-act:26941087"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:2246122",
+        "database": "ChEMBL",
+        "label": "Activity 2246122 (CHEMBL1009318)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL180022:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL180022",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 8.83,
+      "label": "median pChEMBL 8.83 (n=8)",
+      "meta": {
+        "n": 8,
+        "min": 6.81,
+        "max": 10.1,
+        "activityType": "IC50",
+        "rank": 4,
+        "alsoValid": [
+          "chembl-act:1943214",
+          "chembl-act:2246121",
+          "chembl-act:13322674",
+          "chembl-act:23276955",
+          "chembl-act:24907894",
+          "chembl-act:26154205",
+          "chembl-act:29122426"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:1943195",
+        "database": "ChEMBL",
+        "label": "Activity 1943195 (CHEMBL892951)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL31965:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL31965",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 8.77,
+      "label": "median pChEMBL 8.77 (n=11)",
+      "meta": {
+        "n": 11,
+        "min": 7.13,
+        "max": 9.34,
+        "activityType": "IC50",
+        "rank": 5,
+        "alsoValid": [
+          "chembl-act:121735",
+          "chembl-act:790534",
+          "chembl-act:2246120",
+          "chembl-act:2615700",
+          "chembl-act:15698606",
+          "chembl-act:18955278",
+          "chembl-act:18997546",
+          "chembl-act:26224572",
+          "chembl-act:26237978",
+          "chembl-act:27814601"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:110479",
+        "database": "ChEMBL",
+        "label": "Activity 110479 (CHEMBL673925)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL673925"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL2087361:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL2087361",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 8.7,
+      "label": "median pChEMBL 8.7 (n=3)",
+      "meta": {
+        "n": 3,
+        "min": 8.3,
+        "max": 8.91,
+        "activityType": "IC50",
+        "rank": 6,
+        "alsoValid": [
+          "chembl-act:18997561",
+          "chembl-act:27322259"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:11022075",
+        "database": "ChEMBL",
+        "label": "Activity 11022075 (CHEMBL2090277)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2090277"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL2110732:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL2110732",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 8.16,
+      "label": "median pChEMBL 8.16 (n=4)",
+      "meta": {
+        "n": 4,
+        "min": 7.23,
+        "max": 8.74,
+        "activityType": "IC50",
+        "rank": 7,
+        "alsoValid": [
+          "chembl-act:16352077",
+          "chembl-act:26581692",
+          "chembl-act:29122425"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:15743462",
+        "database": "ChEMBL",
+        "label": "Activity 15743462 (CHEMBL3625155)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3625155"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL554:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL554",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 7.87,
+      "label": "median pChEMBL 7.87 (n=19)",
+      "meta": {
+        "n": 19,
+        "min": 6.55,
+        "max": 8.3,
+        "activityType": "IC50",
+        "rank": 8,
+        "alsoValid": [
+          "chembl-act:1766862",
+          "chembl-act:2246119",
+          "chembl-act:2390320",
+          "chembl-act:2489169",
+          "chembl-act:2943656",
+          "chembl-act:3120278",
+          "chembl-act:3222548",
+          "chembl-act:5243225",
+          "chembl-act:7980775",
+          "chembl-act:13480566",
+          "chembl-act:15229669",
+          "chembl-act:16416927",
+          "chembl-act:20708043",
+          "chembl-act:22965630",
+          "chembl-act:23148927",
+          "chembl-act:24348823",
+          "chembl-act:25755867",
+          "chembl-act:27814598"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:190221",
+        "database": "ChEMBL",
+        "label": "Activity 190221 (CHEMBL674106)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL939:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL939",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 7.69,
+      "label": "median pChEMBL 7.69 (n=30)",
+      "meta": {
+        "n": 30,
+        "min": 4.81,
+        "max": 10,
+        "activityType": "IC50",
+        "rank": 9,
+        "alsoValid": [
+          "chembl-act:186630",
+          "chembl-act:1943182",
+          "chembl-act:1943201",
+          "chembl-act:2048875",
+          "chembl-act:2390321",
+          "chembl-act:2503070",
+          "chembl-act:3130635",
+          "chembl-act:6315901",
+          "chembl-act:8017332",
+          "chembl-act:13297481",
+          "chembl-act:13453602",
+          "chembl-act:14547458",
+          "chembl-act:14974602",
+          "chembl-act:15112228",
+          "chembl-act:15229663",
+          "chembl-act:16395724",
+          "chembl-act:16499782",
+          "chembl-act:16588547",
+          "chembl-act:16811409",
+          "chembl-act:18573667",
+          "chembl-act:18955275",
+          "chembl-act:22473600",
+          "chembl-act:22892177",
+          "chembl-act:23232604",
+          "chembl-act:24993667",
+          "chembl-act:26196706",
+          "chembl-act:26199037",
+          "chembl-act:27322265",
+          "chembl-act:29131835"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:108863",
+        "database": "ChEMBL",
+        "label": "Activity 108863 (CHEMBL683041)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL553:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL553",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 7.58,
+      "label": "median pChEMBL 7.58 (n=25)",
+      "meta": {
+        "n": 25,
+        "min": 5.21,
+        "max": 10.54,
+        "activityType": "IC50",
+        "rank": 10,
+        "alsoValid": [
+          "chembl-act:2048876",
+          "chembl-act:2194204",
+          "chembl-act:2206757",
+          "chembl-act:3222547",
+          "chembl-act:3261330",
+          "chembl-act:7980774",
+          "chembl-act:14543397",
+          "chembl-act:14652523",
+          "chembl-act:16410660",
+          "chembl-act:18439537",
+          "chembl-act:19110259",
+          "chembl-act:22753820",
+          "chembl-act:22892165",
+          "chembl-act:22965631",
+          "chembl-act:23203418",
+          "chembl-act:24776465",
+          "chembl-act:24796320",
+          "chembl-act:24993557",
+          "chembl-act:24993675",
+          "chembl-act:25098074",
+          "chembl-act:25456679",
+          "chembl-act:25706595",
+          "chembl-act:26001397",
+          "chembl-act:27814595"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:129395",
+        "database": "ChEMBL",
+        "label": "Activity 129395 (CHEMBL683041)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL3353410:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL3353410",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 7.57,
+      "label": "median pChEMBL 7.57 (n=12)",
+      "meta": {
+        "n": 12,
+        "min": 6.71,
+        "max": 8.96,
+        "activityType": "IC50",
+        "rank": 11,
+        "alsoValid": [
+          "chembl-act:18722887",
+          "chembl-act:24343051",
+          "chembl-act:24377971",
+          "chembl-act:24413842",
+          "chembl-act:24805889",
+          "chembl-act:24958839",
+          "chembl-act:25533404",
+          "chembl-act:26132485",
+          "chembl-act:28497443",
+          "chembl-act:29159013",
+          "chembl-act:29163691"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:18581491",
+        "database": "ChEMBL",
+        "label": "Activity 18581491 (CHEMBL4222844)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4222844"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL3545311:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL3545311",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 7.07,
+      "label": "median pChEMBL 7.07 (n=10)",
+      "meta": {
+        "n": 10,
+        "min": 5.88,
+        "max": 8.8,
+        "activityType": "IC50",
+        "rank": 12,
+        "alsoValid": [
+          "chembl-act:24919508",
+          "chembl-act:25098072",
+          "chembl-act:25533405",
+          "chembl-act:25665244",
+          "chembl-act:26190886",
+          "chembl-act:26307836",
+          "chembl-act:26316162",
+          "chembl-act:28620149",
+          "chembl-act:29310114"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:24349079",
+        "database": "ChEMBL",
+        "label": "Activity 24349079 (CHEMBL5031761)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5031761"
+      }
+    },
+    {
+      "id": "e:measured_against:drug:CHEMBL3545308:target:CHEMBL203",
+      "type": "measured_against",
+      "from": "drug:CHEMBL3545308",
+      "to": "target:CHEMBL203",
+      "kind": "measured",
+      "strength": 6.99,
+      "label": "median pChEMBL 6.99 (n=12)",
+      "meta": {
+        "n": 12,
+        "min": 5.6,
+        "max": 8.89,
+        "activityType": "IC50",
+        "rank": 13,
+        "alsoValid": [
+          "chembl-act:24993651",
+          "chembl-act:26838751",
+          "chembl-act:26838754",
+          "chembl-act:27322277",
+          "chembl-act:27322286",
+          "chembl-act:27619415",
+          "chembl-act:27619418",
+          "chembl-act:27619442",
+          "chembl-act:27619454",
+          "chembl-act:27619472",
+          "chembl-act:29122963"
+        ]
+      },
+      "source": {
+        "id": "chembl-act:16335936",
+        "database": "ChEMBL",
+        "label": "Activity 16335936 (CHEMBL3707998)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3707998"
+      }
+    },
+    {
+      "id": "e:has_warning:drug:CHEMBL554:warning:1043",
+      "type": "has_warning",
+      "from": "drug:CHEMBL554",
+      "to": "warning:1043",
+      "kind": "clinical",
+      "label": "Black Box Warning",
+      "source": {
+        "id": "chembl-warn:1043",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hepatotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee37f88-ec6a-4c30-b8aa-e2c71f93088c"
+      }
+    },
+    {
+      "id": "e:has_warning:drug:CHEMBL4650319:warning:2847",
+      "type": "has_warning",
+      "from": "drug:CHEMBL4650319",
+      "to": "warning:2847",
+      "kind": "clinical",
+      "label": "Black Box Warning",
+      "source": {
+        "id": "chembl-warn:2847",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+      }
+    },
+    {
+      "id": "e:has_warning:drug:CHEMBL4650319:warning:3784",
+      "type": "has_warning",
+      "from": "drug:CHEMBL4650319",
+      "to": "warning:3784",
+      "kind": "clinical",
+      "label": "Black Box Warning",
+      "source": {
+        "id": "chembl-warn:3784",
+        "database": "ChEMBL",
+        "label": "MOBOCERTINIB: Black Box Warning (cardiotoxicity)",
+        "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1a91500-a944-4cb8-b4a8-ae278bcf728d"
+      }
+    },
+    {
+      "id": "e:has_warning:drug:CHEMBL554:warning:5118",
+      "type": "has_warning",
+      "from": "drug:CHEMBL554",
+      "to": "warning:5118",
+      "kind": "clinical",
+      "label": "Black Box Warning",
+      "source": {
+        "id": "chembl-warn:5118",
+        "database": "ChEMBL",
+        "label": "LAPATINIB: Black Box Warning (hematological toxicity)",
+        "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00949910",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00949910",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Completed",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00949910",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00949910",
+        "url": "https://clinicaltrials.gov/study/NCT00949910"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00949910:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00949910",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00949910",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00949910",
+        "url": "https://clinicaltrials.gov/study/NCT00949910"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT01203917",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT01203917",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Completed",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01203917",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01203917",
+        "url": "https://clinicaltrials.gov/study/NCT01203917"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01203917:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01203917",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Caucasian Patients With EGFR Mutation Positive Advanced NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01203917",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01203917",
+        "url": "https://clinicaltrials.gov/study/NCT01203917"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2110732:trial:NCT04511533",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2110732",
+      "to": "trial:NCT04511533",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Completed",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT04511533",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04511533",
+        "url": "https://clinicaltrials.gov/study/NCT04511533"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04511533:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04511533",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Metastatic Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04511533",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04511533",
+        "url": "https://clinicaltrials.gov/study/NCT04511533"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04401059:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04401059",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma",
+          "Non-Small-Cell Lung Cancer",
+          "Adenocarcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04401059",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04401059",
+        "url": "https://clinicaltrials.gov/study/NCT04401059"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2087361:trial:NCT02031601",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2087361",
+      "to": "trial:NCT02031601",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Unknown status",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02031601",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02031601",
+        "url": "https://clinicaltrials.gov/study/NCT02031601"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT02031601",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT02031601",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Unknown status",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02031601",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02031601",
+        "url": "https://clinicaltrials.gov/study/NCT02031601"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT02031601",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT02031601",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Unknown status",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02031601",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02031601",
+        "url": "https://clinicaltrials.gov/study/NCT02031601"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02031601:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02031601",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small-Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02031601",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02031601",
+        "url": "https://clinicaltrials.gov/study/NCT02031601"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2087361:trial:NCT02404675",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2087361",
+      "to": "trial:NCT02404675",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Unknown status",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02404675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02404675",
+        "url": "https://clinicaltrials.gov/study/NCT02404675"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02404675:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02404675",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02404675",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02404675",
+        "url": "https://clinicaltrials.gov/study/NCT02404675"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2087361:trial:NCT02103257",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2087361",
+      "to": "trial:NCT02103257",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Unknown status",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT02103257",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02103257",
+        "url": "https://clinicaltrials.gov/study/NCT02103257"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02103257:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02103257",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "EGFR Positive Non-small Cell Lung Cancer",
+          "Adenocarcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02103257",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02103257",
+        "url": "https://clinicaltrials.gov/study/NCT02103257"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2087361:trial:NCT07900243",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2087361",
+      "to": "trial:NCT07900243",
+      "kind": "clinical",
+      "strength": 4,
+      "label": "Phase 4 · Not yet recruiting",
+      "meta": {
+        "phase": "Phase 4",
+        "status": "Not yet recruiting",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT07900243",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07900243",
+        "url": "https://clinicaltrials.gov/study/NCT07900243"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT07900243:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT07900243",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Locally Advanced or Metastatic Non-small Cell Lung Cancer With Previously Untreated EGFR-sensitive Mutations and ECOG Performance Status Score ≥2"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT07900243",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT07900243",
+        "url": "https://clinicaltrials.gov/study/NCT07900243"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02474355:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02474355",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02474355",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02474355",
+        "url": "https://clinicaltrials.gov/study/NCT02474355"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00364351",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00364351",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00364351",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00364351",
+        "url": "https://clinicaltrials.gov/study/NCT00364351"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00364351:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00364351",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00364351",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00364351",
+        "url": "https://clinicaltrials.gov/study/NCT00364351"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT00322452",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT00322452",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00322452",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00322452",
+        "url": "https://clinicaltrials.gov/study/NCT00322452"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00322452:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00322452",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00322452",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00322452",
+        "url": "https://clinicaltrials.gov/study/NCT00322452"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00373425",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00373425",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00373425",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00373425",
+        "url": "https://clinicaltrials.gov/study/NCT00373425"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00373425:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00373425",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00373425",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00373425",
+        "url": "https://clinicaltrials.gov/study/NCT00373425"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01085136:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01085136",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01085136",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01085136",
+        "url": "https://clinicaltrials.gov/study/NCT01085136"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00257608",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00257608",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00257608",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00257608",
+        "url": "https://clinicaltrials.gov/study/NCT00257608"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00257608:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00257608",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00257608",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00257608",
+        "url": "https://clinicaltrials.gov/study/NCT00257608"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3353410:trial:NCT04487080",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3353410",
+      "to": "trial:NCT04487080",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Active, not recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT04487080",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04487080",
+        "url": "https://clinicaltrials.gov/study/NCT04487080"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04487080:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04487080",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04487080",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04487080",
+        "url": "https://clinicaltrials.gov/study/NCT04487080"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT01244191",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT01244191",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Terminated",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01244191",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01244191",
+        "url": "https://clinicaltrials.gov/study/NCT01244191"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01244191:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01244191",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non Squamous, Non-small-cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01244191",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01244191",
+        "url": "https://clinicaltrials.gov/study/NCT01244191"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00457392",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00457392",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00457392",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00457392",
+        "url": "https://clinicaltrials.gov/study/NCT00457392"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00457392:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00457392",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00457392",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00457392",
+        "url": "https://clinicaltrials.gov/study/NCT00457392"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00556712",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00556712",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00556712",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00556712",
+        "url": "https://clinicaltrials.gov/study/NCT00556712"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00556712:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00556712",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00556712",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00556712",
+        "url": "https://clinicaltrials.gov/study/NCT00556712"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2110732:trial:NCT01360554",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2110732",
+      "to": "trial:NCT01360554",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01360554",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01360554",
+        "url": "https://clinicaltrials.gov/study/NCT01360554"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT01360554",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT01360554",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01360554",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01360554",
+        "url": "https://clinicaltrials.gov/study/NCT01360554"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01360554:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01360554",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01360554",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01360554",
+        "url": "https://clinicaltrials.gov/study/NCT01360554"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL1173655:trial:NCT01523587",
+      "type": "tested_in",
+      "from": "drug:CHEMBL1173655",
+      "to": "trial:NCT01523587",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01523587",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01523587",
+        "url": "https://clinicaltrials.gov/study/NCT01523587"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT01523587",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT01523587",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01523587",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01523587",
+        "url": "https://clinicaltrials.gov/study/NCT01523587"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01523587:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01523587",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01523587",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01523587",
+        "url": "https://clinicaltrials.gov/study/NCT01523587"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04988295:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04988295",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04988295",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04988295",
+        "url": "https://clinicaltrials.gov/study/NCT04988295"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01000025:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01000025",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01000025",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01000025",
+        "url": "https://clinicaltrials.gov/study/NCT01000025"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02511106:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02511106",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Stage IB-IIIA Non-small Cell Lung Carcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02511106",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02511106",
+        "url": "https://clinicaltrials.gov/study/NCT02511106"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT02296125",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT02296125",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02296125",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02296125",
+        "url": "https://clinicaltrials.gov/study/NCT02296125"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT02296125",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT02296125",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02296125",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02296125",
+        "url": "https://clinicaltrials.gov/study/NCT02296125"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02296125:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02296125",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Locally Advanced or Metastatic EGFR Sensitising Mutation Positive Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02296125",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02296125",
+        "url": "https://clinicaltrials.gov/study/NCT02296125"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT01328951",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT01328951",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01328951",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01328951",
+        "url": "https://clinicaltrials.gov/study/NCT01328951"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01328951:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01328951",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Squamous Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01328951",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01328951",
+        "url": "https://clinicaltrials.gov/study/NCT01328951"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00130728",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00130728",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00130728",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00130728",
+        "url": "https://clinicaltrials.gov/study/NCT00130728"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00130728:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00130728",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00130728",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00130728",
+        "url": "https://clinicaltrials.gov/study/NCT00130728"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT02352948",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT02352948",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02352948",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02352948",
+        "url": "https://clinicaltrials.gov/study/NCT02352948"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02352948:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02352948",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non - Small Cell Lung Cancer NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02352948",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02352948",
+        "url": "https://clinicaltrials.gov/study/NCT02352948"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3353410:trial:NCT04035486",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3353410",
+      "to": "trial:NCT04035486",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Active, not recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT04035486",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04035486",
+        "url": "https://clinicaltrials.gov/study/NCT04035486"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04035486:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04035486",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04035486",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04035486",
+        "url": "https://clinicaltrials.gov/study/NCT04035486"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00656136:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00656136",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00656136",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00656136",
+        "url": "https://clinicaltrials.gov/study/NCT00656136"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT00673049",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT00673049",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Terminated",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00673049",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00673049",
+        "url": "https://clinicaltrials.gov/study/NCT00673049"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00673049:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00673049",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Large Cell",
+          "Carcinoma, Non-Small-Cell Lung",
+          "Carcinoma, Squamous Cell",
+          "Carcinoma, Adenosquamous Cell"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00673049",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00673049",
+        "url": "https://clinicaltrials.gov/study/NCT00673049"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT02411448",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT02411448",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Active, not recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02411448",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02411448",
+        "url": "https://clinicaltrials.gov/study/NCT02411448"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT02411448",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT02411448",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Active, not recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02411448",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02411448",
+        "url": "https://clinicaltrials.gov/study/NCT02411448"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3353410:trial:NCT02411448",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3353410",
+      "to": "trial:NCT02411448",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Active, not recruiting",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Active, not recruiting",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02411448",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02411448",
+        "url": "https://clinicaltrials.gov/study/NCT02411448"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02411448:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02411448",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Metastatic Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02411448",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02411448",
+        "url": "https://clinicaltrials.gov/study/NCT02411448"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL1173655:trial:NCT01953913",
+      "type": "tested_in",
+      "from": "drug:CHEMBL1173655",
+      "to": "trial:NCT01953913",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01953913",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953913",
+        "url": "https://clinicaltrials.gov/study/NCT01953913"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01953913:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01953913",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01953913",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953913",
+        "url": "https://clinicaltrials.gov/study/NCT01953913"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT02588261",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT02588261",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Terminated",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02588261",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02588261",
+        "url": "https://clinicaltrials.gov/study/NCT02588261"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT02588261",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT02588261",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Terminated",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02588261",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02588261",
+        "url": "https://clinicaltrials.gov/study/NCT02588261"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02588261:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02588261",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-small Cell Lung Cancer (NSCLC)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02588261",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02588261",
+        "url": "https://clinicaltrials.gov/study/NCT02588261"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT00049543",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT00049543",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00049543",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00049543",
+        "url": "https://clinicaltrials.gov/study/NCT00049543"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00049543:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00049543",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Adenocarcinoma of the Lung",
+          "Adenosquamous Cell Lung Cancer",
+          "Bronchoalveolar Cell Lung Cancer",
+          "Large Cell Lung Cancer",
+          "Squamous Cell Lung Cancer",
+          "Stage IB Non-small Cell Lung Cancer",
+          "Stage IIA Non-small Cell Lung Cancer",
+          "Stage IIB Non-small Cell Lung Cancer",
+          "Stage IIIA Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00049543",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00049543",
+        "url": "https://clinicaltrials.gov/study/NCT00049543"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL1173655:trial:NCT01853826",
+      "type": "tested_in",
+      "from": "drug:CHEMBL1173655",
+      "to": "trial:NCT01853826",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01853826",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01853826",
+        "url": "https://clinicaltrials.gov/study/NCT01853826"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01853826:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01853826",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01853826",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01853826",
+        "url": "https://clinicaltrials.gov/study/NCT01853826"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL2110732:trial:NCT01774721",
+      "type": "tested_in",
+      "from": "drug:CHEMBL2110732",
+      "to": "trial:NCT01774721",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01774721",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01774721",
+        "url": "https://clinicaltrials.gov/study/NCT01774721"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT01774721",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT01774721",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01774721",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01774721",
+        "url": "https://clinicaltrials.gov/study/NCT01774721"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01774721:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01774721",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-small Cell Lung Cancer With EGFR-Activating Mutations"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01774721",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01774721",
+        "url": "https://clinicaltrials.gov/study/NCT01774721"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL939:trial:NCT03849768",
+      "type": "tested_in",
+      "from": "drug:CHEMBL939",
+      "to": "trial:NCT03849768",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Unknown status",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Unknown status",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT03849768",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03849768",
+        "url": "https://clinicaltrials.gov/study/NCT03849768"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT03849768:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT03849768",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03849768",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03849768",
+        "url": "https://clinicaltrials.gov/study/NCT03849768"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545311:trial:NCT02737501",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545311",
+      "to": "trial:NCT02737501",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02737501",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02737501",
+        "url": "https://clinicaltrials.gov/study/NCT02737501"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02737501:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02737501",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-small Cell Lung Cancer",
+          "Lung Cancer",
+          "Advanced Malignancies",
+          "Carcinoma"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02737501",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02737501",
+        "url": "https://clinicaltrials.gov/study/NCT02737501"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545311:trial:NCT03596866",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545311",
+      "to": "trial:NCT03596866",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Completed",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT03596866",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03596866",
+        "url": "https://clinicaltrials.gov/study/NCT03596866"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT03596866:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT03596866",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "ALK+ Advanced NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03596866",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03596866",
+        "url": "https://clinicaltrials.gov/study/NCT03596866"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545308:trial:NCT02322281",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545308",
+      "to": "trial:NCT02322281",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Terminated",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02322281",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02322281",
+        "url": "https://clinicaltrials.gov/study/NCT02322281"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02322281:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02322281",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02322281",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02322281",
+        "url": "https://clinicaltrials.gov/study/NCT02322281"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04129502:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04129502",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Advanced/Metastatic Non-Small Cell Lung Cancer (NSCLC)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04129502",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04129502",
+        "url": "https://clinicaltrials.gov/study/NCT04129502"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545154:trial:NCT05378763",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545154",
+      "to": "trial:NCT05378763",
+      "kind": "clinical",
+      "strength": 3,
+      "label": "Phase 3 · Suspended",
+      "meta": {
+        "phase": "Phase 3",
+        "status": "Suspended",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT05378763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05378763",
+        "url": "https://clinicaltrials.gov/study/NCT05378763"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT05378763:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT05378763",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT05378763",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05378763",
+        "url": "https://clinicaltrials.gov/study/NCT05378763"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT02186301",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT02186301",
+      "kind": "clinical",
+      "strength": 2.5,
+      "label": "Phase 2/3 · Terminated",
+      "meta": {
+        "phase": "Phase 2/3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02186301",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02186301",
+        "url": "https://clinicaltrials.gov/study/NCT02186301"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545308:trial:NCT02186301",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545308",
+      "to": "trial:NCT02186301",
+      "kind": "clinical",
+      "strength": 2.5,
+      "label": "Phase 2/3 · Terminated",
+      "meta": {
+        "phase": "Phase 2/3",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02186301",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02186301",
+        "url": "https://clinicaltrials.gov/study/NCT02186301"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02186301:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02186301",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02186301",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02186301",
+        "url": "https://clinicaltrials.gov/study/NCT02186301"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545154:trial:NCT03318939",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545154",
+      "to": "trial:NCT03318939",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Terminated",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT03318939",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03318939",
+        "url": "https://clinicaltrials.gov/study/NCT03318939"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT03318939:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT03318939",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03318939",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03318939",
+        "url": "https://clinicaltrials.gov/study/NCT03318939"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL554:trial:NCT01306045",
+      "type": "tested_in",
+      "from": "drug:CHEMBL554",
+      "to": "trial:NCT01306045",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01306045",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01306045",
+        "url": "https://clinicaltrials.gov/study/NCT01306045"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT01306045",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT01306045",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01306045",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01306045",
+        "url": "https://clinicaltrials.gov/study/NCT01306045"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01306045:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01306045",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung",
+          "Carcinoma, Small Cell Lung",
+          "Carcinoma, Thymic"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01306045",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01306045",
+        "url": "https://clinicaltrials.gov/study/NCT01306045"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL180022:trial:NCT01953926",
+      "type": "tested_in",
+      "from": "drug:CHEMBL180022",
+      "to": "trial:NCT01953926",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Terminated",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01953926",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953926",
+        "url": "https://clinicaltrials.gov/study/NCT01953926"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01953926:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01953926",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Solid Tumors Harboring Somatic HER2 or EGFR Exon 18 Mutations"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01953926",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01953926",
+        "url": "https://clinicaltrials.gov/study/NCT01953926"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545308:trial:NCT02147990",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545308",
+      "to": "trial:NCT02147990",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Terminated",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02147990",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02147990",
+        "url": "https://clinicaltrials.gov/study/NCT02147990"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02147990:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02147990",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02147990",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02147990",
+        "url": "https://clinicaltrials.gov/study/NCT02147990"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545311:trial:NCT02094573",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545311",
+      "to": "trial:NCT02094573",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT02094573",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02094573",
+        "url": "https://clinicaltrials.gov/study/NCT02094573"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02094573:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02094573",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02094573",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02094573",
+        "url": "https://clinicaltrials.gov/study/NCT02094573"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00266877:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00266877",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung",
+          "Lung Neoplasms"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00266877",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00266877",
+        "url": "https://clinicaltrials.gov/study/NCT00266877"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL554:trial:NCT00073008",
+      "type": "tested_in",
+      "from": "drug:CHEMBL554",
+      "to": "trial:NCT00073008",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Terminated",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT00073008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00073008",
+        "url": "https://clinicaltrials.gov/study/NCT00073008"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00073008:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00073008",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Lung Cancer, Non-Small Cell"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00073008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00073008",
+        "url": "https://clinicaltrials.gov/study/NCT00073008"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL180022:trial:NCT01827267",
+      "type": "tested_in",
+      "from": "drug:CHEMBL180022",
+      "to": "trial:NCT01827267",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Completed",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Completed",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT01827267",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01827267",
+        "url": "https://clinicaltrials.gov/study/NCT01827267"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT01827267:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT01827267",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "HER2-mutant Non-Small Cell Lung Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT01827267",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT01827267",
+        "url": "https://clinicaltrials.gov/study/NCT01827267"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL554:trial:NCT04591431",
+      "type": "tested_in",
+      "from": "drug:CHEMBL554",
+      "to": "trial:NCT04591431",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Unknown status",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT04591431",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04591431",
+        "url": "https://clinicaltrials.gov/study/NCT04591431"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL553:trial:NCT04591431",
+      "type": "tested_in",
+      "from": "drug:CHEMBL553",
+      "to": "trial:NCT04591431",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Unknown status",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT04591431",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04591431",
+        "url": "https://clinicaltrials.gov/study/NCT04591431"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545311:trial:NCT04591431",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545311",
+      "to": "trial:NCT04591431",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Unknown status",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Unknown status",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT04591431",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04591431",
+        "url": "https://clinicaltrials.gov/study/NCT04591431"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04591431:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04591431",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Breast Cancer",
+          "Gastrointestinal Cancer",
+          "Non Small Cell Lung Cancer",
+          "Other Cancer"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04591431",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04591431",
+        "url": "https://clinicaltrials.gov/study/NCT04591431"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00050830:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00050830",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Lung Neoplasms"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00050830",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00050830",
+        "url": "https://clinicaltrials.gov/study/NCT00050830"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545154:trial:NCT03066206",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545154",
+      "to": "trial:NCT03066206",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Terminated",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT03066206",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03066206",
+        "url": "https://clinicaltrials.gov/study/NCT03066206"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT03066206:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT03066206",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "EGFR Exon 20 Mutation",
+          "ERBB2 Gene Mutation",
+          "Recurrent Lung Non-Small Cell Carcinoma",
+          "Stage IV Non-Small Cell Lung Cancer AJCC v7"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT03066206",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT03066206",
+        "url": "https://clinicaltrials.gov/study/NCT03066206"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545154:trial:NCT04044170",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545154",
+      "to": "trial:NCT04044170",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Terminated",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Terminated",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT04044170",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04044170",
+        "url": "https://clinicaltrials.gov/study/NCT04044170"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04044170:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04044170",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04044170",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04044170",
+        "url": "https://clinicaltrials.gov/study/NCT04044170"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04576208:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04576208",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Non-Small Cell Lung Cancer (NSCLC)"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04576208",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04576208",
+        "url": "https://clinicaltrials.gov/study/NCT04576208"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545154:trial:NCT05045404",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545154",
+      "to": "trial:NCT05045404",
+      "kind": "clinical",
+      "strength": 2,
+      "label": "Phase 2 · Withdrawn",
+      "meta": {
+        "phase": "Phase 2",
+        "status": "Withdrawn",
+        "hasResults": false
+      },
+      "source": {
+        "id": "nct:NCT05045404",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05045404",
+        "url": "https://clinicaltrials.gov/study/NCT05045404"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT05045404:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT05045404",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Metastatic Lung Non-Small Cell Carcinoma",
+          "Stage IV Lung Cancer AJCC v8",
+          "Stage IVA Lung Cancer AJCC v8",
+          "Stage IVB Lung Cancer AJCC v8"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT05045404",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT05045404",
+        "url": "https://clinicaltrials.gov/study/NCT05045404"
+      }
+    },
+    {
+      "id": "e:tested_in:drug:CHEMBL3545154:trial:NCT04402008",
+      "type": "tested_in",
+      "from": "drug:CHEMBL3545154",
+      "to": "trial:NCT04402008",
+      "kind": "clinical",
+      "strength": 1.5,
+      "label": "Phase 1/2 · Terminated",
+      "meta": {
+        "phase": "Phase 1/2",
+        "status": "Terminated",
+        "hasResults": true
+      },
+      "source": {
+        "id": "nct:NCT04402008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04402008",
+        "url": "https://clinicaltrials.gov/study/NCT04402008"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT04402008:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT04402008",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "NSCLC"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT04402008",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT04402008",
+        "url": "https://clinicaltrials.gov/study/NCT04402008"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT02716116:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT02716116",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small-Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT02716116",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT02716116",
+        "url": "https://clinicaltrials.gov/study/NCT02716116"
+      }
+    },
+    {
+      "id": "e:for_disease:trial:NCT00174356:disease:query",
+      "type": "for_disease",
+      "from": "trial:NCT00174356",
+      "to": "disease:query",
+      "kind": "clinical",
+      "label": "trial for disease",
+      "meta": {
+        "conditions": [
+          "Carcinoma, Non-Small Cell Lung"
+        ]
+      },
+      "source": {
+        "id": "nct:NCT00174356",
+        "database": "ClinicalTrials.gov",
+        "label": "NCT00174356",
+        "url": "https://clinicaltrials.gov/study/NCT00174356"
+      }
+    }
+  ],
+  "hypotheses": [],
+  "builtAt": "2026-10-28T22:00:47.562Z",
+  "sources": [
+    {
+      "id": "chembl-target:CHEMBL203",
+      "database": "ChEMBL",
+      "label": "CHEMBL203",
+      "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL203"
+    },
+    {
+      "id": "chembl-mol:CHEMBL3545154",
+      "database": "ChEMBL",
+      "label": "POZIOTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545154"
+    },
+    {
+      "id": "chembl-act:25078762",
+      "database": "ChEMBL",
+      "label": "Activity 25078762 (CHEMBL5255141)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255141"
+    },
+    {
+      "id": "chembl-act:26198959",
+      "database": "ChEMBL",
+      "label": "Activity 26198959 (CHEMBL5638807)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638807"
+    },
+    {
+      "id": "chembl-act:26199036",
+      "database": "ChEMBL",
+      "label": "Activity 26199036 (CHEMBL5638814)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638814"
+    },
+    {
+      "id": "chembl-act:26199040",
+      "database": "ChEMBL",
+      "label": "Activity 26199040 (CHEMBL5638815)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638815"
+    },
+    {
+      "id": "chembl-act:29092502",
+      "database": "ChEMBL",
+      "label": "Activity 29092502 (CHEMBL6083476)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6083476"
+    },
+    {
+      "id": "chembl-mol:CHEMBL4650319",
+      "database": "ChEMBL",
+      "label": "MOBOCERTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+    },
+    {
+      "id": "chembl-act:25098080",
+      "database": "ChEMBL",
+      "label": "Activity 25098080 (CHEMBL5260455)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+    },
+    {
+      "id": "chembl-act:29113771",
+      "database": "ChEMBL",
+      "label": "Activity 29113771 (CHEMBL6089387)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6089387"
+    },
+    {
+      "id": "chembl-mol:CHEMBL1173655",
+      "database": "ChEMBL",
+      "label": "AFATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1173655"
+    },
+    {
+      "id": "chembl-act:2246122",
+      "database": "ChEMBL",
+      "label": "Activity 2246122 (CHEMBL1009318)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+    },
+    {
+      "id": "chembl-act:16479890",
+      "database": "ChEMBL",
+      "label": "Activity 16479890 (CHEMBL3766407)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3766407"
+    },
+    {
+      "id": "chembl-act:19310304",
+      "database": "ChEMBL",
+      "label": "Activity 19310304 (CHEMBL4416105)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4416105"
+    },
+    {
+      "id": "chembl-act:22894024",
+      "database": "ChEMBL",
+      "label": "Activity 22894024 (CHEMBL4730144)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4730144"
+    },
+    {
+      "id": "chembl-act:24902244",
+      "database": "ChEMBL",
+      "label": "Activity 24902244 (CHEMBL5161051)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5161051"
+    },
+    {
+      "id": "chembl-act:24957791",
+      "database": "ChEMBL",
+      "label": "Activity 24957791 (CHEMBL5214829)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5214829"
+    },
+    {
+      "id": "chembl-act:25078763",
+      "database": "ChEMBL",
+      "label": "Activity 25078763 (CHEMBL5255141)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5255141"
+    },
+    {
+      "id": "chembl-act:25094728",
+      "database": "ChEMBL",
+      "label": "Activity 25094728 (CHEMBL5259686)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5259686"
+    },
+    {
+      "id": "chembl-act:26039767",
+      "database": "ChEMBL",
+      "label": "Activity 26039767 (CHEMBL5585679)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5585679"
+    },
+    {
+      "id": "chembl-act:26941087",
+      "database": "ChEMBL",
+      "label": "Activity 26941087 (CHEMBL5731383)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5731383"
+    },
+    {
+      "id": "chembl-mol:CHEMBL180022",
+      "database": "ChEMBL",
+      "label": "NERATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL180022"
+    },
+    {
+      "id": "chembl-act:1943195",
+      "database": "ChEMBL",
+      "label": "Activity 1943195 (CHEMBL892951)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+    },
+    {
+      "id": "chembl-act:1943214",
+      "database": "ChEMBL",
+      "label": "Activity 1943214 (CHEMBL892954)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892954"
+    },
+    {
+      "id": "chembl-act:2246121",
+      "database": "ChEMBL",
+      "label": "Activity 2246121 (CHEMBL1009318)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+    },
+    {
+      "id": "chembl-act:13322674",
+      "database": "ChEMBL",
+      "label": "Activity 13322674 (CHEMBL2390159)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2390159"
+    },
+    {
+      "id": "chembl-act:23276955",
+      "database": "ChEMBL",
+      "label": "Activity 23276955 (CHEMBL4836401)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4836401"
+    },
+    {
+      "id": "chembl-act:24907894",
+      "database": "ChEMBL",
+      "label": "Activity 24907894 (CHEMBL5162370)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5162370"
+    },
+    {
+      "id": "chembl-act:26154205",
+      "database": "ChEMBL",
+      "label": "Activity 26154205 (CHEMBL5626926)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5626926"
+    },
+    {
+      "id": "chembl-act:29122426",
+      "database": "ChEMBL",
+      "label": "Activity 29122426 (CHEMBL6092696)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6092696"
+    },
+    {
+      "id": "chembl-mol:CHEMBL31965",
+      "database": "ChEMBL",
+      "label": "CANERTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL31965"
+    },
+    {
+      "id": "chembl-act:110479",
+      "database": "ChEMBL",
+      "label": "Activity 110479 (CHEMBL673925)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL673925"
+    },
+    {
+      "id": "chembl-act:121735",
+      "database": "ChEMBL",
+      "label": "Activity 121735 (CHEMBL683041)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+    },
+    {
+      "id": "chembl-act:790534",
+      "database": "ChEMBL",
+      "label": "Activity 790534 (CHEMBL674020)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674020"
+    },
+    {
+      "id": "chembl-act:2246120",
+      "database": "ChEMBL",
+      "label": "Activity 2246120 (CHEMBL1009318)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+    },
+    {
+      "id": "chembl-act:2615700",
+      "database": "ChEMBL",
+      "label": "Activity 2615700 (CHEMBL1026506)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1026506"
+    },
+    {
+      "id": "chembl-act:15698606",
+      "database": "ChEMBL",
+      "label": "Activity 15698606 (CHEMBL3616083)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3616083"
+    },
+    {
+      "id": "chembl-act:18955278",
+      "database": "ChEMBL",
+      "label": "Activity 18955278 (CHEMBL4332285)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4332285"
+    },
+    {
+      "id": "chembl-act:18997546",
+      "database": "ChEMBL",
+      "label": "Activity 18997546 (CHEMBL4342859)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4342859"
+    },
+    {
+      "id": "chembl-act:26224572",
+      "database": "ChEMBL",
+      "label": "Activity 26224572 (CHEMBL5653821)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5653821"
+    },
+    {
+      "id": "chembl-act:26237978",
+      "database": "ChEMBL",
+      "label": "Activity 26237978 (CHEMBL5662067)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5662067"
+    },
+    {
+      "id": "chembl-act:27814601",
+      "database": "ChEMBL",
+      "label": "Activity 27814601 (CHEMBL5734616)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5734616"
+    },
+    {
+      "id": "chembl-mol:CHEMBL2087361",
+      "database": "ChEMBL",
+      "label": "ICOTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2087361"
+    },
+    {
+      "id": "chembl-act:11022075",
+      "database": "ChEMBL",
+      "label": "Activity 11022075 (CHEMBL2090277)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2090277"
+    },
+    {
+      "id": "chembl-act:18997561",
+      "database": "ChEMBL",
+      "label": "Activity 18997561 (CHEMBL4342870)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4342870"
+    },
+    {
+      "id": "chembl-act:27322259",
+      "database": "ChEMBL",
+      "label": "Activity 27322259 (CHEMBL5732711)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732711"
+    },
+    {
+      "id": "chembl-mol:CHEMBL2110732",
+      "database": "ChEMBL",
+      "label": "DACOMITINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2110732"
+    },
+    {
+      "id": "chembl-act:15743462",
+      "database": "ChEMBL",
+      "label": "Activity 15743462 (CHEMBL3625155)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3625155"
+    },
+    {
+      "id": "chembl-act:16352077",
+      "database": "ChEMBL",
+      "label": "Activity 16352077 (CHEMBL3705968)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3705968"
+    },
+    {
+      "id": "chembl-act:26581692",
+      "database": "ChEMBL",
+      "label": "Activity 26581692 (CHEMBL5729875)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5729875"
+    },
+    {
+      "id": "chembl-act:29122425",
+      "database": "ChEMBL",
+      "label": "Activity 29122425 (CHEMBL6092696)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6092696"
+    },
+    {
+      "id": "chembl-mol:CHEMBL554",
+      "database": "ChEMBL",
+      "label": "LAPATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+    },
+    {
+      "id": "chembl-act:190221",
+      "database": "ChEMBL",
+      "label": "Activity 190221 (CHEMBL674106)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+    },
+    {
+      "id": "chembl-act:1766862",
+      "database": "ChEMBL",
+      "label": "Activity 1766862 (CHEMBL910357)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL910357"
+    },
+    {
+      "id": "chembl-act:2246119",
+      "database": "ChEMBL",
+      "label": "Activity 2246119 (CHEMBL1009318)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1009318"
+    },
+    {
+      "id": "chembl-act:2390320",
+      "database": "ChEMBL",
+      "label": "Activity 2390320 (CHEMBL944276)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL944276"
+    },
+    {
+      "id": "chembl-act:2489169",
+      "database": "ChEMBL",
+      "label": "Activity 2489169 (CHEMBL1028080)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1028080"
+    },
+    {
+      "id": "chembl-act:2943656",
+      "database": "ChEMBL",
+      "label": "Activity 2943656 (CHEMBL1044055)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1044055"
+    },
+    {
+      "id": "chembl-act:3120278",
+      "database": "ChEMBL",
+      "label": "Activity 3120278 (CHEMBL1064921)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1064921"
+    },
+    {
+      "id": "chembl-act:3222548",
+      "database": "ChEMBL",
+      "label": "Activity 3222548 (CHEMBL1116653)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1116653"
+    },
+    {
+      "id": "chembl-act:5243225",
+      "database": "ChEMBL",
+      "label": "Activity 5243225 (CHEMBL1686143)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1686143"
+    },
+    {
+      "id": "chembl-act:7980775",
+      "database": "ChEMBL",
+      "label": "Activity 7980775 (CHEMBL1930721)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930721"
+    },
+    {
+      "id": "chembl-act:13480566",
+      "database": "ChEMBL",
+      "label": "Activity 13480566 (CHEMBL2439214)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2439214"
+    },
+    {
+      "id": "chembl-act:15229669",
+      "database": "ChEMBL",
+      "label": "Activity 15229669 (CHEMBL3418211)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3418211"
+    },
+    {
+      "id": "chembl-act:16416927",
+      "database": "ChEMBL",
+      "label": "Activity 16416927 (CHEMBL3750872)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3750872"
+    },
+    {
+      "id": "chembl-act:20708043",
+      "database": "ChEMBL",
+      "label": "Activity 20708043 (CHEMBL4628613)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4628613"
+    },
+    {
+      "id": "chembl-act:22965630",
+      "database": "ChEMBL",
+      "label": "Activity 22965630 (CHEMBL4769431)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4769431"
+    },
+    {
+      "id": "chembl-act:23148927",
+      "database": "ChEMBL",
+      "label": "Activity 23148927 (CHEMBL4810017)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4810017"
+    },
+    {
+      "id": "chembl-act:24348823",
+      "database": "ChEMBL",
+      "label": "Activity 24348823 (CHEMBL5031645)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5031645"
+    },
+    {
+      "id": "chembl-act:25755867",
+      "database": "ChEMBL",
+      "label": "Activity 25755867 (CHEMBL5446212)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5446212"
+    },
+    {
+      "id": "chembl-act:27814598",
+      "database": "ChEMBL",
+      "label": "Activity 27814598 (CHEMBL5734616)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5734616"
+    },
+    {
+      "id": "chembl-mol:CHEMBL939",
+      "database": "ChEMBL",
+      "label": "GEFITINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL939"
+    },
+    {
+      "id": "chembl-act:108863",
+      "database": "ChEMBL",
+      "label": "Activity 108863 (CHEMBL683041)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+    },
+    {
+      "id": "chembl-act:186630",
+      "database": "ChEMBL",
+      "label": "Activity 186630 (CHEMBL674106)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL674106"
+    },
+    {
+      "id": "chembl-act:1943182",
+      "database": "ChEMBL",
+      "label": "Activity 1943182 (CHEMBL892951)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892951"
+    },
+    {
+      "id": "chembl-act:1943201",
+      "database": "ChEMBL",
+      "label": "Activity 1943201 (CHEMBL892954)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL892954"
+    },
+    {
+      "id": "chembl-act:2048875",
+      "database": "ChEMBL",
+      "label": "Activity 2048875 (CHEMBL924351)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924351"
+    },
+    {
+      "id": "chembl-act:2390321",
+      "database": "ChEMBL",
+      "label": "Activity 2390321 (CHEMBL944276)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL944276"
+    },
+    {
+      "id": "chembl-act:2503070",
+      "database": "ChEMBL",
+      "label": "Activity 2503070 (CHEMBL946651)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL946651"
+    },
+    {
+      "id": "chembl-act:3130635",
+      "database": "ChEMBL",
+      "label": "Activity 3130635 (CHEMBL1071045)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1071045"
+    },
+    {
+      "id": "chembl-act:6315901",
+      "database": "ChEMBL",
+      "label": "Activity 6315901 (CHEMBL1817212)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1817212"
+    },
+    {
+      "id": "chembl-act:8017332",
+      "database": "ChEMBL",
+      "label": "Activity 8017332 (CHEMBL1949352)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1949352"
+    },
+    {
+      "id": "chembl-act:13297481",
+      "database": "ChEMBL",
+      "label": "Activity 13297481 (CHEMBL2383984)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2383984"
+    },
+    {
+      "id": "chembl-act:13453602",
+      "database": "ChEMBL",
+      "label": "Activity 13453602 (CHEMBL2428558)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL2428558"
+    },
+    {
+      "id": "chembl-act:14547458",
+      "database": "ChEMBL",
+      "label": "Activity 14547458 (CHEMBL3226103)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3226103"
+    },
+    {
+      "id": "chembl-act:14974602",
+      "database": "ChEMBL",
+      "label": "Activity 14974602 (CHEMBL3375345)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3375345"
+    },
+    {
+      "id": "chembl-act:15112228",
+      "database": "ChEMBL",
+      "label": "Activity 15112228 (CHEMBL3385194)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3385194"
+    },
+    {
+      "id": "chembl-act:15229663",
+      "database": "ChEMBL",
+      "label": "Activity 15229663 (CHEMBL3418213)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3418213"
+    },
+    {
+      "id": "chembl-act:16395724",
+      "database": "ChEMBL",
+      "label": "Activity 16395724 (CHEMBL3745460)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3745460"
+    },
+    {
+      "id": "chembl-act:16499782",
+      "database": "ChEMBL",
+      "label": "Activity 16499782 (CHEMBL3776094)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3776094"
+    },
+    {
+      "id": "chembl-act:16588547",
+      "database": "ChEMBL",
+      "label": "Activity 16588547 (CHEMBL3807186)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3807186"
+    },
+    {
+      "id": "chembl-act:16811409",
+      "database": "ChEMBL",
+      "label": "Activity 16811409 (CHEMBL3870704)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3870704"
+    },
+    {
+      "id": "chembl-act:18573667",
+      "database": "ChEMBL",
+      "label": "Activity 18573667 (CHEMBL4221532)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4221532"
+    },
+    {
+      "id": "chembl-act:18955275",
+      "database": "ChEMBL",
+      "label": "Activity 18955275 (CHEMBL4332282)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4332282"
+    },
+    {
+      "id": "chembl-act:22473600",
+      "database": "ChEMBL",
+      "label": "Activity 22473600 (CHEMBL4685759)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4685759"
+    },
+    {
+      "id": "chembl-act:22892177",
+      "database": "ChEMBL",
+      "label": "Activity 22892177 (CHEMBL4729717)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4729717"
+    },
+    {
+      "id": "chembl-act:23232604",
+      "database": "ChEMBL",
+      "label": "Activity 23232604 (CHEMBL4827337)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4827337"
+    },
+    {
+      "id": "chembl-act:24993667",
+      "database": "ChEMBL",
+      "label": "Activity 24993667 (CHEMBL5230875)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230875"
+    },
+    {
+      "id": "chembl-act:26196706",
+      "database": "ChEMBL",
+      "label": "Activity 26196706 (CHEMBL5638112)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638112"
+    },
+    {
+      "id": "chembl-act:26199037",
+      "database": "ChEMBL",
+      "label": "Activity 26199037 (CHEMBL5638814)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5638814"
+    },
+    {
+      "id": "chembl-act:27322265",
+      "database": "ChEMBL",
+      "label": "Activity 27322265 (CHEMBL5732709)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732709"
+    },
+    {
+      "id": "chembl-act:29131835",
+      "database": "ChEMBL",
+      "label": "Activity 29131835 (CHEMBL6094898)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6094898"
+    },
+    {
+      "id": "chembl-mol:CHEMBL553",
+      "database": "ChEMBL",
+      "label": "ERLOTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL553"
+    },
+    {
+      "id": "chembl-act:129395",
+      "database": "ChEMBL",
+      "label": "Activity 129395 (CHEMBL683041)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL683041"
+    },
+    {
+      "id": "chembl-act:2048876",
+      "database": "ChEMBL",
+      "label": "Activity 2048876 (CHEMBL924351)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL924351"
+    },
+    {
+      "id": "chembl-act:2194204",
+      "database": "ChEMBL",
+      "label": "Activity 2194204 (CHEMBL978648)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL978648"
+    },
+    {
+      "id": "chembl-act:2206757",
+      "database": "ChEMBL",
+      "label": "Activity 2206757 (CHEMBL976899)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL976899"
+    },
+    {
+      "id": "chembl-act:3222547",
+      "database": "ChEMBL",
+      "label": "Activity 3222547 (CHEMBL1116653)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1116653"
+    },
+    {
+      "id": "chembl-act:3261330",
+      "database": "ChEMBL",
+      "label": "Activity 3261330 (CHEMBL1105216)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1105216"
+    },
+    {
+      "id": "chembl-act:7980774",
+      "database": "ChEMBL",
+      "label": "Activity 7980774 (CHEMBL1930721)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL1930721"
+    },
+    {
+      "id": "chembl-act:14543397",
+      "database": "ChEMBL",
+      "label": "Activity 14543397 (CHEMBL3226013)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3226013"
+    },
+    {
+      "id": "chembl-act:14652523",
+      "database": "ChEMBL",
+      "label": "Activity 14652523 (CHEMBL3266279)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3266279"
+    },
+    {
+      "id": "chembl-act:16410660",
+      "database": "ChEMBL",
+      "label": "Activity 16410660 (CHEMBL3745491)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3745491"
+    },
+    {
+      "id": "chembl-act:18439537",
+      "database": "ChEMBL",
+      "label": "Activity 18439537 (CHEMBL4156805)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4156805"
+    },
+    {
+      "id": "chembl-act:19110259",
+      "database": "ChEMBL",
+      "label": "Activity 19110259 (CHEMBL4370290)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4370290"
+    },
+    {
+      "id": "chembl-act:22753820",
+      "database": "ChEMBL",
+      "label": "Activity 22753820 (CHEMBL4700377)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4700377"
+    },
+    {
+      "id": "chembl-act:22892165",
+      "database": "ChEMBL",
+      "label": "Activity 22892165 (CHEMBL4729710)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4729710"
+    },
+    {
+      "id": "chembl-act:22965631",
+      "database": "ChEMBL",
+      "label": "Activity 22965631 (CHEMBL4769431)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4769431"
+    },
+    {
+      "id": "chembl-act:23203418",
+      "database": "ChEMBL",
+      "label": "Activity 23203418 (CHEMBL4821238)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4821238"
+    },
+    {
+      "id": "chembl-act:24776465",
+      "database": "ChEMBL",
+      "label": "Activity 24776465 (CHEMBL5128251)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5128251"
+    },
+    {
+      "id": "chembl-act:24796320",
+      "database": "ChEMBL",
+      "label": "Activity 24796320 (CHEMBL5133605)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5133605"
+    },
+    {
+      "id": "chembl-act:24993557",
+      "database": "ChEMBL",
+      "label": "Activity 24993557 (CHEMBL5230835)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230835"
+    },
+    {
+      "id": "chembl-act:24993675",
+      "database": "ChEMBL",
+      "label": "Activity 24993675 (CHEMBL5230879)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230879"
+    },
+    {
+      "id": "chembl-act:25098074",
+      "database": "ChEMBL",
+      "label": "Activity 25098074 (CHEMBL5260455)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+    },
+    {
+      "id": "chembl-act:25456679",
+      "database": "ChEMBL",
+      "label": "Activity 25456679 (CHEMBL5320277)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5320277"
+    },
+    {
+      "id": "chembl-act:25706595",
+      "database": "ChEMBL",
+      "label": "Activity 25706595 (CHEMBL5386905)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5386905"
+    },
+    {
+      "id": "chembl-act:26001397",
+      "database": "ChEMBL",
+      "label": "Activity 26001397 (CHEMBL5553676)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5553676"
+    },
+    {
+      "id": "chembl-act:27814595",
+      "database": "ChEMBL",
+      "label": "Activity 27814595 (CHEMBL5734616)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5734616"
+    },
+    {
+      "id": "chembl-mol:CHEMBL3353410",
+      "database": "ChEMBL",
+      "label": "OSIMERTINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3353410"
+    },
+    {
+      "id": "chembl-act:18581491",
+      "database": "ChEMBL",
+      "label": "Activity 18581491 (CHEMBL4222844)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4222844"
+    },
+    {
+      "id": "chembl-act:18722887",
+      "database": "ChEMBL",
+      "label": "Activity 18722887 (CHEMBL4258549)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL4258549"
+    },
+    {
+      "id": "chembl-act:24343051",
+      "database": "ChEMBL",
+      "label": "Activity 24343051 (CHEMBL5029925)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5029925"
+    },
+    {
+      "id": "chembl-act:24377971",
+      "database": "ChEMBL",
+      "label": "Activity 24377971 (CHEMBL5037732)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5037732"
+    },
+    {
+      "id": "chembl-act:24413842",
+      "database": "ChEMBL",
+      "label": "Activity 24413842 (CHEMBL5046855)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5046855"
+    },
+    {
+      "id": "chembl-act:24805889",
+      "database": "ChEMBL",
+      "label": "Activity 24805889 (CHEMBL5135826)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5135826"
+    },
+    {
+      "id": "chembl-act:24958839",
+      "database": "ChEMBL",
+      "label": "Activity 24958839 (CHEMBL5215097)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5215097"
+    },
+    {
+      "id": "chembl-act:25533404",
+      "database": "ChEMBL",
+      "label": "Activity 25533404 (CHEMBL5341567)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5341567"
+    },
+    {
+      "id": "chembl-act:26132485",
+      "database": "ChEMBL",
+      "label": "Activity 26132485 (CHEMBL5620507)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5620507"
+    },
+    {
+      "id": "chembl-act:28497443",
+      "database": "ChEMBL",
+      "label": "Activity 28497443 (CHEMBL5737313)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5737313"
+    },
+    {
+      "id": "chembl-act:29159013",
+      "database": "ChEMBL",
+      "label": "Activity 29159013 (CHEMBL6105594)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6105594"
+    },
+    {
+      "id": "chembl-act:29163691",
+      "database": "ChEMBL",
+      "label": "Activity 29163691 (CHEMBL6107142)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6107142"
+    },
+    {
+      "id": "chembl-mol:CHEMBL3545311",
+      "database": "ChEMBL",
+      "label": "BRIGATINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545311"
+    },
+    {
+      "id": "chembl-act:24349079",
+      "database": "ChEMBL",
+      "label": "Activity 24349079 (CHEMBL5031761)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5031761"
+    },
+    {
+      "id": "chembl-act:24919508",
+      "database": "ChEMBL",
+      "label": "Activity 24919508 (CHEMBL5165819)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5165819"
+    },
+    {
+      "id": "chembl-act:25098072",
+      "database": "ChEMBL",
+      "label": "Activity 25098072 (CHEMBL5260455)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5260455"
+    },
+    {
+      "id": "chembl-act:25533405",
+      "database": "ChEMBL",
+      "label": "Activity 25533405 (CHEMBL5341567)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5341567"
+    },
+    {
+      "id": "chembl-act:25665244",
+      "database": "ChEMBL",
+      "label": "Activity 25665244 (CHEMBL5374831)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5374831"
+    },
+    {
+      "id": "chembl-act:26190886",
+      "database": "ChEMBL",
+      "label": "Activity 26190886 (CHEMBL5636480)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5636480"
+    },
+    {
+      "id": "chembl-act:26307836",
+      "database": "ChEMBL",
+      "label": "Activity 26307836 (CHEMBL5705018)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5705018"
+    },
+    {
+      "id": "chembl-act:26316162",
+      "database": "ChEMBL",
+      "label": "Activity 26316162 (CHEMBL5711708)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5711708"
+    },
+    {
+      "id": "chembl-act:28620149",
+      "database": "ChEMBL",
+      "label": "Activity 28620149 (CHEMBL5737852)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5737852"
+    },
+    {
+      "id": "chembl-act:29310114",
+      "database": "ChEMBL",
+      "label": "Activity 29310114 (CHEMBL6183453)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6183453"
+    },
+    {
+      "id": "chembl-mol:CHEMBL3545308",
+      "database": "ChEMBL",
+      "label": "ROCILETINIB",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3545308"
+    },
+    {
+      "id": "chembl-act:16335936",
+      "database": "ChEMBL",
+      "label": "Activity 16335936 (CHEMBL3707998)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL3707998"
+    },
+    {
+      "id": "chembl-act:24993651",
+      "database": "ChEMBL",
+      "label": "Activity 24993651 (CHEMBL5230869)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5230869"
+    },
+    {
+      "id": "chembl-act:26838751",
+      "database": "ChEMBL",
+      "label": "Activity 26838751 (CHEMBL5731066)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5731066"
+    },
+    {
+      "id": "chembl-act:26838754",
+      "database": "ChEMBL",
+      "label": "Activity 26838754 (CHEMBL5731067)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5731067"
+    },
+    {
+      "id": "chembl-act:27322277",
+      "database": "ChEMBL",
+      "label": "Activity 27322277 (CHEMBL5732708)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732708"
+    },
+    {
+      "id": "chembl-act:27322286",
+      "database": "ChEMBL",
+      "label": "Activity 27322286 (CHEMBL5732711)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5732711"
+    },
+    {
+      "id": "chembl-act:27619415",
+      "database": "ChEMBL",
+      "label": "Activity 27619415 (CHEMBL5733820)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733820"
+    },
+    {
+      "id": "chembl-act:27619418",
+      "database": "ChEMBL",
+      "label": "Activity 27619418 (CHEMBL5733821)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+    },
+    {
+      "id": "chembl-act:27619442",
+      "database": "ChEMBL",
+      "label": "Activity 27619442 (CHEMBL5733821)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+    },
+    {
+      "id": "chembl-act:27619454",
+      "database": "ChEMBL",
+      "label": "Activity 27619454 (CHEMBL5733821)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+    },
+    {
+      "id": "chembl-act:27619472",
+      "database": "ChEMBL",
+      "label": "Activity 27619472 (CHEMBL5733821)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL5733821"
+    },
+    {
+      "id": "chembl-act:29122963",
+      "database": "ChEMBL",
+      "label": "Activity 29122963 (CHEMBL6092756)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/assay/CHEMBL6092756"
+    },
+    {
+      "id": "chembl-warn:1043",
+      "database": "ChEMBL",
+      "label": "LAPATINIB: Black Box Warning (hepatotoxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=eee37f88-ec6a-4c30-b8aa-e2c71f93088c"
+    },
+    {
+      "id": "chembl-warn:2847",
+      "database": "ChEMBL",
+      "label": "MOBOCERTINIB: Black Box Warning",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL4650319"
+    },
+    {
+      "id": "chembl-warn:3784",
+      "database": "ChEMBL",
+      "label": "MOBOCERTINIB: Black Box Warning (cardiotoxicity)",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f1a91500-a944-4cb8-b4a8-ae278bcf728d"
+    },
+    {
+      "id": "chembl-warn:5118",
+      "database": "ChEMBL",
+      "label": "LAPATINIB: Black Box Warning (hematological toxicity)",
+      "url": "https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL554"
+    },
+    {
+      "id": "nct:NCT00949910",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00949910",
+      "url": "https://clinicaltrials.gov/study/NCT00949910"
+    },
+    {
+      "id": "nct:NCT01203917",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01203917",
+      "url": "https://clinicaltrials.gov/study/NCT01203917"
+    },
+    {
+      "id": "nct:NCT04511533",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04511533",
+      "url": "https://clinicaltrials.gov/study/NCT04511533"
+    },
+    {
+      "id": "nct:NCT04401059",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04401059",
+      "url": "https://clinicaltrials.gov/study/NCT04401059"
+    },
+    {
+      "id": "nct:NCT02031601",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02031601",
+      "url": "https://clinicaltrials.gov/study/NCT02031601"
+    },
+    {
+      "id": "nct:NCT02404675",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02404675",
+      "url": "https://clinicaltrials.gov/study/NCT02404675"
+    },
+    {
+      "id": "nct:NCT02103257",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02103257",
+      "url": "https://clinicaltrials.gov/study/NCT02103257"
+    },
+    {
+      "id": "nct:NCT07900243",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT07900243",
+      "url": "https://clinicaltrials.gov/study/NCT07900243"
+    },
+    {
+      "id": "nct:NCT02474355",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02474355",
+      "url": "https://clinicaltrials.gov/study/NCT02474355"
+    },
+    {
+      "id": "nct:NCT00364351",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00364351",
+      "url": "https://clinicaltrials.gov/study/NCT00364351"
+    },
+    {
+      "id": "nct:NCT00322452",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00322452",
+      "url": "https://clinicaltrials.gov/study/NCT00322452"
+    },
+    {
+      "id": "nct:NCT00373425",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00373425",
+      "url": "https://clinicaltrials.gov/study/NCT00373425"
+    },
+    {
+      "id": "nct:NCT01085136",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01085136",
+      "url": "https://clinicaltrials.gov/study/NCT01085136"
+    },
+    {
+      "id": "nct:NCT00257608",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00257608",
+      "url": "https://clinicaltrials.gov/study/NCT00257608"
+    },
+    {
+      "id": "nct:NCT04487080",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04487080",
+      "url": "https://clinicaltrials.gov/study/NCT04487080"
+    },
+    {
+      "id": "nct:NCT01244191",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01244191",
+      "url": "https://clinicaltrials.gov/study/NCT01244191"
+    },
+    {
+      "id": "nct:NCT00457392",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00457392",
+      "url": "https://clinicaltrials.gov/study/NCT00457392"
+    },
+    {
+      "id": "nct:NCT00556712",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00556712",
+      "url": "https://clinicaltrials.gov/study/NCT00556712"
+    },
+    {
+      "id": "nct:NCT01360554",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01360554",
+      "url": "https://clinicaltrials.gov/study/NCT01360554"
+    },
+    {
+      "id": "nct:NCT01523587",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01523587",
+      "url": "https://clinicaltrials.gov/study/NCT01523587"
+    },
+    {
+      "id": "nct:NCT04988295",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04988295",
+      "url": "https://clinicaltrials.gov/study/NCT04988295"
+    },
+    {
+      "id": "nct:NCT01000025",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01000025",
+      "url": "https://clinicaltrials.gov/study/NCT01000025"
+    },
+    {
+      "id": "nct:NCT02511106",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02511106",
+      "url": "https://clinicaltrials.gov/study/NCT02511106"
+    },
+    {
+      "id": "nct:NCT02296125",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02296125",
+      "url": "https://clinicaltrials.gov/study/NCT02296125"
+    },
+    {
+      "id": "nct:NCT01328951",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01328951",
+      "url": "https://clinicaltrials.gov/study/NCT01328951"
+    },
+    {
+      "id": "nct:NCT00130728",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00130728",
+      "url": "https://clinicaltrials.gov/study/NCT00130728"
+    },
+    {
+      "id": "nct:NCT02352948",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02352948",
+      "url": "https://clinicaltrials.gov/study/NCT02352948"
+    },
+    {
+      "id": "nct:NCT04035486",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04035486",
+      "url": "https://clinicaltrials.gov/study/NCT04035486"
+    },
+    {
+      "id": "nct:NCT00656136",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00656136",
+      "url": "https://clinicaltrials.gov/study/NCT00656136"
+    },
+    {
+      "id": "nct:NCT00673049",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00673049",
+      "url": "https://clinicaltrials.gov/study/NCT00673049"
+    },
+    {
+      "id": "nct:NCT02411448",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02411448",
+      "url": "https://clinicaltrials.gov/study/NCT02411448"
+    },
+    {
+      "id": "nct:NCT01953913",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01953913",
+      "url": "https://clinicaltrials.gov/study/NCT01953913"
+    },
+    {
+      "id": "nct:NCT02588261",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02588261",
+      "url": "https://clinicaltrials.gov/study/NCT02588261"
+    },
+    {
+      "id": "nct:NCT00049543",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00049543",
+      "url": "https://clinicaltrials.gov/study/NCT00049543"
+    },
+    {
+      "id": "nct:NCT01853826",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01853826",
+      "url": "https://clinicaltrials.gov/study/NCT01853826"
+    },
+    {
+      "id": "nct:NCT01774721",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01774721",
+      "url": "https://clinicaltrials.gov/study/NCT01774721"
+    },
+    {
+      "id": "nct:NCT03849768",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT03849768",
+      "url": "https://clinicaltrials.gov/study/NCT03849768"
+    },
+    {
+      "id": "nct:NCT02737501",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02737501",
+      "url": "https://clinicaltrials.gov/study/NCT02737501"
+    },
+    {
+      "id": "nct:NCT03596866",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT03596866",
+      "url": "https://clinicaltrials.gov/study/NCT03596866"
+    },
+    {
+      "id": "nct:NCT02322281",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02322281",
+      "url": "https://clinicaltrials.gov/study/NCT02322281"
+    },
+    {
+      "id": "nct:NCT04129502",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04129502",
+      "url": "https://clinicaltrials.gov/study/NCT04129502"
+    },
+    {
+      "id": "nct:NCT05378763",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT05378763",
+      "url": "https://clinicaltrials.gov/study/NCT05378763"
+    },
+    {
+      "id": "nct:NCT02186301",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02186301",
+      "url": "https://clinicaltrials.gov/study/NCT02186301"
+    },
+    {
+      "id": "nct:NCT03318939",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT03318939",
+      "url": "https://clinicaltrials.gov/study/NCT03318939"
+    },
+    {
+      "id": "nct:NCT01306045",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01306045",
+      "url": "https://clinicaltrials.gov/study/NCT01306045"
+    },
+    {
+      "id": "nct:NCT01953926",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01953926",
+      "url": "https://clinicaltrials.gov/study/NCT01953926"
+    },
+    {
+      "id": "nct:NCT02147990",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02147990",
+      "url": "https://clinicaltrials.gov/study/NCT02147990"
+    },
+    {
+      "id": "nct:NCT02094573",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02094573",
+      "url": "https://clinicaltrials.gov/study/NCT02094573"
+    },
+    {
+      "id": "nct:NCT00266877",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00266877",
+      "url": "https://clinicaltrials.gov/study/NCT00266877"
+    },
+    {
+      "id": "nct:NCT00073008",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00073008",
+      "url": "https://clinicaltrials.gov/study/NCT00073008"
+    },
+    {
+      "id": "nct:NCT01827267",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT01827267",
+      "url": "https://clinicaltrials.gov/study/NCT01827267"
+    },
+    {
+      "id": "nct:NCT04591431",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04591431",
+      "url": "https://clinicaltrials.gov/study/NCT04591431"
+    },
+    {
+      "id": "nct:NCT00050830",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00050830",
+      "url": "https://clinicaltrials.gov/study/NCT00050830"
+    },
+    {
+      "id": "nct:NCT03066206",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT03066206",
+      "url": "https://clinicaltrials.gov/study/NCT03066206"
+    },
+    {
+      "id": "nct:NCT04044170",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04044170",
+      "url": "https://clinicaltrials.gov/study/NCT04044170"
+    },
+    {
+      "id": "nct:NCT04576208",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04576208",
+      "url": "https://clinicaltrials.gov/study/NCT04576208"
+    },
+    {
+      "id": "nct:NCT05045404",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT05045404",
+      "url": "https://clinicaltrials.gov/study/NCT05045404"
+    },
+    {
+      "id": "nct:NCT04402008",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT04402008",
+      "url": "https://clinicaltrials.gov/study/NCT04402008"
+    },
+    {
+      "id": "nct:NCT02716116",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT02716116",
+      "url": "https://clinicaltrials.gov/study/NCT02716116"
+    },
+    {
+      "id": "nct:NCT00174356",
+      "database": "ClinicalTrials.gov",
+      "label": "NCT00174356",
+      "url": "https://clinicaltrials.gov/study/NCT00174356"
+    }
+  ]
+}
