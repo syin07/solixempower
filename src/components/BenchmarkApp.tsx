@@ -2,9 +2,10 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import type { BenchmarkResult, EvidenceReport as Report, TrialsResult } from "@/lib/contracts";
+import type { BenchmarkResult, EvidenceReport as Report, GraphResult, TrialsResult } from "@/lib/contracts";
 import { CompoundCard } from "./CompoundCard";
 import { DrugWarningsPanel } from "./DrugWarningsPanel";
+import { EvidenceGraphSection } from "./EvidenceGraphSection";
 import { EvidenceReport } from "./EvidenceReport";
 import { MatchedAssayTable } from "./MatchedAssayTable";
 import { MockBanner } from "./MockBanner";
@@ -34,6 +35,7 @@ export function BenchmarkApp() {
 
   const [benchmark, setBenchmark] = useState<Load<BenchmarkResult>>({ state: "idle" });
   const [trials, setTrials] = useState<Load<TrialsResult>>({ state: "idle" });
+  const [graph, setGraph] = useState<Load<GraphResult>>({ state: "idle" });
   const [report, setReport] = useState<Load<Report>>({ state: "idle" });
   const runId = useRef(0);
 
@@ -44,6 +46,7 @@ export function BenchmarkApp() {
       const flag = demo ? "&demo=1" : "";
       setBenchmark({ state: "loading" });
       setTrials({ state: "idle" });
+      setGraph({ state: "idle" });
       setReport({ state: "idle" });
 
       let b: BenchmarkResult;
@@ -69,12 +72,30 @@ export function BenchmarkApp() {
       if (!live()) return;
 
       // Never let the AI summarize placeholder trials: mock trials are shown (bannered) but not sent.
+      const realTrials = t && !t.isMock ? t : undefined;
+
+      // Evidence graph: built from the benchmark + trials, enriched server-side. Runs before the report,
+      // which will consume its hypotheses.
+      setGraph({ state: "loading" });
+      let g: GraphResult | undefined;
+      try {
+        g = await fetchJson<GraphResult>(`/api/graph${demo ? "?demo=1" : ""}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ benchmark: b, trials: realTrials }),
+        });
+        if (live()) setGraph({ state: "done", data: g });
+      } catch (e) {
+        if (live()) setGraph({ state: "error", error: message(e) });
+      }
+      if (!live()) return;
+
       setReport({ state: "loading" });
       try {
         const r = await fetchJson<Report>(`/api/report${demo ? "?demo=1" : ""}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ benchmark: b, trials: t && !t.isMock ? t : undefined }),
+          body: JSON.stringify({ benchmark: b, trials: realTrials, graph: g && !g.isMock ? g : undefined }),
         });
         if (live()) setReport({ state: "done", data: r });
       } catch (e) {
@@ -94,7 +115,8 @@ export function BenchmarkApp() {
 
   const b = benchmark.state === "done" ? benchmark.data : null;
   const t = trials.state === "done" ? trials.data : null;
-  const sources = useMemo(() => indexSources(b, t), [b, t]);
+  const g = graph.state === "done" ? graph.data : null;
+  const sources = useMemo(() => indexSources(b, t, g), [b, t, g]);
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-5 px-4 py-6">
@@ -161,6 +183,18 @@ export function BenchmarkApp() {
             </Section>
           )}
           {t && <TrialsTable trials={t} />}
+
+          {graph.state === "loading" && (
+            <Section title="Evidence graph">
+              <Loading label="Building the evidence graph from ChEMBL, Open Targets and ClinicalTrials.gov…" />
+            </Section>
+          )}
+          {graph.state === "error" && (
+            <Section title="Evidence graph">
+              <ErrorNote message={`Graph unavailable: ${graph.error}`} />
+            </Section>
+          )}
+          {g && <EvidenceGraphSection graph={g} sources={sources} />}
 
           {report.state === "loading" && (
             <Section title="AI evidence report">

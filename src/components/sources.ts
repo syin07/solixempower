@@ -1,7 +1,11 @@
-import type { BenchmarkResult, SourceRef, TrialsResult } from "@/lib/contracts";
+import type { BenchmarkResult, GraphResult, SourceRef, TrialsResult } from "@/lib/contracts";
 
 /** Every SourceRef the UI has retrieved, keyed by id, so report citations resolve to clickable links. */
-export function indexSources(benchmark: BenchmarkResult | null, trials: TrialsResult | null): Map<string, SourceRef> {
+export function indexSources(
+  benchmark: BenchmarkResult | null,
+  trials: TrialsResult | null,
+  graph: GraphResult | null = null,
+): Map<string, SourceRef> {
   const index = new Map<string, SourceRef>();
   const add = (ref: SourceRef | undefined) => ref && index.set(ref.id, ref);
   if (benchmark) {
@@ -15,6 +19,8 @@ export function indexSources(benchmark: BenchmarkResult | null, trials: TrialsRe
     benchmark.drugWarnings?.forEach((w) => add(w.source));
   }
   trials?.trials.forEach((t) => add(t.source));
+  // Graph edges (indications, Open Targets associations, mechanisms, absence checks) are citable too.
+  graph?.sources.forEach((s) => add(s));
   return index;
 }
 
