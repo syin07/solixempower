@@ -54,7 +54,7 @@ drug node name (case-insensitive, reuse the matching in `report.ts`), one `disea
 disease (`id: disease:query` until S3 resolves it), `for_disease` edges from each trial. `hypotheses: []`,
 `sources` = every `SourceRef` used. Throw if any edge lacks a source.
 
-Then a script that runs `buildGraph` on `src/fixtures/demo/benchmark--poziotinib--*.json` +
+Then a script (run with `node --import ./scripts/ts-loader.mjs scripts/build-graph-fixture.mjs`) that runs `buildGraph` on `src/fixtures/demo/benchmark--poziotinib--*.json` +
 `trials--…` and writes `src/fixtures/graph.json`, so S4 and M3 can start on real shapes.
 
 Done when: the fixture has ≥ 10 drug nodes, 1 target, ≥ 40 trial nodes, every edge has `source.url`.
