@@ -9,6 +9,7 @@ import { addEdge, addNode, QUERY_DISEASE_ID } from "./build";
 import { edgeId, nodeId, normalizeEfo, openTargetsEvidenceUrl, parseNodeId } from "./ids";
 import {
   associatedDiseases,
+  diseaseAncestorCounts,
   diseaseAncestors,
   filterDiseaseRows,
   mapUniprotToEnsembl,
@@ -17,6 +18,10 @@ import {
 } from "./opentargets";
 
 const SECONDARY_TARGETS = 3;
+/** Indication-only disease nodes with fewer ancestors than this are too generic to draw (PRD §5) */
+const MIN_ANCESTORS = 5;
+/** Names treated as generic when Open Targets cannot tell us the ancestor count */
+const GENERIC_NAMES = /^(malignant )?(carcinoma|neoplasm|tumou?r|solid tumou?r|disease|disorder|syndrome|infection|pain|inflammation)s?$/;
 const ROUTES = { oral: "Oral", parenteral: "Parenteral", topical: "Topical" } as const;
 const fmt = (n: number) => n.toFixed(2);
 const warn = (what: string, e: unknown) => console.warn(`[kg/enrich] ${what} unavailable:`, e instanceof Error ? e.message : e);
@@ -182,6 +187,16 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
     warn("indications", e);
   }
 
+  // d2. Drop generic indication-only diseases ("cancer", "neoplasm"): comparators' indications are not
+  // subject to the Open Targets ancestor filter, so apply it here. The query disease and anything the
+  // candidate is indicated for are kept (the gap check needs the candidate's full list) but flagged.
+  try {
+    const dropped = await pruneGenericIndicationDiseases(graph, candidate?.id ?? null);
+    if (dropped.length) console.info(`[kg/enrich] dropped ${dropped.length} generic indication-only disease(s): ${dropped.join(", ")}`);
+  } catch (e) {
+    warn("generic-disease pruning", e);
+  }
+
   // e. Merge disease nodes that are the same disease under different ids (ChEMBL EFO vs Open Targets MONDO)
   mergeDiseasesByName(graph);
 
@@ -290,6 +305,46 @@ function renameNode(graph: GraphResult, from: string, to: string): void {
   // Rewriting can create duplicate edge ids (two trials → same disease is fine, same type+from+to is not)
   const seen = new Set<string>();
   graph.edges = graph.edges.filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)));
+}
+
+/**
+ * Removes disease nodes reachable only through indicated_for edges when they are generic: fewer than
+ * MIN_ANCESTORS ancestors in Open Targets, or unknown to Open Targets and matching GENERIC_NAMES.
+ * Nodes linked from the candidate or marked as the query disease are kept and get meta.generic = true.
+ * Returns the labels dropped (for logging and checks).
+ */
+export async function pruneGenericIndicationDiseases(graph: GraphResult, candidateId: string | null): Promise<string[]> {
+  const linkedBy = (d: GraphNode, type: string) => graph.edges.some((e) => e.type === type && (e.to === d.id || e.from === d.id));
+  const indicationOnly = graph.nodes.filter(
+    (d) => d.type === "disease" && !d.isQueryDisease && d.id !== QUERY_DISEASE_ID && !linkedBy(d, "associated_with") && linkedBy(d, "indicated_for"),
+  );
+  if (!indicationOnly.length) return [];
+  const counts = await diseaseAncestorCounts(indicationOnly.map((d) => parseNodeId(d.id)!.key));
+  const dropped: string[] = [];
+  const remove = new Set<string>();
+  for (const d of indicationOnly) {
+    const key = parseNodeId(d.id)!.key;
+    const n = counts.get(key);
+    const generic = n != null ? n < MIN_ANCESTORS : GENERIC_NAMES.test(normName(d.label));
+    if (!generic) {
+      if (n != null) d.meta = { ...d.meta, nAncestors: n };
+      continue;
+    }
+    const candidateLinked = candidateId != null && graph.edges.some((e) => e.type === "indicated_for" && e.from === candidateId && e.to === d.id);
+    if (candidateLinked) {
+      d.meta = { ...d.meta, generic: true, nAncestors: n ?? null };
+      continue;
+    }
+    remove.add(d.id);
+    dropped.push(d.label);
+  }
+  if (remove.size) {
+    graph.nodes = graph.nodes.filter((n) => !remove.has(n.id));
+    graph.edges = graph.edges.filter((e) => !remove.has(e.from) && !remove.has(e.to));
+    const used = new Set([...graph.nodes.map((n) => n.source?.id), ...graph.edges.map((e) => e.source.id)]);
+    graph.sources = graph.sources.filter((s) => used.has(s.id));
+  }
+  return dropped;
 }
 
 export const normName = (s: string) =>
