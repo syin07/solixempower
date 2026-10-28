@@ -1,0 +1,41 @@
+{
+  "isMock": true,
+  "verdict": "insufficient_evidence",
+  "headline": "MOCK: Candidate shows intermediate in-vitro potency against EGFR; no clinical or safety evidence identified.",
+  "sections": [
+    {
+      "layer": "molecular",
+      "summary": "In comparable binding assays the candidate ranks 3rd of 4 compounds by median pChEMBL.",
+      "claims": [
+        { "text": "In a shared kinase assay, the candidate (pChEMBL 7.6) was less potent than Mock Approved Drug A (8.2).", "kind": "measured", "sourceIds": ["chembl-act:MOCK1", "chembl-act:MOCK4"] }
+      ]
+    },
+    {
+      "layer": "preclinical",
+      "summary": "No cell-based or in-vivo results were retrieved.",
+      "claims": []
+    },
+    {
+      "layer": "clinical",
+      "summary": "No human trials of the candidate were found. The indication has completed Phase 3 trials of approved comparators.",
+      "claims": [
+        { "text": "Mock Approved Drug A has a completed Phase 3 trial with posted results.", "kind": "clinical", "sourceIds": ["nct:NCT00000001"] }
+      ]
+    },
+    {
+      "layer": "safety",
+      "summary": "Only computed drug-likeness properties are available; no measured toxicity data.",
+      "claims": [
+        { "text": "The candidate has 0 Lipinski rule-of-5 violations (computed).", "kind": "computed", "sourceIds": ["chembl-mol:CHEMBL_MOCK_C"] }
+      ]
+    }
+  ],
+  "openQuestions": [
+    "Is the candidate selective for EGFR over related kinases?",
+    "Does in-vitro potency translate to cell-based activity?"
+  ],
+  "nextSteps": [
+    "Run cell-based assays in EGFR-dependent cell lines.",
+    "Obtain selectivity panel and early toxicity data before further comparison."
+  ]
+}

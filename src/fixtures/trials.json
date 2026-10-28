@@ -1,0 +1,32 @@
+{
+  "isMock": true,
+  "query": { "disease": "non-small cell lung cancer", "drugs": ["Mock Approved Drug A", "Mock Approved Drug B"] },
+  "trials": [
+    {
+      "nctId": "NCT00000001",
+      "title": "MOCK: Phase 3 study of Mock Approved Drug A vs chemotherapy in NSCLC",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "conditions": ["Non-small Cell Lung Cancer"],
+      "interventions": ["Mock Approved Drug A", "Platinum doublet chemotherapy"],
+      "enrollment": 600,
+      "hasResults": true,
+      "primaryOutcomes": ["Progression-free survival"],
+      "startDate": "2015-03",
+      "source": { "id": "nct:NCT00000001", "database": "ClinicalTrials.gov", "label": "NCT00000001", "url": "https://clinicaltrials.gov/" }
+    },
+    {
+      "nctId": "NCT00000002",
+      "title": "MOCK: Phase 2 study of Mock Approved Drug B in EGFR-mutant NSCLC",
+      "phase": "PHASE2",
+      "status": "RECRUITING",
+      "conditions": ["Non-small Cell Lung Cancer"],
+      "interventions": ["Mock Approved Drug B"],
+      "enrollment": 120,
+      "hasResults": false,
+      "primaryOutcomes": ["Objective response rate"],
+      "startDate": "2024-09",
+      "source": { "id": "nct:NCT00000002", "database": "ClinicalTrials.gov", "label": "NCT00000002", "url": "https://clinicaltrials.gov/" }
+    }
+  ]
+}

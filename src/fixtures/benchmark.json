@@ -1,0 +1,55 @@
+{
+  "isMock": true,
+  "query": { "candidate": "MOCK-CANDIDATE", "disease": "non-small cell lung cancer", "targetChemblId": "CHEMBL203" },
+  "target": {
+    "chemblId": "CHEMBL203",
+    "name": "Epidermal growth factor receptor erbB1",
+    "organism": "Homo sapiens",
+    "source": { "id": "chembl-target:CHEMBL203", "database": "ChEMBL", "label": "CHEMBL203", "url": "https://www.ebi.ac.uk/chembl/explore/target/CHEMBL203" }
+  },
+  "activityType": "IC50",
+  "candidate": {
+    "compound": {
+      "chemblId": "CHEMBL_MOCK_C",
+      "name": "Mock Candidate C",
+      "maxPhase": null,
+      "isCandidate": true,
+      "properties": { "molecularWeight": 452.5, "alogp": 3.8, "ro5Violations": 0, "qed": 0.61 },
+      "source": { "id": "chembl-mol:CHEMBL_MOCK_C", "database": "ChEMBL", "label": "Mock Candidate C", "url": "https://www.ebi.ac.uk/chembl/" }
+    },
+    "n": 3, "medianPchembl": 7.6, "minPchembl": 7.2, "maxPchembl": 8.0, "rank": 3,
+    "measurements": [
+      { "compoundChemblId": "CHEMBL_MOCK_C", "assayChemblId": "CHEMBL_MOCK_ASSAY_1", "assayDescription": "MOCK: EGFR kinase inhibition assay", "assayType": "B", "activityType": "IC50", "valueNm": 25, "pchembl": 7.6, "source": { "id": "chembl-act:MOCK1", "database": "ChEMBL", "label": "Activity MOCK1", "url": "https://www.ebi.ac.uk/chembl/" } },
+      { "compoundChemblId": "CHEMBL_MOCK_C", "assayChemblId": "CHEMBL_MOCK_ASSAY_2", "assayDescription": "MOCK: EGFR binding assay", "assayType": "B", "activityType": "IC50", "valueNm": 63, "pchembl": 7.2, "source": { "id": "chembl-act:MOCK2", "database": "ChEMBL", "label": "Activity MOCK2", "url": "https://www.ebi.ac.uk/chembl/" } },
+      { "compoundChemblId": "CHEMBL_MOCK_C", "assayChemblId": "CHEMBL_MOCK_ASSAY_3", "assayDescription": "MOCK: EGFR kinase inhibition assay (variant)", "assayType": "B", "activityType": "IC50", "valueNm": 10, "pchembl": 8.0, "source": { "id": "chembl-act:MOCK3", "database": "ChEMBL", "label": "Activity MOCK3", "url": "https://www.ebi.ac.uk/chembl/" } }
+    ]
+  },
+  "comparators": [
+    {
+      "compound": { "chemblId": "CHEMBL_MOCK_A", "name": "Mock Approved Drug A", "maxPhase": 4, "isCandidate": false, "source": { "id": "chembl-mol:CHEMBL_MOCK_A", "database": "ChEMBL", "label": "Mock Approved Drug A", "url": "https://www.ebi.ac.uk/chembl/" } },
+      "n": 12, "medianPchembl": 8.4, "minPchembl": 7.5, "maxPchembl": 9.1, "rank": 1, "measurements": []
+    },
+    {
+      "compound": { "chemblId": "CHEMBL_MOCK_B", "name": "Mock Approved Drug B", "maxPhase": 4, "isCandidate": false, "source": { "id": "chembl-mol:CHEMBL_MOCK_B", "database": "ChEMBL", "label": "Mock Approved Drug B", "url": "https://www.ebi.ac.uk/chembl/" } },
+      "n": 8, "medianPchembl": 7.9, "minPchembl": 7.0, "maxPchembl": 8.6, "rank": 2, "measurements": []
+    },
+    {
+      "compound": { "chemblId": "CHEMBL_MOCK_D", "name": "Mock Phase 2 Drug D", "maxPhase": 2, "isCandidate": false, "source": { "id": "chembl-mol:CHEMBL_MOCK_D", "database": "ChEMBL", "label": "Mock Phase 2 Drug D", "url": "https://www.ebi.ac.uk/chembl/" } },
+      "n": 4, "medianPchembl": 7.0, "minPchembl": 6.4, "maxPchembl": 7.5, "rank": 4, "measurements": []
+    }
+  ],
+  "matchedAssays": [
+    {
+      "assayChemblId": "CHEMBL_MOCK_ASSAY_1",
+      "assayDescription": "MOCK: EGFR kinase inhibition assay",
+      "rows": [
+        { "compoundChemblId": "CHEMBL_MOCK_C", "compoundName": "Mock Candidate C", "pchembl": 7.6, "source": { "id": "chembl-act:MOCK1", "database": "ChEMBL", "label": "Activity MOCK1", "url": "https://www.ebi.ac.uk/chembl/" } },
+        { "compoundChemblId": "CHEMBL_MOCK_A", "compoundName": "Mock Approved Drug A", "pchembl": 8.2, "source": { "id": "chembl-act:MOCK4", "database": "ChEMBL", "label": "Activity MOCK4", "url": "https://www.ebi.ac.uk/chembl/" } }
+      ]
+    }
+  ],
+  "warnings": [
+    "MOCK DATA — not real measurements.",
+    "Candidate has only 3 comparable measurements."
+  ]
+}
