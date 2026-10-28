@@ -75,15 +75,22 @@ export async function addQueryDiseaseAnswer(input: GraphResult, benchmark: Bench
   const name = displayName(drug.label);
 
   if (disease.id === QUERY_DISEASE_ID) {
+    const outage = disease.meta?.resolution === "lookup_failed";
     graph.hypotheses = [
       card({
         drug,
         disease,
         status: "no_path",
-        statement: `"${disease.label}" could not be resolved to a disease in Open Targets, so no target-level path from ${name} could be checked`,
+        statement: outage
+          ? `Open Targets was unavailable, so "${disease.label}" could not be resolved and no target-level path from ${name} could be checked — rebuild the graph later`
+          : `"${disease.label}" could not be resolved to a disease in Open Targets, so no target-level path from ${name} could be checked`,
         pathEdgeIds: [],
-        ladder: [{ kind: "absent", label: "Disease resolution", value: "no Open Targets match for the disease name — try another spelling or the EFO/MONDO name", sourceIds: [] }],
-        suggestedTest: "Rephrase the disease (e.g. the EFO or MONDO preferred name) and rebuild the graph.",
+        ladder: [
+          outage
+            ? { kind: "absent", label: "Disease resolution", value: "Open Targets lookup failed (service unavailable); only ChEMBL and ClinicalTrials.gov evidence is shown", sourceIds: [] }
+            : { kind: "absent", label: "Disease resolution", value: "no Open Targets match for the disease name — try another spelling or the EFO/MONDO name", sourceIds: [] },
+        ],
+        suggestedTest: outage ? "Rebuild the graph once Open Targets is reachable." : "Rephrase the disease (e.g. the EFO or MONDO preferred name) and rebuild the graph.",
         sourceIds: [],
       }),
       ...graph.hypotheses.filter((h) => h.diseaseId !== disease.id),
