@@ -425,6 +425,25 @@ function buildLadder(
     sourceIds: precedent ? [precedent.edge.source.id] : [],
   });
 
+  // Safety signals (FAERS) — a regulatory reporting record, shown before the gap check
+  const safetyEdge = out(drug.id, "has_adverse_events")[0];
+  const safety = safetyEdge ? node(safetyEdge.to) : undefined;
+  if (safety) {
+    const total = Number(safety.meta?.total ?? 0);
+    const top = (Array.isArray(safety.meta?.topReactions) ? (safety.meta!.topReactions as string[]) : [])
+      .map((s) => s.split("|")[0])
+      .filter((t) => !/^drug ineffective$/i.test(t))
+      .slice(0, 3);
+    rows.push({
+      kind: "clinical",
+      label: "Safety signals (FAERS)",
+      value: total
+        ? `${total.toLocaleString("en-US")} reports, ${safety.meta?.seriousPct}% serious; top: ${top.join(", ").toLowerCase()} (spontaneous reports, not rates)`
+        : "no FAERS reports found for this drug",
+      sourceIds: [safetyEdge.source.id],
+    });
+  }
+
   if (s.status === "proposed") rows.push({ kind: "absent", label: "Gap check", value: s.edges[0].label, sourceIds: [s.edges[0].source.id] });
   else if (s.status === "already_tested")
     rows.push({ kind: "clinical", label: "Gap check", value: `interventional trial(s) found: ${s.nctIds.join(", ")}`, sourceIds: s.nctIds.map((n) => `nct:${n}`) });

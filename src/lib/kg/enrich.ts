@@ -6,6 +6,7 @@ import { getIndications, getMechanisms, getMolecules, getTarget } from "@/lib/ch
 import { chemblUrl } from "@/lib/chembl/client";
 import type { BenchmarkResult, GraphNode, GraphResult, SourceRef } from "@/lib/contracts";
 import { addEdge, addNode, QUERY_DISEASE_ID } from "./build";
+import { formatCount, getFaersSummary } from "./faers";
 import { edgeId, nodeId, normalizeEfo, openTargetsEvidenceUrl, parseNodeId } from "./ids";
 import {
   associatedDiseases,
@@ -258,7 +259,58 @@ export async function enrichGraph(input: GraphResult, benchmark: BenchmarkResult
     warn("mechanisms", e);
   }
 
+  // g. FAERS safety signals for the candidate (openFDA)
+  try {
+    await addSafety(graph, benchmark);
+  } catch (e) {
+    warn("FAERS", e);
+  }
+
   graph.builtAt = new Date().toISOString();
+  return graph;
+}
+
+/**
+ * One "safety" satellite node per candidate with the FAERS report totals and top reactions, linked by a
+ * has_adverse_events edge (kind clinical: a regulatory reporting record, not a measurement).
+ */
+export async function addSafety(graph: GraphResult, benchmark: BenchmarkResult): Promise<GraphResult> {
+  const cand = benchmark.candidate.compound;
+  const drug = graph.nodes.find((n) => n.id === nodeId("drug", cand.chemblId));
+  if (!drug) return graph;
+  const f = await getFaersSummary(cand.name);
+  const pct = f.total ? Math.round((100 * f.serious) / f.total) : 0;
+  const label = f.total ? `FAERS: ${formatCount(f.total)} reports, ${pct}% serious` : "FAERS: no reports found";
+  const safety = addNode(graph, {
+    id: nodeId("safety", cand.chemblId),
+    type: "safety",
+    label,
+    meta: {
+      total: f.total,
+      serious: f.serious,
+      seriousPct: pct,
+      field: f.field,
+      topReactions: f.topReactions.map((r) => `${r.term}|${r.count}`),
+      seriousTop: (f.seriousTop ?? []).map((r) => `${r.term}|${r.count}`),
+      query: f.query,
+    },
+  });
+  addEdge(graph, {
+    id: edgeId("has_adverse_events", drug.id, safety.id),
+    type: "has_adverse_events",
+    from: drug.id,
+    to: safety.id,
+    kind: "clinical",
+    strength: f.total || undefined,
+    label: "adverse event reports (FAERS)",
+    meta: { total: f.total, serious: f.serious, query: f.query },
+    source: {
+      id: `faers:${f.name}`,
+      database: "FDA FAERS",
+      label: `openFDA adverse-event reports for ${f.name}${f.total ? ` (${f.total.toLocaleString("en-US")})` : " (none found)"}`,
+      url: f.query,
+    },
+  });
   return graph;
 }
 
